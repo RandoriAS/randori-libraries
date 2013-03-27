@@ -318,6 +318,9 @@ public class Window
 	*/
 	public static function get location():Location { return null; }
 	public static function set location(value:Location):void { }
+	
+	[JavaScriptProperty(name="location")]
+	public static function set locationString(value:String):void { }
 
 	/**
 	*  @see randori.webkit.dom.DomEvent
