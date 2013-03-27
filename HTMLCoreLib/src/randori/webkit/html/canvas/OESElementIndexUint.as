@@ -42,7 +42,7 @@ package randori.webkit.html.canvas
 {
 
 
-[JavaScript(export="false", nativecondition="WEBGL", name="OESElementIndexUint")]
+[JavaScript(export="false", nativecondition="WEBGL", omitconstructor="true", name="OESElementIndexUint")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

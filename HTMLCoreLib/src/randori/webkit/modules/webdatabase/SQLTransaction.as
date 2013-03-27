@@ -42,7 +42,7 @@ package randori.webkit.modules.webdatabase
 {
 
 
-[JavaScript(export="false", nativecondition="SQL_DATABASE", name="SQLTransaction")]
+[JavaScript(export="false", nativecondition="SQL_DATABASE", omitconstructor="true", name="SQLTransaction")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

@@ -42,7 +42,7 @@ package randori.webkit.svg
 {
 
 
-[JavaScript(export="false", nativecondition="SVG", name="SVGURIReference")]
+[JavaScript(export="false", nativecondition="SVG", omitconstructor="true", name="SVGURIReference")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

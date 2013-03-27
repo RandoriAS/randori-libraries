@@ -50,7 +50,7 @@ import randori.webkit.html.URL;
 import randori.webkit.html.canvas.ArrayBuffer;
 import randori.webkit.html.canvas.DataView;
 
-[JavaScript(export="false", nativecondition="WORKERS", name="WorkerContext")]
+[JavaScript(export="false", nativecondition="WORKERS", omitconstructor="true", name="WorkerContext")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

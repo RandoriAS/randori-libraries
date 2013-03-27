@@ -43,7 +43,7 @@ package randori.webkit.modules.notifications
 
 import randori.webkit.dom.DomEvent;
 
-[JavaScript(export="false", nativecondition="NOTIFICATIONS", name="Notification")]
+[JavaScript(export="false", nativecondition="NOTIFICATIONS", omitconstructor="true", name="Notification")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

@@ -42,7 +42,7 @@ package randori.webkit.modules.notifications
 {
 
 
-[JavaScript(export="false", nativecondition="LEGACY_NOTIFICATIONS", name="NotificationCenter")]
+[JavaScript(export="false", nativecondition="LEGACY_NOTIFICATIONS", omitconstructor="true", name="NotificationCenter")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

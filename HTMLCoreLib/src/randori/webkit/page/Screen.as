@@ -42,7 +42,7 @@ package randori.webkit.page
 {
 
 
-[JavaScript(export="false", name="Screen")]
+[JavaScript(export="false", omitconstructor="true", name="Screen")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

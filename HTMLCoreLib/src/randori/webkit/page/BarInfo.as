@@ -42,7 +42,7 @@ package randori.webkit.page
 {
 
 
-[JavaScript(export="false", name="BarInfo")]
+[JavaScript(export="false", omitconstructor="true", name="BarInfo")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

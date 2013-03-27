@@ -43,7 +43,7 @@ package randori.webkit.page
 
 import randori.webkit.dom.DOMStringList;
 
-[JavaScript(export="false", nativecondition="CSP_NEXT", name="SecurityPolicy")]
+[JavaScript(export="false", nativecondition="CSP_NEXT", omitconstructor="true", name="SecurityPolicy")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

@@ -42,7 +42,7 @@ package randori.webkit.modules.quota
 {
 
 
-[JavaScript(export="false", nativecondition="QUOTA", name="StorageInfo")]
+[JavaScript(export="false", nativecondition="QUOTA", omitconstructor="true", name="StorageInfo")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

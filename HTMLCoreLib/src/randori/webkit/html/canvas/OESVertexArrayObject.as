@@ -42,7 +42,7 @@ package randori.webkit.html.canvas
 {
 
 
-[JavaScript(export="false", nativecondition="WEBGL", name="OESVertexArrayObject")]
+[JavaScript(export="false", nativecondition="WEBGL", omitconstructor="true", name="OESVertexArrayObject")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

@@ -42,7 +42,7 @@ package randori.webkit.inspector
 {
 
 
-[JavaScript(export="false", nativecondition="JAVASCRIPT_DEBUGGER", name="JavaScriptCallFrame")]
+[JavaScript(export="false", nativecondition="JAVASCRIPT_DEBUGGER", omitconstructor="true", name="JavaScriptCallFrame")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

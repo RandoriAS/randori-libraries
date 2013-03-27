@@ -43,9 +43,9 @@ package randori.webkit.xml
 
 import randori.webkit.dom.Document;
 import randori.webkit.dom.DomEvent;
+import randori.webkit.html.canvas.ArrayBuffer;
 import randori.webkit.fileapi.Blob;
 import randori.webkit.html.FormData;
-import randori.webkit.html.canvas.ArrayBuffer;
 
 [JavaScript(export="false", name="XMLHttpRequest")]
 /**
@@ -134,13 +134,6 @@ public class XMLHttpRequest
 	*  @param value
 	*/
 	public function setRequestHeader(header:String, value:String):void {}
-	public function send( data:* = null ):void {}
-    public function sendArrayBuffer(data:ArrayBuffer):void {}
-    public function sendBlob(data:Blob):void {}
-    public function sendDocument(data:Document):void {}
-    public function sendString(data:String):void {}
-    public function sendFormData(data:FormData):void {}
-
 	public function abort():void {}
 
 	/**
@@ -193,6 +186,35 @@ public class XMLHttpRequest
 	*  @return A <code>Boolean</code> instance.
 	*/
 	public function dispatchEvent(evt:DomEvent):Boolean { return false;}
+	/**
+	*  @param data (optional argument, default value is <code>null</code>)
+	*/
+	public function send(data:*=null):void {}
+	[JavaScriptMethod(name="send")]
+	/**
+	*  @param data
+	*/
+	public function sendArrayBuffer(data:ArrayBuffer):void {}
+	[JavaScriptMethod(name="send")]
+	/**
+	*  @param data
+	*/
+	public function sendBlob(data:Blob):void {}
+	[JavaScriptMethod(name="send")]
+	/**
+	*  @param data
+	*/
+	public function sendDocument(data:Document):void {}
+	[JavaScriptMethod(name="send")]
+	/**
+	*  @param data
+	*/
+	public function sendString(data:String):void {}
+	[JavaScriptMethod(name="send")]
+	/**
+	*  @param data
+	*/
+	public function sendFormData(data:FormData):void {}
 }
 
 }

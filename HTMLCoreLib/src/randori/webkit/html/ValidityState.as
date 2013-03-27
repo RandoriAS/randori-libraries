@@ -42,7 +42,7 @@ package randori.webkit.html
 {
 
 
-[JavaScript(export="false", name="ValidityState")]
+[JavaScript(export="false", omitconstructor="true", name="ValidityState")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

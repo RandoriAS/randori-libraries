@@ -44,7 +44,7 @@ package randori.webkit.page
 import randori.webkit.dom.Document;
 import randori.webkit.css.StyleMedia;
 
-[JavaScript(export="false", name="AbstractView")]
+[JavaScript(export="false", omitconstructor="true", name="AbstractView")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0

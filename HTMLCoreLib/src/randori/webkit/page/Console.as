@@ -42,7 +42,7 @@ package randori.webkit.page
 {
 
 
-[JavaScript(export="false", name="Console")]
+[JavaScript(export="false", omitconstructor="true", name="Console")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0
