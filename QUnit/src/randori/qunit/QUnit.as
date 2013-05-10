@@ -49,12 +49,12 @@ package randori.qunit {
 
 		}
 
-		public static function start( count:Number ):void
+		public static function start( count:Number = -1 ):void
 		{
 
 		}
 
-		public static function stop( count:Number ):void
+		public static function stop( count:Number = -1 ):void
 		{
 
 		}
