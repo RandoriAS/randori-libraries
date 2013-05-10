@@ -49,6 +49,16 @@ package randori.qunit {
 
 		}
 
+		public static function start( count:Number ):void
+		{
+
+		}
+
+		public static function stop( count:Number ):void
+		{
+
+		}
+
 		public static function testDone( callback:Function ):void
 		{
 

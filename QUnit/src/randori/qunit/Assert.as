@@ -49,17 +49,27 @@ package randori.qunit {
 
 		}
 
-		public static function ok(state:*, message:String):void
+		public static function ok(result:*, message:String):void
 		{
 
 		}
 
-		public static function strictEqual(actual:Object, expected:Object, message:String):void
+		public static function propEqual( actual:Object, expected:Object, message:String ):void
 		{
 
 		}
 
-		public static function throws(block:Function, expected:Error, message:String):void
+		public static function notPropEqual( actual:Object, expected:Object, message:String ):void
+		{
+
+		}
+
+		public static function strictEqual( actual:Object, expected:Object, message:String ):void
+		{
+
+		}
+
+		public static function throws( block:Function, expected:Error, message:String ):void
 		{
 
 		}

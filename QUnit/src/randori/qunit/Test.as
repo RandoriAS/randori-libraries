@@ -28,12 +28,7 @@ package randori.qunit {
 		{
 		}
 
-		public static function asyncTest(  name:String, expected:Number, test:Function  ):void
-		{
-
-		}
-
-		public static function expect( amount:Number ):void
+		public static function expect( asserts:Number ):void
 		{
 
 		}
@@ -43,9 +38,37 @@ package randori.qunit {
 
 		}
 
-		public static function test( description:String, expected:Function ):void
+		// Because QUnit has this method defined with a optional paramter (in the middle of the method signature)
+		// we are making parmA and parmB generic. Where parmA could be either the function to call OR the
+		// expected asserts. and ParmB would always be the target function to call.
+		// Use:
+		// Test.asyncTest("My Test", method);
+		// Test.asyncTest("My Test", 5, method);
+		public static function asyncTest( description:String, parmA:*, parmB:* = null ):void
 		{
 
 		}
+
+		// JS Has it defined as such, but middle parameters are optional.
+		// function( testName, expected, callback, async )
+		// Use:
+		// Test.test("My Test", method);
+		// Test.test("My Test", 5, method);
+		// Test.test("My Test", 5, method, async);
+		public static function test( testName:String, paramA:* = null, paramB:* = null, async:* = null ):void
+		{
+
+		}
+
+		public static function start( count:Number ):void
+		{
+
+		}
+
+		public static function stop( count:Number ):void
+		{
+
+		}
+
 	}
 }
