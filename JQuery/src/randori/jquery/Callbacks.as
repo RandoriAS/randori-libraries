@@ -30,7 +30,7 @@ package randori.jquery {
 		 * @since 1.7
 		 * @param callbacks A function, or array of functions, that are to be added to the callback list.
 		 */
-		public function add(callbacks:*):Callbacks {
+		public function add(callbacks:Object):Callbacks {
 			return null;
 		}
 		
@@ -115,7 +115,7 @@ package randori.jquery {
 		 * @since 1.7
 		 * @param callbacks A function, or array of functions, that are to be removed from the callback list.
 		 */
-		public function remove(callbacks:*):Callbacks {
+		public function remove(callbacks:Object):Callbacks {
 			return null;
 		}
 	}

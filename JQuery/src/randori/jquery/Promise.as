@@ -126,9 +126,9 @@ package randori.jquery {
 		/**
 		 * Add handlers to be called when the Deferred object generates progress notifications.
 		 * @since 1.7
-		 * @param progressCallbacks A function, or array of functions, that is called when the Deferred generates progress notifications.
+		 * @param progressCallbacks A function, or array of functions, to be called when the Deferred generates progress notifications.
 		 */
-		public function progress(progressCallbacks:Function):Deferred {
+		public function progress(progressCallbacks:Object):Deferred {
 			return null;
 		}
 		

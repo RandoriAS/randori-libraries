@@ -46,7 +46,7 @@ package randori.jquery {
 		public var length:Number;
 		
 		/**
-		 * A selector representing selector originally passed to jQuery().
+		 * A selector representing selector passed to jQuery(), if any, when creating the original set.
 		 * @since 1.3
 		 */
 		public var selector:String;
@@ -138,7 +138,7 @@ package randori.jquery {
 		 * @param content2 One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert after each element in the set of matched elements.
 		 */
 		[JavaScriptMethod(name="after")]
-		public function after1(content1:*, content2:*=null):JQuery {
+		public function after1(content1:Object, content2:Object=null):JQuery {
 			return null;
 		}
 		
@@ -241,7 +241,7 @@ package randori.jquery {
 		 * @param content2 One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.
 		 */
 		[JavaScriptMethod(name="append")]
-		public function append1(content1:*, content2:*=null):JQuery {
+		public function append1(content1:Object, content2:Object=null):JQuery {
 			return null;
 		}
 		
@@ -260,7 +260,7 @@ package randori.jquery {
 		 * @since 1.0
 		 * @param target A selector, element, HTML string, or jQuery object; the matched set of elements will be inserted at the end of the element(s) specified by this parameter.
 		 */
-		public function appendTo(target:*):JQuery {
+		public function appendTo(target:Object):JQuery {
 			return null;
 		}
 		
@@ -281,7 +281,7 @@ package randori.jquery {
 		 * @param value A value to set for the attribute.
 		 */
 		[JavaScriptMethod(name="attr")]
-		public function attr2(attributeName:String, value:*):JQuery {
+		public function attr2(attributeName:String, value:Object):JQuery {
 			return null;
 		}
 		
@@ -313,7 +313,7 @@ package randori.jquery {
 		 * @param content2 One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert before each element in the set of matched elements.
 		 */
 		[JavaScriptMethod(name="before")]
-		public function before1(content1:*, content2:*=null):JQuery {
+		public function before1(content1:Object, content2:Object=null):JQuery {
 			return null;
 		}
 		
@@ -577,7 +577,7 @@ package randori.jquery {
 		 * @param value A value to set for the property.
 		 */
 		[JavaScriptMethod(name="css")]
-		public function css3(propertyName:String, value:*):JQuery {
+		public function css3(propertyName:String, value:Object):JQuery {
 			return null;
 		}
 		
@@ -906,7 +906,7 @@ package randori.jquery {
 		 * @param complete A function to call once the animation is complete.
 		 */
 		[JavaScriptMethod(name="fadeTo")]
-		public function fadeTo1(duration:*, opacity:Number, complete:Function=null):JQuery {
+		public function fadeTo1(duration:Object, opacity:Number, complete:Function=null):JQuery {
 			return null;
 		}
 		
@@ -919,7 +919,7 @@ package randori.jquery {
 		 * @param complete A function to call once the animation is complete.
 		 */
 		[JavaScriptMethod(name="fadeTo")]
-		public function fadeTo2(duration:*, opacity:Number, easing:String='', complete:Function=null):JQuery {
+		public function fadeTo2(duration:Object, opacity:Number, easing:String='', complete:Function=null):JQuery {
 			return null;
 		}
 		
@@ -1105,16 +1105,6 @@ package randori.jquery {
 		}
 		
 		/**
-		 * Retrieve the DOM elements matched by the jQuery object.
-		 * @since 1.0
-		 * @return Either of these types: Element, Array
-		 * @param index A zero-based integer indicating which element to retrieve.
-		 */
-		public function get(index:Number=0):Object {
-			return null;
-		}
-		
-		/**
 		 * Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.
 		 * @since 1.4
 		 * @param selector A string containing a selector expression to match elements against.
@@ -1158,7 +1148,7 @@ package randori.jquery {
 		 * @param value An integer representing the number of pixels, or an integer with an optional unit of measure appended (as a string).
 		 */
 		[JavaScriptMethod(name="height")]
-		public function height2(value:*):JQuery {
+		public function height2(value:Object):JQuery {
 			return null;
 		}
 		
@@ -1206,11 +1196,9 @@ package randori.jquery {
 		 * Hide the matched elements.
 		 * @since 1.4.3
 		 * @param duration A string or number determining how long the animation will run.
-		 * @param easing A string indicating which easing function to use for the transition.
-		 * @param complete A function to call once the animation is complete.
 		 */
 		[JavaScriptMethod(name="hide")]
-		public function hide4(duration:*=null, easing:String='', complete:Function=null):JQuery {
+		public function hide4(duration:Object):JQuery {
 			return null;
 		}
 		
@@ -1289,7 +1277,7 @@ package randori.jquery {
 		 * @param element The DOM element or first element within the jQuery object to look for.
 		 */
 		[JavaScriptMethod(name="index")]
-		public function index3(element:*):Number {
+		public function index3(element:Object):Number {
 			return 0;
 		}
 		
@@ -1314,7 +1302,7 @@ package randori.jquery {
 		 * @since 1.0
 		 * @param target A selector, element, HTML string, or jQuery object; the matched set of elements will be inserted after the element(s) specified by this parameter.
 		 */
-		public function insertAfter(target:*):JQuery {
+		public function insertAfter(target:Object):JQuery {
 			return null;
 		}
 		
@@ -1323,7 +1311,7 @@ package randori.jquery {
 		 * @since 1.0
 		 * @param target A selector, element, HTML string, or jQuery object; the matched set of elements will be inserted before the element(s) specified by this parameter.
 		 */
-		public function insertBefore(target:*):JQuery {
+		public function insertBefore(target:Object):JQuery {
 			return null;
 		}
 		
@@ -1374,7 +1362,7 @@ package randori.jquery {
 		 * @param context A DOM Element, Document, or jQuery to use as context
 		 */
 		[JavaScriptMethod(name="jQuery")]
-		public function jQuery1(selector:String, context:*=null):JQuery {
+		public function jQuery1(selector:String, context:Object=null):JQuery {
 			return null;
 		}
 		
@@ -1619,7 +1607,7 @@ package randori.jquery {
 		 * @param callBack A callback function that is executed when the request completes. (The method requires to have the following signature: complete(responseText,textStatus,XMLHttpRequest))
 		 */
 		[JavaScriptMethod(name="load")]
-		public function load3(url:String, data:*=null, callBack:Function=null):JQuery {
+		public function load3(url:String, data:Object=null, callBack:Function=null):JQuery {
 			return null;
 		}
 		
@@ -2117,7 +2105,7 @@ package randori.jquery {
 		 * @param content2 One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the beginning of each element in the set of matched elements.
 		 */
 		[JavaScriptMethod(name="prepend")]
-		public function prepend1(content1:*, content2:*=null):JQuery {
+		public function prepend1(content1:Object, content2:Object=null):JQuery {
 			return null;
 		}
 		
@@ -2136,7 +2124,7 @@ package randori.jquery {
 		 * @since 1.0
 		 * @param target A selector, element, HTML string, or jQuery object; the matched set of elements will be inserted at the beginning of the element(s) specified by this parameter.
 		 */
-		public function prependTo(target:*):JQuery {
+		public function prependTo(target:Object):JQuery {
 			return null;
 		}
 		
@@ -2183,11 +2171,12 @@ package randori.jquery {
 		/**
 		 * Get the value of a property for the first element in the set of matched elements.
 		 * @since 1.6
+		 * @return Either of these types: String, Boolean
 		 * @param propertyName The name of the property to get.
 		 */
 		[JavaScriptMethod(name="prop")]
-		public function prop1(propertyName:String):String {
-			return '';
+		public function prop1(propertyName:String):* {
+			return null;
 		}
 		
 		/**
@@ -2197,7 +2186,7 @@ package randori.jquery {
 		 * @param value A value to set for the property.
 		 */
 		[JavaScriptMethod(name="prop")]
-		public function prop2(propertyName:String, value:*):JQuery {
+		public function prop2(propertyName:String, value:Object):JQuery {
 			return null;
 		}
 		
@@ -2339,7 +2328,7 @@ package randori.jquery {
 		 * @param list An array or space-separated string naming the pieces of data to delete.
 		 */
 		[JavaScriptMethod(name="removeData")]
-		public function removeData2(list:*=null):JQuery {
+		public function removeData2(list:Object=null):JQuery {
 			return null;
 		}
 		
@@ -2355,9 +2344,9 @@ package randori.jquery {
 		/**
 		 * Replace each target element with the set of matched elements.
 		 * @since 1.2
-		 * @param target A selector expression indicating which element(s) to replace.
+		 * @param target A selector string, jQuery object, or DOM element reference indicating which element(s) to replace.
 		 */
-		public function replaceAll(target:String):JQuery {
+		public function replaceAll(target:Object):JQuery {
 			return null;
 		}
 		
@@ -2367,7 +2356,7 @@ package randori.jquery {
 		 * @param newContent The content to insert. May be an HTML string, DOM element, or jQuery object.
 		 */
 		[JavaScriptMethod(name="replaceWith")]
-		public function replaceWith1(newContent:*):JQuery {
+		public function replaceWith1(newContent:Object):JQuery {
 			return null;
 		}
 		
@@ -2559,11 +2548,9 @@ package randori.jquery {
 		 * Display the matched elements.
 		 * @since 1.4.3
 		 * @param duration A string or number determining how long the animation will run.
-		 * @param easing A string indicating which easing function to use for the transition.
-		 * @param complete A function to call once the animation is complete.
 		 */
 		[JavaScriptMethod(name="show")]
-		public function show4(duration:*=null, easing:String='', complete:Function=null):JQuery {
+		public function show4(duration:Object):JQuery {
 			return null;
 		}
 		
@@ -2820,11 +2807,9 @@ package randori.jquery {
 		 * Display or hide the matched elements.
 		 * @since 1.4.3
 		 * @param duration A string or number determining how long the animation will run.
-		 * @param easing A string indicating which easing function to use for the transition.
-		 * @param complete A function to call once the animation is complete.
 		 */
 		[JavaScriptMethod(name="toggle")]
-		public function toggle4(duration:*=null, easing:String='', complete:Function=null):JQuery {
+		public function toggle4(duration:Object):JQuery {
 			return null;
 		}
 		
@@ -2887,7 +2872,7 @@ package randori.jquery {
 		 * @param extraParameters Additional parameters to pass along to the event handler.
 		 */
 		[JavaScriptMethod(name="trigger")]
-		public function trigger1(eventType:String, extraParameters:*=null):JQuery {
+		public function trigger1(eventType:String, extraParameters:Object=null):JQuery {
 			return null;
 		}
 		
@@ -2895,9 +2880,10 @@ package randori.jquery {
 		 * Execute all handlers and behaviors attached to the matched elements for the given event type.
 		 * @since 1.3
 		 * @param event A jQuery.Event object.
+		 * @param extraParameters Additional parameters to pass along to the event handler.
 		 */
 		[JavaScriptMethod(name="trigger")]
-		public function trigger2(event:Event):JQuery {
+		public function trigger2(event:Event, extraParameters:Object=null):JQuery {
 			return null;
 		}
 		
@@ -3031,7 +3017,7 @@ package randori.jquery {
 		 * @return Either of these types: String, Number, Array
 		 */
 		[JavaScriptMethod(name="val")]
-		public function val1():Object {
+		public function val1():* {
 			return null;
 		}
 		
@@ -3041,7 +3027,7 @@ package randori.jquery {
 		 * @param value A string of text or an array of strings corresponding to the value of each matched element to set as selected/checked.
 		 */
 		[JavaScriptMethod(name="val")]
-		public function val2(value:*):JQuery {
+		public function val2(value:Object):JQuery {
 			return null;
 		}
 		
@@ -3070,7 +3056,7 @@ package randori.jquery {
 		 * @param value An integer representing the number of pixels, or an integer along with an optional unit of measure appended (as a string).
 		 */
 		[JavaScriptMethod(name="width")]
-		public function width2(value:*):JQuery {
+		public function width2(value:Object):JQuery {
 			return null;
 		}
 		
@@ -3087,10 +3073,10 @@ package randori.jquery {
 		/**
 		 * Wrap an HTML structure around each element in the set of matched elements.
 		 * @since 1.0
-		 * @param wrappingElement An HTML snippet, selector expression, jQuery object, or DOM element specifying the structure to wrap around the matched elements.
+		 * @param wrappingElement A selector, element, HTML string, or jQuery object specifying the structure to wrap around the matched elements.
 		 */
 		[JavaScriptMethod(name="wrap")]
-		public function wrap1(wrappingElement:*):JQuery {
+		public function wrap1(wrappingElement:Object):JQuery {
 			return null;
 		}
 		
@@ -3107,9 +3093,9 @@ package randori.jquery {
 		/**
 		 * Wrap an HTML structure around all elements in the set of matched elements.
 		 * @since 1.2
-		 * @param wrappingElement An HTML snippet, selector expression, jQuery object, or DOM element specifying the structure to wrap around the matched elements.
+		 * @param wrappingElement A selector, element, HTML string, or jQuery object specifying the structure to wrap around the matched elements.
 		 */
-		public function wrapAll(wrappingElement:*):JQuery {
+		public function wrapAll(wrappingElement:Object):JQuery {
 			return null;
 		}
 		

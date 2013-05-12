@@ -24,7 +24,7 @@ package randori.jquery {
 	import randori.webkit.dom.Element;
 	
 	
-	[JavaScript(export="false", name="JQuery")]
+	[JavaScript(export="false", name="jQuery")]
 	public final class JQueryStatic {
 		
 		/**
@@ -34,13 +34,13 @@ package randori.jquery {
 		public static var boxModel:Boolean;
 		
 		/**
-		 * Contains flags for the useragent, read from navigator.userAgent. We recommend against using this property; please try to use feature detection instead (see jQuery.support). jQuery.browser may be moved to a plugin in a future release of jQuery.
+		 * Contains flags for the useragent, read from navigator.userAgent. This property was removed in jQuery 1.9 and is available only through the jQuery.migrate plugin. Please try to use feature detection instead.
 		 * @since 1.0
 		 */
 		public static var browser:Object;
 		
 		/**
-		 * The version number of the rendering engine for the user's browser.
+		 * The version number of the rendering engine for the user's browser. This property was removed in jQuery 1.9 and is available only through the jQuery.migrate plugin.
 		 * @since 1.1.3
 		 */
 		public static var version:String;
@@ -100,7 +100,7 @@ package randori.jquery {
 		}
 		
 		/**
-		 * Set default values for future Ajax requests.
+		 * Set default values for future Ajax requests. Its use is not recommended.
 		 * @since 1.1
 		 * @param options A set of key/value pairs that configure the default Ajax request. All options are optional.
 		 */
@@ -239,7 +239,7 @@ package randori.jquery {
 		 * @param callBack A callback function that is executed if the request succeeds. (The method requires to have the following signature: success(data,textStatus,jqXHR))
 		 * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, or html).
 		 */
-		public static function get(url:String, data:*=null, callBack:Function=null, dataType:String=''):XMLHttpRequest {
+		public static function get(url:String, data:Object=null, callBack:Function=null, dataType:String=''):XMLHttpRequest {
 			return null;
 		}
 		
@@ -401,7 +401,7 @@ package randori.jquery {
 		 * @param callBack The function to process each item against.  The first argument to the function is the value; the second argument is the index or key of the array or object property. The function can return any value to add to the array. A returned array will be flattened into the resulting array. Within the function, this refers to the global (window) object. (The method requires to have the following signature: callback(value,indexOrKey))
 		 */
 		[JavaScriptMethod(name="map")]
-		public static function map2(arrayOrObject:*, callBack:Function):Array {
+		public static function map2(arrayOrObject:Object, callBack:Function):Array {
 			return null;
 		}
 		
@@ -445,7 +445,7 @@ package randori.jquery {
 		 * @param obj An array or object to serialize.
 		 */
 		[JavaScriptMethod(name="param")]
-		public static function param1(obj:*):String {
+		public static function param1(obj:Object):String {
 			return '';
 		}
 		
@@ -456,7 +456,7 @@ package randori.jquery {
 		 * @param traditional A Boolean indicating whether to perform a traditional "shallow" serialization.
 		 */
 		[JavaScriptMethod(name="param")]
-		public static function param2(obj:*, traditional:Boolean):String {
+		public static function param2(obj:Object, traditional:Boolean):String {
 			return '';
 		}
 		
@@ -497,7 +497,7 @@ package randori.jquery {
 		 * @param callBack A callback function that is executed if the request succeeds. (The method requires to have the following signature: success(data,textStatus,jqXHR))
 		 * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
 		 */
-		public static function post(url:String, data:*=null, callBack:Function=null, dataType:String=''):XMLHttpRequest {
+		public static function post(url:String, data:Object=null, callBack:Function=null, dataType:String=''):XMLHttpRequest {
 			return null;
 		}
 		
@@ -636,36 +636,36 @@ package randori.jquery {
 			return null;
 		}
 		
-		public static function ajax(...params):* {
-			return null;
-		}
-		
-		public static function data(...params):* {
-			return null;
-		}
-		
-		public static function extend(...params):* {
-			return null;
-		}
-		
-		public static function map(...params):* {
-			return null;
-		}
-		
-		public static function param(...params):* {
-			return null;
-		}
-		
-		public static function proxy(...params):* {
-			return null;
-		}
-		
-		public static function queue(...params):* {
-			return null;
-		}
-		
 		[JavaScriptMethod(name="")]
 		public static function J(...params):JQuery {
+			return null;
+		}
+		
+		public function ajax(...params):* {
+			return null;
+		}
+		
+		public function data(...params):* {
+			return null;
+		}
+		
+		public function extend(...params):* {
+			return null;
+		}
+		
+		public function map(...params):* {
+			return null;
+		}
+		
+		public function param(...params):* {
+			return null;
+		}
+		
+		public function proxy(...params):* {
+			return null;
+		}
+		
+		public function queue(...params):* {
 			return null;
 		}
 	}

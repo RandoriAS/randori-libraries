@@ -96,8 +96,8 @@ package randori.jquery {
 		 * @param doneFilter An optional function that is called when the Deferred is resolved.
 		 * @param failFilter An optional function that is called when the Deferred is rejected.
 		 */
-		[JavaScriptMethod(name="pipe", name="pipe")]
-		public function pipe11(doneFilter:Function=null, failFilter:Function=null):Promise {
+		[JavaScriptMethod(name="pipe")]
+		public function pipe1(doneFilter:Function=null, failFilter:Function=null):Promise {
 			return null;
 		}
 		
@@ -108,17 +108,17 @@ package randori.jquery {
 		 * @param failFilter An optional function that is called when the Deferred is rejected.
 		 * @param progressFilter An optional function that is called when progress notifications are sent to the Deferred.
 		 */
-		[JavaScriptMethod(name="pipe", name="pipe")]
-		public function pipe22(doneFilter:Function=null, failFilter:Function=null, progressFilter:Function=null):Promise {
+		[JavaScriptMethod(name="pipe")]
+		public function pipe2(doneFilter:Function=null, failFilter:Function=null, progressFilter:Function=null):Promise {
 			return null;
 		}
 		
 		/**
 		 * Add handlers to be called when the Deferred object generates progress notifications.
 		 * @since 1.7
-		 * @param progressCallbacks A function, or array of functions, that is called when the Deferred generates progress notifications.
+		 * @param progressCallbacks A function, or array of functions, to be called when the Deferred generates progress notifications.
 		 */
-		public function progress(progressCallbacks:Function):Deferred {
+		public function progress(progressCallbacks:Object):Deferred {
 			return null;
 		}
 		
@@ -136,7 +136,7 @@ package randori.jquery {
 		 * @since 1.5
 		 * @param args Optional arguments that are passed to the failCallbacks.
 		 */
-		public function reject(args:Object):Deferred {
+		public function reject(args:*=null):Deferred {
 			return null;
 		}
 		
@@ -155,7 +155,7 @@ package randori.jquery {
 		 * @since 1.5
 		 * @param args Optional arguments that are passed to the doneCallbacks.
 		 */
-		public function resolve(args:Object):Deferred {
+		public function resolve(args:*=null):Deferred {
 			return null;
 		}
 		
@@ -184,8 +184,8 @@ package randori.jquery {
 		 * @param failFilter An optional function that is called when the Deferred is rejected.
 		 * @param progressFilter An optional function that is called when progress notifications are sent to the Deferred.
 		 */
-		[JavaScriptMethod(name="then", name="then")]
-		public function then11(doneFilter:Function, failFilter:Function=null, progressFilter:Function=null):Promise {
+		[JavaScriptMethod(name="then")]
+		public function then1(doneFilter:Function, failFilter:Function=null, progressFilter:Function=null):Promise {
 			return null;
 		}
 		
@@ -195,8 +195,8 @@ package randori.jquery {
 		 * @param doneCallbacks A function, or array of functions, called when the Deferred is resolved.
 		 * @param failCallbacks A function, or array of functions, called when the Deferred is rejected.
 		 */
-		[JavaScriptMethod(name="then", name="then")]
-		public function then22(doneCallbacks:Function, failCallbacks:Function):Promise {
+		[JavaScriptMethod(name="then")]
+		public function then2(doneCallbacks:Function, failCallbacks:Function):Promise {
 			return null;
 		}
 		
@@ -207,8 +207,8 @@ package randori.jquery {
 		 * @param failCallbacks A function, or array of functions, called when the Deferred is rejected.
 		 * @param progressCallbacks A function, or array of functions, called when the Deferred notifies progress.
 		 */
-		[JavaScriptMethod(name="then", name="then")]
-		public function then33(doneCallbacks:Function, failCallbacks:Function, progressCallbacks:Function=null):Promise {
+		[JavaScriptMethod(name="then")]
+		public function then3(doneCallbacks:Function, failCallbacks:Function, progressCallbacks:Function=null):Promise {
 			return null;
 		}
 		
