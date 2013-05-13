@@ -19,12 +19,11 @@
  * used to generate this class
  * @author Randori JQuery generator
 */
-package randori.jquery {
+package randori.jquery.func {
 
-import randori.jquery.JQuery;
+  import randori.jquery.JQuery;
 
-	[JavaScriptMethod(name="jQuery")]
-	public function jq(...args):JQuery
+	public function jQuery(...args):JQuery
 	{
 		return null;
 	}
