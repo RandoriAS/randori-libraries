@@ -26,7 +26,7 @@ package randori.jqueryui {
 	 * 
 		Themeable menu with mouse and keyboard interactions for navigation.
 	
-	 * <p>A menu can be created from any valid markup as long as the elements have a strict parent/child relationship and each menu item has an anchor. The most commonly used element is the unordered list (<code>&lt;ul&gt;</code>):</p><pre><![CDATA[
+	 * <p>A menu can be created from any valid markup as long as the elements have a strict parent/child relationship and each menu item has an anchor. The most commonly used element is the unordered list (<code>&lt;ul&gt;</code>):</p><pre><code><![CDATA[
 	 * <ul id="menu">
 	 * <li><a href="#">Item 1</a></li>
 	 * <li><a href="#">Item 2</a></li>
@@ -42,11 +42,11 @@ package randori.jqueryui {
 	 * <li><a href="#">Item 4</a></li>
 	 * <li><a href="#">Item 5</a></li>
 	 * </ul>
-	 * ]]></pre><p>If you use a structure other than <code>&lt;ul&gt;</code>/<code>&lt;li&gt;</code>, including using the same element for the menu and the menu items, use the <a href="#option-menus"><code>menus</code></a> option to specify a way to differentiate the two elements, e.g., <code>menus: "div.menuElement"</code>.</p><p>Any menu item can be disabled by adding the <code>ui-state-disabled</code> class to that element.</p><p>To add icons to the menu, include them in the markup:</p><pre><![CDATA[
+	 * ]]></code></pre><p>If you use a structure other than <code>&lt;ul&gt;</code>/<code>&lt;li&gt;</code>, including using the same element for the menu and the menu items, use the <a href="#option-menus"><code>menus</code></a> option to specify a way to differentiate the two elements, e.g., <code>menus: "div.menuElement"</code>.</p><p>Any menu item can be disabled by adding the <code>ui-state-disabled</code> class to that element.</p><p>To add icons to the menu, include them in the markup:</p><pre><code><![CDATA[
 	 * <ul id="menu">
 	 * <li><a href="#"><span class="ui-icon ui-icon-disk"></span>Save</a></li>
 	 * </ul>
-	 * ]]></pre><p>Menu automatically adds the necessary padding to items without icons.</p><h3>Keyboard interaction</h3><ul><li>ENTER/SPACE: Invoke the focused menu item's action, which may be opening a submenu.</li><li>UP: Move focus to the previous menu item.</li><li>DOWN: Move focus to the next menu item.</li><li>RIGHT: Open the submenu, if available.</li><li>LEFT: Close the current submenu and move focus to the parent menu item. If not in a submenu, do nothing.</li><li>ESCAPE: Close the current submenu and move focus to the parent menu item. If not in a submenu, do nothing.</li></ul><p>Typing a letter moves focus to the first item whose title starts with that character. Repeating the same character cycles through matching items. Typing more characters within the one second timer matches those characters.</p><p>Disabled items can receive keyboard focus, but do not allow any other interaction.</p><h3>Dependencies</h3><ul><li><a href="/category/ui-core/">UI Core</a></li><li><a href="/jQuery.widget/">Widget Factory</a></li><li><a href="/position/">Position</a></li></ul>
+	 * ]]></code></pre><p>Menu automatically adds the necessary padding to items without icons.</p><h3>Keyboard interaction</h3><ul><li>ENTER/SPACE: Invoke the focused menu item's action, which may be opening a submenu.</li><li>UP: Move focus to the previous menu item.</li><li>DOWN: Move focus to the next menu item.</li><li>RIGHT: Open the submenu, if available.</li><li>LEFT: Close the current submenu and move focus to the parent menu item. If not in a submenu, do nothing.</li><li>ESCAPE: Close the current submenu and move focus to the parent menu item. If not in a submenu, do nothing.</li></ul><p>Typing a letter moves focus to the first item whose title starts with that character. Repeating the same character cycles through matching items. Typing more characters within the one second timer matches those characters.</p><p>Disabled items can receive keyboard focus, but do not allow any other interaction.</p><h3>Dependencies</h3><ul><li><a href="/category/ui-core/">UI Core</a></li><li><a href="/jQuery.widget/">Widget Factory</a></li><li><a href="/position/">Position</a></li></ul>
 	 */
 	[JavaScript(export="false")]
 	public class Menu {
@@ -58,7 +58,7 @@ package randori.jqueryui {
 		public var icons:Object;
 		
 		/**
-		 * <p>Selector for the elements that serve as the menu container, including sub-menus.</p><p><em>Note: The <code>menus</code> option should not be changed after initialization. Existing submenus will not be updated.</em></p>
+		 * <p>Selector for the elements that serve as the menu container, including sub-menus.</p><div class="warning"><strong>Note:</strong> The <code>menus</code> option should not be changed after initialization. Existing submenus will not be updated.</div>
 		 */
 		public var menus:String;
 		
@@ -68,7 +68,7 @@ package randori.jqueryui {
 		public var position:Object;
 		
 		/**
-		 * <p>Customize the ARIA roles used for the menu and menu items. The default uses <code>"menuitem"</code> for items. Setting the <code>role</code> option to <code>"listbox"</code> will use <code>"option"</code> for items. If set to <code>null</code>, no roles will be set, which is useful if the menu is being controlled by another element that is maintaining focus.</p><p><em>Note: The <code>role</code> option should not be changed after initialization. Existing (sub)menus and menu items will not be updated.</em></p>
+		 * <p>Customize the ARIA roles used for the menu and menu items. The default uses <code>"menuitem"</code> for items. Setting the <code>role</code> option to <code>"listbox"</code> will use <code>"option"</code> for items. If set to <code>null</code>, no roles will be set, which is useful if the menu is being controlled by another element that is maintaining focus.</p><div class="warning"><strong>Note:</strong> The <code>role</code> option should not be changed after initialization. Existing (sub)menus and menu items will not be updated.</div>
 		 */
 		public var role:String;
 		

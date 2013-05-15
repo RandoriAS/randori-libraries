@@ -265,13 +265,13 @@ package randori.jqueryui {
 		
 		/**
 		 * Event:
-		 * This event is triggered when a sortable item is moved into a connected list.
+		 * This event is triggered when a sortable item is moved into a sortable list.
 		 */
 		public var onover:Function;
 		
 		/**
 		 * Event:
-		 * <p>This event is triggered when a sortable item is moved away from a connected list.</p><p><em>Note: This event is also triggered when a sortable item is dropped.</em></p>
+		 * <p>This event is triggered when a sortable item is moved away from a sortable list.</p><p><em>Note: This event is also triggered when a sortable item is dropped.</em></p>
 		 */
 		public var onout:Function;
 		

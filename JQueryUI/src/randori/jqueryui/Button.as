@@ -23,7 +23,7 @@ package randori.jqueryui {
 	
 	
 	/**
-	 * Themable buttons and button sets.
+	 * Themeable buttons and button sets.
 	 * <p>Button enhances standard form elements like buttons, inputs and anchors to themeable buttons with appropriate hover and active styles.</p><p>In addition to basic push buttons, radio buttons and checkboxes (inputs of type radio and checkbox) can be converted to buttons. Their associated label is styled to appear as the button, while the underlying input is updated on click. For the association to work properly, give the input an <code>id</code> attribute, and refer to that in the label's <code>for</code> attribute. Don't nest the input inside the label, as that <a href="http://www.paciellogroup.com/blog/2011/07/html5-accessibility-chops-form-control-labeling/">causes accessibility problems</a>.</p><p>In order to group radio buttons, Button also provides an additional widget, called Buttonset. Buttonset is used by selecting a container element (which contains the radio buttons) and calling <code>.buttonset()</code>. Buttonset will also provide visual grouping, and therefore should be used whenever you have a group of buttons. It works by selecting all descendants and applying <code>.button()</code> to them. You can enable and disable a button set, which will enable and disable all contained buttons. Destroying a button set also calls each button's <code>destroy</code> method.</p><p>When using an input of type button, submit or reset, support is limited to plain text labels with no icons.</p><h3>Dependencies</h3><ul><li><a href="/category/ui-core/">UI Core</a></li><li><a href="/jQuery.widget/">Widget Factory</a></li></ul>
 	 */
 	[JavaScript(export="false")]

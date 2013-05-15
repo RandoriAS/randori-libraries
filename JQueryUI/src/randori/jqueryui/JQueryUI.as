@@ -28,7 +28,16 @@ package randori.jqueryui {
 		/**
 		 * <div><p>Similar to native CSS transitions, jQuery UI's class animations provide a smooth transition from one state to another while allowing you to keep all the details about which styles to change in CSS and out of your JavaScript. All class animation methods, including <code>.<placeholder name="name" />()</code>, support custom durations and easings, as well as providing a callback for when the animation completes.</p><p>Not all styles can be animated. For example, there is no way to animate a background image. Any styles that cannot be animated will be changed at the end of the animation.</p></div><p>This plugin extends jQuery's built-in <placeholder name="core-link" /> method. If jQuery UI is not loaded, calling the <code>.<placeholder name="name" />()</code> method may not fail directly, as the method still exists. However, the expected behavior will not occur.</p>
 		 */
-		public function addClass(className:String):JQueryUI {
+		[JavaScriptMethod(name="addClass")]
+		public function addClass1(className:String):JQueryUI {
+			return null;
+		}
+		
+		/**
+		 * <div><p>Similar to native CSS transitions, jQuery UI's class animations provide a smooth transition from one state to another while allowing you to keep all the details about which styles to change in CSS and out of your JavaScript. All class animation methods, including <code>.<placeholder name="name" />()</code>, support custom durations and easings, as well as providing a callback for when the animation completes.</p><p>Not all styles can be animated. For example, there is no way to animate a background image. Any styles that cannot be animated will be changed at the end of the animation.</p></div><p>This plugin extends jQuery's built-in <placeholder name="core-link" /> method. If jQuery UI is not loaded, calling the <code>.<placeholder name="name" />()</code> method may not fail directly, as the method still exists. However, the expected behavior will not occur.</p>
+		 */
+		[JavaScriptMethod(name="addClass")]
+		public function addClass2(className:String):JQueryUI {
 			return null;
 		}
 		
@@ -77,7 +86,16 @@ package randori.jqueryui {
 		/**
 		 * <div><p>Similar to native CSS transitions, jQuery UI's class animations provide a smooth transition from one state to another while allowing you to keep all the details about which styles to change in CSS and out of your JavaScript. All class animation methods, including <code>.<placeholder name="name" />()</code>, support custom durations and easings, as well as providing a callback for when the animation completes.</p><p>Not all styles can be animated. For example, there is no way to animate a background image. Any styles that cannot be animated will be changed at the end of the animation.</p></div><p>This plugin extends jQuery's built-in <placeholder name="core-link" /> method. If jQuery UI is not loaded, calling the <code>.<placeholder name="name" />()</code> method may not fail directly, as the method still exists. However, the expected behavior will not occur.</p>
 		 */
-		public function removeClass(className:String):JQueryUI {
+		[JavaScriptMethod(name="removeClass")]
+		public function removeClass1(className:String):JQueryUI {
+			return null;
+		}
+		
+		/**
+		 * <div><p>Similar to native CSS transitions, jQuery UI's class animations provide a smooth transition from one state to another while allowing you to keep all the details about which styles to change in CSS and out of your JavaScript. All class animation methods, including <code>.<placeholder name="name" />()</code>, support custom durations and easings, as well as providing a callback for when the animation completes.</p><p>Not all styles can be animated. For example, there is no way to animate a background image. Any styles that cannot be animated will be changed at the end of the animation.</p></div><p>This plugin extends jQuery's built-in <placeholder name="core-link" /> method. If jQuery UI is not loaded, calling the <code>.<placeholder name="name" />()</code> method may not fail directly, as the method still exists. However, the expected behavior will not occur.</p>
+		 */
+		[JavaScriptMethod(name="removeClass")]
+		public function removeClass2(className:String):JQueryUI {
 			return null;
 		}
 		
@@ -105,7 +123,16 @@ package randori.jqueryui {
 		/**
 		 * <p>The <code>.switchClass()</code> method allows you to animate the transition of adding and removing classes at the same time.</p><div><p>Similar to native CSS transitions, jQuery UI's class animations provide a smooth transition from one state to another while allowing you to keep all the details about which styles to change in CSS and out of your JavaScript. All class animation methods, including <code>.<placeholder name="name" />()</code>, support custom durations and easings, as well as providing a callback for when the animation completes.</p><p>Not all styles can be animated. For example, there is no way to animate a background image. Any styles that cannot be animated will be changed at the end of the animation.</p></div><p>This plugin extends jQuery's built-in <placeholder name="core-link" /> method. If jQuery UI is not loaded, calling the <code>.<placeholder name="name" />()</code> method may not fail directly, as the method still exists. However, the expected behavior will not occur.</p>
 		 */
-		public function switchClass(removeClassName:String, addClassName:String):JQueryUI {
+		[JavaScriptMethod(name="switchClass")]
+		public function switchClass1(removeClassName:String, addClassName:String):JQueryUI {
+			return null;
+		}
+		
+		/**
+		 * <p>The <code>.switchClass()</code> method allows you to animate the transition of adding and removing classes at the same time.</p><div><p>Similar to native CSS transitions, jQuery UI's class animations provide a smooth transition from one state to another while allowing you to keep all the details about which styles to change in CSS and out of your JavaScript. All class animation methods, including <code>.<placeholder name="name" />()</code>, support custom durations and easings, as well as providing a callback for when the animation completes.</p><p>Not all styles can be animated. For example, there is no way to animate a background image. Any styles that cannot be animated will be changed at the end of the animation.</p></div><p>This plugin extends jQuery's built-in <placeholder name="core-link" /> method. If jQuery UI is not loaded, calling the <code>.<placeholder name="name" />()</code> method may not fail directly, as the method still exists. However, the expected behavior will not occur.</p>
+		 */
+		[JavaScriptMethod(name="switchClass")]
+		public function switchClass2(removeClassName:String, addClassName:String):JQueryUI {
 			return null;
 		}
 		
@@ -119,7 +146,16 @@ package randori.jqueryui {
 		/**
 		 * <div><p>Similar to native CSS transitions, jQuery UI's class animations provide a smooth transition from one state to another while allowing you to keep all the details about which styles to change in CSS and out of your JavaScript. All class animation methods, including <code>.<placeholder name="name" />()</code>, support custom durations and easings, as well as providing a callback for when the animation completes.</p><p>Not all styles can be animated. For example, there is no way to animate a background image. Any styles that cannot be animated will be changed at the end of the animation.</p></div><p>This plugin extends jQuery's built-in <placeholder name="core-link" /> method. If jQuery UI is not loaded, calling the <code>.<placeholder name="name" />()</code> method may not fail directly, as the method still exists. However, the expected behavior will not occur.</p>
 		 */
-		public function toggleClass(className:String, _switch:Boolean):JQueryUI {
+		[JavaScriptMethod(name="toggleClass")]
+		public function toggleClass1(className:String, _switch:Boolean):JQueryUI {
+			return null;
+		}
+		
+		/**
+		 * <div><p>Similar to native CSS transitions, jQuery UI's class animations provide a smooth transition from one state to another while allowing you to keep all the details about which styles to change in CSS and out of your JavaScript. All class animation methods, including <code>.<placeholder name="name" />()</code>, support custom durations and easings, as well as providing a callback for when the animation completes.</p><p>Not all styles can be animated. For example, there is no way to animate a background image. Any styles that cannot be animated will be changed at the end of the animation.</p></div><p>This plugin extends jQuery's built-in <placeholder name="core-link" /> method. If jQuery UI is not loaded, calling the <code>.<placeholder name="name" />()</code> method may not fail directly, as the method still exists. However, the expected behavior will not occur.</p>
+		 */
+		[JavaScriptMethod(name="toggleClass")]
+		public function toggleClass2(className:String, _switch:Boolean):JQueryUI {
 			return null;
 		}
 		
@@ -127,6 +163,22 @@ package randori.jqueryui {
 		 * <p>Many widgets need to generate unique ids for elements. <code>.uniqueId()</code> will check if the element has an id, and if not, it will generate one and set it on the element. It is safe to call <code>.uniqueId()</code> on an element without checking if it already has an id. If/when the widget needs to clean up after itself, the <a href="/removeUniqueId"><code>.removeUniqueId()</code></a> method will remove the id from the element if it was added by <code>.uniqueId()</code> and leave the id alone if it was not. <code>.removeUniqueId()</code> is able to be smart about this because the generated ids have a prefix of <code>"ui-id-"</code>.</p>
 		 */
 		public function uniqueId():JQueryUI {
+			return null;
+		}
+		
+		public function addClass(...params):* {
+			return null;
+		}
+		
+		public function removeClass(...params):* {
+			return null;
+		}
+		
+		public function switchClass(...params):* {
+			return null;
+		}
+		
+		public function toggleClass(...params):* {
 			return null;
 		}
 	}

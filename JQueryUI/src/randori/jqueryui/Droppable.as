@@ -55,7 +55,7 @@ package randori.jqueryui {
 		public var addClasses:Boolean;
 		
 		/**
-		 * By default, when an element is dropped on nested droppables, each droppable will receive the element. However, by setting this option to <code>true</code>, any parent droppables will not receive the element.
+		 * By default, when an element is dropped on nested droppables, each droppable will receive the element. However, by setting this option to <code>true</code>, any parent droppables will not receive the element. The <code>drop</code> event will still bubble normally, but the <code>event.target</code> can be checked to see which droppable received the draggable element.
 		 */
 		public var greedy:Boolean;
 		

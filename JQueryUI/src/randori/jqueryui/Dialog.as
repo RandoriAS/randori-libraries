@@ -24,11 +24,11 @@ package randori.jqueryui {
 	
 	/**
 	 * Open content in an interactive overlay.
-	 * <p>A dialog is a floating window that contains a title bar and a content area. The dialog window can be moved, resized and closed with the 'x' icon by default.</p><p>If the content length exceeds the maximum height, a scrollbar will automatically appear.</p><p>A bottom button bar and semi-transparent modal overlay layer are common options that can be added.</p><h3>Hiding the close button</h3><p>In some cases, you may want to hide the close button, for instance, if you have a close button in the button pane. The best way to accomplish this is via CSS. As an example, you can define a simple rule, such as:</p><pre><code>
+	 * <p>A dialog is a floating window that contains a title bar and a content area. The dialog window can be moved, resized and closed with the 'x' icon by default.</p><p>If the content length exceeds the maximum height, a scrollbar will automatically appear.</p><p>A bottom button bar and semi-transparent modal overlay layer are common options that can be added.</p><h3>Focus</h3><p>Upon opening a dialog, focus is automatically moved to the first item that matches the following:</p><ol><li>The first element within the dialog with the <code>autofocus</code> attribute</li><li>The first <a href="/tabbable-selector/"><code>:tabbable</code></a> element within the dialog's content</li><li>The first <a href="/tabbable-selector/"><code>:tabbable</code></a> element within the dialog's buttonpane</li><li>The dialog's close button</li><li>The dialog itself</li></ol><p>While open, the dialog widget ensures that tabbing cycles focus between elements within the dialog itself, not elements outside of it. Modal dialogs additionally prevent mouse users from clicking on elements outside of the dialog.</p><p>Upon closing a dialog, focus is automatically returned to the element that had focus when the dialog was opened.</p><h3>Hiding the close button</h3><p>In some cases, you may want to hide the close button, for instance, if you have a close button in the button pane. The best way to accomplish this is via CSS. As an example, you can define a simple rule, such as:</p><pre><code>
 	 * .no-close .ui-dialog-titlebar-close {
 	 * display: none;
 	 * }
-	 * </code></pre><p>Then, you can simply add the <code>no-close</code> class to any dialog in order to hide it's close button:</p><pre><code>
+	 * </code></pre><p>Then, you can simply add the <code>no-close</code> class to any dialog in order to hide its close button:</p><pre><code>
 	 * $( "#dialog" ).dialog({
 	 * dialogClass: "no-close",
 	 * buttons: [
@@ -46,7 +46,7 @@ package randori.jqueryui {
 	public class Dialog {
 		
 		/**
-		 * Which element the dialog (and overlay, if <a href="#option-modal">modal</a>) should be appended to.
+		 * <p>Which element the dialog (and overlay, if <a href="#option-modal">modal</a>) should be appended to.</p><div class="warning"><strong>Note:</strong> The <code>appendTo</code> option should not be changed while the dialog is open.</div>
 		 */
 		public var appendTo:String;
 		

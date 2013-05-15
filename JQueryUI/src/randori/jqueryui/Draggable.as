@@ -126,7 +126,7 @@ package randori.jqueryui {
 		public var grid:Array;
 		
 		/**
-		 * If specified, restricts dragging from starting unless the mousedown occurs on the specified element(s).
+		 * If specified, restricts dragging from starting unless the mousedown occurs on the specified element(s). Only elements that descend from the draggable element are permitted.
 		 */
 		public var handle:*;
 		
