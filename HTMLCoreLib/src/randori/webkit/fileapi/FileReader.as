@@ -58,7 +58,7 @@ public class FileReader
 	public static const LOADING:uint = 1;
 	public static const DONE:uint = 2;
 
-	public function get readyState():uint { return 0; }
+	public function get readyState():uint { return undefined; }
 	/**
 	*  @param blob
 	*/
@@ -69,75 +69,75 @@ public class FileReader
 	public function readAsBinaryString(blob:Blob):void {}
 	/**
 	*  @param blob
-	*  @param encoding (optional argument, default value is <code>''</code>)
+	*  @param encoding (optional argument, default value is <code>undefined</code>)
 	*/
-	public function readAsText(blob:Blob, encoding:String=''):void {}
+	public function readAsText(blob:Blob, encoding:String=undefined):void {}
 	/**
 	*  @param blob
 	*/
 	public function readAsDataURL(blob:Blob):void {}
 	public function abort():void {}
 
-	public function get result():* { return null; }
+	public function get result():* { return undefined; }
 
 	/**
 	*  @see randori.webkit.fileapi.FileError
 	*/
-	public function get error():FileError { return null; }
+	public function get error():FileError { return undefined; }
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param evt
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(evt:DomEvent):Boolean { return false;}
+	public function dispatchEvent(evt:DomEvent):Boolean { return undefined;}
 
 	/**
 	*  Function that accepts an event of type <code>LoadstartEvent</code>.
 	*/
-	public function get onloadstart():Function { return null; }
+	public function get onloadstart():Function { return undefined; }
 	public function set onloadstart(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ProgressEvent</code>.
 	*  @see randori.webkit.dom.ProgressEvent
 	*/
-	public function get onprogress():Function { return null; }
+	public function get onprogress():Function { return undefined; }
 	public function set onprogress(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>LoadEvent</code>.
 	*/
-	public function get onload():Function { return null; }
+	public function get onload():Function { return undefined; }
 	public function set onload(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>AbortEvent</code>.
 	*/
-	public function get onabort():Function { return null; }
+	public function get onabort():Function { return undefined; }
 	public function set onabort(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ErrorEvent</code>.
 	*  @see randori.webkit.dom.ErrorEvent
 	*/
-	public function get onerror():Function { return null; }
+	public function get onerror():Function { return undefined; }
 	public function set onerror(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>LoadendEvent</code>.
 	*/
-	public function get onloadend():Function { return null; }
+	public function get onloadend():Function { return undefined; }
 	public function set onloadend(value:Function):void { }
 }
 

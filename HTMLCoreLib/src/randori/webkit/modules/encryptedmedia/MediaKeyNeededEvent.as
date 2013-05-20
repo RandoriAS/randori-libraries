@@ -55,7 +55,7 @@ public class MediaKeyNeededEvent extends DomEvent
 	/**
 	*  @see randori.webkit.html.canvas.Uint8Array
 	*/
-	public function get initData():Object { return null; }
+	public function get initData():Object { return undefined; }
 }
 
 }

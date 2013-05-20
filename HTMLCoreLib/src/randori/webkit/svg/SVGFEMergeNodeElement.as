@@ -59,7 +59,7 @@ public class SVGFEMergeNodeElement extends SVGElement
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get in1():SVGAnimatedString { return null; }
+	public function get in1():SVGAnimatedString { return undefined; }
 }
 
 }

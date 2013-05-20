@@ -70,9 +70,9 @@ public class SVGPathSeg
 	public static const PATHSEG_CURVETO_QUADRATIC_SMOOTH_ABS:uint = 18;
 	public static const PATHSEG_CURVETO_QUADRATIC_SMOOTH_REL:uint = 19;
 
-	public function get pathSegType():uint { return 0; }
+	public function get pathSegType():uint { return undefined; }
 
-	public function get pathSegTypeAsLetter():String { return ''; }
+	public function get pathSegTypeAsLetter():String { return undefined; }
 }
 
 }

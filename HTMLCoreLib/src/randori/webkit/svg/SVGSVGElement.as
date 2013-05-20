@@ -62,61 +62,61 @@ public class SVGSVGElement extends SVGStyledElement implements SVGTests, SVGLang
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get x():SVGAnimatedLength { return null; }
+	public function get x():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get y():SVGAnimatedLength { return null; }
+	public function get y():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get width():SVGAnimatedLength { return null; }
+	public function get width():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get height():SVGAnimatedLength { return null; }
+	public function get height():SVGAnimatedLength { return undefined; }
 
-	public function get contentScriptType():String { return ''; }
+	public function get contentScriptType():String { return undefined; }
 	public function set contentScriptType(value:String):void { }
 
-	public function get contentStyleType():String { return ''; }
+	public function get contentStyleType():String { return undefined; }
 	public function set contentStyleType(value:String):void { }
 
 	/**
 	*  @see randori.webkit.svg.SVGRect
 	*/
-	public function get viewport():SVGRect { return null; }
+	public function get viewport():SVGRect { return undefined; }
 
-	public function get pixelUnitToMillimeterX():Number { return 0; }
+	public function get pixelUnitToMillimeterX():Number { return undefined; }
 
-	public function get pixelUnitToMillimeterY():Number { return 0; }
+	public function get pixelUnitToMillimeterY():Number { return undefined; }
 
-	public function get screenPixelToMillimeterX():Number { return 0; }
+	public function get screenPixelToMillimeterX():Number { return undefined; }
 
-	public function get screenPixelToMillimeterY():Number { return 0; }
+	public function get screenPixelToMillimeterY():Number { return undefined; }
 
-	public function get useCurrentView():Boolean { return false; }
+	public function get useCurrentView():Boolean { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGViewSpec
 	*/
-	public function get currentView():SVGViewSpec { return null; }
+	public function get currentView():SVGViewSpec { return undefined; }
 
-	public function get currentScale():Number { return 0; }
+	public function get currentScale():Number { return undefined; }
 	public function set currentScale(value:Number):void { }
 
 	/**
 	*  @see randori.webkit.svg.SVGPoint
 	*/
-	public function get currentTranslate():SVGPoint { return null; }
+	public function get currentTranslate():SVGPoint { return undefined; }
 	/**
 	*  @param maxWaitMilliseconds (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>uint</code> instance.
 	*/
-	public function suspendRedraw(maxWaitMilliseconds:uint=undefined):uint { return 0;}
+	public function suspendRedraw(maxWaitMilliseconds:uint=undefined):uint { return undefined;}
 	/**
 	*  @param suspendHandleId (optional argument, default value is <code>undefined</code>)
 	*/
@@ -128,11 +128,11 @@ public class SVGSVGElement extends SVGStyledElement implements SVGTests, SVGLang
 	/**
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function animationsPaused():Boolean { return false;}
+	public function animationsPaused():Boolean { return undefined;}
 	/**
 	*  @return A <code>Number</code> instance.
 	*/
-	public function getCurrentTime():Number { return 0;}
+	public function getCurrentTime():Number { return undefined;}
 	/**
 	*  @param seconds (optional argument, default value is <code>undefined</code>)
 	*/
@@ -142,145 +142,145 @@ public class SVGSVGElement extends SVGStyledElement implements SVGTests, SVGLang
 	*  @param referenceElement (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>NodeList</code> instance.
 	*/
-	public function getIntersectionList(rect:SVGRect=undefined, referenceElement:SVGElement=undefined):NodeList { return null;}
+	public function getIntersectionList(rect:SVGRect=undefined, referenceElement:SVGElement=undefined):NodeList { return undefined;}
 	/**
 	*  @param rect (optional argument, default value is <code>undefined</code>)
 	*  @param referenceElement (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>NodeList</code> instance.
 	*/
-	public function getEnclosureList(rect:SVGRect=undefined, referenceElement:SVGElement=undefined):NodeList { return null;}
+	public function getEnclosureList(rect:SVGRect=undefined, referenceElement:SVGElement=undefined):NodeList { return undefined;}
 	/**
 	*  @param element (optional argument, default value is <code>undefined</code>)
 	*  @param rect (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function checkIntersection(element:SVGElement=undefined, rect:SVGRect=undefined):Boolean { return false;}
+	public function checkIntersection(element:SVGElement=undefined, rect:SVGRect=undefined):Boolean { return undefined;}
 	/**
 	*  @param element (optional argument, default value is <code>undefined</code>)
 	*  @param rect (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function checkEnclosure(element:SVGElement=undefined, rect:SVGRect=undefined):Boolean { return false;}
+	public function checkEnclosure(element:SVGElement=undefined, rect:SVGRect=undefined):Boolean { return undefined;}
 	public function deselectAll():void {}
 	/**
 	*  @return A <code>SVGNumber</code> instance.
 	*/
-	public function createSVGNumber():SVGNumber { return null;}
+	public function createSVGNumber():SVGNumber { return undefined;}
 	/**
 	*  @return A <code>SVGLength</code> instance.
 	*/
-	public function createSVGLength():SVGLength { return null;}
+	public function createSVGLength():SVGLength { return undefined;}
 	/**
 	*  @return A <code>SVGAngle</code> instance.
 	*/
-	public function createSVGAngle():SVGAngle { return null;}
+	public function createSVGAngle():SVGAngle { return undefined;}
 	/**
 	*  @return A <code>SVGPoint</code> instance.
 	*/
-	public function createSVGPoint():SVGPoint { return null;}
+	public function createSVGPoint():SVGPoint { return undefined;}
 	/**
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function createSVGMatrix():SVGMatrix { return null;}
+	public function createSVGMatrix():SVGMatrix { return undefined;}
 	/**
 	*  @return A <code>SVGRect</code> instance.
 	*/
-	public function createSVGRect():SVGRect { return null;}
+	public function createSVGRect():SVGRect { return undefined;}
 	/**
 	*  @return A <code>SVGTransform</code> instance.
 	*/
-	public function createSVGTransform():SVGTransform { return null;}
+	public function createSVGTransform():SVGTransform { return undefined;}
 	/**
 	*  @param matrix (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>SVGTransform</code> instance.
 	*/
-	public function createSVGTransformFromMatrix(matrix:SVGMatrix=undefined):SVGTransform { return null;}
+	public function createSVGTransformFromMatrix(matrix:SVGMatrix=undefined):SVGTransform { return undefined;}
 	/**
 	*  @param elementId (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Element</code> instance.
 	*/
-	public function getElementById(elementId:String=undefined):Element { return null;}
+	public function getElementById(elementId:String=undefined):Element { return undefined;}
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get requiredFeatures():SVGStringList { return null; }
+	public function get requiredFeatures():SVGStringList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get requiredExtensions():SVGStringList { return null; }
+	public function get requiredExtensions():SVGStringList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get systemLanguage():SVGStringList { return null; }
+	public function get systemLanguage():SVGStringList { return undefined; }
 	/**
 	*  @param extension (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function hasExtension(extension:String=undefined):Boolean { return false;}
+	public function hasExtension(extension:String=undefined):Boolean { return undefined;}
 
-	public function get xmllang():String { return ''; }
+	public function get xmllang():String { return undefined; }
 	public function set xmllang(value:String):void { }
 
-	public function get xmlspace():String { return ''; }
+	public function get xmlspace():String { return undefined; }
 	public function set xmlspace(value:String):void { }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedBoolean
 	*/
-	public function get externalResourcesRequired():SVGAnimatedBoolean { return null; }
+	public function get externalResourcesRequired():SVGAnimatedBoolean { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedTransformList
 	*/
-	public function get transform():SVGAnimatedTransformList { return null; }
+	public function get transform():SVGAnimatedTransformList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGElement
 	*/
-	public function get nearestViewportElement():SVGElement { return null; }
+	public function get nearestViewportElement():SVGElement { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGElement
 	*/
-	public function get farthestViewportElement():SVGElement { return null; }
+	public function get farthestViewportElement():SVGElement { return undefined; }
 	/**
 	*  @return A <code>SVGRect</code> instance.
 	*/
-	public function getBBox():SVGRect { return null;}
+	public function getBBox():SVGRect { return undefined;}
 	/**
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function getCTM():SVGMatrix { return null;}
+	public function getCTM():SVGMatrix { return undefined;}
 	/**
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function getScreenCTM():SVGMatrix { return null;}
+	public function getScreenCTM():SVGMatrix { return undefined;}
 	/**
 	*  @param element (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function getTransformToElement(element:SVGElement=undefined):SVGMatrix { return null;}
+	public function getTransformToElement(element:SVGElement=undefined):SVGMatrix { return undefined;}
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedRect
 	*/
-	public function get viewBox():SVGAnimatedRect { return null; }
+	public function get viewBox():SVGAnimatedRect { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedPreserveAspectRatio
 	*/
-	public function get preserveAspectRatio():SVGAnimatedPreserveAspectRatio { return null; }
+	public function get preserveAspectRatio():SVGAnimatedPreserveAspectRatio { return undefined; }
 
-	public function get SVG_ZOOMANDPAN_UNKNOWN():uint { return 0; }
+	public function get SVG_ZOOMANDPAN_UNKNOWN():uint { return undefined; }
 
-	public function get SVG_ZOOMANDPAN_DISABLE():uint { return 0; }
+	public function get SVG_ZOOMANDPAN_DISABLE():uint { return undefined; }
 
-	public function get SVG_ZOOMANDPAN_MAGNIFY():uint { return 0; }
+	public function get SVG_ZOOMANDPAN_MAGNIFY():uint { return undefined; }
 
-	public function get zoomAndPan():uint { return 0; }
+	public function get zoomAndPan():uint { return undefined; }
 	public function set zoomAndPan(value:uint):void { }
 }
 

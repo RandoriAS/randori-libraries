@@ -41,6 +41,7 @@
 package randori.webkit.dom
 {
 
+import randori.webkit.fileapi.File;
 
 [JavaScript(export="false", nativecondition="DATA_TRANSFER_ITEMS", name="DataTransferItemList")]
 /**
@@ -51,13 +52,26 @@ package randori.webkit.dom
 public dynamic class DataTransferItemList
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 	public function clear():void {}
+	[JavaScriptMethod(name="add")]
+	/**
+	*  @param file
+	*/
+	public function add1(file:File):void {}
+	[JavaScriptMethod(name="add")]
+	public function add2():void {}
+	[JavaScriptMethod(name="add")]
+	/**
+	*  @param data (optional argument, default value is <code>undefined</code>)
+	*/
+	public function add3(data:String=undefined):void {}
+	[JavaScriptMethod(name="add")]
 	/**
 	*  @param data (optional argument, default value is <code>undefined</code>)
 	*  @param type (optional argument, default value is <code>undefined</code>)
 	*/
-	public function add(data:String=undefined, type:String=undefined):void {}
+	public function add4(data:String=undefined, type:String=undefined):void {}
 }
 
 }

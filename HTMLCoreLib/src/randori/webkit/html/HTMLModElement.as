@@ -56,10 +56,10 @@ public class HTMLModElement extends HTMLElement
 	*/
 	public function HTMLModElement() {super();}
 
-	public function get cite():String { return ''; }
+	public function get cite():String { return undefined; }
 	public function set cite(value:String):void { }
 
-	public function get dateTime():String { return ''; }
+	public function get dateTime():String { return undefined; }
 	public function set dateTime(value:String):void { }
 }
 

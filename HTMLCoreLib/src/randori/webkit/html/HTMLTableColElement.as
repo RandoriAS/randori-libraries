@@ -56,22 +56,22 @@ public class HTMLTableColElement extends HTMLElement
 	*/
 	public function HTMLTableColElement() {super();}
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 
-	public function get ch():String { return ''; }
+	public function get ch():String { return undefined; }
 	public function set ch(value:String):void { }
 
-	public function get chOff():String { return ''; }
+	public function get chOff():String { return undefined; }
 	public function set chOff(value:String):void { }
 
-	public function get span():uint { return 0; }
+	public function get span():uint { return undefined; }
 	public function set span(value:uint):void { }
 
-	public function get vAlign():String { return ''; }
+	public function get vAlign():String { return undefined; }
 	public function set vAlign(value:String):void { }
 
-	public function get width():String { return ''; }
+	public function get width():String { return undefined; }
 	public function set width(value:String):void { }
 }
 

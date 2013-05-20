@@ -80,7 +80,7 @@ public class XPathExpression
 	*  @throw XPathException <p>TYPE_ERR: Raised if the result cannot be converted to
 	*  return the specified type.</p>
 	*/
-	public function evaluate(contextNode:Node=undefined, type:uint=undefined, inResult:XPathResult=undefined):XPathResult { return null;}
+	public function evaluate(contextNode:Node=undefined, type:uint=undefined, inResult:XPathResult=undefined):XPathResult { return undefined;}
 }
 
 }

@@ -67,13 +67,13 @@ public class Notation extends Node
 	*  <p>The public identifier of this notation. If the
 	*  public identifier was not specified, this is <code>null</code>.</p>
 	*/
-	public function get publicId():String { return ''; }
+	public function get publicId():String { return undefined; }
 
 	/**
 	*  <p>The system identifier of this notation. If the
 	*  system identifier was not specified, this is <code>null</code>.</p>
 	*/
-	public function get systemId():String { return ''; }
+	public function get systemId():String { return undefined; }
 }
 
 }

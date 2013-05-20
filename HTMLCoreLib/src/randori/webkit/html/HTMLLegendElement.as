@@ -59,9 +59,9 @@ public class HTMLLegendElement extends HTMLElement
 	/**
 	*  @see randori.webkit.html.HTMLFormElement
 	*/
-	public function get form():HTMLFormElement { return null; }
+	public function get form():HTMLFormElement { return undefined; }
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 }
 

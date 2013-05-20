@@ -54,14 +54,14 @@ public class DOMWindow
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioProcessingEvent
 	*/
-	public function get AudioProcessingEvent_():AudioProcessingEvent { return null; }
+	public function get AudioProcessingEvent_():AudioProcessingEvent { return undefined; }
 	public function set AudioProcessingEvent_(value:AudioProcessingEvent):void { }
 
 	[JavaScriptProperty(name="OfflineAudioCompletionEvent")]
 	/**
 	*  @see randori.webkit.modules.webaudio.OfflineAudioCompletionEvent
 	*/
-	public function get OfflineAudioCompletionEvent_():OfflineAudioCompletionEvent { return null; }
+	public function get OfflineAudioCompletionEvent_():OfflineAudioCompletionEvent { return undefined; }
 	public function set OfflineAudioCompletionEvent_(value:OfflineAudioCompletionEvent):void { }
 }
 

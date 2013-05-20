@@ -50,16 +50,16 @@ package randori.webkit.inspector
 public class ScriptProfile
 {
 
-	public function get title():String { return ''; }
+	public function get title():String { return undefined; }
 
-	public function get uid():uint { return 0; }
+	public function get uid():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.inspector.ScriptProfileNode
 	*/
-	public function get head():ScriptProfileNode { return null; }
+	public function get head():ScriptProfileNode { return undefined; }
 
-	public function get idleTime():Number { return 0; }
+	public function get idleTime():Number { return undefined; }
 }
 
 }

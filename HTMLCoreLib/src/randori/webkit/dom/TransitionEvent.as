@@ -51,11 +51,11 @@ package randori.webkit.dom
 public class TransitionEvent extends DomEvent
 {
 
-	public function get propertyName():String { return ''; }
+	public function get propertyName():String { return undefined; }
 
-	public function get elapsedTime():Number { return 0; }
+	public function get elapsedTime():Number { return undefined; }
 
-	public function get pseudoElement():String { return ''; }
+	public function get pseudoElement():String { return undefined; }
 }
 
 }

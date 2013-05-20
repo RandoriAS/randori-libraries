@@ -71,7 +71,7 @@ public class CSSStyleSheet extends StyleSheet
 	*  </p>
 	*  @see randori.webkit.css.CSSRule
 	*/
-	public function get ownerRule():CSSRule { return null; }
+	public function get ownerRule():CSSRule { return undefined; }
 
 	/**
 	*  <p>
@@ -81,7 +81,7 @@ public class CSSStyleSheet extends StyleSheet
 	*  </p>
 	*  @see randori.webkit.css.CSSRuleList
 	*/
-	public function get cssRules():CSSRuleList { return null; }
+	public function get cssRules():CSSRuleList { return undefined; }
 	/**
 	*  <p>
 	*  Used to insert a new rule into the style sheet. The new rule now
@@ -110,7 +110,7 @@ public class CSSStyleSheet extends StyleSheet
 	*  readonly.</p><p>SYNTAX_ERR: Raised if the specified rule has a syntax error
 	*  and is unparsable.</p>
 	*/
-	public function insertRule(rule:String=undefined, index:uint=undefined):uint { return 0;}
+	public function insertRule(rule:String=undefined, index:uint=undefined):uint { return undefined;}
 	/**
 	*  <p>
 	*  Used to delete a rule from the style sheet.
@@ -128,14 +128,14 @@ public class CSSStyleSheet extends StyleSheet
 	/**
 	*  @see randori.webkit.css.CSSRuleList
 	*/
-	public function get rules():CSSRuleList { return null; }
+	public function get rules():CSSRuleList { return undefined; }
 	/**
 	*  @param selector (optional argument, default value is <code>undefined</code>)
 	*  @param style (optional argument, default value is <code>undefined</code>)
-	*  @param index (optional argument, default value is <code>0</code>)
+	*  @param index (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>uint</code> instance.
 	*/
-	public function addRule(selector:String=undefined, style:String=undefined, index:uint=0):uint { return 0;}
+	public function addRule(selector:String=undefined, style:String=undefined, index:uint=undefined):uint { return undefined;}
 	/**
 	*  @param index (optional argument, default value is <code>undefined</code>)
 	*/

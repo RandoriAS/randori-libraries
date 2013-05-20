@@ -54,10 +54,10 @@ public class SpeechGrammar
 	*/
 	public function SpeechGrammar() {super();}
 
-	public function get src():String { return ''; }
+	public function get src():String { return undefined; }
 	public function set src(value:String):void { }
 
-	public function get weight():Number { return 0; }
+	public function get weight():Number { return undefined; }
 	public function set weight(value:Number):void { }
 }
 

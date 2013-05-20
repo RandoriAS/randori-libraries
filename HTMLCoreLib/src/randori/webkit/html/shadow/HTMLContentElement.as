@@ -58,15 +58,15 @@ public class HTMLContentElement extends HTMLElement
 	*/
 	public function HTMLContentElement() {super();}
 
-	public function get select():String { return ''; }
+	public function get select():String { return undefined; }
 	public function set select(value:String):void { }
 
-	public function get resetStyleInheritance():Boolean { return false; }
+	public function get resetStyleInheritance():Boolean { return undefined; }
 	public function set resetStyleInheritance(value:Boolean):void { }
 	/**
 	*  @return A <code>NodeList</code> instance.
 	*/
-	public function getDistributedNodes():NodeList { return null;}
+	public function getDistributedNodes():NodeList { return undefined;}
 }
 
 }

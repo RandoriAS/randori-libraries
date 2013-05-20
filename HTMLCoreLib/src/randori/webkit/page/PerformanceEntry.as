@@ -50,13 +50,13 @@ package randori.webkit.page
 public class PerformanceEntry
 {
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
-	public function get entryType():String { return ''; }
+	public function get entryType():String { return undefined; }
 
-	public function get startTime():Number { return 0; }
+	public function get startTime():Number { return undefined; }
 
-	public function get duration():Number { return 0; }
+	public function get duration():Number { return undefined; }
 }
 
 }

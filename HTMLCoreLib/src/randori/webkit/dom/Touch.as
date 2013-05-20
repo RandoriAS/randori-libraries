@@ -51,24 +51,24 @@ package randori.webkit.dom
 public class Touch
 {
 
-	public function get clientX():uint { return 0; }
+	public function get clientX():uint { return undefined; }
 
-	public function get clientY():uint { return 0; }
+	public function get clientY():uint { return undefined; }
 
-	public function get screenX():uint { return 0; }
+	public function get screenX():uint { return undefined; }
 
-	public function get screenY():uint { return 0; }
+	public function get screenY():uint { return undefined; }
 
-	public function get pageX():uint { return 0; }
+	public function get pageX():uint { return undefined; }
 
-	public function get pageY():uint { return 0; }
+	public function get pageY():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.EventTarget
 	*/
-	public function get target():EventTarget { return null; }
+	public function get target():EventTarget { return undefined; }
 
-	public function get identifier():uint { return 0; }
+	public function get identifier():uint { return undefined; }
 }
 
 }

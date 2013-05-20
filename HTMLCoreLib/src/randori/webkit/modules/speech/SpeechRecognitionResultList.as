@@ -50,7 +50,7 @@ package randori.webkit.modules.speech
 public dynamic class SpeechRecognitionResultList
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 }
 
 }

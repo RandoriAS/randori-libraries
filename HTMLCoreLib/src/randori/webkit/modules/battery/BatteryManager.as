@@ -51,54 +51,54 @@ import randori.webkit.dom.DomEvent;
 public class BatteryManager
 {
 
-	public function get charging():Boolean { return false; }
+	public function get charging():Boolean { return undefined; }
 
-	public function get chargingTime():Number { return 0; }
+	public function get chargingTime():Number { return undefined; }
 
-	public function get dischargingTime():Number { return 0; }
+	public function get dischargingTime():Number { return undefined; }
 
-	public function get level():Number { return 0; }
+	public function get level():Number { return undefined; }
 
 	/**
 	*  Function that accepts an event of type <code>ChargingchangeEvent</code>.
 	*/
-	public function get onchargingchange():Function { return null; }
+	public function get onchargingchange():Function { return undefined; }
 	public function set onchargingchange(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ChargingtimechangeEvent</code>.
 	*/
-	public function get onchargingtimechange():Function { return null; }
+	public function get onchargingtimechange():Function { return undefined; }
 	public function set onchargingtimechange(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>DischargingtimechangeEvent</code>.
 	*/
-	public function get ondischargingtimechange():Function { return null; }
+	public function get ondischargingtimechange():Function { return undefined; }
 	public function set ondischargingtimechange(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>LevelchangeEvent</code>.
 	*/
-	public function get onlevelchange():Function { return null; }
+	public function get onlevelchange():Function { return undefined; }
 	public function set onlevelchange(value:Function):void { }
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param event
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(event:DomEvent):Boolean { return false;}
+	public function dispatchEvent(event:DomEvent):Boolean { return undefined;}
 }
 
 }

@@ -56,16 +56,16 @@ public class HTMLParamElement extends HTMLElement
 	*/
 	public function HTMLParamElement() {super();}
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 
-	public function get value():String { return ''; }
+	public function get value():String { return undefined; }
 	public function set value(value:String):void { }
 
-	public function get valueType():String { return ''; }
+	public function get valueType():String { return undefined; }
 	public function set valueType(value:String):void { }
 }
 

@@ -64,7 +64,7 @@ public class CSSFontFaceRule extends CSSRule
 	*  </p>
 	*  @see randori.webkit.css.CSSStyleDeclaration
 	*/
-	public function get style():CSSStyleDeclaration { return null; }
+	public function get style():CSSStyleDeclaration { return undefined; }
 }
 
 }

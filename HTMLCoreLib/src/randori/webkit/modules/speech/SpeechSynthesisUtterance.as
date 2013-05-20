@@ -51,72 +51,72 @@ public class SpeechSynthesisUtterance
 {
 	/**
 	*  Creates a new <code>SpeechSynthesisUtterance</code> instance.
-	*  @param text (optional argument, default value is <code>null</code>)
+	*  @param text (optional argument, default value is <code>undefined</code>)
 	*/
-	public function SpeechSynthesisUtterance(text:String=null) {super();}
+	public function SpeechSynthesisUtterance(text:String=undefined) {super();}
 
-	public function get text():String { return ''; }
+	public function get text():String { return undefined; }
 	public function set text(value:String):void { }
 
-	public function get lang():String { return ''; }
+	public function get lang():String { return undefined; }
 	public function set lang(value:String):void { }
 
 	/**
 	*  @see randori.webkit.modules.speech.SpeechSynthesisVoice
 	*/
-	public function get voice():SpeechSynthesisVoice { return null; }
+	public function get voice():SpeechSynthesisVoice { return undefined; }
 	public function set voice(value:SpeechSynthesisVoice):void { }
 
-	public function get volume():Number { return 0; }
+	public function get volume():Number { return undefined; }
 	public function set volume(value:Number):void { }
 
-	public function get rate():Number { return 0; }
+	public function get rate():Number { return undefined; }
 	public function set rate(value:Number):void { }
 
-	public function get pitch():Number { return 0; }
+	public function get pitch():Number { return undefined; }
 	public function set pitch(value:Number):void { }
 
 	/**
 	*  Function that accepts an event of type <code>StartEvent</code>.
 	*/
-	public function get onstart():Function { return null; }
+	public function get onstart():Function { return undefined; }
 	public function set onstart(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>EndEvent</code>.
 	*/
-	public function get onend():Function { return null; }
+	public function get onend():Function { return undefined; }
 	public function set onend(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ErrorEvent</code>.
 	*  @see randori.webkit.dom.ErrorEvent
 	*/
-	public function get onerror():Function { return null; }
+	public function get onerror():Function { return undefined; }
 	public function set onerror(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>PauseEvent</code>.
 	*/
-	public function get onpause():Function { return null; }
+	public function get onpause():Function { return undefined; }
 	public function set onpause(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ResumeEvent</code>.
 	*/
-	public function get onresume():Function { return null; }
+	public function get onresume():Function { return undefined; }
 	public function set onresume(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>MarkEvent</code>.
 	*/
-	public function get onmark():Function { return null; }
+	public function get onmark():Function { return undefined; }
 	public function set onmark(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>BoundaryEvent</code>.
 	*/
-	public function get onboundary():Function { return null; }
+	public function get onboundary():Function { return undefined; }
 	public function set onboundary(value:Function):void { }
 }
 

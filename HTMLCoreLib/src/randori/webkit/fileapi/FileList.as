@@ -50,7 +50,7 @@ package randori.webkit.fileapi
 public dynamic class FileList
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 }
 
 }

@@ -50,40 +50,40 @@ package randori.webkit.svg
 public class SVGNumberList
 {
 
-	public function get numberOfItems():uint { return 0; }
+	public function get numberOfItems():uint { return undefined; }
 	public function clear():void {}
 	/**
 	*  @param item
 	*  @return A <code>SVGNumber</code> instance.
 	*/
-	public function initialize(item:SVGNumber):SVGNumber { return null;}
+	public function initialize(item:SVGNumber):SVGNumber { return undefined;}
 	/**
 	*  @param index
 	*  @return A <code>SVGNumber</code> instance.
 	*/
-	public function getItem(index:uint):SVGNumber { return null;}
+	public function getItem(index:uint):SVGNumber { return undefined;}
 	/**
 	*  @param item
 	*  @param index
 	*  @return A <code>SVGNumber</code> instance.
 	*/
-	public function insertItemBefore(item:SVGNumber, index:uint):SVGNumber { return null;}
+	public function insertItemBefore(item:SVGNumber, index:uint):SVGNumber { return undefined;}
 	/**
 	*  @param item
 	*  @param index
 	*  @return A <code>SVGNumber</code> instance.
 	*/
-	public function replaceItem(item:SVGNumber, index:uint):SVGNumber { return null;}
+	public function replaceItem(item:SVGNumber, index:uint):SVGNumber { return undefined;}
 	/**
 	*  @param index
 	*  @return A <code>SVGNumber</code> instance.
 	*/
-	public function removeItem(index:uint):SVGNumber { return null;}
+	public function removeItem(index:uint):SVGNumber { return undefined;}
 	/**
 	*  @param item
 	*  @return A <code>SVGNumber</code> instance.
 	*/
-	public function appendItem(item:SVGNumber):SVGNumber { return null;}
+	public function appendItem(item:SVGNumber):SVGNumber { return undefined;}
 }
 
 }

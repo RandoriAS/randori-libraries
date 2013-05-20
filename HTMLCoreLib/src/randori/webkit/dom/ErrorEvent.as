@@ -51,11 +51,11 @@ package randori.webkit.dom
 public class ErrorEvent extends DomEvent
 {
 
-	public function get message():String { return ''; }
+	public function get message():String { return undefined; }
 
-	public function get filename():String { return ''; }
+	public function get filename():String { return undefined; }
 
-	public function get lineno():uint { return 0; }
+	public function get lineno():uint { return undefined; }
 }
 
 }

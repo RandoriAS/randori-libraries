@@ -53,21 +53,21 @@ public class RTCPeerConnection
 	/**
 	*  Creates a new <code>RTCPeerConnection</code> instance.
 	*  @param rtcIceServers
-	*  @param mediaConstraints (optional argument, default value is <code>null</code>)
+	*  @param mediaConstraints (optional argument, default value is <code>undefined</code>)
 	*/
-	public function RTCPeerConnection(rtcIceServers:Object, mediaConstraints:Object=null) {super();}
+	public function RTCPeerConnection(rtcIceServers:Object, mediaConstraints:Object=undefined) {super();}
 	/**
 	*  @param successCallback
 	*  @param failureCallback (optional argument, default value is <code>undefined</code>)
-	*  @param mediaConstraints (optional argument, default value is <code>null</code>)
+	*  @param mediaConstraints (optional argument, default value is <code>undefined</code>)
 	*/
-	public function createOffer(successCallback:Object, failureCallback:Object=undefined, mediaConstraints:Object=null):void {}
+	public function createOffer(successCallback:Object, failureCallback:Object=undefined, mediaConstraints:Object=undefined):void {}
 	/**
 	*  @param successCallback
 	*  @param failureCallback (optional argument, default value is <code>undefined</code>)
-	*  @param mediaConstraints (optional argument, default value is <code>null</code>)
+	*  @param mediaConstraints (optional argument, default value is <code>undefined</code>)
 	*/
-	public function createAnswer(successCallback:Object, failureCallback:Object=undefined, mediaConstraints:Object=null):void {}
+	public function createAnswer(successCallback:Object, failureCallback:Object=undefined, mediaConstraints:Object=undefined):void {}
 	/**
 	*  @param description
 	*  @param successCallback (optional argument, default value is <code>undefined</code>)
@@ -78,7 +78,7 @@ public class RTCPeerConnection
 	/**
 	*  @see randori.webkit.modules.mediastream.RTCSessionDescription
 	*/
-	public function get localDescription():RTCSessionDescription { return null; }
+	public function get localDescription():RTCSessionDescription { return undefined; }
 	/**
 	*  @param description
 	*  @param successCallback (optional argument, default value is <code>undefined</code>)
@@ -89,42 +89,40 @@ public class RTCPeerConnection
 	/**
 	*  @see randori.webkit.modules.mediastream.RTCSessionDescription
 	*/
-	public function get remoteDescription():RTCSessionDescription { return null; }
+	public function get remoteDescription():RTCSessionDescription { return undefined; }
 
-	public function get readyState():String { return ''; }
-
-	public function get signalingState():String { return ''; }
+	public function get signalingState():String { return undefined; }
 	/**
-	*  @param configuration (optional argument, default value is <code>null</code>)
-	*  @param mediaConstraints (optional argument, default value is <code>null</code>)
+	*  @param configuration (optional argument, default value is <code>undefined</code>)
+	*  @param mediaConstraints (optional argument, default value is <code>undefined</code>)
 	*/
-	public function updateIce(configuration:Object=null, mediaConstraints:Object=null):void {}
+	public function updateIce(configuration:Object=undefined, mediaConstraints:Object=undefined):void {}
 	/**
 	*  @param candidate
 	*/
 	public function addIceCandidate(candidate:RTCIceCandidate):void {}
 
-	public function get iceGatheringState():String { return ''; }
+	public function get iceGatheringState():String { return undefined; }
 
-	public function get iceConnectionState():String { return ''; }
+	public function get iceConnectionState():String { return undefined; }
 	/**
 	*  @return A <code>sequence</code> instance.
 	*/
-	public function getLocalStreams():Vector.<MediaStream> { return null;}
+	public function getLocalStreams():Vector.<MediaStream> { return undefined;}
 	/**
 	*  @return A <code>sequence</code> instance.
 	*/
-	public function getRemoteStreams():Vector.<MediaStream> { return null;}
+	public function getRemoteStreams():Vector.<MediaStream> { return undefined;}
 	/**
 	*  @param streamId
 	*  @return A <code>MediaStream</code> instance.
 	*/
-	public function getStreamById(streamId:String):MediaStream { return null;}
+	public function getStreamById(streamId:String):MediaStream { return undefined;}
 	/**
 	*  @param stream
-	*  @param mediaConstraints (optional argument, default value is <code>null</code>)
+	*  @param mediaConstraints (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addStream(stream:MediaStream, mediaConstraints:Object=null):void {}
+	public function addStream(stream:MediaStream, mediaConstraints:Object=undefined):void {}
 	/**
 	*  @param stream
 	*/
@@ -136,81 +134,75 @@ public class RTCPeerConnection
 	public function getStats(successCallback:Object, selector:MediaStreamTrack=undefined):void {}
 	/**
 	*  @param label
-	*  @param options (optional argument, default value is <code>null</code>)
+	*  @param options (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>RTCDataChannel</code> instance.
 	*/
-	public function createDataChannel(label:String, options:Object=null):RTCDataChannel { return null;}
+	public function createDataChannel(label:String, options:Object=undefined):RTCDataChannel { return undefined;}
 	/**
 	*  @param track
 	*  @return A <code>RTCDTMFSender</code> instance.
 	*/
-	public function createDTMFSender(track:MediaStreamTrack):RTCDTMFSender { return null;}
+	public function createDTMFSender(track:MediaStreamTrack):RTCDTMFSender { return undefined;}
 	public function close():void {}
 
 	/**
 	*  Function that accepts an event of type <code>NegotiationneededEvent</code>.
 	*/
-	public function get onnegotiationneeded():Function { return null; }
+	public function get onnegotiationneeded():Function { return undefined; }
 	public function set onnegotiationneeded(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>IcecandidateEvent</code>.
 	*/
-	public function get onicecandidate():Function { return null; }
+	public function get onicecandidate():Function { return undefined; }
 	public function set onicecandidate(value:Function):void { }
 
 	/**
-	*  Function that accepts an event of type <code>StatechangeEvent</code>.
+	*  Function that accepts an event of type <code>SignalingstatechangeEvent</code>.
 	*/
-	public function get onstatechange():Function { return null; }
-	public function set onstatechange(value:Function):void { }
+	public function get onsignalingstatechange():Function { return undefined; }
+	public function set onsignalingstatechange(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>AddstreamEvent</code>.
 	*/
-	public function get onaddstream():Function { return null; }
+	public function get onaddstream():Function { return undefined; }
 	public function set onaddstream(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>RemovestreamEvent</code>.
 	*/
-	public function get onremovestream():Function { return null; }
+	public function get onremovestream():Function { return undefined; }
 	public function set onremovestream(value:Function):void { }
 
 	/**
-	*  Function that accepts an event of type <code>GatheringchangeEvent</code>.
+	*  Function that accepts an event of type <code>IceconnectionstatechangeEvent</code>.
 	*/
-	public function get ongatheringchange():Function { return null; }
-	public function set ongatheringchange(value:Function):void { }
-
-	/**
-	*  Function that accepts an event of type <code>IcechangeEvent</code>.
-	*/
-	public function get onicechange():Function { return null; }
-	public function set onicechange(value:Function):void { }
+	public function get oniceconnectionstatechange():Function { return undefined; }
+	public function set oniceconnectionstatechange(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>DatachannelEvent</code>.
 	*/
-	public function get ondatachannel():Function { return null; }
+	public function get ondatachannel():Function { return undefined; }
 	public function set ondatachannel(value:Function):void { }
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param event
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(event:DomEvent):Boolean { return false;}
+	public function dispatchEvent(event:DomEvent):Boolean { return undefined;}
 }
 
 }

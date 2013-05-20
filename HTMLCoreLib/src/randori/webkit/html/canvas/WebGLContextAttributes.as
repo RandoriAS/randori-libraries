@@ -50,22 +50,22 @@ package randori.webkit.html.canvas
 public class WebGLContextAttributes
 {
 
-	public function get alpha():Boolean { return false; }
+	public function get alpha():Boolean { return undefined; }
 	public function set alpha(value:Boolean):void { }
 
-	public function get depth():Boolean { return false; }
+	public function get depth():Boolean { return undefined; }
 	public function set depth(value:Boolean):void { }
 
-	public function get stencil():Boolean { return false; }
+	public function get stencil():Boolean { return undefined; }
 	public function set stencil(value:Boolean):void { }
 
-	public function get antialias():Boolean { return false; }
+	public function get antialias():Boolean { return undefined; }
 	public function set antialias(value:Boolean):void { }
 
-	public function get premultipliedAlpha():Boolean { return false; }
+	public function get premultipliedAlpha():Boolean { return undefined; }
 	public function set premultipliedAlpha(value:Boolean):void { }
 
-	public function get preserveDrawingBuffer():Boolean { return false; }
+	public function get preserveDrawingBuffer():Boolean { return undefined; }
 	public function set preserveDrawingBuffer(value:Boolean):void { }
 }
 

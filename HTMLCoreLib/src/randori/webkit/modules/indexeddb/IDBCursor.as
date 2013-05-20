@@ -50,35 +50,35 @@ package randori.webkit.modules.indexeddb
 public class IDBCursor
 {
 
-	public function get direction():String { return ''; }
+	public function get direction():String { return undefined; }
 
-	public function get key():* { return null; }
+	public function get key():* { return undefined; }
 
-	public function get primaryKey():* { return null; }
+	public function get primaryKey():* { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.indexeddb.IDBAny
 	*/
-	public function get source():IDBAny { return null; }
+	public function get source():IDBAny { return undefined; }
 	/**
 	*  @param value
 	*  @return A <code>IDBRequest</code> instance.
 	*/
-	public function update(value:*):IDBRequest { return null;}
+	public function update(value:*):IDBRequest { return undefined;}
 	/**
 	*  @param count
 	*/
-	public function advance(count:Number):void {}
+	public function advance(count:uint):void {}
 	[JavaScriptMethod(name="continue")]
 	/**
-	*  @param key (optional argument, default value is <code>null</code>)
+	*  @param key (optional argument, default value is <code>undefined</code>)
 	*/
-	public function continue_(key:*=null):void {}
+	public function continue_(key:*=undefined):void {}
 	[JavaScriptMethod(name="delete")]
 	/**
 	*  @return A <code>IDBRequest</code> instance.
 	*/
-	public function delete_():IDBRequest { return null;}
+	public function delete_():IDBRequest { return undefined;}
 }
 
 }

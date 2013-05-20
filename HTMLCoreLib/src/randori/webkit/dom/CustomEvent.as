@@ -51,7 +51,7 @@ package randori.webkit.dom
 public class CustomEvent extends DomEvent
 {
 
-	public function get detail():* { return null; }
+	public function get detail():* { return undefined; }
 	/**
 	*  @param typeArg (optional argument, default value is <code>undefined</code>)
 	*  @param canBubbleArg (optional argument, default value is <code>undefined</code>)

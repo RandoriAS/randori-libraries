@@ -58,18 +58,18 @@ public class SVGScriptElement extends SVGElement implements SVGURIReference, SVG
 	*/
 	public function SVGScriptElement() {super();}
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get href():SVGAnimatedString { return null; }
+	public function get href():SVGAnimatedString { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedBoolean
 	*/
-	public function get externalResourcesRequired():SVGAnimatedBoolean { return null; }
+	public function get externalResourcesRequired():SVGAnimatedBoolean { return undefined; }
 }
 
 }

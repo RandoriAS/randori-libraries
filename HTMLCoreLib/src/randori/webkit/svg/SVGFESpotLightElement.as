@@ -59,42 +59,42 @@ public class SVGFESpotLightElement extends SVGElement
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get x():SVGAnimatedNumber { return null; }
+	public function get x():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get y():SVGAnimatedNumber { return null; }
+	public function get y():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get z():SVGAnimatedNumber { return null; }
+	public function get z():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get pointsAtX():SVGAnimatedNumber { return null; }
+	public function get pointsAtX():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get pointsAtY():SVGAnimatedNumber { return null; }
+	public function get pointsAtY():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get pointsAtZ():SVGAnimatedNumber { return null; }
+	public function get pointsAtZ():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get specularExponent():SVGAnimatedNumber { return null; }
+	public function get specularExponent():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get limitingConeAngle():SVGAnimatedNumber { return null; }
+	public function get limitingConeAngle():SVGAnimatedNumber { return undefined; }
 }
 
 }

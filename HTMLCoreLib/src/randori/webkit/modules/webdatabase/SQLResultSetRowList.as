@@ -50,7 +50,7 @@ package randori.webkit.modules.webdatabase
 public dynamic class SQLResultSetRowList
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 }
 
 }

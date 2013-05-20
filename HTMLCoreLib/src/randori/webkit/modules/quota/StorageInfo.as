@@ -53,17 +53,17 @@ public class StorageInfo
 	public static const PERSISTENT:uint = 1;
 	/**
 	*  @param storageType
-	*  @param usageCallback (optional argument, default value is <code>null</code>)
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param usageCallback (optional argument, default value is <code>undefined</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function queryUsageAndQuota(storageType:uint, usageCallback:Object=null, errorCallback:Object=null):void {}
+	public function queryUsageAndQuota(storageType:uint, usageCallback:Object=undefined, errorCallback:Object=undefined):void {}
 	/**
 	*  @param storageType
-	*  @param newQuotaInBytes
-	*  @param quotaCallback (optional argument, default value is <code>null</code>)
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param newQuotaInBytes (optional argument, default value is <code>undefined</code>)
+	*  @param quotaCallback (optional argument, default value is <code>undefined</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function requestQuota(storageType:uint, newQuotaInBytes:Number, quotaCallback:Object=null, errorCallback:Object=null):void {}
+	public function requestQuota(storageType:uint, newQuotaInBytes:Number=undefined, quotaCallback:Object=undefined, errorCallback:Object=undefined):void {}
 }
 
 }

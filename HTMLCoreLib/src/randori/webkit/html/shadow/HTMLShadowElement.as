@@ -58,13 +58,13 @@ public class HTMLShadowElement extends HTMLElement
 	*/
 	public function HTMLShadowElement() {super();}
 
-	public function get resetStyleInheritance():Boolean { return false; }
+	public function get resetStyleInheritance():Boolean { return undefined; }
 	public function set resetStyleInheritance(value:Boolean):void { }
 
 	/**
 	*  @see randori.webkit.dom.ShadowRoot
 	*/
-	public function get olderShadowRoot():ShadowRoot { return null; }
+	public function get olderShadowRoot():ShadowRoot { return undefined; }
 }
 
 }

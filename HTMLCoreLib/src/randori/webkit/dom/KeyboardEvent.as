@@ -52,19 +52,19 @@ import randori.webkit.page.Window;
 public class KeyboardEvent extends UIEvent
 {
 
-	public function get keyIdentifier():String { return ''; }
+	public function get keyIdentifier():String { return undefined; }
 
-	public function get keyLocation():uint { return 0; }
+	public function get keyLocation():uint { return undefined; }
 
-	public function get ctrlKey():Boolean { return false; }
+	public function get ctrlKey():Boolean { return undefined; }
 
-	public function get shiftKey():Boolean { return false; }
+	public function get shiftKey():Boolean { return undefined; }
 
-	public function get altKey():Boolean { return false; }
+	public function get altKey():Boolean { return undefined; }
 
-	public function get metaKey():Boolean { return false; }
+	public function get metaKey():Boolean { return undefined; }
 
-	public function get altGraphKey():Boolean { return false; }
+	public function get altGraphKey():Boolean { return undefined; }
 	/**
 	*  @param type (optional argument, default value is <code>undefined</code>)
 	*  @param canBubble (optional argument, default value is <code>undefined</code>)

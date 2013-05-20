@@ -60,7 +60,7 @@ public class Navigator
 	*  @param url
 	*  @return A <code>String</code> instance.
 	*/
-	public function isProtocolHandlerRegistered(scheme:String, url:String):String { return '';}
+	public function isProtocolHandlerRegistered(scheme:String, url:String):String { return undefined;}
 	/**
 	*  @param scheme
 	*  @param url

@@ -51,21 +51,21 @@ public class IDBFactory
 {
 	/**
 	*  @param name
-	*  @param version (optional argument, default value is <code>0</code>)
+	*  @param version (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>IDBOpenDBRequest</code> instance.
 	*/
-	public function open(name:String, version:Number=0):IDBOpenDBRequest { return null;}
+	public function open(name:String, version:Number=undefined):IDBOpenDBRequest { return undefined;}
 	/**
 	*  @param name
 	*  @return A <code>IDBOpenDBRequest</code> instance.
 	*/
-	public function deleteDatabase(name:String):IDBOpenDBRequest { return null;}
+	public function deleteDatabase(name:String):IDBOpenDBRequest { return undefined;}
 	/**
 	*  @param first
 	*  @param second
 	*  @return A <code>int</code> instance.
 	*/
-	public function cmp(first:*, second:*):int { return 0;}
+	public function cmp(first:*, second:*):int { return undefined;}
 }
 
 }

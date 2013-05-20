@@ -52,21 +52,21 @@ import randori.webkit.dom.Element;
 public class SVGElement extends Element
 {
 
-	public function get id():String { return ''; }
+	public function get id():String { return undefined; }
 	public function set id(value:String):void { }
 
-	public function get xmlbase():String { return ''; }
+	public function get xmlbase():String { return undefined; }
 	public function set xmlbase(value:String):void { }
 
 	/**
 	*  @see randori.webkit.svg.SVGSVGElement
 	*/
-	public function get ownerSVGElement():SVGSVGElement { return null; }
+	public function get ownerSVGElement():SVGSVGElement { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGElement
 	*/
-	public function get viewportElement():SVGElement { return null; }
+	public function get viewportElement():SVGElement { return undefined; }
 }
 
 }

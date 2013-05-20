@@ -58,54 +58,54 @@ public class HTMLIFrameElement extends HTMLElement
 	*/
 	public function HTMLIFrameElement() {super();}
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 
-	public function get frameBorder():String { return ''; }
+	public function get frameBorder():String { return undefined; }
 	public function set frameBorder(value:String):void { }
 
-	public function get height():String { return ''; }
+	public function get height():String { return undefined; }
 	public function set height(value:String):void { }
 
-	public function get longDesc():String { return ''; }
+	public function get longDesc():String { return undefined; }
 	public function set longDesc(value:String):void { }
 
-	public function get marginHeight():String { return ''; }
+	public function get marginHeight():String { return undefined; }
 	public function set marginHeight(value:String):void { }
 
-	public function get marginWidth():String { return ''; }
+	public function get marginWidth():String { return undefined; }
 	public function set marginWidth(value:String):void { }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 
-	public function get sandbox():String { return ''; }
+	public function get sandbox():String { return undefined; }
 	public function set sandbox(value:String):void { }
 
-	public function get seamless():Boolean { return false; }
+	public function get seamless():Boolean { return undefined; }
 	public function set seamless(value:Boolean):void { }
 
-	public function get scrolling():String { return ''; }
+	public function get scrolling():String { return undefined; }
 	public function set scrolling(value:String):void { }
 
-	public function get src():String { return ''; }
+	public function get src():String { return undefined; }
 	public function set src(value:String):void { }
 
-	public function get srcdoc():String { return ''; }
+	public function get srcdoc():String { return undefined; }
 	public function set srcdoc(value:String):void { }
 
-	public function get width():String { return ''; }
+	public function get width():String { return undefined; }
 	public function set width(value:String):void { }
 
 	/**
 	*  @see randori.webkit.dom.Document
 	*/
-	public function get contentDocument():Document { return null; }
+	public function get contentDocument():Document { return undefined; }
 
 	/**
 	*  @see randori.webkit.page.Window
 	*/
-	public function get contentWindow():Window { return null; }
+	public function get contentWindow():Window { return undefined; }
 }
 
 }

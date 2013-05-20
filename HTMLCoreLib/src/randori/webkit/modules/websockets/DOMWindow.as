@@ -54,14 +54,14 @@ public class DOMWindow
 	/**
 	*  @see randori.webkit.modules.websockets.CloseEvent
 	*/
-	public function get CloseEvent_():CloseEvent { return null; }
+	public function get CloseEvent_():CloseEvent { return undefined; }
 	public function set CloseEvent_(value:CloseEvent):void { }
 
 	[JavaScriptProperty(name="WebSocket")]
 	/**
 	*  @see randori.webkit.modules.websockets.WebSocket
 	*/
-	public function get WebSocket_():WebSocket { return null; }
+	public function get WebSocket_():WebSocket { return undefined; }
 	public function set WebSocket_(value:WebSocket):void { }
 }
 

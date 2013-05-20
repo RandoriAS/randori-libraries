@@ -56,34 +56,34 @@ public class HTMLTableRowElement extends HTMLElement
 	*/
 	public function HTMLTableRowElement() {super();}
 
-	public function get rowIndex():uint { return 0; }
+	public function get rowIndex():uint { return undefined; }
 
-	public function get sectionRowIndex():uint { return 0; }
+	public function get sectionRowIndex():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get cells():HTMLCollection { return null; }
+	public function get cells():HTMLCollection { return undefined; }
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 
-	public function get bgColor():String { return ''; }
+	public function get bgColor():String { return undefined; }
 	public function set bgColor(value:String):void { }
 
-	public function get ch():String { return ''; }
+	public function get ch():String { return undefined; }
 	public function set ch(value:String):void { }
 
-	public function get chOff():String { return ''; }
+	public function get chOff():String { return undefined; }
 	public function set chOff(value:String):void { }
 
-	public function get vAlign():String { return ''; }
+	public function get vAlign():String { return undefined; }
 	public function set vAlign(value:String):void { }
 	/**
 	*  @param index (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>HTMLElement</code> instance.
 	*/
-	public function insertCell(index:uint=undefined):HTMLElement { return null;}
+	public function insertCell(index:uint=undefined):HTMLElement { return undefined;}
 	/**
 	*  @param index (optional argument, default value is <code>undefined</code>)
 	*/

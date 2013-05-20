@@ -50,40 +50,40 @@ package randori.webkit.svg
 public class SVGStringList
 {
 
-	public function get numberOfItems():uint { return 0; }
+	public function get numberOfItems():uint { return undefined; }
 	public function clear():void {}
 	/**
 	*  @param item
 	*  @return A <code>String</code> instance.
 	*/
-	public function initialize(item:String):String { return '';}
+	public function initialize(item:String):String { return undefined;}
 	/**
 	*  @param index
 	*  @return A <code>String</code> instance.
 	*/
-	public function getItem(index:uint):String { return '';}
+	public function getItem(index:uint):String { return undefined;}
 	/**
 	*  @param item
 	*  @param index
 	*  @return A <code>String</code> instance.
 	*/
-	public function insertItemBefore(item:String, index:uint):String { return '';}
+	public function insertItemBefore(item:String, index:uint):String { return undefined;}
 	/**
 	*  @param item
 	*  @param index
 	*  @return A <code>String</code> instance.
 	*/
-	public function replaceItem(item:String, index:uint):String { return '';}
+	public function replaceItem(item:String, index:uint):String { return undefined;}
 	/**
 	*  @param index
 	*  @return A <code>String</code> instance.
 	*/
-	public function removeItem(index:uint):String { return '';}
+	public function removeItem(index:uint):String { return undefined;}
 	/**
 	*  @param item
 	*  @return A <code>String</code> instance.
 	*/
-	public function appendItem(item:String):String { return '';}
+	public function appendItem(item:String):String { return undefined;}
 }
 
 }

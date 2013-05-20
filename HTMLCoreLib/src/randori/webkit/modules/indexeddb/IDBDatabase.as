@@ -52,70 +52,103 @@ import randori.webkit.dom.DomEvent;
 public class IDBDatabase
 {
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.indexeddb.IDBAny
 	*/
-	public function get version():IDBAny { return null; }
+	public function get version():IDBAny { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.DOMStringList
 	*/
-	public function get objectStoreNames():DOMStringList { return null; }
+	public function get objectStoreNames():DOMStringList { return undefined; }
 
 	/**
 	*  Function that accepts an event of type <code>AbortEvent</code>.
 	*/
-	public function get onabort():Function { return null; }
+	public function get onabort():Function { return undefined; }
 	public function set onabort(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ErrorEvent</code>.
 	*  @see randori.webkit.dom.ErrorEvent
 	*/
-	public function get onerror():Function { return null; }
+	public function get onerror():Function { return undefined; }
 	public function set onerror(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>VersionchangeEvent</code>.
 	*/
-	public function get onversionchange():Function { return null; }
+	public function get onversionchange():Function { return undefined; }
 	public function set onversionchange(value:Function):void { }
 	/**
 	*  @param name
-	*  @param options (optional argument, default value is <code>null</code>)
+	*  @param options (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>IDBObjectStore</code> instance.
 	*/
-	public function createObjectStore(name:String, options:Object=null):IDBObjectStore { return null;}
+	public function createObjectStore(name:String, options:Object=undefined):IDBObjectStore { return undefined;}
 	/**
 	*  @param name
 	*/
 	public function deleteObjectStore(name:String):void {}
+	[JavaScriptMethod(name="transaction")]
 	/**
 	*  @param storeNames
-	*  @param mode (optional argument, default value is <code>null</code>)
 	*  @return A <code>IDBTransaction</code> instance.
 	*/
-	public function transaction(storeNames:DOMStringList, mode:String=null):IDBTransaction { return null;}
+	public function transaction1(storeNames:DOMStringList):IDBTransaction { return undefined;}
+	[JavaScriptMethod(name="transaction")]
+	/**
+	*  @param storeNames
+	*  @param mode (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBTransaction</code> instance.
+	*/
+	public function transaction2(storeNames:DOMStringList, mode:String=undefined):IDBTransaction { return undefined;}
+	[JavaScriptMethod(name="transaction")]
+	/**
+	*  @param storeNames
+	*  @return A <code>IDBTransaction</code> instance.
+	*/
+	public function transaction3(storeNames:Vector.<String>):IDBTransaction { return undefined;}
+	[JavaScriptMethod(name="transaction")]
+	/**
+	*  @param storeNames
+	*  @param mode (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBTransaction</code> instance.
+	*/
+	public function transaction4(storeNames:Vector.<String>, mode:String=undefined):IDBTransaction { return undefined;}
+	[JavaScriptMethod(name="transaction")]
+	/**
+	*  @param storeName
+	*  @return A <code>IDBTransaction</code> instance.
+	*/
+	public function transaction5(storeName:String):IDBTransaction { return undefined;}
+	[JavaScriptMethod(name="transaction")]
+	/**
+	*  @param storeName
+	*  @param mode (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBTransaction</code> instance.
+	*/
+	public function transaction6(storeName:String, mode:String=undefined):IDBTransaction { return undefined;}
 	public function close():void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param evt
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(evt:DomEvent):Boolean { return false;}
+	public function dispatchEvent(evt:DomEvent):Boolean { return undefined;}
 }
 
 }

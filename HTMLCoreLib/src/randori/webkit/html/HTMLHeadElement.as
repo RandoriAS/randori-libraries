@@ -56,7 +56,7 @@ public class HTMLHeadElement extends HTMLElement
 	*/
 	public function HTMLHeadElement() {super();}
 
-	public function get profile():String { return ''; }
+	public function get profile():String { return undefined; }
 	public function set profile(value:String):void { }
 }
 

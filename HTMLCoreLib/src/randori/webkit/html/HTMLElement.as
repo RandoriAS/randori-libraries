@@ -52,50 +52,50 @@ import randori.webkit.dom.Element;
 public class HTMLElement extends Element
 {
 
-	public function get id():String { return ''; }
+	public function get id():String { return undefined; }
 	public function set id(value:String):void { }
 
-	public function get title():String { return ''; }
+	public function get title():String { return undefined; }
 	public function set title(value:String):void { }
 
-	public function get lang():String { return ''; }
+	public function get lang():String { return undefined; }
 	public function set lang(value:String):void { }
 
-	public function get translate():Boolean { return false; }
+	public function get translate():Boolean { return undefined; }
 	public function set translate(value:Boolean):void { }
 
-	public function get dir():String { return ''; }
+	public function get dir():String { return undefined; }
 	public function set dir(value:String):void { }
 
-	public function get tabIndex():uint { return 0; }
+	public function get tabIndex():uint { return undefined; }
 	public function set tabIndex(value:uint):void { }
 
-	public function get draggable():Boolean { return false; }
+	public function get draggable():Boolean { return undefined; }
 	public function set draggable(value:Boolean):void { }
 
-	public function get hidden():Boolean { return false; }
+	public function get hidden():Boolean { return undefined; }
 	public function set hidden(value:Boolean):void { }
 
-	public function get accessKey():String { return ''; }
+	public function get accessKey():String { return undefined; }
 	public function set accessKey(value:String):void { }
 
-	public function get innerHTML():String { return ''; }
+	public function get innerHTML():String { return undefined; }
 	public function set innerHTML(value:String):void { }
 
-	public function get innerText():String { return ''; }
+	public function get innerText():String { return undefined; }
 	public function set innerText(value:String):void { }
 
-	public function get outerHTML():String { return ''; }
+	public function get outerHTML():String { return undefined; }
 	public function set outerHTML(value:String):void { }
 
-	public function get outerText():String { return ''; }
+	public function get outerText():String { return undefined; }
 	public function set outerText(value:String):void { }
 	/**
 	*  @param where (optional argument, default value is <code>undefined</code>)
 	*  @param element (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Element</code> instance.
 	*/
-	public function insertAdjacentElement(where:String=undefined, element:Element=undefined):Element { return null;}
+	public function insertAdjacentElement(where:String=undefined, element:Element=undefined):Element { return undefined;}
 	/**
 	*  @param where (optional argument, default value is <code>undefined</code>)
 	*  @param html (optional argument, default value is <code>undefined</code>)
@@ -110,38 +110,38 @@ public class HTMLElement extends Element
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get children():HTMLCollection { return null; }
+	public function get children():HTMLCollection { return undefined; }
 
-	public function get contentEditable():String { return ''; }
+	public function get contentEditable():String { return undefined; }
 	public function set contentEditable(value:String):void { }
 
-	public function get isContentEditable():Boolean { return false; }
+	public function get isContentEditable():Boolean { return undefined; }
 
-	public function get spellcheck():Boolean { return false; }
+	public function get spellcheck():Boolean { return undefined; }
 	public function set spellcheck(value:Boolean):void { }
 
-	public function get itemScope():Boolean { return false; }
+	public function get itemScope():Boolean { return undefined; }
 	public function set itemScope(value:Boolean):void { }
 
 	/**
 	*  @see randori.webkit.html.DOMSettableTokenList
 	*/
-	public function get itemType():DOMSettableTokenList { return null; }
+	public function get itemType():DOMSettableTokenList { return undefined; }
 
-	public function get itemId():String { return ''; }
+	public function get itemId():String { return undefined; }
 	public function set itemId(value:String):void { }
 
 	/**
 	*  @see randori.webkit.html.DOMSettableTokenList
 	*/
-	public function get itemRef():DOMSettableTokenList { return null; }
+	public function get itemRef():DOMSettableTokenList { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.DOMSettableTokenList
 	*/
-	public function get itemProp():DOMSettableTokenList { return null; }
+	public function get itemProp():DOMSettableTokenList { return undefined; }
 
-	public function get itemValue():* { return null; }
+	public function get itemValue():* { return undefined; }
 	public function set itemValue(value:*):void { }
 	public function click():void {}
 }

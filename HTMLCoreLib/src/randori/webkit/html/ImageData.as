@@ -50,9 +50,9 @@ package randori.webkit.html
 public class ImageData
 {
 
-	public function get width():uint { return 0; }
+	public function get width():uint { return undefined; }
 
-	public function get height():uint { return 0; }
+	public function get height():uint { return undefined; }
 }
 
 }

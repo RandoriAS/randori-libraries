@@ -66,12 +66,12 @@ public class XSLTProcessor
 	*  @param docVal (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>DocumentFragment</code> instance.
 	*/
-	public function transformToFragment(source:Node=undefined, docVal:Document=undefined):DocumentFragment { return null;}
+	public function transformToFragment(source:Node=undefined, docVal:Document=undefined):DocumentFragment { return undefined;}
 	/**
 	*  @param source (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Document</code> instance.
 	*/
-	public function transformToDocument(source:Node=undefined):Document { return null;}
+	public function transformToDocument(source:Node=undefined):Document { return undefined;}
 	/**
 	*  @param namespaceURI
 	*  @param localName
@@ -83,7 +83,7 @@ public class XSLTProcessor
 	*  @param localName
 	*  @return A <code>String</code> instance.
 	*/
-	public function getParameter(namespaceURI:String, localName:String):String { return '';}
+	public function getParameter(namespaceURI:String, localName:String):String { return undefined;}
 	/**
 	*  @param namespaceURI
 	*  @param localName

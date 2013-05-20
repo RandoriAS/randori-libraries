@@ -61,15 +61,15 @@ public class SVGLength
 	public static const SVG_LENGTHTYPE_PT:uint = 9;
 	public static const SVG_LENGTHTYPE_PC:uint = 10;
 
-	public function get unitType():uint { return 0; }
+	public function get unitType():uint { return undefined; }
 
-	public function get value():Number { return 0; }
+	public function get value():Number { return undefined; }
 	public function set value(value:Number):void { }
 
-	public function get valueInSpecifiedUnits():Number { return 0; }
+	public function get valueInSpecifiedUnits():Number { return undefined; }
 	public function set valueInSpecifiedUnits(value:Number):void { }
 
-	public function get valueAsString():String { return ''; }
+	public function get valueAsString():String { return undefined; }
 	public function set valueAsString(value:String):void { }
 	/**
 	*  @param unitType

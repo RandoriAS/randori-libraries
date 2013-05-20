@@ -51,7 +51,7 @@ package randori.webkit.dom
 public class BeforeLoadEvent extends DomEvent
 {
 
-	public function get url():String { return ''; }
+	public function get url():String { return undefined; }
 }
 
 }

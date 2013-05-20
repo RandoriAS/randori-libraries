@@ -64,10 +64,10 @@ public class SVGPreserveAspectRatio
 	public static const SVG_MEETORSLICE_MEET:uint = 1;
 	public static const SVG_MEETORSLICE_SLICE:uint = 2;
 
-	public function get align():uint { return 0; }
+	public function get align():uint { return undefined; }
 	public function set align(value:uint):void { }
 
-	public function get meetOrSlice():uint { return 0; }
+	public function get meetOrSlice():uint { return undefined; }
 	public function set meetOrSlice(value:uint):void { }
 }
 

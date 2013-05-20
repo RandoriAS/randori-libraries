@@ -62,44 +62,44 @@ public class SVGAnimationElement extends SVGElement implements SVGTests, SVGExte
 	/**
 	*  @see randori.webkit.svg.SVGElement
 	*/
-	public function get targetElement():SVGElement { return null; }
+	public function get targetElement():SVGElement { return undefined; }
 	/**
 	*  @return A <code>Number</code> instance.
 	*/
-	public function getStartTime():Number { return 0;}
+	public function getStartTime():Number { return undefined;}
 	/**
 	*  @return A <code>Number</code> instance.
 	*/
-	public function getCurrentTime():Number { return 0;}
+	public function getCurrentTime():Number { return undefined;}
 	/**
 	*  @return A <code>Number</code> instance.
 	*/
-	public function getSimpleDuration():Number { return 0;}
+	public function getSimpleDuration():Number { return undefined;}
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get requiredFeatures():SVGStringList { return null; }
+	public function get requiredFeatures():SVGStringList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get requiredExtensions():SVGStringList { return null; }
+	public function get requiredExtensions():SVGStringList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get systemLanguage():SVGStringList { return null; }
+	public function get systemLanguage():SVGStringList { return undefined; }
 	/**
 	*  @param extension (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function hasExtension(extension:String=undefined):Boolean { return false;}
+	public function hasExtension(extension:String=undefined):Boolean { return undefined;}
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedBoolean
 	*/
-	public function get externalResourcesRequired():SVGAnimatedBoolean { return null; }
+	public function get externalResourcesRequired():SVGAnimatedBoolean { return undefined; }
 	public function beginElement():void {}
 	/**
 	*  @param offset (optional argument, default value is <code>undefined</code>)

@@ -58,58 +58,58 @@ public class MediaController
 	/**
 	*  @see randori.webkit.html.TimeRanges
 	*/
-	public function get buffered():TimeRanges { return null; }
+	public function get buffered():TimeRanges { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.TimeRanges
 	*/
-	public function get seekable():TimeRanges { return null; }
+	public function get seekable():TimeRanges { return undefined; }
 
-	public function get duration():Number { return 0; }
+	public function get duration():Number { return undefined; }
 
-	public function get currentTime():Number { return 0; }
+	public function get currentTime():Number { return undefined; }
 	public function set currentTime(value:Number):void { }
 
-	public function get paused():Boolean { return false; }
+	public function get paused():Boolean { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.TimeRanges
 	*/
-	public function get played():TimeRanges { return null; }
+	public function get played():TimeRanges { return undefined; }
 
-	public function get playbackState():String { return ''; }
+	public function get playbackState():String { return undefined; }
 	public function play():void {}
 	public function pause():void {}
 	public function unpause():void {}
 
-	public function get defaultPlaybackRate():Number { return 0; }
+	public function get defaultPlaybackRate():Number { return undefined; }
 	public function set defaultPlaybackRate(value:Number):void { }
 
-	public function get playbackRate():Number { return 0; }
+	public function get playbackRate():Number { return undefined; }
 	public function set playbackRate(value:Number):void { }
 
-	public function get volume():Number { return 0; }
+	public function get volume():Number { return undefined; }
 	public function set volume(value:Number):void { }
 
-	public function get muted():Boolean { return false; }
+	public function get muted():Boolean { return undefined; }
 	public function set muted(value:Boolean):void { }
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param evt
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(evt:DomEvent):Boolean { return false;}
+	public function dispatchEvent(evt:DomEvent):Boolean { return undefined;}
 }
 
 }

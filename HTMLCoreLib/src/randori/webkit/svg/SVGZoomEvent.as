@@ -55,21 +55,21 @@ public class SVGZoomEvent extends UIEvent
 	/**
 	*  @see randori.webkit.svg.SVGRect
 	*/
-	public function get zoomRectScreen():SVGRect { return null; }
+	public function get zoomRectScreen():SVGRect { return undefined; }
 
-	public function get previousScale():Number { return 0; }
-
-	/**
-	*  @see randori.webkit.svg.SVGPoint
-	*/
-	public function get previousTranslate():SVGPoint { return null; }
-
-	public function get newScale():Number { return 0; }
+	public function get previousScale():Number { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGPoint
 	*/
-	public function get newTranslate():SVGPoint { return null; }
+	public function get previousTranslate():SVGPoint { return undefined; }
+
+	public function get newScale():Number { return undefined; }
+
+	/**
+	*  @see randori.webkit.svg.SVGPoint
+	*/
+	public function get newTranslate():SVGPoint { return undefined; }
 }
 
 }

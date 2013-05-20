@@ -50,16 +50,16 @@ package randori.webkit.svg
 public class SVGRect
 {
 
-	public function get x():Number { return 0; }
+	public function get x():Number { return undefined; }
 	public function set x(value:Number):void { }
 
-	public function get y():Number { return 0; }
+	public function get y():Number { return undefined; }
 	public function set y(value:Number):void { }
 
-	public function get width():Number { return 0; }
+	public function get width():Number { return undefined; }
 	public function set width(value:Number):void { }
 
-	public function get height():Number { return 0; }
+	public function get height():Number { return undefined; }
 	public function set height(value:Number):void { }
 }
 

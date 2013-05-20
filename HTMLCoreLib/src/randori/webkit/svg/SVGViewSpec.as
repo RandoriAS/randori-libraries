@@ -53,33 +53,33 @@ public class SVGViewSpec
 	/**
 	*  @see randori.webkit.svg.SVGTransformList
 	*/
-	public function get transform():SVGTransformList { return null; }
+	public function get transform():SVGTransformList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGElement
 	*/
-	public function get viewTarget():SVGElement { return null; }
+	public function get viewTarget():SVGElement { return undefined; }
 
-	public function get viewBoxString():String { return ''; }
+	public function get viewBoxString():String { return undefined; }
 
-	public function get preserveAspectRatioString():String { return ''; }
+	public function get preserveAspectRatioString():String { return undefined; }
 
-	public function get transformString():String { return ''; }
+	public function get transformString():String { return undefined; }
 
-	public function get viewTargetString():String { return ''; }
+	public function get viewTargetString():String { return undefined; }
 
-	public function get zoomAndPan():uint { return 0; }
+	public function get zoomAndPan():uint { return undefined; }
 	public function set zoomAndPan(value:uint):void { }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedRect
 	*/
-	public function get viewBox():SVGAnimatedRect { return null; }
+	public function get viewBox():SVGAnimatedRect { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedPreserveAspectRatio
 	*/
-	public function get preserveAspectRatio():SVGAnimatedPreserveAspectRatio { return null; }
+	public function get preserveAspectRatio():SVGAnimatedPreserveAspectRatio { return undefined; }
 }
 
 }

@@ -53,12 +53,12 @@ public class SVGAnimatedLengthList
 	/**
 	*  @see randori.webkit.svg.SVGLengthList
 	*/
-	public function get baseVal():SVGLengthList { return null; }
+	public function get baseVal():SVGLengthList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGLengthList
 	*/
-	public function get animVal():SVGLengthList { return null; }
+	public function get animVal():SVGLengthList { return undefined; }
 }
 
 }

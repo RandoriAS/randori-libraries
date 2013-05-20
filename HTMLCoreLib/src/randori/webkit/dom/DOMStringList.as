@@ -50,12 +50,12 @@ package randori.webkit.dom
 public dynamic class DOMStringList
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 	/**
 	*  @param string (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function contains(string:String=undefined):Boolean { return false;}
+	public function contains(string:String=undefined):Boolean { return undefined;}
 }
 
 }

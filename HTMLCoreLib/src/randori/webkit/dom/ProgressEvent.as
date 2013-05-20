@@ -51,11 +51,11 @@ package randori.webkit.dom
 public class ProgressEvent extends DomEvent
 {
 
-	public function get lengthComputable():Boolean { return false; }
+	public function get lengthComputable():Boolean { return undefined; }
 
-	public function get loaded():Number { return 0; }
+	public function get loaded():Number { return undefined; }
 
-	public function get total():Number { return 0; }
+	public function get total():Number { return undefined; }
 }
 
 }

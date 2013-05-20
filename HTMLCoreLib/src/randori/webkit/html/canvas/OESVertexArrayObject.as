@@ -53,7 +53,7 @@ public class OESVertexArrayObject
 	/**
 	*  @return A <code>WebGLVertexArrayObjectOES</code> instance.
 	*/
-	public function createVertexArrayOES():WebGLVertexArrayObjectOES { return null;}
+	public function createVertexArrayOES():WebGLVertexArrayObjectOES { return undefined;}
 	/**
 	*  @param arrayObject (optional argument, default value is <code>undefined</code>)
 	*/
@@ -62,7 +62,7 @@ public class OESVertexArrayObject
 	*  @param arrayObject (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function isVertexArrayOES(arrayObject:WebGLVertexArrayObjectOES=undefined):Boolean { return false;}
+	public function isVertexArrayOES(arrayObject:WebGLVertexArrayObjectOES=undefined):Boolean { return undefined;}
 	/**
 	*  @param arrayObject (optional argument, default value is <code>undefined</code>)
 	*/

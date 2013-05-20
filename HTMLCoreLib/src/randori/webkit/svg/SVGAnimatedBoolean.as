@@ -50,10 +50,10 @@ package randori.webkit.svg
 public class SVGAnimatedBoolean
 {
 
-	public function get baseVal():Boolean { return false; }
+	public function get baseVal():Boolean { return undefined; }
 	public function set baseVal(value:Boolean):void { }
 
-	public function get animVal():Boolean { return false; }
+	public function get animVal():Boolean { return undefined; }
 }
 
 }

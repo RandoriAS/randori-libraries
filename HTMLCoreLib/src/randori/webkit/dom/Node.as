@@ -74,20 +74,20 @@ public class Node
 	*  <p>The name of this node, depending on its type; see the table above.
 	*  </p>
 	*/
-	public function get nodeName():String { return ''; }
+	public function get nodeName():String { return undefined; }
 
 	/**
 	*  <p>The value of this node, depending on its type; see the table above.
 	*  When it is defined to be <code>null</code>, setting it has no effect.</p>
 	*/
-	public function get nodeValue():String { return ''; }
+	public function get nodeValue():String { return undefined; }
 	public function set nodeValue(value:String):void { }
 
 	/**
 	*  <p>A code representing the type of the underlying object, as defined
 	*  above.</p>
 	*/
-	public function get nodeType():uint { return 0; }
+	public function get nodeType():uint { return undefined; }
 
 	/**
 	*  <p>The parent of this node. All nodes,
@@ -95,46 +95,46 @@ public class Node
 	*  added to the tree, or if it has been removed from the tree, this is <code>null</code>.</p>
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get parentNode():Node { return null; }
+	public function get parentNode():Node { return undefined; }
 
 	/**
 	*  <p>A <code>NodeList</code> that contains all children of this node. If there are no children, this
 	*  is a <code>NodeList</code> containing no nodes.</p>
 	*  @see randori.webkit.dom.NodeList
 	*/
-	public function get childNodes():NodeList { return null; }
+	public function get childNodes():NodeList { return undefined; }
 
 	/**
 	*  <p>The first child of this node. If there is no such node, this returns <code>null</code>.</p>
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get firstChild():Node { return null; }
+	public function get firstChild():Node { return undefined; }
 
 	/**
 	*  <p>The last child of this node. If there is no such node, this returns <code>null</code>.</p>
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get lastChild():Node { return null; }
+	public function get lastChild():Node { return undefined; }
 
 	/**
 	*  <p>The node immediately preceding this node. If there is no such node,
 	*  this returns <code>null</code>.</p>
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get previousSibling():Node { return null; }
+	public function get previousSibling():Node { return undefined; }
 
 	/**
 	*  <p>The node immediately following this node. If there is no such node,
 	*  this returns <code>null</code>.</p>
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get nextSibling():Node { return null; }
+	public function get nextSibling():Node { return undefined; }
 
 	/**
 	*  <p>The <code>Document</code> object associated with this node. This is also the <code>Document</code> object used to create new nodes. When this node is a <code>Document</code> or a <code>DocumentType</code> which is not used with any <code>Document</code> yet, this is <code>null</code>.</p>
 	*  @see randori.webkit.dom.Document
 	*/
-	public function get ownerDocument():Document { return null; }
+	public function get ownerDocument():Document { return undefined; }
 	/**
 	*  <p>Inserts the node <code>newChild</code> before the existing child node <code>refChild</code>. If <code>refChild</code> is <code>null</code>, insert <code>newChild</code> at the end of the list of children.</p><p>If <code>newChild</code> is a <code>DocumentFragment</code> object, all of its children are inserted, in the same order, before <code>refChild</code>. If the <code>newChild</code> is already in the tree, it is first removed.</p>
 	*  @param newChild <p>The node to insert.</p>
@@ -147,7 +147,7 @@ public class Node
 	*  node.</p><p>NO_MODIFICATION_ALLOWED_ERR: Raised if this node is readonly or if
 	*  the parent of the node being inserted is readonly.</p><p>NOT_FOUND_ERR: Raised if <code>refChild</code> is not a child of this node.</p>
 	*/
-	public function insertBefore(newChild:Node, refChild:Node):Node { return null;}
+	public function insertBefore(newChild:Node, refChild:Node):Node { return undefined;}
 	/**
 	*  <p>Replaces the child node <code>oldChild</code> with <code>newChild</code> in the list of children, and returns the <code>oldChild</code> node.</p><p>If <code>newChild</code> is a <code>DocumentFragment</code> object, <code>oldChild</code> is replaced by all of the <code>DocumentFragment</code> children, which are inserted in the same order. If the <code>newChild</code> is already in the tree, it is first removed.</p>
 	*  @param newChild <p>The new node to put in the child list.</p>
@@ -159,14 +159,14 @@ public class Node
 	*  node.</p><p>NO_MODIFICATION_ALLOWED_ERR: Raised if this node or the parent of
 	*  the new node is readonly.</p><p>NOT_FOUND_ERR: Raised if <code>oldChild</code> is not a child of this node.</p>
 	*/
-	public function replaceChild(newChild:Node, oldChild:Node):Node { return null;}
+	public function replaceChild(newChild:Node, oldChild:Node):Node { return undefined;}
 	/**
 	*  <p>Removes the child node indicated by <code>oldChild</code> from the list of children, and returns it.</p>
 	*  @param oldChild <p>The node being removed.</p>
 	*  @return <p>The node removed.</p>
 	*  @throw DOMException <p>NO_MODIFICATION_ALLOWED_ERR: Raised if this node is readonly.</p><p>NOT_FOUND_ERR: Raised if <code>oldChild</code> is not a child of this node.</p>
 	*/
-	public function removeChild(oldChild:Node):Node { return null;}
+	public function removeChild(oldChild:Node):Node { return undefined;}
 	/**
 	*  <p>Adds the node <code>newChild</code> to the end of the list of children of this node. If the <code>newChild</code> is already in the tree, it is first removed.</p>
 	*  @param newChild <p>The node to add.</p><p>If it is a <code>DocumentFragment</code> object, the entire contents of the document fragment are moved into the
@@ -177,12 +177,12 @@ public class Node
 	*  ancestors.</p><p>WRONG_DOCUMENT_ERR: Raised if <code>newChild</code> was created from a different document than the one that created this
 	*  node.</p><p>NO_MODIFICATION_ALLOWED_ERR: Raised if this node is readonly.</p>
 	*/
-	public function appendChild(newChild:Node):Node { return null;}
+	public function appendChild(newChild:Node):Node { return undefined;}
 	/**
 	*  <p>Returns whether this node has any children.</p>
 	*  @return <p><code>true</code> if this node has any children, <code>false</code> otherwise.</p>
 	*/
-	public function hasChildNodes():Boolean { return false;}
+	public function hasChildNodes():Boolean { return undefined;}
 	/**
 	*  <p>Returns a duplicate of this node, i.e., serves as a generic copy
 	*  constructor for nodes. The duplicate node has no parent; (<code>parentNode</code> is <code>null</code>.).</p><p>Cloning an <code>Element</code> copies all attributes and their values, including those generated by
@@ -195,7 +195,7 @@ public class Node
 	*  @param deep <p>If <code>true</code>, recursively clone the subtree under the specified node; if <code>false</code>, clone only the node itself (and its attributes, if it is an <code>Element</code>). </p>
 	*  @return <p>The duplicate node.</p>
 	*/
-	public function cloneNode(deep:Boolean=undefined):Node { return null;}
+	public function cloneNode(deep:Boolean=undefined):Node { return undefined;}
 	/**
 	*  <p>Puts all <code>Text</code> nodes in the full depth of the sub-tree underneath this <code>Node</code>, including attribute nodes, into a "normal" form where only structure
 	*  (e.g., elements, comments, processing instructions, CDATA sections, and entity
@@ -216,7 +216,7 @@ public class Node
 	*  supporting any version of the feature will cause the method to return <code>true</code>.</p>
 	*  @return <p>Returns <code>true</code> if the specified feature is supported on this node, <code>false</code> otherwise.</p>
 	*/
-	public function isSupported(feature:String=undefined, version:String=undefined):Boolean { return false;}
+	public function isSupported(feature:String=undefined, version:String=undefined):Boolean { return undefined;}
 
 	/**
 	*  <p>The namespace URI of this
@@ -227,7 +227,7 @@ public class Node
 	*  element it is attached to. If an attribute is not explicitly given a namespace,
 	*  it simply has no namespace.</p></note>
 	*/
-	public function get namespaceURI():String { return ''; }
+	public function get namespaceURI():String { return undefined; }
 
 	/**
 	*  <p>The namespace prefix of
@@ -236,43 +236,43 @@ public class Node
 	*  have a default value, does not make a new attribute with the default value and
 	*  the original prefix appear, since the <code>namespaceURI</code> and <code>localName</code> do not change.</p><p>For nodes of any type other than <code>ELEMENT_NODE</code> and <code>ATTRIBUTE_NODE</code> and nodes created with a DOM Level 1 method, such as <code>createElement</code> from the <code>Document</code> interface, this is always <code>null</code>.</p>
 	*/
-	public function get prefix():String { return ''; }
+	public function get prefix():String { return undefined; }
 	public function set prefix(value:String):void { }
 
 	/**
 	*  <p>Returns the local part of the qualified name of this node.</p><p>For nodes of any type other than <code>ELEMENT_NODE</code> and <code>ATTRIBUTE_NODE</code> and nodes created with a DOM Level 1 method, such as <code>createElement</code> from the <code>Document</code> interface, this is always <code>null</code>.</p>
 	*/
-	public function get localName():String { return ''; }
+	public function get localName():String { return undefined; }
 
-	public function get baseURI():String { return ''; }
+	public function get baseURI():String { return undefined; }
 
-	public function get textContent():String { return ''; }
+	public function get textContent():String { return undefined; }
 	public function set textContent(value:String):void { }
 	/**
 	*  @param other (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function isSameNode(other:Node=undefined):Boolean { return false;}
+	public function isSameNode(other:Node=undefined):Boolean { return undefined;}
 	/**
 	*  @param other (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function isEqualNode(other:Node=undefined):Boolean { return false;}
+	public function isEqualNode(other:Node=undefined):Boolean { return undefined;}
 	/**
 	*  @param namespaceURI (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>String</code> instance.
 	*/
-	public function lookupPrefix(namespaceURI:String=undefined):String { return '';}
+	public function lookupPrefix(namespaceURI:String=undefined):String { return undefined;}
 	/**
 	*  @param namespaceURI (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function isDefaultNamespace(namespaceURI:String=undefined):Boolean { return false;}
+	public function isDefaultNamespace(namespaceURI:String=undefined):Boolean { return undefined;}
 	/**
 	*  @param prefix (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>String</code> instance.
 	*/
-	public function lookupNamespaceURI(prefix:String=undefined):String { return '';}
+	public function lookupNamespaceURI(prefix:String=undefined):String { return undefined;}
 	public static const DOCUMENT_POSITION_DISCONNECTED:uint = 0x01;
 	public static const DOCUMENT_POSITION_PRECEDING:uint = 0x02;
 	public static const DOCUMENT_POSITION_FOLLOWING:uint = 0x04;
@@ -283,34 +283,34 @@ public class Node
 	*  @param other (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>uint</code> instance.
 	*/
-	public function compareDocumentPosition(other:Node=undefined):uint { return 0;}
+	public function compareDocumentPosition(other:Node=undefined):uint { return undefined;}
 	/**
 	*  @param other (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function contains(other:Node=undefined):Boolean { return false;}
+	public function contains(other:Node=undefined):Boolean { return undefined;}
 
 	/**
 	*  @see randori.webkit.dom.Element
 	*/
-	public function get parentElement():Element { return null; }
+	public function get parentElement():Element { return undefined; }
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param event
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(event:DomEvent):Boolean { return false;}
+	public function dispatchEvent(event:DomEvent):Boolean { return undefined;}
 }
 
 }

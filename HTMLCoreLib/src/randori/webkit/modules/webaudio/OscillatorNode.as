@@ -56,24 +56,24 @@ public class OscillatorNode extends AudioSourceNode
 	public static const TRIANGLE:uint = 3;
 	public static const CUSTOM:uint = 4;
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 	public static const UNSCHEDULED_STATE:uint = 0;
 	public static const SCHEDULED_STATE:uint = 1;
 	public static const PLAYING_STATE:uint = 2;
 	public static const FINISHED_STATE:uint = 3;
 
-	public function get playbackState():uint { return 0; }
+	public function get playbackState():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get frequency():AudioParam { return null; }
+	public function get frequency():AudioParam { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get detune():AudioParam { return null; }
+	public function get detune():AudioParam { return undefined; }
 	/**
 	*  @param when
 	*/

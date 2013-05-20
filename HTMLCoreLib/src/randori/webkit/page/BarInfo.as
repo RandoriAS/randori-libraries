@@ -50,7 +50,7 @@ package randori.webkit.page
 public class BarInfo
 {
 
-	public function get visible():Boolean { return false; }
+	public function get visible():Boolean { return undefined; }
 }
 
 }

@@ -50,40 +50,40 @@ package randori.webkit.svg
 public class SVGLengthList
 {
 
-	public function get numberOfItems():uint { return 0; }
+	public function get numberOfItems():uint { return undefined; }
 	public function clear():void {}
 	/**
 	*  @param item
 	*  @return A <code>SVGLength</code> instance.
 	*/
-	public function initialize(item:SVGLength):SVGLength { return null;}
+	public function initialize(item:SVGLength):SVGLength { return undefined;}
 	/**
 	*  @param index
 	*  @return A <code>SVGLength</code> instance.
 	*/
-	public function getItem(index:uint):SVGLength { return null;}
+	public function getItem(index:uint):SVGLength { return undefined;}
 	/**
 	*  @param item
 	*  @param index
 	*  @return A <code>SVGLength</code> instance.
 	*/
-	public function insertItemBefore(item:SVGLength, index:uint):SVGLength { return null;}
+	public function insertItemBefore(item:SVGLength, index:uint):SVGLength { return undefined;}
 	/**
 	*  @param item
 	*  @param index
 	*  @return A <code>SVGLength</code> instance.
 	*/
-	public function replaceItem(item:SVGLength, index:uint):SVGLength { return null;}
+	public function replaceItem(item:SVGLength, index:uint):SVGLength { return undefined;}
 	/**
 	*  @param index
 	*  @return A <code>SVGLength</code> instance.
 	*/
-	public function removeItem(index:uint):SVGLength { return null;}
+	public function removeItem(index:uint):SVGLength { return undefined;}
 	/**
 	*  @param item
 	*  @return A <code>SVGLength</code> instance.
 	*/
-	public function appendItem(item:SVGLength):SVGLength { return null;}
+	public function appendItem(item:SVGLength):SVGLength { return undefined;}
 }
 
 }

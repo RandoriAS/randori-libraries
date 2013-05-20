@@ -63,7 +63,7 @@ public class XPathNSResolver
 	*  @return <p>Returns the associated namespace URI or
 	*  <code>null</code> if none is found.</p>
 	*/
-	public function lookupNamespaceURI(prefix:String=undefined):String { return '';}
+	public function lookupNamespaceURI(prefix:String=undefined):String { return undefined;}
 }
 
 }

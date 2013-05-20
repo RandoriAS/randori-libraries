@@ -63,7 +63,7 @@ public class DocumentType extends Node
 	*  <p>The name of DTD; i.e., the name immediately
 	*  following the <code>DOCTYPE</code> keyword.</p>
 	*/
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
 	/**
 	*  <p>A <code>NamedNodeMap</code> containing the general entities, both
@@ -84,7 +84,7 @@ public class DocumentType extends Node
 	*  <code>entities</code> cannot be altered in any way.</p>
 	*  @see randori.webkit.dom.NamedNodeMap
 	*/
-	public function get entities():NamedNodeMap { return null; }
+	public function get entities():NamedNodeMap { return undefined; }
 
 	/**
 	*  <p>A <code>NamedNodeMap</code> containing  the
@@ -93,17 +93,17 @@ public class DocumentType extends Node
 	*  <code>notations</code> cannot be altered in any way.</p>
 	*  @see randori.webkit.dom.NamedNodeMap
 	*/
-	public function get notations():NamedNodeMap { return null; }
+	public function get notations():NamedNodeMap { return undefined; }
 
 	/**
 	*  <p>The public identifier of the external subset.</p>
 	*/
-	public function get publicId():String { return ''; }
+	public function get publicId():String { return undefined; }
 
 	/**
 	*  <p>The system identifier of the external subset.</p>
 	*/
-	public function get systemId():String { return ''; }
+	public function get systemId():String { return undefined; }
 
 	/**
 	*  <p>The internal subset as a string.</p><note><p>The actual content returned depends on how much information is
@@ -111,7 +111,7 @@ public class DocumentType extends Node
 	*  parameters, including the XML processor used to build the
 	*  document.</p></note>
 	*/
-	public function get internalSubset():String { return ''; }
+	public function get internalSubset():String { return undefined; }
 	public function remove():void {}
 }
 

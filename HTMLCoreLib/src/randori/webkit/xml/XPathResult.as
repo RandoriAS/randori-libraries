@@ -76,7 +76,7 @@ public class XPathResult
 	*  <p>A code representing the type of this result, as defined
 	*  by the type constants.</p>
 	*/
-	public function get resultType():uint { return 0; }
+	public function get resultType():uint { return undefined; }
 
 	/**
 	*  <p>The value of this number result.  If the native double type of the DOM binding does
@@ -84,23 +84,23 @@ public class XPathResult
 	*  the definition of the binding to specify how the XPath number is converted to the
 	*  native binding number.</p>
 	*/
-	public function get numberValue():Number { return 0; }
+	public function get numberValue():Number { return undefined; }
 
 	/**
 	*  <p>The value of this string result.</p>
 	*/
-	public function get stringValue():String { return ''; }
+	public function get stringValue():String { return undefined; }
 
 	/**
 	*  <p>The value of this boolean result.</p>
 	*/
-	public function get booleanValue():Boolean { return false; }
+	public function get booleanValue():Boolean { return undefined; }
 
 	/**
 	*  <p>The value of this single node result, which may be <code>null</code>.</p>
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get singleNodeValue():Node { return null; }
+	public function get singleNodeValue():Node { return undefined; }
 
 	/**
 	*  <p>Signifies that the iterator has become invalid.
@@ -110,14 +110,14 @@ public class XPathResult
 	*  document has been modified since this result was
 	*  returned.</p>
 	*/
-	public function get invalidIteratorState():Boolean { return false; }
+	public function get invalidIteratorState():Boolean { return undefined; }
 
 	/**
 	*  <p>The number of nodes in the result snapshot.  Valid values
 	*  for snapshotItem indices are <code>0</code> to
 	*  <code>snapshotLength-1</code> inclusive.</p>
 	*/
-	public function get snapshotLength():uint { return 0; }
+	public function get snapshotLength():uint { return undefined; }
 	/**
 	*  <p>Iterates and returns the next node from the node set
 	*  or <code>null</code>if there are no more nodes.</p>
@@ -126,7 +126,7 @@ public class XPathResult
 	*  <code>UNORDERED_NODE_ITERATOR_TYPE</code> or
 	*  <code>ORDERED_NODE_ITERATOR_TYPE</code>.</p>
 	*/
-	public function iterateNext():Node { return null;}
+	public function iterateNext():Node { return undefined;}
 	/**
 	*  <p>Returns the <code>index</code>th item in the snapshot collection.
 	*  If <code>index</code> is greater than or equal to the number of nodes
@@ -141,7 +141,7 @@ public class XPathResult
 	*  <code>UNORDERED_NODE_SNAPSHOT_TYPE</code> or
 	*  <code>ORDERED_NODE_SNAPSHOT_TYPE</code>.</p>
 	*/
-	public function snapshotItem(index:uint=undefined):Node { return null;}
+	public function snapshotItem(index:uint=undefined):Node { return undefined;}
 }
 
 }

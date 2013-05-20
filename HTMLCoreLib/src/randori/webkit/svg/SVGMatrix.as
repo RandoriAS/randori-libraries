@@ -50,78 +50,78 @@ package randori.webkit.svg
 public class SVGMatrix
 {
 
-	public function get a():Number { return 0; }
+	public function get a():Number { return undefined; }
 	public function set a(value:Number):void { }
 
-	public function get b():Number { return 0; }
+	public function get b():Number { return undefined; }
 	public function set b(value:Number):void { }
 
-	public function get c():Number { return 0; }
+	public function get c():Number { return undefined; }
 	public function set c(value:Number):void { }
 
-	public function get d():Number { return 0; }
+	public function get d():Number { return undefined; }
 	public function set d(value:Number):void { }
 
-	public function get e():Number { return 0; }
+	public function get e():Number { return undefined; }
 	public function set e(value:Number):void { }
 
-	public function get f():Number { return 0; }
+	public function get f():Number { return undefined; }
 	public function set f(value:Number):void { }
 	/**
 	*  @param secondMatrix
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function multiply(secondMatrix:SVGMatrix):SVGMatrix { return null;}
+	public function multiply(secondMatrix:SVGMatrix):SVGMatrix { return undefined;}
 	/**
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function inverse():SVGMatrix { return null;}
+	public function inverse():SVGMatrix { return undefined;}
 	/**
 	*  @param x
 	*  @param y
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function translate(x:Number, y:Number):SVGMatrix { return null;}
+	public function translate(x:Number, y:Number):SVGMatrix { return undefined;}
 	/**
 	*  @param scaleFactor
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function scale(scaleFactor:Number):SVGMatrix { return null;}
+	public function scale(scaleFactor:Number):SVGMatrix { return undefined;}
 	/**
 	*  @param scaleFactorX
 	*  @param scaleFactorY
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function scaleNonUniform(scaleFactorX:Number, scaleFactorY:Number):SVGMatrix { return null;}
+	public function scaleNonUniform(scaleFactorX:Number, scaleFactorY:Number):SVGMatrix { return undefined;}
 	/**
 	*  @param angle
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function rotate(angle:Number):SVGMatrix { return null;}
+	public function rotate(angle:Number):SVGMatrix { return undefined;}
 	/**
 	*  @param x
 	*  @param y
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function rotateFromVector(x:Number, y:Number):SVGMatrix { return null;}
+	public function rotateFromVector(x:Number, y:Number):SVGMatrix { return undefined;}
 	/**
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function flipX():SVGMatrix { return null;}
+	public function flipX():SVGMatrix { return undefined;}
 	/**
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function flipY():SVGMatrix { return null;}
-	/**
-	*  @param angle
-	*  @return A <code>SVGMatrix</code> instance.
-	*/
-	public function skewX(angle:Number):SVGMatrix { return null;}
+	public function flipY():SVGMatrix { return undefined;}
 	/**
 	*  @param angle
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function skewY(angle:Number):SVGMatrix { return null;}
+	public function skewX(angle:Number):SVGMatrix { return undefined;}
+	/**
+	*  @param angle
+	*  @return A <code>SVGMatrix</code> instance.
+	*/
+	public function skewY(angle:Number):SVGMatrix { return undefined;}
 }
 
 }

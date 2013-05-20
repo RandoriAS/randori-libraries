@@ -57,12 +57,12 @@ public class MessageChannel
 	/**
 	*  @see randori.webkit.dom.MessagePort
 	*/
-	public function get port1():MessagePort { return null; }
+	public function get port1():MessagePort { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.MessagePort
 	*/
-	public function get port2():MessagePort { return null; }
+	public function get port2():MessagePort { return undefined; }
 }
 
 }

@@ -51,7 +51,7 @@ package randori.webkit.modules.webaudio
 public class AudioDestinationNode extends AudioNode
 {
 
-	public function get maxChannelCount():uint { return 0; }
+	public function get maxChannelCount():uint { return undefined; }
 }
 
 }

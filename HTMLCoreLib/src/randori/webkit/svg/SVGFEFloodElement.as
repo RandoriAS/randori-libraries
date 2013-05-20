@@ -55,27 +55,27 @@ public class SVGFEFloodElement extends SVGStyledElement implements SVGFilterPrim
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get x():SVGAnimatedLength { return null; }
+	public function get x():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get y():SVGAnimatedLength { return null; }
+	public function get y():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get width():SVGAnimatedLength { return null; }
+	public function get width():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get height():SVGAnimatedLength { return null; }
+	public function get height():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get result():SVGAnimatedString { return null; }
+	public function get result():SVGAnimatedString { return undefined; }
 }
 
 }

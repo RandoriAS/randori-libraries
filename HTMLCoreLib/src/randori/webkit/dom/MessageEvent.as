@@ -52,18 +52,18 @@ import randori.webkit.page.Window;
 public class MessageEvent extends DomEvent
 {
 
-	public function get origin():String { return ''; }
+	public function get origin():String { return undefined; }
 
-	public function get lastEventId():String { return ''; }
+	public function get lastEventId():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.page.Window
 	*/
-	public function get source():Window { return null; }
+	public function get source():Window { return undefined; }
 
-	public function get data():* { return null; }
+	public function get data():* { return undefined; }
 
-	public function get ports():Array { return null; }
+	public function get ports():Array { return undefined; }
 	/**
 	*  @param typeArg (optional argument, default value is <code>undefined</code>)
 	*  @param canBubbleArg (optional argument, default value is <code>undefined</code>)

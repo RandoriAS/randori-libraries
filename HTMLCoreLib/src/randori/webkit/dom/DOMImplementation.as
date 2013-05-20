@@ -74,7 +74,7 @@ public class DOMImplementation
 	*  @return <p><code>true</code> if the feature is implemented in the
 	*  specified version, <code>false</code> otherwise.</p>
 	*/
-	public function hasFeature(feature:String=undefined, version:String=undefined):Boolean { return false;}
+	public function hasFeature(feature:String=undefined, version:String=undefined):Boolean { return undefined;}
 	/**
 	*  <p>Creates an empty <code>DocumentType</code> node. Entity
 	*  declarations and notations are not made available. Entity reference
@@ -92,7 +92,7 @@ public class DOMImplementation
 	*  contains an illegal character.</p><p>NAMESPACE_ERR: Raised if the <code>qualifiedName</code> is
 	*  malformed.</p>
 	*/
-	public function createDocumentType(qualifiedName:String=undefined, publicId:String=undefined, systemId:String=undefined):DocumentType { return null;}
+	public function createDocumentType(qualifiedName:String=undefined, publicId:String=undefined, systemId:String=undefined):DocumentType { return undefined;}
 	/**
 	*  <p>Creates an XML <code>Document</code> object of the specified type
 	*  with its document element. HTML-only DOM implementations do not need to
@@ -115,18 +115,18 @@ public class DOMImplementation
 	*  been used with a different document or was created from a different
 	*  implementation.</p>
 	*/
-	public function createDocument(namespaceURI:String=undefined, qualifiedName:String=undefined, doctype:DocumentType=undefined):Document { return null;}
+	public function createDocument(namespaceURI:String=undefined, qualifiedName:String=undefined, doctype:DocumentType=undefined):Document { return undefined;}
 	/**
 	*  @param title (optional argument, default value is <code>undefined</code>)
 	*  @param media (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>CSSStyleSheet</code> instance.
 	*/
-	public function createCSSStyleSheet(title:String=undefined, media:String=undefined):CSSStyleSheet { return null;}
+	public function createCSSStyleSheet(title:String=undefined, media:String=undefined):CSSStyleSheet { return undefined;}
 	/**
-	*  @param title (optional argument, default value is <code>null</code>)
+	*  @param title (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>HTMLDocument</code> instance.
 	*/
-	public function createHTMLDocument(title:String=null):HTMLDocument { return null;}
+	public function createHTMLDocument(title:String=undefined):HTMLDocument { return undefined;}
 }
 
 }

@@ -55,12 +55,12 @@ public class AudioProcessingEvent extends DomEvent
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioBuffer
 	*/
-	public function get inputBuffer():AudioBuffer { return null; }
+	public function get inputBuffer():AudioBuffer { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioBuffer
 	*/
-	public function get outputBuffer():AudioBuffer { return null; }
+	public function get outputBuffer():AudioBuffer { return undefined; }
 }
 
 }

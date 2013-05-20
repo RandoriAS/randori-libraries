@@ -54,7 +54,7 @@ public class MediaError
 	public static const MEDIA_ERR_DECODE:uint = 3;
 	public static const MEDIA_ERR_SRC_NOT_SUPPORTED:uint = 4;
 
-	public function get code():uint { return 0; }
+	public function get code():uint { return undefined; }
 }
 
 }

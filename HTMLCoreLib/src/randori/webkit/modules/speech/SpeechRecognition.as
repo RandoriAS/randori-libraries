@@ -58,19 +58,19 @@ public class SpeechRecognition
 	/**
 	*  @see randori.webkit.modules.speech.SpeechGrammarList
 	*/
-	public function get grammars():SpeechGrammarList { return null; }
+	public function get grammars():SpeechGrammarList { return undefined; }
 	public function set grammars(value:SpeechGrammarList):void { }
 
-	public function get lang():String { return ''; }
+	public function get lang():String { return undefined; }
 	public function set lang(value:String):void { }
 
-	public function get continuous():Boolean { return false; }
+	public function get continuous():Boolean { return undefined; }
 	public function set continuous(value:Boolean):void { }
 
-	public function get interimResults():Boolean { return false; }
+	public function get interimResults():Boolean { return undefined; }
 	public function set interimResults(value:Boolean):void { }
 
-	public function get maxAlternatives():uint { return 0; }
+	public function get maxAlternatives():uint { return undefined; }
 	public function set maxAlternatives(value:uint):void { }
 	public function start():void {}
 	public function stop():void {}
@@ -79,86 +79,86 @@ public class SpeechRecognition
 	/**
 	*  Function that accepts an event of type <code>AudiostartEvent</code>.
 	*/
-	public function get onaudiostart():Function { return null; }
+	public function get onaudiostart():Function { return undefined; }
 	public function set onaudiostart(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>SoundstartEvent</code>.
 	*/
-	public function get onsoundstart():Function { return null; }
+	public function get onsoundstart():Function { return undefined; }
 	public function set onsoundstart(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>SpeechstartEvent</code>.
 	*/
-	public function get onspeechstart():Function { return null; }
+	public function get onspeechstart():Function { return undefined; }
 	public function set onspeechstart(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>SpeechendEvent</code>.
 	*/
-	public function get onspeechend():Function { return null; }
+	public function get onspeechend():Function { return undefined; }
 	public function set onspeechend(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>SoundendEvent</code>.
 	*/
-	public function get onsoundend():Function { return null; }
+	public function get onsoundend():Function { return undefined; }
 	public function set onsoundend(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>AudioendEvent</code>.
 	*/
-	public function get onaudioend():Function { return null; }
+	public function get onaudioend():Function { return undefined; }
 	public function set onaudioend(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ResultEvent</code>.
 	*/
-	public function get onresult():Function { return null; }
+	public function get onresult():Function { return undefined; }
 	public function set onresult(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>NomatchEvent</code>.
 	*/
-	public function get onnomatch():Function { return null; }
+	public function get onnomatch():Function { return undefined; }
 	public function set onnomatch(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ErrorEvent</code>.
 	*  @see randori.webkit.dom.ErrorEvent
 	*/
-	public function get onerror():Function { return null; }
+	public function get onerror():Function { return undefined; }
 	public function set onerror(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>StartEvent</code>.
 	*/
-	public function get onstart():Function { return null; }
+	public function get onstart():Function { return undefined; }
 	public function set onstart(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>EndEvent</code>.
 	*/
-	public function get onend():Function { return null; }
+	public function get onend():Function { return undefined; }
 	public function set onend(value:Function):void { }
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param evt
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(evt:DomEvent):Boolean { return false;}
+	public function dispatchEvent(evt:DomEvent):Boolean { return undefined;}
 }
 
 }

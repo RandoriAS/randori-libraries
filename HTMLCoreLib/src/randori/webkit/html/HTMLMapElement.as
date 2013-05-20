@@ -59,9 +59,9 @@ public class HTMLMapElement extends HTMLElement
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get areas():HTMLCollection { return null; }
+	public function get areas():HTMLCollection { return undefined; }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 }
 

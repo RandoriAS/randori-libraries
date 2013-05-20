@@ -59,15 +59,15 @@ public class HTMLLabelElement extends HTMLElement
 	/**
 	*  @see randori.webkit.html.HTMLFormElement
 	*/
-	public function get form():HTMLFormElement { return null; }
+	public function get form():HTMLFormElement { return undefined; }
 
-	public function get htmlFor():String { return ''; }
+	public function get htmlFor():String { return undefined; }
 	public function set htmlFor(value:String):void { }
 
 	/**
 	*  @see randori.webkit.html.HTMLElement
 	*/
-	public function get control():HTMLElement { return null; }
+	public function get control():HTMLElement { return undefined; }
 }
 
 }

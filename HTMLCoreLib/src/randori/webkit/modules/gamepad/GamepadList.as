@@ -50,7 +50,7 @@ package randori.webkit.modules.gamepad
 public dynamic class GamepadList
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 }
 
 }

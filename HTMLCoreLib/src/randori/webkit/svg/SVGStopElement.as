@@ -54,7 +54,7 @@ public class SVGStopElement extends SVGStyledElement
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get offset():SVGAnimatedNumber { return null; }
+	public function get offset():SVGAnimatedNumber { return undefined; }
 }
 
 }

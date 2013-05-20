@@ -55,7 +55,7 @@ public class RTCDataChannelEvent extends DomEvent
 	/**
 	*  @see randori.webkit.modules.mediastream.RTCDataChannel
 	*/
-	public function get channel():RTCDataChannel { return null; }
+	public function get channel():RTCDataChannel { return undefined; }
 }
 
 }

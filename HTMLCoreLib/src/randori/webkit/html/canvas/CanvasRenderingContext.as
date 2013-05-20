@@ -54,7 +54,7 @@ public class CanvasRenderingContext
 	/**
 	*  @see randori.webkit.html.HTMLCanvasElement
 	*/
-	public function get canvas():HTMLCanvasElement { return null; }
+	public function get canvas():HTMLCanvasElement { return undefined; }
 }
 
 }

@@ -50,9 +50,9 @@ package randori.webkit.modules.filesystem
 public class Metadata
 {
 
-	public function get modificationTime():Object { return null; }
+	public function get modificationTime():Object { return undefined; }
 
-	public function get size():Number { return 0; }
+	public function get size():Number { return undefined; }
 }
 
 }

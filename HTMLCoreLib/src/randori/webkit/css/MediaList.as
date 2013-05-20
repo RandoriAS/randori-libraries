@@ -67,7 +67,7 @@ public dynamic class MediaList
 	*  comma-separated list of media.
 	*  </p>
 	*/
-	public function get mediaText():String { return ''; }
+	public function get mediaText():String { return undefined; }
 	public function set mediaText(value:String):void { }
 
 	/**
@@ -76,7 +76,7 @@ public dynamic class MediaList
 	*  <code>0</code> to <code>length-1</code> inclusive.
 	*  </p>
 	*/
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 	/**
 	*  <p>
 	*  Deletes the medium indicated by <code>oldMedium</code> from the list.

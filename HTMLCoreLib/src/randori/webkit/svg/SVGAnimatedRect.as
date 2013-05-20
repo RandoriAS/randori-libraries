@@ -53,12 +53,12 @@ public class SVGAnimatedRect
 	/**
 	*  @see randori.webkit.svg.SVGRect
 	*/
-	public function get baseVal():SVGRect { return null; }
+	public function get baseVal():SVGRect { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGRect
 	*/
-	public function get animVal():SVGRect { return null; }
+	public function get animVal():SVGRect { return undefined; }
 }
 
 }

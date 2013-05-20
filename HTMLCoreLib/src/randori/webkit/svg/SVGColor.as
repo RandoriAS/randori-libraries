@@ -57,12 +57,12 @@ public class SVGColor extends CSSValue
 	public static const SVG_COLORTYPE_RGBCOLOR_ICCCOLOR:uint = 2;
 	public static const SVG_COLORTYPE_CURRENTCOLOR:uint = 3;
 
-	public function get colorType():uint { return 0; }
+	public function get colorType():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.css.RGBColor
 	*/
-	public function get rgbColor():RGBColor { return null; }
+	public function get rgbColor():RGBColor { return undefined; }
 	/**
 	*  @param rgbColor
 	*/

@@ -67,35 +67,35 @@ public class MutationEvent extends DomEvent
 	*  </p>
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get relatedNode():Node { return null; }
+	public function get relatedNode():Node { return undefined; }
 
 	/**
 	*  <p><code>prevValue</code> indicates the previous value of the <code>Attr</code> node in
 	*  DOMAttrModified events, and of the <code>CharacterData</code> node in DOMCharDataModified events.
 	*  </p>
 	*/
-	public function get prevValue():String { return ''; }
+	public function get prevValue():String { return undefined; }
 
 	/**
 	*  <p><code>newValue</code> indicates the new value of the <code>Attr</code> node in DOMAttrModified
 	*  events, and of the <code>CharacterData</code> node in DOMCharDataModified events.
 	*  </p>
 	*/
-	public function get newValue():String { return ''; }
+	public function get newValue():String { return undefined; }
 
 	/**
 	*  <p><code>attrName</code> indicates the name of the changed <code>Attr</code> node in a
 	*  DOMAttrModified event.
 	*  </p>
 	*/
-	public function get attrName():String { return ''; }
+	public function get attrName():String { return undefined; }
 
 	/**
 	*  <p><code>attrChange</code> indicates the type of change which triggered the DOMAttrModified event.
 	*  The values can be <code>MODIFICATION</code>, <code>ADDITION</code>, or <code>REMOVAL</code>.
 	*  </p>
 	*/
-	public function get attrChange():uint { return 0; }
+	public function get attrChange():uint { return undefined; }
 	/**
 	*  <p>The <code>initMutationEvent</code> method is used to initialize the value of a <code>MutationEvent</code> created through
 	*  the <code>DocumentEvent</code> interface.  This method may only be called before the <code>MutationEvent</code> has

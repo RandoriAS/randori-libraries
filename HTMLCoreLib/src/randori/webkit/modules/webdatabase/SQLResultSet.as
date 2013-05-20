@@ -53,11 +53,11 @@ public class SQLResultSet
 	/**
 	*  @see randori.webkit.modules.webdatabase.SQLResultSetRowList
 	*/
-	public function get rows():SQLResultSetRowList { return null; }
+	public function get rows():SQLResultSetRowList { return undefined; }
 
-	public function get insertId():uint { return 0; }
+	public function get insertId():uint { return undefined; }
 
-	public function get rowsAffected():uint { return 0; }
+	public function get rowsAffected():uint { return undefined; }
 }
 
 }

@@ -56,37 +56,37 @@ public class HTMLAppletElement extends HTMLElement
 	*/
 	public function HTMLAppletElement() {super();}
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 
-	public function get alt():String { return ''; }
+	public function get alt():String { return undefined; }
 	public function set alt(value:String):void { }
 
-	public function get archive():String { return ''; }
+	public function get archive():String { return undefined; }
 	public function set archive(value:String):void { }
 
-	public function get code():String { return ''; }
+	public function get code():String { return undefined; }
 	public function set code(value:String):void { }
 
-	public function get codeBase():String { return ''; }
+	public function get codeBase():String { return undefined; }
 	public function set codeBase(value:String):void { }
 
-	public function get height():String { return ''; }
+	public function get height():String { return undefined; }
 	public function set height(value:String):void { }
 
-	public function get hspace():String { return ''; }
+	public function get hspace():String { return undefined; }
 	public function set hspace(value:String):void { }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 
-	public function get object():String { return ''; }
+	public function get object():String { return undefined; }
 	public function set object(value:String):void { }
 
-	public function get vspace():String { return ''; }
+	public function get vspace():String { return undefined; }
 	public function set vspace(value:String):void { }
 
-	public function get width():String { return ''; }
+	public function get width():String { return undefined; }
 	public function set width(value:String):void { }
 }
 

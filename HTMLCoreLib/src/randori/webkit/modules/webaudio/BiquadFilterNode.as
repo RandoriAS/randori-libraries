@@ -59,28 +59,28 @@ public class BiquadFilterNode extends AudioNode
 	public static const NOTCH:uint = 6;
 	public static const ALLPASS:uint = 7;
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get frequency():AudioParam { return null; }
+	public function get frequency():AudioParam { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get detune():AudioParam { return null; }
+	public function get detune():AudioParam { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get Q():AudioParam { return null; }
+	public function get Q():AudioParam { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get gain():AudioParam { return null; }
+	public function get gain():AudioParam { return undefined; }
 	/**
 	*  @param frequencyHz
 	*  @param magResponse

@@ -86,12 +86,12 @@ public class DocumentFragment extends Node
 	*  @param selectors
 	*  @return A <code>Element</code> instance.
 	*/
-	public function querySelector(selectors:String):Element { return null;}
+	public function querySelector(selectors:String):Element { return undefined;}
 	/**
 	*  @param selectors
 	*  @return A <code>NodeList</code> instance.
 	*/
-	public function querySelectorAll(selectors:String):NodeList { return null;}
+	public function querySelectorAll(selectors:String):NodeList { return undefined;}
 }
 
 }

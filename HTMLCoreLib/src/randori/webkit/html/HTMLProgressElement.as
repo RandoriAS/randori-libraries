@@ -57,18 +57,18 @@ public class HTMLProgressElement extends HTMLElement
 	*/
 	public function HTMLProgressElement() {super();}
 
-	public function get value():Number { return 0; }
+	public function get value():Number { return undefined; }
 	public function set value(value:Number):void { }
 
-	public function get max():Number { return 0; }
+	public function get max():Number { return undefined; }
 	public function set max(value:Number):void { }
 
-	public function get position():Number { return 0; }
+	public function get position():Number { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.NodeList
 	*/
-	public function get labels():NodeList { return null; }
+	public function get labels():NodeList { return undefined; }
 }
 
 }

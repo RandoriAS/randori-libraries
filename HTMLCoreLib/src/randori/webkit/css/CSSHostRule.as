@@ -55,13 +55,13 @@ public class CSSHostRule extends CSSRule
 	/**
 	*  @see randori.webkit.css.CSSRuleList
 	*/
-	public function get cssRules():CSSRuleList { return null; }
+	public function get cssRules():CSSRuleList { return undefined; }
 	/**
 	*  @param rule (optional argument, default value is <code>undefined</code>)
 	*  @param index (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>uint</code> instance.
 	*/
-	public function insertRule(rule:String=undefined, index:uint=undefined):uint { return 0;}
+	public function insertRule(rule:String=undefined, index:uint=undefined):uint { return undefined;}
 	/**
 	*  @param index (optional argument, default value is <code>undefined</code>)
 	*/

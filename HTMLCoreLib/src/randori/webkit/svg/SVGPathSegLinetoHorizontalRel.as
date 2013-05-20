@@ -51,7 +51,7 @@ package randori.webkit.svg
 public class SVGPathSegLinetoHorizontalRel extends SVGPathSeg
 {
 
-	public function get x():Number { return 0; }
+	public function get x():Number { return undefined; }
 	public function set x(value:Number):void { }
 }
 

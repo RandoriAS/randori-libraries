@@ -50,12 +50,12 @@ package randori.webkit.html
 public dynamic class DOMTokenList
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 	/**
 	*  @param token
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function contains(token:String):Boolean { return false;}
+	public function contains(token:String):Boolean { return undefined;}
 	/**
 	*  @param tokens
 	*/
@@ -66,14 +66,14 @@ public dynamic class DOMTokenList
 	public function remove(...params):void {}
 	/**
 	*  @param token
-	*  @param force (optional argument, default value is <code>false</code>)
+	*  @param force (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function toggle(token:String, force:Boolean=false):Boolean { return false;}
+	public function toggle(token:String, force:Boolean=undefined):Boolean { return undefined;}
 	/**
 	*  @return A <code>String</code> instance.
 	*/
-	public function toString():String { return '';}
+	public function toString():String { return undefined;}
 }
 
 }

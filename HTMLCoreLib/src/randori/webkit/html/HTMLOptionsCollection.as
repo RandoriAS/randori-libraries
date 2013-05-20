@@ -51,13 +51,13 @@ package randori.webkit.html
 public class HTMLOptionsCollection extends HTMLCollection
 {
 
-	public function get selectedIndex():uint { return 0; }
+	public function get selectedIndex():uint { return undefined; }
 	public function set selectedIndex(value:uint):void { }
 	/**
 	*  @param option (optional argument, default value is <code>undefined</code>)
-	*  @param index (optional argument, default value is <code>0</code>)
+	*  @param index (optional argument, default value is <code>undefined</code>)
 	*/
-	public function add(option:HTMLOptionElement=undefined, index:uint=0):void {}
+	public function add(option:HTMLOptionElement=undefined, index:uint=undefined):void {}
 	/**
 	*  @param index (optional argument, default value is <code>undefined</code>)
 	*/

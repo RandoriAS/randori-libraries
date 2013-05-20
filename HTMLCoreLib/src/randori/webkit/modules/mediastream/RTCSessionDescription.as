@@ -55,10 +55,10 @@ public class RTCSessionDescription
 	*/
 	public function RTCSessionDescription(dictionary:Object) {super();}
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 
-	public function get sdp():String { return ''; }
+	public function get sdp():String { return undefined; }
 	public function set sdp(value:String):void { }
 }
 

@@ -65,7 +65,7 @@ public dynamic class CSSValueList extends CSSValue
 	*  values of the indices is <code>0</code> to <code>length-1</code>
 	*  inclusive.</p>
 	*/
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 }
 
 }

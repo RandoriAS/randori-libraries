@@ -53,22 +53,22 @@ public class NotificationCenter
 	*  @param url
 	*  @return A <code>Notification</code> instance.
 	*/
-	public function createHTMLNotification(url:String):Notification { return null;}
+	public function createHTMLNotification(url:String):Notification { return undefined;}
 	/**
 	*  @param iconUrl
 	*  @param title
 	*  @param body
 	*  @return A <code>Notification</code> instance.
 	*/
-	public function createNotification(iconUrl:String, title:String, body:String):Notification { return null;}
+	public function createNotification(iconUrl:String, title:String, body:String):Notification { return undefined;}
 	/**
 	*  @return A <code>int</code> instance.
 	*/
-	public function checkPermission():int { return 0;}
+	public function checkPermission():int { return undefined;}
 	/**
-	*  @param callback (optional argument, default value is <code>null</code>)
+	*  @param callback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function requestPermission(callback:Object=null):void {}
+	public function requestPermission(callback:Object=undefined):void {}
 }
 
 }

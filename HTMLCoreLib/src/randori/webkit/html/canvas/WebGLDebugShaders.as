@@ -53,7 +53,7 @@ public class WebGLDebugShaders
 	*  @param shader
 	*  @return A <code>String</code> instance.
 	*/
-	public function getTranslatedShaderSource(shader:WebGLShader):String { return '';}
+	public function getTranslatedShaderSource(shader:WebGLShader):String { return undefined;}
 }
 
 }

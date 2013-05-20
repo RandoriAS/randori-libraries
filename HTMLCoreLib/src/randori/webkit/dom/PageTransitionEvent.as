@@ -51,7 +51,7 @@ package randori.webkit.dom
 public class PageTransitionEvent extends DomEvent
 {
 
-	public function get persisted():Boolean { return false; }
+	public function get persisted():Boolean { return undefined; }
 }
 
 }

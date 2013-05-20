@@ -57,28 +57,28 @@ public class HTMLMeterElement extends HTMLElement
 	*/
 	public function HTMLMeterElement() {super();}
 
-	public function get value():Number { return 0; }
+	public function get value():Number { return undefined; }
 	public function set value(value:Number):void { }
 
-	public function get min():Number { return 0; }
+	public function get min():Number { return undefined; }
 	public function set min(value:Number):void { }
 
-	public function get max():Number { return 0; }
+	public function get max():Number { return undefined; }
 	public function set max(value:Number):void { }
 
-	public function get low():Number { return 0; }
+	public function get low():Number { return undefined; }
 	public function set low(value:Number):void { }
 
-	public function get high():Number { return 0; }
+	public function get high():Number { return undefined; }
 	public function set high(value:Number):void { }
 
-	public function get optimum():Number { return 0; }
+	public function get optimum():Number { return undefined; }
 	public function set optimum(value:Number):void { }
 
 	/**
 	*  @see randori.webkit.dom.NodeList
 	*/
-	public function get labels():NodeList { return null; }
+	public function get labels():NodeList { return undefined; }
 }
 
 }

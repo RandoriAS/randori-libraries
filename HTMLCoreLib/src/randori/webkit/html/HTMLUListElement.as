@@ -56,10 +56,10 @@ public class HTMLUListElement extends HTMLElement
 	*/
 	public function HTMLUListElement() {super();}
 
-	public function get compact():Boolean { return false; }
+	public function get compact():Boolean { return undefined; }
 	public function set compact(value:Boolean):void { }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 }
 

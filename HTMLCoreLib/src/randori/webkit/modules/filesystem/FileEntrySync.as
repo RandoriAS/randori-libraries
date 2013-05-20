@@ -54,11 +54,11 @@ public class FileEntrySync extends EntrySync
 	/**
 	*  @return A <code>File</code> instance.
 	*/
-	public function file():File { return null;}
+	public function file():File { return undefined;}
 	/**
 	*  @return A <code>FileWriterSync</code> instance.
 	*/
-	public function createWriter():FileWriterSync { return null;}
+	public function createWriter():FileWriterSync { return undefined;}
 }
 
 }

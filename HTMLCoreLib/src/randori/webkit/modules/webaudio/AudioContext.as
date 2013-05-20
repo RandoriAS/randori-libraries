@@ -54,100 +54,108 @@ public class AudioContext
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioDestinationNode
 	*/
-	public function get destination():AudioDestinationNode { return null; }
+	public function get destination():AudioDestinationNode { return undefined; }
 
-	public function get currentTime():Number { return 0; }
+	public function get currentTime():Number { return undefined; }
 
-	public function get sampleRate():Number { return 0; }
+	public function get sampleRate():Number { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioListener
 	*/
-	public function get listener():AudioListener { return null; }
+	public function get listener():AudioListener { return undefined; }
 
-	public function get activeSourceCount():uint { return 0; }
+	public function get activeSourceCount():uint { return undefined; }
+	[JavaScriptMethod(name="createBuffer")]
 	/**
 	*  @param numberOfChannels
 	*  @param numberOfFrames
 	*  @param sampleRate
 	*  @return A <code>AudioBuffer</code> instance.
 	*/
-	public function createBuffer(numberOfChannels:uint, numberOfFrames:uint, sampleRate:Number):AudioBuffer { return null;}
+	public function createBuffer1(numberOfChannels:uint, numberOfFrames:uint, sampleRate:Number):AudioBuffer { return undefined;}
+	[JavaScriptMethod(name="createBuffer")]
+	/**
+	*  @param buffer
+	*  @param mixToMono
+	*  @return A <code>AudioBuffer</code> instance.
+	*/
+	public function createBuffer2(buffer:ArrayBuffer, mixToMono:Boolean):AudioBuffer { return undefined;}
 	/**
 	*  @param audioData
-	*  @param successCallback
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param successCallback (optional argument, default value is <code>undefined</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function decodeAudioData(audioData:ArrayBuffer, successCallback:Object, errorCallback:Object=null):void {}
+	public function decodeAudioData(audioData:ArrayBuffer, successCallback:Object=undefined, errorCallback:Object=undefined):void {}
 	/**
 	*  @return A <code>AudioBufferSourceNode</code> instance.
 	*/
-	public function createBufferSource():AudioBufferSourceNode { return null;}
+	public function createBufferSource():AudioBufferSourceNode { return undefined;}
 	/**
 	*  @return A <code>GainNode</code> instance.
 	*/
-	public function createGain():GainNode { return null;}
+	public function createGain():GainNode { return undefined;}
 	/**
-	*  @param maxDelayTime (optional argument, default value is <code>0</code>)
+	*  @param maxDelayTime (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>DelayNode</code> instance.
 	*/
-	public function createDelay(maxDelayTime:Number=0):DelayNode { return null;}
+	public function createDelay(maxDelayTime:Number=undefined):DelayNode { return undefined;}
 	/**
 	*  @return A <code>BiquadFilterNode</code> instance.
 	*/
-	public function createBiquadFilter():BiquadFilterNode { return null;}
+	public function createBiquadFilter():BiquadFilterNode { return undefined;}
 	/**
 	*  @return A <code>WaveShaperNode</code> instance.
 	*/
-	public function createWaveShaper():WaveShaperNode { return null;}
+	public function createWaveShaper():WaveShaperNode { return undefined;}
 	/**
 	*  @return A <code>PannerNode</code> instance.
 	*/
-	public function createPanner():PannerNode { return null;}
+	public function createPanner():PannerNode { return undefined;}
 	/**
 	*  @return A <code>ConvolverNode</code> instance.
 	*/
-	public function createConvolver():ConvolverNode { return null;}
+	public function createConvolver():ConvolverNode { return undefined;}
 	/**
 	*  @return A <code>DynamicsCompressorNode</code> instance.
 	*/
-	public function createDynamicsCompressor():DynamicsCompressorNode { return null;}
+	public function createDynamicsCompressor():DynamicsCompressorNode { return undefined;}
 	/**
 	*  @return A <code>AnalyserNode</code> instance.
 	*/
-	public function createAnalyser():AnalyserNode { return null;}
+	public function createAnalyser():AnalyserNode { return undefined;}
 	/**
 	*  @param bufferSize
-	*  @param numberOfInputChannels (optional argument, default value is <code>0</code>)
-	*  @param numberOfOutputChannels (optional argument, default value is <code>0</code>)
+	*  @param numberOfInputChannels (optional argument, default value is <code>undefined</code>)
+	*  @param numberOfOutputChannels (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>ScriptProcessorNode</code> instance.
 	*/
-	public function createScriptProcessor(bufferSize:uint, numberOfInputChannels:uint=0, numberOfOutputChannels:uint=0):ScriptProcessorNode { return null;}
+	public function createScriptProcessor(bufferSize:uint, numberOfInputChannels:uint=undefined, numberOfOutputChannels:uint=undefined):ScriptProcessorNode { return undefined;}
 	/**
 	*  @return A <code>OscillatorNode</code> instance.
 	*/
-	public function createOscillator():OscillatorNode { return null;}
+	public function createOscillator():OscillatorNode { return undefined;}
 	/**
 	*  @param real
 	*  @param imag
 	*  @return A <code>WaveTable</code> instance.
 	*/
-	public function createWaveTable(real:Object, imag:Object):WaveTable { return null;}
+	public function createWaveTable(real:Object, imag:Object):WaveTable { return undefined;}
 	/**
-	*  @param numberOfOutputs (optional argument, default value is <code>0</code>)
+	*  @param numberOfOutputs (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>ChannelSplitterNode</code> instance.
 	*/
-	public function createChannelSplitter(numberOfOutputs:uint=0):ChannelSplitterNode { return null;}
+	public function createChannelSplitter(numberOfOutputs:uint=undefined):ChannelSplitterNode { return undefined;}
 	/**
-	*  @param numberOfInputs (optional argument, default value is <code>0</code>)
+	*  @param numberOfInputs (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>ChannelMergerNode</code> instance.
 	*/
-	public function createChannelMerger(numberOfInputs:uint=0):ChannelMergerNode { return null;}
+	public function createChannelMerger(numberOfInputs:uint=undefined):ChannelMergerNode { return undefined;}
 
 	/**
 	*  Function that accepts an event of type <code>CompleteEvent</code>.
 	*/
-	public function get oncomplete():Function { return null; }
+	public function get oncomplete():Function { return undefined; }
 	public function set oncomplete(value:Function):void { }
 	public function startRendering():void {}
 }

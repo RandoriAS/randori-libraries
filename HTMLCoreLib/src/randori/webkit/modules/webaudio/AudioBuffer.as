@@ -50,21 +50,21 @@ package randori.webkit.modules.webaudio
 public class AudioBuffer
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 
-	public function get duration():Number { return 0; }
+	public function get duration():Number { return undefined; }
 
-	public function get sampleRate():Number { return 0; }
+	public function get sampleRate():Number { return undefined; }
 
-	public function get gain():Number { return 0; }
+	public function get gain():Number { return undefined; }
 	public function set gain(value:Number):void { }
 
-	public function get numberOfChannels():uint { return 0; }
+	public function get numberOfChannels():uint { return undefined; }
 	/**
 	*  @param channelIndex
 	*  @return A <code>Float32Array</code> instance.
 	*/
-	public function getChannelData(channelIndex:uint):Object { return null;}
+	public function getChannelData(channelIndex:uint):Object { return undefined;}
 }
 
 }

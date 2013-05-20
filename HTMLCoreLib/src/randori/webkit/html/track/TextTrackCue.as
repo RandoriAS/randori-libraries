@@ -62,73 +62,73 @@ public class TextTrackCue
 	/**
 	*  @see randori.webkit.html.track.TextTrack
 	*/
-	public function get track():TextTrack { return null; }
+	public function get track():TextTrack { return undefined; }
 
-	public function get id():String { return ''; }
+	public function get id():String { return undefined; }
 	public function set id(value:String):void { }
 
-	public function get startTime():Number { return 0; }
+	public function get startTime():Number { return undefined; }
 	public function set startTime(value:Number):void { }
 
-	public function get endTime():Number { return 0; }
+	public function get endTime():Number { return undefined; }
 	public function set endTime(value:Number):void { }
 
-	public function get pauseOnExit():Boolean { return false; }
+	public function get pauseOnExit():Boolean { return undefined; }
 	public function set pauseOnExit(value:Boolean):void { }
 
-	public function get vertical():String { return ''; }
+	public function get vertical():String { return undefined; }
 	public function set vertical(value:String):void { }
 
-	public function get snapToLines():Boolean { return false; }
+	public function get snapToLines():Boolean { return undefined; }
 	public function set snapToLines(value:Boolean):void { }
 
-	public function get line():uint { return 0; }
+	public function get line():uint { return undefined; }
 	public function set line(value:uint):void { }
 
-	public function get position():uint { return 0; }
+	public function get position():uint { return undefined; }
 	public function set position(value:uint):void { }
 
-	public function get size():uint { return 0; }
+	public function get size():uint { return undefined; }
 	public function set size(value:uint):void { }
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 
-	public function get text():String { return ''; }
+	public function get text():String { return undefined; }
 	public function set text(value:String):void { }
 	/**
 	*  @return A <code>DocumentFragment</code> instance.
 	*/
-	public function getCueAsHTML():DocumentFragment { return null;}
+	public function getCueAsHTML():DocumentFragment { return undefined;}
 
 	/**
 	*  Function that accepts an event of type <code>EnterEvent</code>.
 	*/
-	public function get onenter():Function { return null; }
+	public function get onenter():Function { return undefined; }
 	public function set onenter(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ExitEvent</code>.
 	*/
-	public function get onexit():Function { return null; }
+	public function get onexit():Function { return undefined; }
 	public function set onexit(value:Function):void { }
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param evt
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(evt:DomEvent):Boolean { return false;}
+	public function dispatchEvent(evt:DomEvent):Boolean { return undefined;}
 }
 
 }

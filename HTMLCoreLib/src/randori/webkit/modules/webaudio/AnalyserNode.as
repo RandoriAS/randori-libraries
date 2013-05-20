@@ -51,18 +51,18 @@ package randori.webkit.modules.webaudio
 public class AnalyserNode extends AudioNode
 {
 
-	public function get fftSize():uint { return 0; }
+	public function get fftSize():uint { return undefined; }
 	public function set fftSize(value:uint):void { }
 
-	public function get frequencyBinCount():uint { return 0; }
+	public function get frequencyBinCount():uint { return undefined; }
 
-	public function get minDecibels():Number { return 0; }
+	public function get minDecibels():Number { return undefined; }
 	public function set minDecibels(value:Number):void { }
 
-	public function get maxDecibels():Number { return 0; }
+	public function get maxDecibels():Number { return undefined; }
 	public function set maxDecibels(value:Number):void { }
 
-	public function get smoothingTimeConstant():Number { return 0; }
+	public function get smoothingTimeConstant():Number { return undefined; }
 	public function set smoothingTimeConstant(value:Number):void { }
 	/**
 	*  @param array

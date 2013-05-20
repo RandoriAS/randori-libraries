@@ -61,12 +61,12 @@ public class SVGMPathElement extends SVGElement implements SVGURIReference, SVGE
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get href():SVGAnimatedString { return null; }
+	public function get href():SVGAnimatedString { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedBoolean
 	*/
-	public function get externalResourcesRequired():SVGAnimatedBoolean { return null; }
+	public function get externalResourcesRequired():SVGAnimatedBoolean { return undefined; }
 }
 
 }

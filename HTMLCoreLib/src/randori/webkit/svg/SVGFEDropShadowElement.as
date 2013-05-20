@@ -55,27 +55,27 @@ public class SVGFEDropShadowElement extends SVGStyledElement implements SVGFilte
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get in1():SVGAnimatedString { return null; }
+	public function get in1():SVGAnimatedString { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get dx():SVGAnimatedNumber { return null; }
+	public function get dx():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get dy():SVGAnimatedNumber { return null; }
+	public function get dy():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get stdDeviationX():SVGAnimatedNumber { return null; }
+	public function get stdDeviationX():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get stdDeviationY():SVGAnimatedNumber { return null; }
+	public function get stdDeviationY():SVGAnimatedNumber { return undefined; }
 	/**
 	*  @param stdDeviationX (optional argument, default value is <code>undefined</code>)
 	*  @param stdDeviationY (optional argument, default value is <code>undefined</code>)
@@ -85,27 +85,27 @@ public class SVGFEDropShadowElement extends SVGStyledElement implements SVGFilte
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get x():SVGAnimatedLength { return null; }
+	public function get x():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get y():SVGAnimatedLength { return null; }
+	public function get y():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get width():SVGAnimatedLength { return null; }
+	public function get width():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get height():SVGAnimatedLength { return null; }
+	public function get height():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get result():SVGAnimatedString { return null; }
+	public function get result():SVGAnimatedString { return undefined; }
 }
 
 }

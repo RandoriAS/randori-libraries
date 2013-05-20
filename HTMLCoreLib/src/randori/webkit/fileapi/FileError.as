@@ -62,7 +62,7 @@ public class FileError
 	public static const TYPE_MISMATCH_ERR:uint = 11;
 	public static const PATH_EXISTS_ERR:uint = 12;
 
-	public function get code():uint { return 0; }
+	public function get code():uint { return undefined; }
 }
 
 }

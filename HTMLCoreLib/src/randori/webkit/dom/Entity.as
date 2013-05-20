@@ -84,20 +84,20 @@ public class Entity extends Node
 	*  specified. If the public identifier was not specified, this
 	*  is <code>null</code>.</p>
 	*/
-	public function get publicId():String { return ''; }
+	public function get publicId():String { return undefined; }
 
 	/**
 	*  <p>The system identifier associated with the entity, if
 	*  specified. If the system identifier was not specified, this
 	*  is <code>null</code>.</p>
 	*/
-	public function get systemId():String { return ''; }
+	public function get systemId():String { return undefined; }
 
 	/**
 	*  <p>For unparsed entities, the name of the notation for the
 	*  entity. For parsed entities, this is <code>null</code>. </p>
 	*/
-	public function get notationName():String { return ''; }
+	public function get notationName():String { return undefined; }
 }
 
 }

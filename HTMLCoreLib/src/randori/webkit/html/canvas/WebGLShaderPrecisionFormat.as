@@ -50,11 +50,11 @@ package randori.webkit.html.canvas
 public class WebGLShaderPrecisionFormat
 {
 
-	public function get rangeMin():uint { return 0; }
+	public function get rangeMin():uint { return undefined; }
 
-	public function get rangeMax():uint { return 0; }
+	public function get rangeMax():uint { return undefined; }
 
-	public function get precision():uint { return 0; }
+	public function get precision():uint { return undefined; }
 }
 
 }

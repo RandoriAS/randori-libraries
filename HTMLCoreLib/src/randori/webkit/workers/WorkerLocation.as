@@ -50,25 +50,25 @@ package randori.webkit.workers
 public class WorkerLocation
 {
 
-	public function get href():String { return ''; }
+	public function get href():String { return undefined; }
 
-	public function get protocol():String { return ''; }
+	public function get protocol():String { return undefined; }
 
-	public function get host():String { return ''; }
+	public function get host():String { return undefined; }
 
-	public function get hostname():String { return ''; }
+	public function get hostname():String { return undefined; }
 
-	public function get port():String { return ''; }
+	public function get port():String { return undefined; }
 
-	public function get pathname():String { return ''; }
+	public function get pathname():String { return undefined; }
 
-	public function get search():String { return ''; }
+	public function get search():String { return undefined; }
 
-	public function get hash():String { return ''; }
+	public function get hash():String { return undefined; }
 	/**
 	*  @return A <code>String</code> instance.
 	*/
-	public function toString():String { return '';}
+	public function toString():String { return undefined;}
 }
 
 }

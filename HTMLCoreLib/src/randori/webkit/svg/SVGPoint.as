@@ -50,16 +50,16 @@ package randori.webkit.svg
 public class SVGPoint
 {
 
-	public function get x():Number { return 0; }
+	public function get x():Number { return undefined; }
 	public function set x(value:Number):void { }
 
-	public function get y():Number { return 0; }
+	public function get y():Number { return undefined; }
 	public function set y(value:Number):void { }
 	/**
 	*  @param matrix
 	*  @return A <code>SVGPoint</code> instance.
 	*/
-	public function matrixTransform(matrix:SVGMatrix):SVGPoint { return null;}
+	public function matrixTransform(matrix:SVGMatrix):SVGPoint { return undefined;}
 }
 
 }

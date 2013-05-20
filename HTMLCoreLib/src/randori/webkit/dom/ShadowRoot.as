@@ -56,47 +56,47 @@ public class ShadowRoot extends DocumentFragment
 	/**
 	*  @see randori.webkit.dom.Element
 	*/
-	public function get activeElement():Element { return null; }
+	public function get activeElement():Element { return undefined; }
 
-	public function get applyAuthorStyles():Boolean { return false; }
+	public function get applyAuthorStyles():Boolean { return undefined; }
 	public function set applyAuthorStyles(value:Boolean):void { }
 
-	public function get resetStyleInheritance():Boolean { return false; }
+	public function get resetStyleInheritance():Boolean { return undefined; }
 	public function set resetStyleInheritance(value:Boolean):void { }
 
-	public function get innerHTML():String { return ''; }
+	public function get innerHTML():String { return undefined; }
 	public function set innerHTML(value:String):void { }
 	/**
 	*  @return A <code>Selection</code> instance.
 	*/
-	public function getSelection():Selection { return null;}
+	public function getSelection():Selection { return undefined;}
 	/**
 	*  @param elementId (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Element</code> instance.
 	*/
-	public function getElementById(elementId:String=undefined):Element { return null;}
+	public function getElementById(elementId:String=undefined):Element { return undefined;}
 	/**
 	*  @param className (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>NodeList</code> instance.
 	*/
-	public function getElementsByClassName(className:String=undefined):NodeList { return null;}
+	public function getElementsByClassName(className:String=undefined):NodeList { return undefined;}
 	/**
 	*  @param tagName (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>NodeList</code> instance.
 	*/
-	public function getElementsByTagName(tagName:String=undefined):NodeList { return null;}
+	public function getElementsByTagName(tagName:String=undefined):NodeList { return undefined;}
 	/**
 	*  @param namespaceURI (optional argument, default value is <code>undefined</code>)
 	*  @param localName (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>NodeList</code> instance.
 	*/
-	public function getElementsByTagNameNS(namespaceURI:String=undefined, localName:String=undefined):NodeList { return null;}
+	public function getElementsByTagNameNS(namespaceURI:String=undefined, localName:String=undefined):NodeList { return undefined;}
 	/**
 	*  @param x (optional argument, default value is <code>undefined</code>)
 	*  @param y (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Element</code> instance.
 	*/
-	public function elementFromPoint(x:uint=undefined, y:uint=undefined):Element { return null;}
+	public function elementFromPoint(x:uint=undefined, y:uint=undefined):Element { return undefined;}
 }
 
 }

@@ -60,7 +60,7 @@ public class HTMLTemplateElement extends HTMLElement
 	/**
 	*  @see randori.webkit.dom.DocumentFragment
 	*/
-	public function get content():DocumentFragment { return null; }
+	public function get content():DocumentFragment { return undefined; }
 }
 
 }

@@ -52,7 +52,7 @@ import randori.webkit.dom.NodeList;
 public class RadioNodeList extends NodeList
 {
 
-	public function get value():String { return ''; }
+	public function get value():String { return undefined; }
 	public function set value(value:String):void { }
 }
 

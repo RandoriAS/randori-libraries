@@ -57,14 +57,14 @@ public class SVGTransform
 	public static const SVG_TRANSFORM_SKEWX:uint = 5;
 	public static const SVG_TRANSFORM_SKEWY:uint = 6;
 
-	public function get type():uint { return 0; }
+	public function get type():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGMatrix
 	*/
-	public function get matrix():SVGMatrix { return null; }
+	public function get matrix():SVGMatrix { return undefined; }
 
-	public function get angle():Number { return 0; }
+	public function get angle():Number { return undefined; }
 	/**
 	*  @param matrix
 	*/

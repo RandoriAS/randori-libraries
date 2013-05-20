@@ -53,12 +53,12 @@ public class SVGAnimatedAngle
 	/**
 	*  @see randori.webkit.svg.SVGAngle
 	*/
-	public function get baseVal():SVGAngle { return null; }
+	public function get baseVal():SVGAngle { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAngle
 	*/
-	public function get animVal():SVGAngle { return null; }
+	public function get animVal():SVGAngle { return undefined; }
 }
 
 }

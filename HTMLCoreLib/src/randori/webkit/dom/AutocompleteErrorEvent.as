@@ -52,7 +52,7 @@ package randori.webkit.dom
 public class AutocompleteErrorEvent extends DomEvent
 {
 
-	public function get reason():String { return ''; }
+	public function get reason():String { return undefined; }
 }
 
 }

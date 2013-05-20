@@ -56,16 +56,16 @@ public class HTMLHRElement extends HTMLElement
 	*/
 	public function HTMLHRElement() {super();}
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 
-	public function get noShade():Boolean { return false; }
+	public function get noShade():Boolean { return undefined; }
 	public function set noShade(value:Boolean):void { }
 
-	public function get size():String { return ''; }
+	public function get size():String { return undefined; }
 	public function set size(value:String):void { }
 
-	public function get width():String { return ''; }
+	public function get width():String { return undefined; }
 	public function set width(value:String):void { }
 }
 

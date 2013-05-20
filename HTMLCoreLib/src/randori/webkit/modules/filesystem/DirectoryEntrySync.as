@@ -53,19 +53,19 @@ public class DirectoryEntrySync extends EntrySync
 	/**
 	*  @return A <code>DirectoryReaderSync</code> instance.
 	*/
-	public function createReader():DirectoryReaderSync { return null;}
+	public function createReader():DirectoryReaderSync { return undefined;}
 	/**
 	*  @param path
 	*  @param flags
 	*  @return A <code>FileEntrySync</code> instance.
 	*/
-	public function getFile(path:String, flags:Object):FileEntrySync { return null;}
+	public function getFile(path:String, flags:Object):FileEntrySync { return undefined;}
 	/**
 	*  @param path
 	*  @param flags
 	*  @return A <code>DirectoryEntrySync</code> instance.
 	*/
-	public function getDirectory(path:String, flags:Object):DirectoryEntrySync { return null;}
+	public function getDirectory(path:String, flags:Object):DirectoryEntrySync { return undefined;}
 	public function removeRecursively():void {}
 }
 

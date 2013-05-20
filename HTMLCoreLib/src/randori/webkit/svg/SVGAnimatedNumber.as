@@ -50,10 +50,10 @@ package randori.webkit.svg
 public class SVGAnimatedNumber
 {
 
-	public function get baseVal():Number { return 0; }
+	public function get baseVal():Number { return undefined; }
 	public function set baseVal(value:Number):void { }
 
-	public function get animVal():Number { return 0; }
+	public function get animVal():Number { return undefined; }
 }
 
 }

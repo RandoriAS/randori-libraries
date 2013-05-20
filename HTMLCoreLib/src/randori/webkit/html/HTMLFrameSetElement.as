@@ -56,74 +56,74 @@ public class HTMLFrameSetElement extends HTMLElement
 	*/
 	public function HTMLFrameSetElement() {super();}
 
-	public function get cols():String { return ''; }
+	public function get cols():String { return undefined; }
 	public function set cols(value:String):void { }
 
-	public function get rows():String { return ''; }
+	public function get rows():String { return undefined; }
 	public function set rows(value:String):void { }
 
 	/**
 	*  Function that accepts an event of type <code>BeforeunloadEvent</code>.
 	*/
-	public function get onbeforeunload():Function { return null; }
+	public function get onbeforeunload():Function { return undefined; }
 	public function set onbeforeunload(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>HashchangeEvent</code>.
 	*  @see randori.webkit.dom.HashChangeEvent
 	*/
-	public function get onhashchange():Function { return null; }
+	public function get onhashchange():Function { return undefined; }
 	public function set onhashchange(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>MessageEvent</code>.
 	*  @see randori.webkit.dom.MessageEvent
 	*/
-	public function get onmessage():Function { return null; }
+	public function get onmessage():Function { return undefined; }
 	public function set onmessage(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>OfflineEvent</code>.
 	*/
-	public function get onoffline():Function { return null; }
+	public function get onoffline():Function { return undefined; }
 	public function set onoffline(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>OnlineEvent</code>.
 	*/
-	public function get ononline():Function { return null; }
+	public function get ononline():Function { return undefined; }
 	public function set ononline(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>PopstateEvent</code>.
 	*  @see randori.webkit.dom.PopStateEvent
 	*/
-	public function get onpopstate():Function { return null; }
+	public function get onpopstate():Function { return undefined; }
 	public function set onpopstate(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ResizeEvent</code>.
 	*/
-	public function get onresize():Function { return null; }
+	public function get onresize():Function { return undefined; }
 	public function set onresize(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>StorageEvent</code>.
 	*  @see randori.webkit.storage.StorageEvent
 	*/
-	public function get onstorage():Function { return null; }
+	public function get onstorage():Function { return undefined; }
 	public function set onstorage(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>UnloadEvent</code>.
 	*/
-	public function get onunload():Function { return null; }
+	public function get onunload():Function { return undefined; }
 	public function set onunload(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>OrientationchangeEvent</code>.
 	*/
-	public function get onorientationchange():Function { return null; }
+	public function get onorientationchange():Function { return undefined; }
 	public function set onorientationchange(value:Function):void { }
 }
 

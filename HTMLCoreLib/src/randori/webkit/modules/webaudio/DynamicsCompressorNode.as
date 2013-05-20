@@ -54,32 +54,32 @@ public class DynamicsCompressorNode extends AudioNode
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get threshold():AudioParam { return null; }
+	public function get threshold():AudioParam { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get knee():AudioParam { return null; }
+	public function get knee():AudioParam { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get ratio():AudioParam { return null; }
+	public function get ratio():AudioParam { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get reduction():AudioParam { return null; }
+	public function get reduction():AudioParam { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get attack():AudioParam { return null; }
+	public function get attack():AudioParam { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get release():AudioParam { return null; }
+	public function get release():AudioParam { return undefined; }
 }
 
 }

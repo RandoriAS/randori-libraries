@@ -52,9 +52,9 @@ import randori.webkit.dom.DomEvent;
 public class SpeechRecognitionError extends DomEvent
 {
 
-	public function get error():String { return ''; }
+	public function get error():String { return undefined; }
 
-	public function get message():String { return ''; }
+	public function get message():String { return undefined; }
 }
 
 }

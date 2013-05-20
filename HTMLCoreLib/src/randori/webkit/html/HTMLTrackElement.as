@@ -57,32 +57,32 @@ public class HTMLTrackElement extends HTMLElement
 	*/
 	public function HTMLTrackElement() {super();}
 
-	public function get kind():String { return ''; }
+	public function get kind():String { return undefined; }
 	public function set kind(value:String):void { }
 
-	public function get src():String { return ''; }
+	public function get src():String { return undefined; }
 	public function set src(value:String):void { }
 
-	public function get srclang():String { return ''; }
+	public function get srclang():String { return undefined; }
 	public function set srclang(value:String):void { }
 
-	public function get label():String { return ''; }
+	public function get label():String { return undefined; }
 	public function set label(value:String):void { }
 
 	[JavaScriptProperty(name="default")]
-	public function get default_():Boolean { return false; }
+	public function get default_():Boolean { return undefined; }
 	public function set default_(value:Boolean):void { }
 	public static const NONE:uint = 0;
 	public static const LOADING:uint = 1;
 	public static const LOADED:uint = 2;
 	public static const ERROR:uint = 3;
 
-	public function get readyState():uint { return 0; }
+	public function get readyState():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.track.TextTrack
 	*/
-	public function get track():TextTrack { return null; }
+	public function get track():TextTrack { return undefined; }
 }
 
 }

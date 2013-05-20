@@ -57,53 +57,53 @@ public class HTMLButtonElement extends HTMLElement
 	*/
 	public function HTMLButtonElement() {super();}
 
-	public function get autofocus():Boolean { return false; }
+	public function get autofocus():Boolean { return undefined; }
 	public function set autofocus(value:Boolean):void { }
 
-	public function get disabled():Boolean { return false; }
+	public function get disabled():Boolean { return undefined; }
 	public function set disabled(value:Boolean):void { }
 
 	/**
 	*  @see randori.webkit.html.HTMLFormElement
 	*/
-	public function get form():HTMLFormElement { return null; }
+	public function get form():HTMLFormElement { return undefined; }
 
-	public function get formAction():String { return ''; }
+	public function get formAction():String { return undefined; }
 	public function set formAction(value:String):void { }
 
-	public function get formEnctype():String { return ''; }
+	public function get formEnctype():String { return undefined; }
 	public function set formEnctype(value:String):void { }
 
-	public function get formMethod():String { return ''; }
+	public function get formMethod():String { return undefined; }
 	public function set formMethod(value:String):void { }
 
-	public function get formNoValidate():Boolean { return false; }
+	public function get formNoValidate():Boolean { return undefined; }
 	public function set formNoValidate(value:Boolean):void { }
 
-	public function get formTarget():String { return ''; }
+	public function get formTarget():String { return undefined; }
 	public function set formTarget(value:String):void { }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 
-	public function get value():String { return ''; }
+	public function get value():String { return undefined; }
 	public function set value(value:String):void { }
 
-	public function get willValidate():Boolean { return false; }
+	public function get willValidate():Boolean { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.ValidityState
 	*/
-	public function get validity():ValidityState { return null; }
+	public function get validity():ValidityState { return undefined; }
 
-	public function get validationMessage():String { return ''; }
+	public function get validationMessage():String { return undefined; }
 	/**
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function checkValidity():Boolean { return false;}
+	public function checkValidity():Boolean { return undefined;}
 	/**
 	*  @param error
 	*/
@@ -112,7 +112,7 @@ public class HTMLButtonElement extends HTMLElement
 	/**
 	*  @see randori.webkit.dom.NodeList
 	*/
-	public function get labels():NodeList { return null; }
+	public function get labels():NodeList { return undefined; }
 }
 
 }

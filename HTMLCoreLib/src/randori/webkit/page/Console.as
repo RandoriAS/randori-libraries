@@ -128,7 +128,7 @@ public class Console
 	/**
 	*  @see randori.webkit.page.MemoryInfo
 	*/
-	public function get memory():MemoryInfo { return null; }
+	public function get memory():MemoryInfo { return undefined; }
 }
 
 }

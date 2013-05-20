@@ -50,16 +50,16 @@ package randori.webkit.modules.speech
 public class SpeechSynthesisVoice
 {
 
-	public function get voiceURI():String { return ''; }
+	public function get voiceURI():String { return undefined; }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
-	public function get lang():String { return ''; }
+	public function get lang():String { return undefined; }
 
-	public function get localService():Boolean { return false; }
+	public function get localService():Boolean { return undefined; }
 
 	[JavaScriptProperty(name="default")]
-	public function get default_():Boolean { return false; }
+	public function get default_():Boolean { return undefined; }
 }
 
 }

@@ -51,51 +51,51 @@ import randori.webkit.dom.DomEvent;
 public class MediaStreamTrack
 {
 
-	public function get kind():String { return ''; }
+	public function get kind():String { return undefined; }
 
-	public function get id():String { return ''; }
+	public function get id():String { return undefined; }
 
-	public function get label():String { return ''; }
+	public function get label():String { return undefined; }
 
-	public function get enabled():Boolean { return false; }
+	public function get enabled():Boolean { return undefined; }
 	public function set enabled(value:Boolean):void { }
 
-	public function get readyState():String { return ''; }
+	public function get readyState():String { return undefined; }
 
 	/**
 	*  Function that accepts an event of type <code>MuteEvent</code>.
 	*/
-	public function get onmute():Function { return null; }
+	public function get onmute():Function { return undefined; }
 	public function set onmute(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>UnmuteEvent</code>.
 	*/
-	public function get onunmute():Function { return null; }
+	public function get onunmute():Function { return undefined; }
 	public function set onunmute(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>EndedEvent</code>.
 	*/
-	public function get onended():Function { return null; }
+	public function get onended():Function { return undefined; }
 	public function set onended(value:Function):void { }
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param event
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(event:DomEvent):Boolean { return false;}
+	public function dispatchEvent(event:DomEvent):Boolean { return undefined;}
 }
 
 }

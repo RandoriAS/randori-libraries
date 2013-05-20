@@ -53,7 +53,7 @@ public class DOMWindow
 	/**
 	*  @see randori.webkit.page.PagePopupController
 	*/
-	public function get pagePopupController():PagePopupController { return null; }
+	public function get pagePopupController():PagePopupController { return undefined; }
 }
 
 }

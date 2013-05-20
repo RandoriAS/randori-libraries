@@ -52,18 +52,18 @@ import randori.webkit.dom.DomEvent;
 public class StorageEvent extends DomEvent
 {
 
-	public function get key():String { return ''; }
+	public function get key():String { return undefined; }
 
-	public function get oldValue():String { return ''; }
+	public function get oldValue():String { return undefined; }
 
-	public function get newValue():String { return ''; }
+	public function get newValue():String { return undefined; }
 
-	public function get url():String { return ''; }
+	public function get url():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.storage.Storage
 	*/
-	public function get storageArea():Storage { return null; }
+	public function get storageArea():Storage { return undefined; }
 	/**
 	*  @param typeArg (optional argument, default value is <code>undefined</code>)
 	*  @param canBubbleArg (optional argument, default value is <code>undefined</code>)

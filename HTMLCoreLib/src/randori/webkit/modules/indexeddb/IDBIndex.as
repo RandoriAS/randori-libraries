@@ -50,48 +50,124 @@ package randori.webkit.modules.indexeddb
 public class IDBIndex
 {
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.indexeddb.IDBObjectStore
 	*/
-	public function get objectStore():IDBObjectStore { return null; }
+	public function get objectStore():IDBObjectStore { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.indexeddb.IDBAny
 	*/
-	public function get keyPath():IDBAny { return null; }
+	public function get keyPath():IDBAny { return undefined; }
 
-	public function get unique():Boolean { return false; }
+	public function get unique():Boolean { return undefined; }
 
-	public function get multiEntry():Boolean { return false; }
+	public function get multiEntry():Boolean { return undefined; }
+	[JavaScriptMethod(name="openCursor")]
 	/**
-	*  @param range (optional argument, default value is <code>null</code>)
-	*  @param direction (optional argument, default value is <code>''</code>)
 	*  @return A <code>IDBRequest</code> instance.
 	*/
-	public function openCursor(range:IDBKeyRange=null, direction:String=''):IDBRequest { return null;}
+	public function openCursor1():IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openCursor")]
 	/**
-	*  @param range (optional argument, default value is <code>null</code>)
-	*  @param direction (optional argument, default value is <code>''</code>)
+	*  @param range (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>IDBRequest</code> instance.
 	*/
-	public function openKeyCursor(range:IDBKeyRange=null, direction:String=''):IDBRequest { return null;}
+	public function openCursor2(range:IDBKeyRange=undefined):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openCursor")]
+	/**
+	*  @param range (optional argument, default value is <code>undefined</code>)
+	*  @param direction (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function openCursor3(range:IDBKeyRange=undefined, direction:String=undefined):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openCursor")]
 	/**
 	*  @param key
 	*  @return A <code>IDBRequest</code> instance.
 	*/
-	public function get(key:IDBKeyRange):IDBRequest { return null;}
+	public function openCursor4(key:*):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openCursor")]
+	/**
+	*  @param key
+	*  @param direction (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function openCursor5(key:*, direction:String=undefined):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openKeyCursor")]
+	/**
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function openKeyCursor1():IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openKeyCursor")]
+	/**
+	*  @param range (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function openKeyCursor2(range:IDBKeyRange=undefined):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openKeyCursor")]
+	/**
+	*  @param range (optional argument, default value is <code>undefined</code>)
+	*  @param direction (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function openKeyCursor3(range:IDBKeyRange=undefined, direction:String=undefined):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openKeyCursor")]
 	/**
 	*  @param key
 	*  @return A <code>IDBRequest</code> instance.
 	*/
-	public function getKey(key:IDBKeyRange):IDBRequest { return null;}
+	public function openKeyCursor4(key:*):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openKeyCursor")]
 	/**
-	*  @param range (optional argument, default value is <code>null</code>)
+	*  @param key
+	*  @param direction (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>IDBRequest</code> instance.
 	*/
-	public function count(range:IDBKeyRange=null):IDBRequest { return null;}
+	public function openKeyCursor5(key:*, direction:String=undefined):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="get")]
+	/**
+	*  @param key
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function get1(key:IDBKeyRange):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="get")]
+	/**
+	*  @param key
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function get2(key:*):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="getKey")]
+	/**
+	*  @param key
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function getKey1(key:IDBKeyRange):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="getKey")]
+	/**
+	*  @param key
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function getKey2(key:*):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="count")]
+	/**
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function count1():IDBRequest { return undefined;}
+	[JavaScriptMethod(name="count")]
+	/**
+	*  @param range (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function count2(range:IDBKeyRange=undefined):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="count")]
+	/**
+	*  @param key
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function count3(key:*):IDBRequest { return undefined;}
 }
 
 }

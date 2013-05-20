@@ -64,52 +64,51 @@ public class InjectedScriptHost
 	*  @param num
 	*  @return A <code>any</code> instance.
 	*/
-	public function inspectedObject(num:int):* { return null;}
+	public function inspectedObject(num:int):* { return undefined;}
 	/**
 	*  @param object
 	*  @return A <code>any</code> instance.
 	*/
-	public function internalConstructorName(object:*):* { return null;}
+	public function internalConstructorName(object:*):* { return undefined;}
 	/**
 	*  @param object
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function isHTMLAllCollection(object:*):Boolean { return false;}
+	public function isHTMLAllCollection(object:*):Boolean { return undefined;}
 	/**
 	*  @param object
 	*  @return A <code>String</code> instance.
 	*/
-	public function type(object:*):String { return '';}
+	public function type(object:*):String { return undefined;}
 	/**
 	*  @param object
 	*  @return A <code>any</code> instance.
 	*/
-	public function functionDetails(object:*):* { return null;}
+	public function functionDetails(object:*):* { return undefined;}
 	/**
 	*  @param object
 	*  @return A <code>Array</code> instance.
 	*/
-	public function getInternalProperties(object:*):Array { return null;}
+	public function getInternalProperties(object:*):Array { return undefined;}
 	/**
 	*  @param node
 	*  @return A <code>Array</code> instance.
 	*/
-	public function getEventListeners(node:Node):Array { return null;}
+	public function getEventListeners(node:Node):Array { return undefined;}
+
+	public function get evaluateReturnsEvalFunction():Boolean { return undefined; }
+
+	public function get evaluate():* { return undefined; }
 	/**
 	*  @param database
 	*  @return A <code>String</code> instance.
 	*/
-	public function databaseId(database:*):String { return '';}
+	public function databaseId(database:*):String { return undefined;}
 	/**
 	*  @param storage
 	*  @return A <code>String</code> instance.
 	*/
-	public function storageId(storage:*):String { return '';}
-	/**
-	*  @param text
-	*  @return A <code>any</code> instance.
-	*/
-	public function evaluate(text:String):* { return null;}
+	public function storageId(storage:*):String { return undefined;}
 	/**
 	*  @param functionObject
 	*  @param scopeIndex
@@ -117,7 +116,7 @@ public class InjectedScriptHost
 	*  @param newValue
 	*  @return A <code>any</code> instance.
 	*/
-	public function setFunctionVariableValue(functionObject:*, scopeIndex:int, variableName:String, newValue:*):* { return null;}
+	public function setFunctionVariableValue(functionObject:*, scopeIndex:int, variableName:String, newValue:*):* { return undefined;}
 }
 
 }

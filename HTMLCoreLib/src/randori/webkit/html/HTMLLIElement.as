@@ -56,10 +56,10 @@ public class HTMLLIElement extends HTMLElement
 	*/
 	public function HTMLLIElement() {super();}
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 
-	public function get value():uint { return 0; }
+	public function get value():uint { return undefined; }
 	public function set value(value:uint):void { }
 }
 

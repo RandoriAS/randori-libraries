@@ -51,9 +51,9 @@ public class MessagePort
 {
 	/**
 	*  @param message
-	*  @param messagePorts (optional argument, default value is <code>null</code>)
+	*  @param messagePorts (optional argument, default value is <code>undefined</code>)
 	*/
-	public function postMessage(message:*, messagePorts:Array=null):void {}
+	public function postMessage(message:*, messagePorts:Array=undefined):void {}
 	public function start():void {}
 	public function close():void {}
 
@@ -61,25 +61,25 @@ public class MessagePort
 	*  Function that accepts an event of type <code>MessageEvent</code>.
 	*  @see randori.webkit.dom.MessageEvent
 	*/
-	public function get onmessage():Function { return null; }
+	public function get onmessage():Function { return undefined; }
 	public function set onmessage(value:Function):void { }
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param evt
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(evt:DomEvent):Boolean { return false;}
+	public function dispatchEvent(evt:DomEvent):Boolean { return undefined;}
 }
 
 }

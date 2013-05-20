@@ -51,7 +51,7 @@ package randori.webkit.dom
 public class PopStateEvent extends DomEvent
 {
 
-	public function get state():* { return null; }
+	public function get state():* { return undefined; }
 }
 
 }

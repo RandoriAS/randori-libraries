@@ -65,37 +65,37 @@ public class SVGComponentTransferFunctionElement extends SVGElement
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedEnumeration
 	*/
-	public function get type():SVGAnimatedEnumeration { return null; }
+	public function get type():SVGAnimatedEnumeration { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumberList
 	*/
-	public function get tableValues():SVGAnimatedNumberList { return null; }
+	public function get tableValues():SVGAnimatedNumberList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get slope():SVGAnimatedNumber { return null; }
+	public function get slope():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get intercept():SVGAnimatedNumber { return null; }
+	public function get intercept():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get amplitude():SVGAnimatedNumber { return null; }
+	public function get amplitude():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get exponent():SVGAnimatedNumber { return null; }
+	public function get exponent():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get offset():SVGAnimatedNumber { return null; }
+	public function get offset():SVGAnimatedNumber { return undefined; }
 }
 
 }

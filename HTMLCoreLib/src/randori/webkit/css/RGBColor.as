@@ -74,7 +74,7 @@ public class RGBColor
 	*  </p>
 	*  @see randori.webkit.css.CSSPrimitiveValue
 	*/
-	public function get red():CSSPrimitiveValue { return null; }
+	public function get red():CSSPrimitiveValue { return undefined; }
 
 	/**
 	*  <p>
@@ -82,7 +82,7 @@ public class RGBColor
 	*  </p>
 	*  @see randori.webkit.css.CSSPrimitiveValue
 	*/
-	public function get green():CSSPrimitiveValue { return null; }
+	public function get green():CSSPrimitiveValue { return undefined; }
 
 	/**
 	*  <p>
@@ -90,7 +90,7 @@ public class RGBColor
 	*  </p>
 	*  @see randori.webkit.css.CSSPrimitiveValue
 	*/
-	public function get blue():CSSPrimitiveValue { return null; }
+	public function get blue():CSSPrimitiveValue { return undefined; }
 }
 
 }

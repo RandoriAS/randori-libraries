@@ -51,9 +51,9 @@ package randori.webkit.fileapi
 public class File extends Blob
 {
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
-	public function get lastModifiedDate():Object { return null; }
+	public function get lastModifiedDate():Object { return undefined; }
 }
 
 }

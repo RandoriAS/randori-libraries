@@ -59,87 +59,87 @@ public class SVGFEConvolveMatrixElement extends SVGStyledElement implements SVGF
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get in1():SVGAnimatedString { return null; }
+	public function get in1():SVGAnimatedString { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedInteger
 	*/
-	public function get orderX():SVGAnimatedInteger { return null; }
+	public function get orderX():SVGAnimatedInteger { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedInteger
 	*/
-	public function get orderY():SVGAnimatedInteger { return null; }
+	public function get orderY():SVGAnimatedInteger { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumberList
 	*/
-	public function get kernelMatrix():SVGAnimatedNumberList { return null; }
+	public function get kernelMatrix():SVGAnimatedNumberList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get divisor():SVGAnimatedNumber { return null; }
+	public function get divisor():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get bias():SVGAnimatedNumber { return null; }
+	public function get bias():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedInteger
 	*/
-	public function get targetX():SVGAnimatedInteger { return null; }
+	public function get targetX():SVGAnimatedInteger { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedInteger
 	*/
-	public function get targetY():SVGAnimatedInteger { return null; }
+	public function get targetY():SVGAnimatedInteger { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedEnumeration
 	*/
-	public function get edgeMode():SVGAnimatedEnumeration { return null; }
+	public function get edgeMode():SVGAnimatedEnumeration { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get kernelUnitLengthX():SVGAnimatedNumber { return null; }
+	public function get kernelUnitLengthX():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get kernelUnitLengthY():SVGAnimatedNumber { return null; }
+	public function get kernelUnitLengthY():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedBoolean
 	*/
-	public function get preserveAlpha():SVGAnimatedBoolean { return null; }
+	public function get preserveAlpha():SVGAnimatedBoolean { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get x():SVGAnimatedLength { return null; }
+	public function get x():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get y():SVGAnimatedLength { return null; }
+	public function get y():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get width():SVGAnimatedLength { return null; }
+	public function get width():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get height():SVGAnimatedLength { return null; }
+	public function get height():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get result():SVGAnimatedString { return null; }
+	public function get result():SVGAnimatedString { return undefined; }
 }
 
 }

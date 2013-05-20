@@ -50,15 +50,15 @@ package randori.webkit.page
 public class WorkerNavigator
 {
 
-	public function get appName():String { return ''; }
+	public function get appName():String { return undefined; }
 
-	public function get appVersion():String { return ''; }
+	public function get appVersion():String { return undefined; }
 
-	public function get platform():String { return ''; }
+	public function get platform():String { return undefined; }
 
-	public function get userAgent():String { return ''; }
+	public function get userAgent():String { return undefined; }
 
-	public function get onLine():Boolean { return false; }
+	public function get onLine():Boolean { return undefined; }
 }
 
 }

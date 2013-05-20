@@ -47,12 +47,12 @@ package randori.webkit.modules.mediastream
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0
  */
-public class RTCStatsResponse
+public dynamic class RTCStatsResponse
 {
 	/**
 	*  @return A <code>sequence</code> instance.
 	*/
-	public function result():Vector.<RTCStatsReport> { return null;}
+	public function result():Vector.<RTCStatsReport> { return undefined;}
 }
 
 }

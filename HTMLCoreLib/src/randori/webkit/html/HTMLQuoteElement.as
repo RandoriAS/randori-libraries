@@ -56,7 +56,7 @@ public class HTMLQuoteElement extends HTMLElement
 	*/
 	public function HTMLQuoteElement() {super();}
 
-	public function get cite():String { return ''; }
+	public function get cite():String { return undefined; }
 	public function set cite(value:String):void { }
 }
 

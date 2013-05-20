@@ -57,43 +57,43 @@ public class HTMLLinkElement extends HTMLElement
 	*/
 	public function HTMLLinkElement() {super();}
 
-	public function get disabled():Boolean { return false; }
+	public function get disabled():Boolean { return undefined; }
 	public function set disabled(value:Boolean):void { }
 
-	public function get charset():String { return ''; }
+	public function get charset():String { return undefined; }
 	public function set charset(value:String):void { }
 
-	public function get href():String { return ''; }
+	public function get href():String { return undefined; }
 	public function set href(value:String):void { }
 
-	public function get hreflang():String { return ''; }
+	public function get hreflang():String { return undefined; }
 	public function set hreflang(value:String):void { }
 
-	public function get media():String { return ''; }
+	public function get media():String { return undefined; }
 	public function set media(value:String):void { }
 
-	public function get rel():String { return ''; }
+	public function get rel():String { return undefined; }
 	public function set rel(value:String):void { }
 
-	public function get rev():String { return ''; }
+	public function get rev():String { return undefined; }
 	public function set rev(value:String):void { }
 
 	/**
 	*  @see randori.webkit.html.DOMSettableTokenList
 	*/
-	public function get sizes():DOMSettableTokenList { return null; }
+	public function get sizes():DOMSettableTokenList { return undefined; }
 	public function set sizes(value:DOMSettableTokenList):void { }
 
-	public function get target():String { return ''; }
+	public function get target():String { return undefined; }
 	public function set target(value:String):void { }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 
 	/**
 	*  @see randori.webkit.css.StyleSheet
 	*/
-	public function get sheet():StyleSheet { return null; }
+	public function get sheet():StyleSheet { return undefined; }
 }
 
 }

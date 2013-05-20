@@ -64,7 +64,7 @@ public class CSSMediaRule extends CSSRule
 	*  </p>
 	*  @see randori.webkit.css.MediaList
 	*/
-	public function get media():MediaList { return null; }
+	public function get media():MediaList { return undefined; }
 
 	/**
 	*  <p>
@@ -72,7 +72,7 @@ public class CSSMediaRule extends CSSRule
 	*  </p>
 	*  @see randori.webkit.css.CSSRuleList
 	*/
-	public function get cssRules():CSSRuleList { return null; }
+	public function get cssRules():CSSRuleList { return undefined; }
 	/**
 	*  <p>
 	*  Used to insert a new rule into the media block.
@@ -100,7 +100,7 @@ public class CSSMediaRule extends CSSRule
 	*  readonly.</p><p>SYNTAX_ERR: Raised if the specified rule has a syntax error
 	*  and is unparsable.</p>
 	*/
-	public function insertRule(rule:String=undefined, index:uint=undefined):uint { return 0;}
+	public function insertRule(rule:String=undefined, index:uint=undefined):uint { return undefined;}
 	/**
 	*  <p>
 	*  Used to delete a rule from the media block.

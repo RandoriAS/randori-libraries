@@ -51,68 +51,68 @@ import randori.webkit.dom.DOMStringList;
 public class SecurityPolicy
 {
 
-	public function get allowsEval():Boolean { return false; }
+	public function get allowsEval():Boolean { return undefined; }
 
-	public function get allowsInlineScript():Boolean { return false; }
+	public function get allowsInlineScript():Boolean { return undefined; }
 
-	public function get allowsInlineStyle():Boolean { return false; }
+	public function get allowsInlineStyle():Boolean { return undefined; }
 
-	public function get isActive():Boolean { return false; }
+	public function get isActive():Boolean { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.DOMStringList
 	*/
-	public function get reportURIs():DOMStringList { return null; }
+	public function get reportURIs():DOMStringList { return undefined; }
 	/**
 	*  @param url
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function allowsConnectionTo(url:String):Boolean { return false;}
+	public function allowsConnectionTo(url:String):Boolean { return undefined;}
 	/**
 	*  @param url
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function allowsFontFrom(url:String):Boolean { return false;}
+	public function allowsFontFrom(url:String):Boolean { return undefined;}
 	/**
 	*  @param url
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function allowsFormAction(url:String):Boolean { return false;}
+	public function allowsFormAction(url:String):Boolean { return undefined;}
 	/**
 	*  @param url
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function allowsFrameFrom(url:String):Boolean { return false;}
+	public function allowsFrameFrom(url:String):Boolean { return undefined;}
 	/**
 	*  @param url
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function allowsImageFrom(url:String):Boolean { return false;}
+	public function allowsImageFrom(url:String):Boolean { return undefined;}
 	/**
 	*  @param url
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function allowsMediaFrom(url:String):Boolean { return false;}
+	public function allowsMediaFrom(url:String):Boolean { return undefined;}
 	/**
 	*  @param url
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function allowsObjectFrom(url:String):Boolean { return false;}
+	public function allowsObjectFrom(url:String):Boolean { return undefined;}
 	/**
 	*  @param type
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function allowsPluginType(type:String):Boolean { return false;}
+	public function allowsPluginType(type:String):Boolean { return undefined;}
 	/**
 	*  @param url
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function allowsScriptFrom(url:String):Boolean { return false;}
+	public function allowsScriptFrom(url:String):Boolean { return undefined;}
 	/**
 	*  @param url
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function allowsStyleFrom(url:String):Boolean { return false;}
+	public function allowsStyleFrom(url:String):Boolean { return undefined;}
 }
 
 }

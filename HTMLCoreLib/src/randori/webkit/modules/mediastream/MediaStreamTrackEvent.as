@@ -55,7 +55,7 @@ public class MediaStreamTrackEvent extends DomEvent
 	/**
 	*  @see randori.webkit.modules.mediastream.MediaStreamTrack
 	*/
-	public function get track():MediaStreamTrack { return null; }
+	public function get track():MediaStreamTrack { return undefined; }
 }
 
 }

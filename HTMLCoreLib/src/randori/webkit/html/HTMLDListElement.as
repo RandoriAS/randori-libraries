@@ -56,7 +56,7 @@ public class HTMLDListElement extends HTMLElement
 	*/
 	public function HTMLDListElement() {super();}
 
-	public function get compact():Boolean { return false; }
+	public function get compact():Boolean { return undefined; }
 	public function set compact(value:Boolean):void { }
 }
 

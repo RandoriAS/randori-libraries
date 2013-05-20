@@ -58,46 +58,46 @@ public class HTMLFrameElement extends HTMLElement
 	*/
 	public function HTMLFrameElement() {super();}
 
-	public function get frameBorder():String { return ''; }
+	public function get frameBorder():String { return undefined; }
 	public function set frameBorder(value:String):void { }
 
-	public function get longDesc():String { return ''; }
+	public function get longDesc():String { return undefined; }
 	public function set longDesc(value:String):void { }
 
-	public function get marginHeight():String { return ''; }
+	public function get marginHeight():String { return undefined; }
 	public function set marginHeight(value:String):void { }
 
-	public function get marginWidth():String { return ''; }
+	public function get marginWidth():String { return undefined; }
 	public function set marginWidth(value:String):void { }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 
-	public function get noResize():Boolean { return false; }
+	public function get noResize():Boolean { return undefined; }
 	public function set noResize(value:Boolean):void { }
 
-	public function get scrolling():String { return ''; }
+	public function get scrolling():String { return undefined; }
 	public function set scrolling(value:String):void { }
 
-	public function get src():String { return ''; }
+	public function get src():String { return undefined; }
 	public function set src(value:String):void { }
 
 	/**
 	*  @see randori.webkit.dom.Document
 	*/
-	public function get contentDocument():Document { return null; }
+	public function get contentDocument():Document { return undefined; }
 
 	/**
 	*  @see randori.webkit.page.Window
 	*/
-	public function get contentWindow():Window { return null; }
+	public function get contentWindow():Window { return undefined; }
 
-	public function get location():String { return ''; }
+	public function get location():String { return undefined; }
 	public function set location(value:String):void { }
 
-	public function get width():uint { return 0; }
+	public function get width():uint { return undefined; }
 
-	public function get height():uint { return 0; }
+	public function get height():uint { return undefined; }
 }
 
 }

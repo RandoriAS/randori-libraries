@@ -56,21 +56,21 @@ public class HTMLCanvasElement extends HTMLElement
 	*/
 	public function HTMLCanvasElement() {super();}
 
-	public function get width():uint { return 0; }
+	public function get width():uint { return undefined; }
 	public function set width(value:uint):void { }
 
-	public function get height():uint { return 0; }
+	public function get height():uint { return undefined; }
 	public function set height(value:uint):void { }
 	/**
 	*  @param type (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>String</code> instance.
 	*/
-	public function toDataURL(type:String=undefined):String { return '';}
+	public function toDataURL(type:String=undefined):String { return undefined;}
 	/**
 	*  @param contextId (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>any</code> instance.
 	*/
-	public function getContext(contextId:String=undefined):* { return null;}
+	public function getContext(contextId:String=undefined):* { return undefined;}
 }
 
 }

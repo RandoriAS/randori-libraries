@@ -53,12 +53,12 @@ public class SVGAnimatedNumberList
 	/**
 	*  @see randori.webkit.svg.SVGNumberList
 	*/
-	public function get baseVal():SVGNumberList { return null; }
+	public function get baseVal():SVGNumberList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGNumberList
 	*/
-	public function get animVal():SVGNumberList { return null; }
+	public function get animVal():SVGNumberList { return undefined; }
 }
 
 }

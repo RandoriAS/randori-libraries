@@ -59,17 +59,17 @@ public class SVGFEPointLightElement extends SVGElement
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get x():SVGAnimatedNumber { return null; }
+	public function get x():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get y():SVGAnimatedNumber { return null; }
+	public function get y():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get z():SVGAnimatedNumber { return null; }
+	public function get z():SVGAnimatedNumber { return undefined; }
 }
 
 }

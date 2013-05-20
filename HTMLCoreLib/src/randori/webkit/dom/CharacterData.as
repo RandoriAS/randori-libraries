@@ -72,7 +72,7 @@ public class CharacterData extends Node
 	*  <code>substringData</code> to retrieve the data in appropriately sized
 	*  pieces.</p>
 	*/
-	public function get data():String { return ''; }
+	public function get data():String { return undefined; }
 	public function set data(value:String):void { }
 
 	/**
@@ -81,7 +81,7 @@ public class CharacterData extends Node
 	*  <code>substringData</code> method below.  This may have the value zero,
 	*  i.e., <code>CharacterData</code> nodes may be empty.</p>
 	*/
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 	/**
 	*  <p>Extracts a range of data from the node.</p>
 	*  @param offset <p>Start offset of substring to extract.</p>
@@ -95,7 +95,7 @@ public class CharacterData extends Node
 	*  negative.</p><p>DOMSTRING_SIZE_ERR: Raised if the specified range of text does
 	*  not fit into a <code>DOMString</code>.</p>
 	*/
-	public function substringData(offset:uint=undefined, length:uint=undefined):String { return '';}
+	public function substringData(offset:uint=undefined, length:uint=undefined):String { return undefined;}
 	/**
 	*  <p>Append the string to the end of the character data of the node.
 	*  Upon success, <code>data</code> provides access to the concatenation of

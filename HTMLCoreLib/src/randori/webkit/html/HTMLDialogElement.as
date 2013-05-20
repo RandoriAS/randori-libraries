@@ -56,7 +56,7 @@ public class HTMLDialogElement extends HTMLElement
 	*/
 	public function HTMLDialogElement() {super();}
 
-	public function get open():Boolean { return false; }
+	public function get open():Boolean { return undefined; }
 	public function set open(value:Boolean):void { }
 	public function close():void {}
 	public function show():void {}

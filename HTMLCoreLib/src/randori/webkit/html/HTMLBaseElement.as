@@ -56,10 +56,10 @@ public class HTMLBaseElement extends HTMLElement
 	*/
 	public function HTMLBaseElement() {super();}
 
-	public function get href():String { return ''; }
+	public function get href():String { return undefined; }
 	public function set href(value:String):void { }
 
-	public function get target():String { return ''; }
+	public function get target():String { return undefined; }
 	public function set target(value:String):void { }
 }
 

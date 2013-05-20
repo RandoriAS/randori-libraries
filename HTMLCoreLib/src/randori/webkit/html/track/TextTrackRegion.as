@@ -57,30 +57,30 @@ public class TextTrackRegion
 	/**
 	*  @see randori.webkit.html.track.TextTrack
 	*/
-	public function get track():TextTrack { return null; }
+	public function get track():TextTrack { return undefined; }
 
-	public function get id():String { return ''; }
+	public function get id():String { return undefined; }
 	public function set id(value:String):void { }
 
-	public function get width():Number { return 0; }
+	public function get width():Number { return undefined; }
 	public function set width(value:Number):void { }
 
-	public function get height():uint { return 0; }
+	public function get height():uint { return undefined; }
 	public function set height(value:uint):void { }
 
-	public function get regionAnchorX():Number { return 0; }
+	public function get regionAnchorX():Number { return undefined; }
 	public function set regionAnchorX(value:Number):void { }
 
-	public function get regionAnchorY():Number { return 0; }
+	public function get regionAnchorY():Number { return undefined; }
 	public function set regionAnchorY(value:Number):void { }
 
-	public function get viewportAnchorX():Number { return 0; }
+	public function get viewportAnchorX():Number { return undefined; }
 	public function set viewportAnchorX(value:Number):void { }
 
-	public function get viewportAnchorY():Number { return 0; }
+	public function get viewportAnchorY():Number { return undefined; }
 	public function set viewportAnchorY(value:Number):void { }
 
-	public function get scroll():String { return ''; }
+	public function get scroll():String { return undefined; }
 	public function set scroll(value:String):void { }
 }
 

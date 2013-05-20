@@ -51,25 +51,25 @@ package randori.webkit.svg
 public class SVGPathSegArcAbs extends SVGPathSeg
 {
 
-	public function get x():Number { return 0; }
+	public function get x():Number { return undefined; }
 	public function set x(value:Number):void { }
 
-	public function get y():Number { return 0; }
+	public function get y():Number { return undefined; }
 	public function set y(value:Number):void { }
 
-	public function get r1():Number { return 0; }
+	public function get r1():Number { return undefined; }
 	public function set r1(value:Number):void { }
 
-	public function get r2():Number { return 0; }
+	public function get r2():Number { return undefined; }
 	public function set r2(value:Number):void { }
 
-	public function get angle():Number { return 0; }
+	public function get angle():Number { return undefined; }
 	public function set angle(value:Number):void { }
 
-	public function get largeArcFlag():Boolean { return false; }
+	public function get largeArcFlag():Boolean { return undefined; }
 	public function set largeArcFlag(value:Boolean):void { }
 
-	public function get sweepFlag():Boolean { return false; }
+	public function get sweepFlag():Boolean { return undefined; }
 	public function set sweepFlag(value:Boolean):void { }
 }
 

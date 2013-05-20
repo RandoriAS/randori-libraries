@@ -53,20 +53,20 @@ public class DOMWindow
 	/**
 	*  @see randori.webkit.modules.speech.SpeechSynthesis
 	*/
-	public function get speechSynthesis():SpeechSynthesis { return null; }
+	public function get speechSynthesis():SpeechSynthesis { return undefined; }
 
 	[JavaScriptProperty(name="SpeechSynthesisEvent")]
 	/**
 	*  @see randori.webkit.modules.speech.SpeechSynthesisEvent
 	*/
-	public function get SpeechSynthesisEvent_():SpeechSynthesisEvent { return null; }
+	public function get SpeechSynthesisEvent_():SpeechSynthesisEvent { return undefined; }
 	public function set SpeechSynthesisEvent_(value:SpeechSynthesisEvent):void { }
 
 	[JavaScriptProperty(name="SpeechSynthesisUtterance")]
 	/**
 	*  @see randori.webkit.modules.speech.SpeechSynthesisUtterance
 	*/
-	public function get SpeechSynthesisUtterance_():SpeechSynthesisUtterance { return null; }
+	public function get SpeechSynthesisUtterance_():SpeechSynthesisUtterance { return undefined; }
 	public function set SpeechSynthesisUtterance_(value:SpeechSynthesisUtterance):void { }
 }
 

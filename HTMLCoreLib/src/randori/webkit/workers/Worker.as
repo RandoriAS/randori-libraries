@@ -60,13 +60,13 @@ public class Worker extends AbstractWorker
 	*  Function that accepts an event of type <code>MessageEvent</code>.
 	*  @see randori.webkit.dom.MessageEvent
 	*/
-	public function get onmessage():Function { return null; }
+	public function get onmessage():Function { return undefined; }
 	public function set onmessage(value:Function):void { }
 	/**
 	*  @param message
-	*  @param messagePorts (optional argument, default value is <code>null</code>)
+	*  @param messagePorts (optional argument, default value is <code>undefined</code>)
 	*/
-	public function postMessage(message:Object, messagePorts:Array=null):void {}
+	public function postMessage(message:Object, messagePorts:Array=undefined):void {}
 	public function terminate():void {}
 }
 

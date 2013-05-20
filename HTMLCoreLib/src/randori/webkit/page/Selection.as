@@ -55,20 +55,20 @@ public class Selection
 	/**
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get anchorNode():Node { return null; }
+	public function get anchorNode():Node { return undefined; }
 
-	public function get anchorOffset():uint { return 0; }
+	public function get anchorOffset():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get focusNode():Node { return null; }
+	public function get focusNode():Node { return undefined; }
 
-	public function get focusOffset():uint { return 0; }
+	public function get focusOffset():uint { return undefined; }
 
-	public function get isCollapsed():Boolean { return false; }
+	public function get isCollapsed():Boolean { return undefined; }
 
-	public function get rangeCount():uint { return 0; }
+	public function get rangeCount():uint { return undefined; }
 	/**
 	*  @param node (optional argument, default value is <code>undefined</code>)
 	*  @param index (optional argument, default value is <code>undefined</code>)
@@ -82,7 +82,7 @@ public class Selection
 	*  @param allowPartial (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function containsNode(node:Node=undefined, allowPartial:Boolean=undefined):Boolean { return false;}
+	public function containsNode(node:Node=undefined, allowPartial:Boolean=undefined):Boolean { return undefined;}
 	/**
 	*  @param node (optional argument, default value is <code>undefined</code>)
 	*/
@@ -96,7 +96,7 @@ public class Selection
 	*  @param index (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Range</code> instance.
 	*/
-	public function getRangeAt(index:uint=undefined):Range { return null;}
+	public function getRangeAt(index:uint=undefined):Range { return undefined;}
 	public function removeAllRanges():void {}
 	/**
 	*  @param range (optional argument, default value is <code>undefined</code>)
@@ -105,23 +105,23 @@ public class Selection
 	/**
 	*  @return A <code>String</code> instance.
 	*/
-	public function toString():String { return '';}
+	public function toString():String { return undefined;}
 
 	/**
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get baseNode():Node { return null; }
+	public function get baseNode():Node { return undefined; }
 
-	public function get baseOffset():uint { return 0; }
+	public function get baseOffset():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get extentNode():Node { return null; }
+	public function get extentNode():Node { return undefined; }
 
-	public function get extentOffset():uint { return 0; }
+	public function get extentOffset():uint { return undefined; }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	/**
 	*  @param alter (optional argument, default value is <code>undefined</code>)
 	*  @param direction (optional argument, default value is <code>undefined</code>)

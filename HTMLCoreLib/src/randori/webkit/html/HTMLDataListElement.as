@@ -59,7 +59,7 @@ public class HTMLDataListElement extends HTMLElement
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get options():HTMLCollection { return null; }
+	public function get options():HTMLCollection { return undefined; }
 }
 
 }

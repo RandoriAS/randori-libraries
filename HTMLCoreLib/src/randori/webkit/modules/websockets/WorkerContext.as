@@ -54,7 +54,7 @@ public class WorkerContext
 	/**
 	*  @see randori.webkit.modules.websockets.WebSocket
 	*/
-	public function get WebSocket_():WebSocket { return null; }
+	public function get WebSocket_():WebSocket { return undefined; }
 	public function set WebSocket_(value:WebSocket):void { }
 }
 

@@ -54,17 +54,17 @@ public dynamic class SpeechGrammarList
 	*/
 	public function SpeechGrammarList() {super();}
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 	/**
 	*  @param src
-	*  @param weight (optional argument, default value is <code>0</code>)
+	*  @param weight (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addFromUri(src:String, weight:Number=0):void {}
+	public function addFromUri(src:String, weight:Number=undefined):void {}
 	/**
 	*  @param string
-	*  @param weight (optional argument, default value is <code>0</code>)
+	*  @param weight (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addFromString(string:String, weight:Number=0):void {}
+	public function addFromString(string:String, weight:Number=undefined):void {}
 }
 
 }

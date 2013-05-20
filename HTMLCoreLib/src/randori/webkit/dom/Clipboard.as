@@ -52,33 +52,33 @@ import randori.webkit.html.HTMLImageElement;
 public class Clipboard
 {
 
-	public function get dropEffect():String { return ''; }
+	public function get dropEffect():String { return undefined; }
 	public function set dropEffect(value:String):void { }
 
-	public function get effectAllowed():String { return ''; }
+	public function get effectAllowed():String { return undefined; }
 	public function set effectAllowed(value:String):void { }
 
-	public function get types():Array { return null; }
+	public function get types():Array { return undefined; }
 
 	/**
 	*  @see randori.webkit.fileapi.FileList
 	*/
-	public function get files():FileList { return null; }
+	public function get files():FileList { return undefined; }
 	/**
-	*  @param type (optional argument, default value is <code>''</code>)
+	*  @param type (optional argument, default value is <code>undefined</code>)
 	*/
-	public function clearData(type:String=''):void {}
+	public function clearData(type:String=undefined):void {}
 	/**
 	*  @param type
 	*  @return A <code>String</code> instance.
 	*/
-	public function getData(type:String):String { return '';}
+	public function getData(type:String):String { return undefined;}
 	/**
 	*  @param type
 	*  @param data
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function setData(type:String, data:String):Boolean { return false;}
+	public function setData(type:String, data:String):Boolean { return undefined;}
 	/**
 	*  @param image
 	*  @param x
@@ -89,7 +89,7 @@ public class Clipboard
 	/**
 	*  @see randori.webkit.dom.DataTransferItemList
 	*/
-	public function get items():DataTransferItemList { return null; }
+	public function get items():DataTransferItemList { return undefined; }
 }
 
 }

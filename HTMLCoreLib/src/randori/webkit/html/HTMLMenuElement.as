@@ -56,7 +56,7 @@ public class HTMLMenuElement extends HTMLElement
 	*/
 	public function HTMLMenuElement() {super();}
 
-	public function get compact():Boolean { return false; }
+	public function get compact():Boolean { return undefined; }
 	public function set compact(value:Boolean):void { }
 }
 

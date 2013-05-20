@@ -56,22 +56,22 @@ public class HTMLEmbedElement extends HTMLElement
 	*/
 	public function HTMLEmbedElement() {super();}
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 
-	public function get height():String { return ''; }
+	public function get height():String { return undefined; }
 	public function set height(value:String):void { }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 
-	public function get src():String { return ''; }
+	public function get src():String { return undefined; }
 	public function set src(value:String):void { }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 
-	public function get width():String { return ''; }
+	public function get width():String { return undefined; }
 	public function set width(value:String):void { }
 }
 

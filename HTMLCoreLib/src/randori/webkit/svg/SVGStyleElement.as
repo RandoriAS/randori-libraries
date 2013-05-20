@@ -57,22 +57,22 @@ public class SVGStyleElement extends SVGElement implements SVGLangSpace
 	*/
 	public function SVGStyleElement() {super();}
 
-	public function get disabled():Boolean { return false; }
+	public function get disabled():Boolean { return undefined; }
 	public function set disabled(value:Boolean):void { }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 
-	public function get media():String { return ''; }
+	public function get media():String { return undefined; }
 	public function set media(value:String):void { }
 
-	public function get title():String { return ''; }
+	public function get title():String { return undefined; }
 	public function set title(value:String):void { }
 
-	public function get xmllang():String { return ''; }
+	public function get xmllang():String { return undefined; }
 	public function set xmllang(value:String):void { }
 
-	public function get xmlspace():String { return ''; }
+	public function get xmlspace():String { return undefined; }
 	public function set xmlspace(value:String):void { }
 }
 

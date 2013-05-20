@@ -50,49 +50,49 @@ package randori.webkit.svg
 public class SVGTransformList
 {
 
-	public function get numberOfItems():uint { return 0; }
+	public function get numberOfItems():uint { return undefined; }
 	public function clear():void {}
 	/**
 	*  @param item
 	*  @return A <code>SVGTransform</code> instance.
 	*/
-	public function initialize(item:SVGTransform):SVGTransform { return null;}
+	public function initialize(item:SVGTransform):SVGTransform { return undefined;}
 	/**
 	*  @param index
 	*  @return A <code>SVGTransform</code> instance.
 	*/
-	public function getItem(index:uint):SVGTransform { return null;}
+	public function getItem(index:uint):SVGTransform { return undefined;}
 	/**
 	*  @param item
 	*  @param index
 	*  @return A <code>SVGTransform</code> instance.
 	*/
-	public function insertItemBefore(item:SVGTransform, index:uint):SVGTransform { return null;}
+	public function insertItemBefore(item:SVGTransform, index:uint):SVGTransform { return undefined;}
 	/**
 	*  @param item
 	*  @param index
 	*  @return A <code>SVGTransform</code> instance.
 	*/
-	public function replaceItem(item:SVGTransform, index:uint):SVGTransform { return null;}
+	public function replaceItem(item:SVGTransform, index:uint):SVGTransform { return undefined;}
 	/**
 	*  @param index
 	*  @return A <code>SVGTransform</code> instance.
 	*/
-	public function removeItem(index:uint):SVGTransform { return null;}
+	public function removeItem(index:uint):SVGTransform { return undefined;}
 	/**
 	*  @param item
 	*  @return A <code>SVGTransform</code> instance.
 	*/
-	public function appendItem(item:SVGTransform):SVGTransform { return null;}
+	public function appendItem(item:SVGTransform):SVGTransform { return undefined;}
 	/**
 	*  @param matrix
 	*  @return A <code>SVGTransform</code> instance.
 	*/
-	public function createSVGTransformFromMatrix(matrix:SVGMatrix):SVGTransform { return null;}
+	public function createSVGTransformFromMatrix(matrix:SVGMatrix):SVGTransform { return undefined;}
 	/**
 	*  @return A <code>SVGTransform</code> instance.
 	*/
-	public function consolidate():SVGTransform { return null;}
+	public function consolidate():SVGTransform { return undefined;}
 }
 
 }

@@ -50,47 +50,47 @@ package randori.webkit.page
 public class PerformanceTiming
 {
 
-	public function get navigationStart():Number { return 0; }
+	public function get navigationStart():Number { return undefined; }
 
-	public function get unloadEventStart():Number { return 0; }
+	public function get unloadEventStart():Number { return undefined; }
 
-	public function get unloadEventEnd():Number { return 0; }
+	public function get unloadEventEnd():Number { return undefined; }
 
-	public function get redirectStart():Number { return 0; }
+	public function get redirectStart():Number { return undefined; }
 
-	public function get redirectEnd():Number { return 0; }
+	public function get redirectEnd():Number { return undefined; }
 
-	public function get fetchStart():Number { return 0; }
+	public function get fetchStart():Number { return undefined; }
 
-	public function get domainLookupStart():Number { return 0; }
+	public function get domainLookupStart():Number { return undefined; }
 
-	public function get domainLookupEnd():Number { return 0; }
+	public function get domainLookupEnd():Number { return undefined; }
 
-	public function get connectStart():Number { return 0; }
+	public function get connectStart():Number { return undefined; }
 
-	public function get connectEnd():Number { return 0; }
+	public function get connectEnd():Number { return undefined; }
 
-	public function get secureConnectionStart():Number { return 0; }
+	public function get secureConnectionStart():Number { return undefined; }
 
-	public function get requestStart():Number { return 0; }
+	public function get requestStart():Number { return undefined; }
 
-	public function get responseStart():Number { return 0; }
+	public function get responseStart():Number { return undefined; }
 
-	public function get responseEnd():Number { return 0; }
+	public function get responseEnd():Number { return undefined; }
 
-	public function get domLoading():Number { return 0; }
+	public function get domLoading():Number { return undefined; }
 
-	public function get domInteractive():Number { return 0; }
+	public function get domInteractive():Number { return undefined; }
 
-	public function get domContentLoadedEventStart():Number { return 0; }
+	public function get domContentLoadedEventStart():Number { return undefined; }
 
-	public function get domContentLoadedEventEnd():Number { return 0; }
+	public function get domContentLoadedEventEnd():Number { return undefined; }
 
-	public function get domComplete():Number { return 0; }
+	public function get domComplete():Number { return undefined; }
 
-	public function get loadEventStart():Number { return 0; }
+	public function get loadEventStart():Number { return undefined; }
 
-	public function get loadEventEnd():Number { return 0; }
+	public function get loadEventEnd():Number { return undefined; }
 }
 
 }

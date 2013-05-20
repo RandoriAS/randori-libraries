@@ -60,68 +60,68 @@ public class HTMLObjectElement extends HTMLElement
 	/**
 	*  @see randori.webkit.html.HTMLFormElement
 	*/
-	public function get form():HTMLFormElement { return null; }
+	public function get form():HTMLFormElement { return undefined; }
 
-	public function get code():String { return ''; }
+	public function get code():String { return undefined; }
 	public function set code(value:String):void { }
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 
-	public function get archive():String { return ''; }
+	public function get archive():String { return undefined; }
 	public function set archive(value:String):void { }
 
-	public function get border():String { return ''; }
+	public function get border():String { return undefined; }
 	public function set border(value:String):void { }
 
-	public function get codeBase():String { return ''; }
+	public function get codeBase():String { return undefined; }
 	public function set codeBase(value:String):void { }
 
-	public function get codeType():String { return ''; }
+	public function get codeType():String { return undefined; }
 	public function set codeType(value:String):void { }
 
-	public function get data():String { return ''; }
+	public function get data():String { return undefined; }
 	public function set data(value:String):void { }
 
-	public function get declare():Boolean { return false; }
+	public function get declare():Boolean { return undefined; }
 	public function set declare(value:Boolean):void { }
 
-	public function get height():String { return ''; }
+	public function get height():String { return undefined; }
 	public function set height(value:String):void { }
 
-	public function get hspace():uint { return 0; }
+	public function get hspace():uint { return undefined; }
 	public function set hspace(value:uint):void { }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 
-	public function get standby():String { return ''; }
+	public function get standby():String { return undefined; }
 	public function set standby(value:String):void { }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 
-	public function get useMap():String { return ''; }
+	public function get useMap():String { return undefined; }
 	public function set useMap(value:String):void { }
 
-	public function get vspace():uint { return 0; }
+	public function get vspace():uint { return undefined; }
 	public function set vspace(value:uint):void { }
 
-	public function get width():String { return ''; }
+	public function get width():String { return undefined; }
 	public function set width(value:String):void { }
 
-	public function get willValidate():Boolean { return false; }
+	public function get willValidate():Boolean { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.ValidityState
 	*/
-	public function get validity():ValidityState { return null; }
+	public function get validity():ValidityState { return undefined; }
 
-	public function get validationMessage():String { return ''; }
+	public function get validationMessage():String { return undefined; }
 	/**
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function checkValidity():Boolean { return false;}
+	public function checkValidity():Boolean { return undefined;}
 	/**
 	*  @param error
 	*/
@@ -130,7 +130,7 @@ public class HTMLObjectElement extends HTMLElement
 	/**
 	*  @see randori.webkit.dom.Document
 	*/
-	public function get contentDocument():Document { return null; }
+	public function get contentDocument():Document { return undefined; }
 }
 
 }

@@ -50,12 +50,19 @@ package randori.webkit.css
  */
 public class CSS
 {
+	[JavaScriptMethod(name="supports")]
 	/**
 	*  @param property
 	*  @param value
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function supports(property:String, value:String):Boolean { return false;}
+	public function supports1(property:String, value:String):Boolean { return undefined;}
+	[JavaScriptMethod(name="supports")]
+	/**
+	*  @param conditionText
+	*  @return A <code>Boolean</code> instance.
+	*/
+	public function supports2(conditionText:String):Boolean { return undefined;}
 }
 
 }

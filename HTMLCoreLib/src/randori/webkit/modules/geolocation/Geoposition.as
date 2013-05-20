@@ -41,7 +41,6 @@
 package randori.webkit.modules.geolocation
 {
 
-import randori.webkit.page.Coordinates;
 
 [JavaScript(export="false", nativecondition="GEOLOCATION", omitconstructor="true", name="Geoposition")]
 /**
@@ -52,11 +51,11 @@ public class Geoposition
 {
 
 	/**
-	*  @see randori.webkit.page.Coordinates
+	*  @see randori.webkit.modules.geolocation.Coordinates
 	*/
-	public function get coords():Coordinates { return null; }
+	public function get coords():Coordinates { return undefined; }
 
-	public function get timestamp():Object { return null; }
+	public function get timestamp():Object { return undefined; }
 }
 
 }

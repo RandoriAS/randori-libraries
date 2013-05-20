@@ -56,7 +56,7 @@ public class FileWriter
 	public static const WRITING:uint = 1;
 	public static const DONE:uint = 2;
 
-	public function get readyState():uint { return 0; }
+	public function get readyState():uint { return undefined; }
 	/**
 	*  @param data
 	*/
@@ -74,66 +74,66 @@ public class FileWriter
 	/**
 	*  @see randori.webkit.fileapi.FileError
 	*/
-	public function get error():FileError { return null; }
+	public function get error():FileError { return undefined; }
 
-	public function get position():Number { return 0; }
+	public function get position():Number { return undefined; }
 
-	public function get length():Number { return 0; }
+	public function get length():Number { return undefined; }
 
 	/**
 	*  Function that accepts an event of type <code>WritestartEvent</code>.
 	*/
-	public function get onwritestart():Function { return null; }
+	public function get onwritestart():Function { return undefined; }
 	public function set onwritestart(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ProgressEvent</code>.
 	*  @see randori.webkit.dom.ProgressEvent
 	*/
-	public function get onprogress():Function { return null; }
+	public function get onprogress():Function { return undefined; }
 	public function set onprogress(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>WriteEvent</code>.
 	*/
-	public function get onwrite():Function { return null; }
+	public function get onwrite():Function { return undefined; }
 	public function set onwrite(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>AbortEvent</code>.
 	*/
-	public function get onabort():Function { return null; }
+	public function get onabort():Function { return undefined; }
 	public function set onabort(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ErrorEvent</code>.
 	*  @see randori.webkit.dom.ErrorEvent
 	*/
-	public function get onerror():Function { return null; }
+	public function get onerror():Function { return undefined; }
 	public function set onerror(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>WriteendEvent</code>.
 	*/
-	public function get onwriteend():Function { return null; }
+	public function get onwriteend():Function { return undefined; }
 	public function set onwriteend(value:Function):void { }
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param evt
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(evt:DomEvent):Boolean { return false;}
+	public function dispatchEvent(evt:DomEvent):Boolean { return undefined;}
 }
 
 }

@@ -60,36 +60,36 @@ public class HTMLOutputElement extends HTMLElement
 	/**
 	*  @see randori.webkit.html.DOMSettableTokenList
 	*/
-	public function get htmlFor():DOMSettableTokenList { return null; }
+	public function get htmlFor():DOMSettableTokenList { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.HTMLFormElement
 	*/
-	public function get form():HTMLFormElement { return null; }
+	public function get form():HTMLFormElement { return undefined; }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 
-	public function get defaultValue():String { return ''; }
+	public function get defaultValue():String { return undefined; }
 	public function set defaultValue(value:String):void { }
 
-	public function get value():String { return ''; }
+	public function get value():String { return undefined; }
 	public function set value(value:String):void { }
 
-	public function get willValidate():Boolean { return false; }
+	public function get willValidate():Boolean { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.ValidityState
 	*/
-	public function get validity():ValidityState { return null; }
+	public function get validity():ValidityState { return undefined; }
 
-	public function get validationMessage():String { return ''; }
+	public function get validationMessage():String { return undefined; }
 	/**
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function checkValidity():Boolean { return false;}
+	public function checkValidity():Boolean { return undefined;}
 	/**
 	*  @param error
 	*/
@@ -98,7 +98,7 @@ public class HTMLOutputElement extends HTMLElement
 	/**
 	*  @see randori.webkit.dom.NodeList
 	*/
-	public function get labels():NodeList { return null; }
+	public function get labels():NodeList { return undefined; }
 }
 
 }

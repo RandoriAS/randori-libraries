@@ -54,14 +54,14 @@ public class SharedWorker extends AbstractWorker
 	/**
 	*  Creates a new <code>SharedWorker</code> instance.
 	*  @param scriptURL
-	*  @param name (optional argument, default value is <code>null</code>)
+	*  @param name (optional argument, default value is <code>undefined</code>)
 	*/
-	public function SharedWorker(scriptURL:String, name:String=null) {super();}
+	public function SharedWorker(scriptURL:String, name:String=undefined) {super();}
 
 	/**
 	*  @see randori.webkit.dom.MessagePort
 	*/
-	public function get port():MessagePort { return null; }
+	public function get port():MessagePort { return undefined; }
 }
 
 }

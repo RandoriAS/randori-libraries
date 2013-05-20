@@ -51,17 +51,17 @@ package randori.webkit.html
 public class HTMLVideoElement extends HTMLMediaElement
 {
 
-	public function get width():uint { return 0; }
+	public function get width():uint { return undefined; }
 	public function set width(value:uint):void { }
 
-	public function get height():uint { return 0; }
+	public function get height():uint { return undefined; }
 	public function set height(value:uint):void { }
 
-	public function get videoWidth():uint { return 0; }
+	public function get videoWidth():uint { return undefined; }
 
-	public function get videoHeight():uint { return 0; }
+	public function get videoHeight():uint { return undefined; }
 
-	public function get poster():String { return ''; }
+	public function get poster():String { return undefined; }
 	public function set poster(value:String):void { }
 }
 

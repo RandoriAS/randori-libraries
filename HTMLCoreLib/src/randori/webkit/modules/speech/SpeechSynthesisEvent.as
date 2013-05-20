@@ -52,11 +52,11 @@ import randori.webkit.dom.DomEvent;
 public class SpeechSynthesisEvent extends DomEvent
 {
 
-	public function get charIndex():uint { return 0; }
+	public function get charIndex():uint { return undefined; }
 
-	public function get elapsedTime():Number { return 0; }
+	public function get elapsedTime():Number { return undefined; }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 }
 
 }

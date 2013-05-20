@@ -54,27 +54,27 @@ public class SVGTextPositioningElement extends SVGTextContentElement
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLengthList
 	*/
-	public function get x():SVGAnimatedLengthList { return null; }
+	public function get x():SVGAnimatedLengthList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLengthList
 	*/
-	public function get y():SVGAnimatedLengthList { return null; }
+	public function get y():SVGAnimatedLengthList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLengthList
 	*/
-	public function get dx():SVGAnimatedLengthList { return null; }
+	public function get dx():SVGAnimatedLengthList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLengthList
 	*/
-	public function get dy():SVGAnimatedLengthList { return null; }
+	public function get dy():SVGAnimatedLengthList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumberList
 	*/
-	public function get rotate():SVGAnimatedNumberList { return null; }
+	public function get rotate():SVGAnimatedNumberList { return undefined; }
 }
 
 }

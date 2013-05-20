@@ -56,7 +56,7 @@ public class HTMLDivElement extends HTMLElement
 	*/
 	public function HTMLDivElement() {super();}
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 }
 

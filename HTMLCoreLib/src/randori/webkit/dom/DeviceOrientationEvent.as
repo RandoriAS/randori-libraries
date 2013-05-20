@@ -52,13 +52,13 @@ package randori.webkit.dom
 public class DeviceOrientationEvent extends DomEvent
 {
 
-	public function get alpha():Number { return 0; }
+	public function get alpha():Number { return undefined; }
 
-	public function get beta():Number { return 0; }
+	public function get beta():Number { return undefined; }
 
-	public function get gamma():Number { return 0; }
+	public function get gamma():Number { return undefined; }
 
-	public function get absolute():Boolean { return false; }
+	public function get absolute():Boolean { return undefined; }
 	/**
 	*  @param type (optional argument, default value is <code>undefined</code>)
 	*  @param bubbles (optional argument, default value is <code>undefined</code>)

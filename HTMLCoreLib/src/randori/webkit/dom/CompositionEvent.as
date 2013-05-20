@@ -52,7 +52,7 @@ import randori.webkit.page.Window;
 public class CompositionEvent extends UIEvent
 {
 
-	public function get data():String { return ''; }
+	public function get data():String { return undefined; }
 	/**
 	*  @param typeArg (optional argument, default value is <code>undefined</code>)
 	*  @param canBubbleArg (optional argument, default value is <code>undefined</code>)

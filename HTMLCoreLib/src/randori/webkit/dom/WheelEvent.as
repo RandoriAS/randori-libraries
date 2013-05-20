@@ -55,13 +55,13 @@ public class WheelEvent extends MouseEvent
 	public static const DOM_DELTA_LINE:uint = 0x01;
 	public static const DOM_DELTA_PAGE:uint = 0x02;
 
-	public function get wheelDeltaX():uint { return 0; }
+	public function get wheelDeltaX():uint { return undefined; }
 
-	public function get wheelDeltaY():uint { return 0; }
+	public function get wheelDeltaY():uint { return undefined; }
 
-	public function get deltaMode():uint { return 0; }
+	public function get deltaMode():uint { return undefined; }
 
-	public function get wheelDelta():uint { return 0; }
+	public function get wheelDelta():uint { return undefined; }
 	/**
 	*  @param wheelDeltaX (optional argument, default value is <code>undefined</code>)
 	*  @param wheelDeltaY (optional argument, default value is <code>undefined</code>)

@@ -54,7 +54,7 @@ public class DelayNode extends AudioNode
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get delayTime():AudioParam { return null; }
+	public function get delayTime():AudioParam { return undefined; }
 }
 
 }

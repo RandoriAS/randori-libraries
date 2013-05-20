@@ -52,11 +52,11 @@ import randori.webkit.dom.DomEvent;
 public class CloseEvent extends DomEvent
 {
 
-	public function get wasClean():Boolean { return false; }
+	public function get wasClean():Boolean { return undefined; }
 
-	public function get code():uint { return 0; }
+	public function get code():uint { return undefined; }
 
-	public function get reason():String { return ''; }
+	public function get reason():String { return undefined; }
 }
 
 }

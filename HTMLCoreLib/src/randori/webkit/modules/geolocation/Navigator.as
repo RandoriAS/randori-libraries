@@ -53,7 +53,7 @@ public class Navigator
 	/**
 	*  @see randori.webkit.modules.geolocation.Geolocation
 	*/
-	public function get geolocation():Geolocation { return null; }
+	public function get geolocation():Geolocation { return undefined; }
 }
 
 }

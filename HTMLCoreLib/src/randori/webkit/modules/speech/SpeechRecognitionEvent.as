@@ -42,6 +42,7 @@ package randori.webkit.modules.speech
 {
 
 import randori.webkit.dom.DomEvent;
+import randori.webkit.dom.Document;
 
 [JavaScript(export="false", nativecondition="SCRIPTED_SPEECH", name="SpeechRecognitionEvent")]
 /**
@@ -52,22 +53,17 @@ import randori.webkit.dom.DomEvent;
 public class SpeechRecognitionEvent extends DomEvent
 {
 
-	/**
-	*  @see randori.webkit.modules.speech.SpeechRecognitionResult
-	*/
-	public function get result():SpeechRecognitionResult { return null; }
+	public function get resultIndex():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.speech.SpeechRecognitionResultList
 	*/
-	public function get resultHistory():SpeechRecognitionResultList { return null; }
-
-	public function get resultIndex():uint { return 0; }
+	public function get results():SpeechRecognitionResultList { return undefined; }
 
 	/**
-	*  @see randori.webkit.modules.speech.SpeechRecognitionResultList
+	*  @see randori.webkit.dom.Document
 	*/
-	public function get results():SpeechRecognitionResultList { return null; }
+	public function get emma():Document { return undefined; }
 }
 
 }

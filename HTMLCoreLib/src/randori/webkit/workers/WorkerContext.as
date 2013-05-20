@@ -61,32 +61,32 @@ public class WorkerContext
 	/**
 	*  @see randori.webkit.workers.WorkerContext
 	*/
-	public function get self():WorkerContext { return null; }
+	public function get self():WorkerContext { return undefined; }
 
 	/**
 	*  @see randori.webkit.workers.WorkerLocation
 	*/
-	public function get location():WorkerLocation { return null; }
+	public function get location():WorkerLocation { return undefined; }
 	public function close():void {}
 
 	/**
 	*  Function that accepts an event of type <code>ErrorEvent</code>.
 	*  @see randori.webkit.dom.ErrorEvent
 	*/
-	public function get onerror():Function { return null; }
+	public function get onerror():Function { return undefined; }
 	public function set onerror(value:Function):void { }
 	public function importScripts():void {}
 
 	/**
 	*  @see randori.webkit.page.WorkerNavigator
 	*/
-	public function get navigator():WorkerNavigator { return null; }
+	public function get navigator():WorkerNavigator { return undefined; }
 	/**
 	*  @param handler
 	*  @param timeout (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>uint</code> instance.
 	*/
-	public function setTimeout(handler:*, timeout:uint=undefined):uint { return 0;}
+	public function setTimeout(handler:*, timeout:uint=undefined):uint { return undefined;}
 	/**
 	*  @param handle (optional argument, default value is <code>undefined</code>)
 	*/
@@ -96,139 +96,139 @@ public class WorkerContext
 	*  @param timeout (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>uint</code> instance.
 	*/
-	public function setInterval(handler:*, timeout:uint=undefined):uint { return 0;}
+	public function setInterval(handler:*, timeout:uint=undefined):uint { return undefined;}
 	/**
 	*  @param handle (optional argument, default value is <code>undefined</code>)
 	*/
 	public function clearInterval(handle:uint=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param evt
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(evt:DomEvent):Boolean { return false;}
+	public function dispatchEvent(evt:DomEvent):Boolean { return undefined;}
 
 	[JavaScriptProperty(name="MessageEvent")]
 	/**
 	*  @see randori.webkit.dom.MessageEvent
 	*/
-	public function get MessageEvent_():MessageEvent { return null; }
+	public function get MessageEvent_():MessageEvent { return undefined; }
 	public function set MessageEvent_(value:MessageEvent):void { }
 
 	[JavaScriptProperty(name="WorkerLocation")]
 	/**
 	*  @see randori.webkit.workers.WorkerLocation
 	*/
-	public function get WorkerLocation_():WorkerLocation { return null; }
+	public function get WorkerLocation_():WorkerLocation { return undefined; }
 	public function set WorkerLocation_(value:WorkerLocation):void { }
 
 	[JavaScriptProperty(name="EventSource")]
 	/**
 	*  @see randori.webkit.page.EventSource
 	*/
-	public function get EventSource_():EventSource { return null; }
+	public function get EventSource_():EventSource { return undefined; }
 	public function set EventSource_(value:EventSource):void { }
 
 	[JavaScriptProperty(name="XMLHttpRequest")]
 	/**
 	*  @see randori.webkit.xml.XMLHttpRequest
 	*/
-	public function get XMLHttpRequest_():XMLHttpRequest { return null; }
+	public function get XMLHttpRequest_():XMLHttpRequest { return undefined; }
 	public function set XMLHttpRequest_(value:XMLHttpRequest):void { }
 
 	[JavaScriptProperty(name="URL")]
 	/**
 	*  @see randori.webkit.html.URL
 	*/
-	public function get URL_():URL { return null; }
+	public function get URL_():URL { return undefined; }
 	public function set URL_(value:URL):void { }
 
 	[JavaScriptProperty(name="ArrayBuffer")]
 	/**
 	*  @see randori.webkit.html.canvas.ArrayBuffer
 	*/
-	public function get ArrayBuffer_():ArrayBuffer { return null; }
+	public function get ArrayBuffer_():ArrayBuffer { return undefined; }
 	public function set ArrayBuffer_(value:ArrayBuffer):void { }
 
 	[JavaScriptProperty(name="Int8Array")]
 	/**
 	*  @see randori.webkit.html.canvas.Int8Array
 	*/
-	public function get Int8Array_():Object { return null; }
+	public function get Int8Array_():Object { return undefined; }
 	public function set Int8Array_(value:Object):void { }
 
 	[JavaScriptProperty(name="Uint8Array")]
 	/**
 	*  @see randori.webkit.html.canvas.Uint8Array
 	*/
-	public function get Uint8Array_():Object { return null; }
+	public function get Uint8Array_():Object { return undefined; }
 	public function set Uint8Array_(value:Object):void { }
 
 	[JavaScriptProperty(name="Uint8ClampedArray")]
 	/**
 	*  @see randori.webkit.html.canvas.Uint8ClampedArray
 	*/
-	public function get Uint8ClampedArray_():Object { return null; }
+	public function get Uint8ClampedArray_():Object { return undefined; }
 	public function set Uint8ClampedArray_(value:Object):void { }
 
 	[JavaScriptProperty(name="Int16Array")]
 	/**
 	*  @see randori.webkit.html.canvas.Int16Array
 	*/
-	public function get Int16Array_():Object { return null; }
+	public function get Int16Array_():Object { return undefined; }
 	public function set Int16Array_(value:Object):void { }
 
 	[JavaScriptProperty(name="Uint16Array")]
 	/**
 	*  @see randori.webkit.html.canvas.Uint16Array
 	*/
-	public function get Uint16Array_():Object { return null; }
+	public function get Uint16Array_():Object { return undefined; }
 	public function set Uint16Array_(value:Object):void { }
 
 	[JavaScriptProperty(name="Int32Array")]
 	/**
 	*  @see randori.webkit.html.canvas.Int32Array
 	*/
-	public function get Int32Array_():Object { return null; }
+	public function get Int32Array_():Object { return undefined; }
 	public function set Int32Array_(value:Object):void { }
 
 	[JavaScriptProperty(name="Uint32Array")]
 	/**
 	*  @see randori.webkit.html.canvas.Uint32Array
 	*/
-	public function get Uint32Array_():Object { return null; }
+	public function get Uint32Array_():Object { return undefined; }
 	public function set Uint32Array_(value:Object):void { }
 
 	[JavaScriptProperty(name="Float32Array")]
 	/**
 	*  @see randori.webkit.html.canvas.Float32Array
 	*/
-	public function get Float32Array_():Object { return null; }
+	public function get Float32Array_():Object { return undefined; }
 	public function set Float32Array_(value:Object):void { }
 
 	[JavaScriptProperty(name="Float64Array")]
 	/**
 	*  @see randori.webkit.html.canvas.Float64Array
 	*/
-	public function get Float64Array_():Object { return null; }
+	public function get Float64Array_():Object { return undefined; }
 	public function set Float64Array_(value:Object):void { }
 
 	[JavaScriptProperty(name="DataView")]
 	/**
 	*  @see randori.webkit.html.canvas.DataView
 	*/
-	public function get DataView_():DataView { return null; }
+	public function get DataView_():DataView { return undefined; }
 	public function set DataView_(value:DataView):void { }
 }
 

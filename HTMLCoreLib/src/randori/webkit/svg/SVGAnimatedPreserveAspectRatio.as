@@ -53,12 +53,12 @@ public class SVGAnimatedPreserveAspectRatio
 	/**
 	*  @see randori.webkit.svg.SVGPreserveAspectRatio
 	*/
-	public function get baseVal():SVGPreserveAspectRatio { return null; }
+	public function get baseVal():SVGPreserveAspectRatio { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGPreserveAspectRatio
 	*/
-	public function get animVal():SVGPreserveAspectRatio { return null; }
+	public function get animVal():SVGPreserveAspectRatio { return undefined; }
 }
 
 }

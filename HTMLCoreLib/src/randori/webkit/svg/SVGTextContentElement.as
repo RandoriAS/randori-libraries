@@ -60,51 +60,51 @@ public class SVGTextContentElement extends SVGStyledElement implements SVGTests,
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get textLength():SVGAnimatedLength { return null; }
+	public function get textLength():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedEnumeration
 	*/
-	public function get lengthAdjust():SVGAnimatedEnumeration { return null; }
+	public function get lengthAdjust():SVGAnimatedEnumeration { return undefined; }
 	/**
 	*  @return A <code>uint</code> instance.
 	*/
-	public function getNumberOfChars():uint { return 0;}
+	public function getNumberOfChars():uint { return undefined;}
 	/**
 	*  @return A <code>Number</code> instance.
 	*/
-	public function getComputedTextLength():Number { return 0;}
+	public function getComputedTextLength():Number { return undefined;}
 	/**
 	*  @param offset (optional argument, default value is <code>undefined</code>)
 	*  @param length (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Number</code> instance.
 	*/
-	public function getSubStringLength(offset:uint=undefined, length:uint=undefined):Number { return 0;}
+	public function getSubStringLength(offset:uint=undefined, length:uint=undefined):Number { return undefined;}
 	/**
 	*  @param offset (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>SVGPoint</code> instance.
 	*/
-	public function getStartPositionOfChar(offset:uint=undefined):SVGPoint { return null;}
+	public function getStartPositionOfChar(offset:uint=undefined):SVGPoint { return undefined;}
 	/**
 	*  @param offset (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>SVGPoint</code> instance.
 	*/
-	public function getEndPositionOfChar(offset:uint=undefined):SVGPoint { return null;}
+	public function getEndPositionOfChar(offset:uint=undefined):SVGPoint { return undefined;}
 	/**
 	*  @param offset (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>SVGRect</code> instance.
 	*/
-	public function getExtentOfChar(offset:uint=undefined):SVGRect { return null;}
+	public function getExtentOfChar(offset:uint=undefined):SVGRect { return undefined;}
 	/**
 	*  @param offset (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Number</code> instance.
 	*/
-	public function getRotationOfChar(offset:uint=undefined):Number { return 0;}
+	public function getRotationOfChar(offset:uint=undefined):Number { return undefined;}
 	/**
 	*  @param point (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>uint</code> instance.
 	*/
-	public function getCharNumAtPosition(point:SVGPoint=undefined):uint { return 0;}
+	public function getCharNumAtPosition(point:SVGPoint=undefined):uint { return undefined;}
 	/**
 	*  @param offset (optional argument, default value is <code>undefined</code>)
 	*  @param length (optional argument, default value is <code>undefined</code>)
@@ -114,33 +114,33 @@ public class SVGTextContentElement extends SVGStyledElement implements SVGTests,
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get requiredFeatures():SVGStringList { return null; }
+	public function get requiredFeatures():SVGStringList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get requiredExtensions():SVGStringList { return null; }
+	public function get requiredExtensions():SVGStringList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get systemLanguage():SVGStringList { return null; }
+	public function get systemLanguage():SVGStringList { return undefined; }
 	/**
 	*  @param extension (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function hasExtension(extension:String=undefined):Boolean { return false;}
+	public function hasExtension(extension:String=undefined):Boolean { return undefined;}
 
-	public function get xmllang():String { return ''; }
+	public function get xmllang():String { return undefined; }
 	public function set xmllang(value:String):void { }
 
-	public function get xmlspace():String { return ''; }
+	public function get xmlspace():String { return undefined; }
 	public function set xmlspace(value:String):void { }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedBoolean
 	*/
-	public function get externalResourcesRequired():SVGAnimatedBoolean { return null; }
+	public function get externalResourcesRequired():SVGAnimatedBoolean { return undefined; }
 }
 
 }

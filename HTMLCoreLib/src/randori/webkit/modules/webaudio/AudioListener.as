@@ -50,10 +50,10 @@ package randori.webkit.modules.webaudio
 public class AudioListener
 {
 
-	public function get dopplerFactor():Number { return 0; }
+	public function get dopplerFactor():Number { return undefined; }
 	public function set dopplerFactor(value:Number):void { }
 
-	public function get speedOfSound():Number { return 0; }
+	public function get speedOfSound():Number { return undefined; }
 	public function set speedOfSound(value:Number):void { }
 	/**
 	*  @param x

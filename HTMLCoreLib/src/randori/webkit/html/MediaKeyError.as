@@ -56,9 +56,9 @@ public class MediaKeyError
 	public static const MEDIA_KEYERR_HARDWARECHANGE:uint = 5;
 	public static const MEDIA_KEYERR_DOMAIN:uint = 6;
 
-	public function get code():uint { return 0; }
+	public function get code():uint { return undefined; }
 
-	public function get systemCode():uint { return 0; }
+	public function get systemCode():uint { return undefined; }
 }
 
 }

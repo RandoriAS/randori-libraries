@@ -58,48 +58,48 @@ public class SVGFEImageElement extends SVGStyledElement implements SVGURIReferen
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedPreserveAspectRatio
 	*/
-	public function get preserveAspectRatio():SVGAnimatedPreserveAspectRatio { return null; }
+	public function get preserveAspectRatio():SVGAnimatedPreserveAspectRatio { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get href():SVGAnimatedString { return null; }
+	public function get href():SVGAnimatedString { return undefined; }
 
-	public function get xmllang():String { return ''; }
+	public function get xmllang():String { return undefined; }
 	public function set xmllang(value:String):void { }
 
-	public function get xmlspace():String { return ''; }
+	public function get xmlspace():String { return undefined; }
 	public function set xmlspace(value:String):void { }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedBoolean
 	*/
-	public function get externalResourcesRequired():SVGAnimatedBoolean { return null; }
+	public function get externalResourcesRequired():SVGAnimatedBoolean { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get x():SVGAnimatedLength { return null; }
+	public function get x():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get y():SVGAnimatedLength { return null; }
+	public function get y():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get width():SVGAnimatedLength { return null; }
+	public function get width():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get height():SVGAnimatedLength { return null; }
+	public function get height():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get result():SVGAnimatedString { return null; }
+	public function get result():SVGAnimatedString { return undefined; }
 }
 
 }

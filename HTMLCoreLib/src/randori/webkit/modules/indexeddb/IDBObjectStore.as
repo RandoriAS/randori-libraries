@@ -51,78 +51,151 @@ import randori.webkit.dom.DOMStringList;
 public class IDBObjectStore
 {
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.indexeddb.IDBAny
 	*/
-	public function get keyPath():IDBAny { return null; }
+	public function get keyPath():IDBAny { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.DOMStringList
 	*/
-	public function get indexNames():DOMStringList { return null; }
+	public function get indexNames():DOMStringList { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.indexeddb.IDBTransaction
 	*/
-	public function get transaction():IDBTransaction { return null; }
+	public function get transaction():IDBTransaction { return undefined; }
 
-	public function get autoIncrement():Boolean { return false; }
+	public function get autoIncrement():Boolean { return undefined; }
 	/**
 	*  @param value
-	*  @param key (optional argument, default value is <code>null</code>)
+	*  @param key (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>IDBRequest</code> instance.
 	*/
-	public function put(value:*, key:*=null):IDBRequest { return null;}
+	public function put(value:*, key:*=undefined):IDBRequest { return undefined;}
 	/**
 	*  @param value
-	*  @param key (optional argument, default value is <code>null</code>)
+	*  @param key (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>IDBRequest</code> instance.
 	*/
-	public function add(value:*, key:*=null):IDBRequest { return null;}
+	public function add(value:*, key:*=undefined):IDBRequest { return undefined;}
 	[JavaScriptMethod(name="delete")]
 	/**
 	*  @param keyRange
 	*  @return A <code>IDBRequest</code> instance.
 	*/
-	public function delete_(keyRange:IDBKeyRange):IDBRequest { return null;}
-	/**
-	*  @return A <code>IDBRequest</code> instance.
-	*/
-	public function clear():IDBRequest { return null;}
+	public function delete1(keyRange:IDBKeyRange):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="delete")]
 	/**
 	*  @param key
 	*  @return A <code>IDBRequest</code> instance.
 	*/
-	public function get(key:IDBKeyRange):IDBRequest { return null;}
+	public function delete2(key:*):IDBRequest { return undefined;}
 	/**
-	*  @param range (optional argument, default value is <code>null</code>)
-	*  @param direction (optional argument, default value is <code>''</code>)
 	*  @return A <code>IDBRequest</code> instance.
 	*/
-	public function openCursor(range:IDBKeyRange=null, direction:String=''):IDBRequest { return null;}
+	public function clear():IDBRequest { return undefined;}
+	[JavaScriptMethod(name="get")]
+	/**
+	*  @param key
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function get1(key:IDBKeyRange):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="get")]
+	/**
+	*  @param key
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function get2(key:*):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openCursor")]
+	/**
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function openCursor1():IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openCursor")]
+	/**
+	*  @param range (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function openCursor2(range:IDBKeyRange=undefined):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openCursor")]
+	/**
+	*  @param range (optional argument, default value is <code>undefined</code>)
+	*  @param direction (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function openCursor3(range:IDBKeyRange=undefined, direction:String=undefined):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openCursor")]
+	/**
+	*  @param key
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function openCursor4(key:*):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="openCursor")]
+	/**
+	*  @param key
+	*  @param direction (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function openCursor5(key:*, direction:String=undefined):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="createIndex")]
 	/**
 	*  @param name
 	*  @param keyPath
-	*  @param options (optional argument, default value is <code>null</code>)
 	*  @return A <code>IDBIndex</code> instance.
 	*/
-	public function createIndex(name:String, keyPath:Vector.<String>, options:Object=null):IDBIndex { return null;}
+	public function createIndex1(name:String, keyPath:Vector.<String>):IDBIndex { return undefined;}
+	[JavaScriptMethod(name="createIndex")]
+	/**
+	*  @param name
+	*  @param keyPath
+	*  @param options (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBIndex</code> instance.
+	*/
+	public function createIndex2(name:String, keyPath:Vector.<String>, options:Object=undefined):IDBIndex { return undefined;}
+	[JavaScriptMethod(name="createIndex")]
+	/**
+	*  @param name
+	*  @param keyPath
+	*  @return A <code>IDBIndex</code> instance.
+	*/
+	public function createIndex3(name:String, keyPath:String):IDBIndex { return undefined;}
+	[JavaScriptMethod(name="createIndex")]
+	/**
+	*  @param name
+	*  @param keyPath
+	*  @param options (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBIndex</code> instance.
+	*/
+	public function createIndex4(name:String, keyPath:String, options:Object=undefined):IDBIndex { return undefined;}
 	/**
 	*  @param name
 	*  @return A <code>IDBIndex</code> instance.
 	*/
-	public function index(name:String):IDBIndex { return null;}
+	public function index(name:String):IDBIndex { return undefined;}
 	/**
 	*  @param name
 	*/
 	public function deleteIndex(name:String):void {}
+	[JavaScriptMethod(name="count")]
 	/**
-	*  @param range (optional argument, default value is <code>null</code>)
 	*  @return A <code>IDBRequest</code> instance.
 	*/
-	public function count(range:IDBKeyRange=null):IDBRequest { return null;}
+	public function count1():IDBRequest { return undefined;}
+	[JavaScriptMethod(name="count")]
+	/**
+	*  @param range (optional argument, default value is <code>undefined</code>)
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function count2(range:IDBKeyRange=undefined):IDBRequest { return undefined;}
+	[JavaScriptMethod(name="count")]
+	/**
+	*  @param key
+	*  @return A <code>IDBRequest</code> instance.
+	*/
+	public function count3(key:*):IDBRequest { return undefined;}
 }
 
 }

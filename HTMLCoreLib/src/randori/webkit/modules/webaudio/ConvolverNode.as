@@ -54,10 +54,10 @@ public class ConvolverNode extends AudioNode
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioBuffer
 	*/
-	public function get buffer():AudioBuffer { return null; }
+	public function get buffer():AudioBuffer { return undefined; }
 	public function set buffer(value:AudioBuffer):void { }
 
-	public function get normalize():Boolean { return false; }
+	public function get normalize():Boolean { return undefined; }
 	public function set normalize(value:Boolean):void { }
 }
 

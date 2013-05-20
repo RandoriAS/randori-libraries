@@ -55,7 +55,7 @@ public class SpeechInputEvent extends DomEvent
 	/**
 	*  @see randori.webkit.page.SpeechInputResultList
 	*/
-	public function get results():SpeechInputResultList { return null; }
+	public function get results():SpeechInputResultList { return undefined; }
 }
 
 }

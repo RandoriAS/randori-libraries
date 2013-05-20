@@ -50,18 +50,18 @@ package randori.webkit.modules.webaudio
 public class AudioParam
 {
 
-	public function get value():Number { return 0; }
+	public function get value():Number { return undefined; }
 	public function set value(value:Number):void { }
 
-	public function get minValue():Number { return 0; }
+	public function get minValue():Number { return undefined; }
 
-	public function get maxValue():Number { return 0; }
+	public function get maxValue():Number { return undefined; }
 
-	public function get defaultValue():Number { return 0; }
+	public function get defaultValue():Number { return undefined; }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
-	public function get units():uint { return 0; }
+	public function get units():uint { return undefined; }
 	/**
 	*  @param value
 	*  @param time

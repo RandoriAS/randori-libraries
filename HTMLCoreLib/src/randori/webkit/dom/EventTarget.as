@@ -78,7 +78,7 @@ public class EventTarget
 	*  through the tree will not trigger an <code>EventListener</code> designated to use
 	*  capture.</p>
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  <p>This method allows the removal of event listeners from the event target.  If an
 	*  <code>EventListener</code> is removed from an <code>EventTarget</code> while it is
@@ -97,7 +97,7 @@ public class EventTarget
 	*  affect a non-capturing version of the same listener, and vice versa.
 	*  </p>
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  <p>This method allows the dispatch of events into the implementations event model.  Events
 	*  dispatched in this manner will have the same capturing and bubbling behavior as events
@@ -117,7 +117,7 @@ public class EventTarget
 	*  <code>null</code> or an empty string will also trigger this
 	*  exception.</p>
 	*/
-	public function dispatchEvent(event:DomEvent):Boolean { return false;}
+	public function dispatchEvent(event:DomEvent):Boolean { return undefined;}
 }
 
 }

@@ -50,25 +50,25 @@ package randori.webkit.html
 public class ValidityState
 {
 
-	public function get valueMissing():Boolean { return false; }
+	public function get valueMissing():Boolean { return undefined; }
 
-	public function get typeMismatch():Boolean { return false; }
+	public function get typeMismatch():Boolean { return undefined; }
 
-	public function get patternMismatch():Boolean { return false; }
+	public function get patternMismatch():Boolean { return undefined; }
 
-	public function get tooLong():Boolean { return false; }
+	public function get tooLong():Boolean { return undefined; }
 
-	public function get rangeUnderflow():Boolean { return false; }
+	public function get rangeUnderflow():Boolean { return undefined; }
 
-	public function get rangeOverflow():Boolean { return false; }
+	public function get rangeOverflow():Boolean { return undefined; }
 
-	public function get stepMismatch():Boolean { return false; }
+	public function get stepMismatch():Boolean { return undefined; }
 
-	public function get badInput():Boolean { return false; }
+	public function get badInput():Boolean { return undefined; }
 
-	public function get customError():Boolean { return false; }
+	public function get customError():Boolean { return undefined; }
 
-	public function get valid():Boolean { return false; }
+	public function get valid():Boolean { return undefined; }
 }
 
 }

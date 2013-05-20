@@ -57,7 +57,7 @@ public class PannerNode extends AudioNode
 	public static const INVERSE_DISTANCE:uint = 1;
 	public static const EXPONENTIAL_DISTANCE:uint = 2;
 
-	public function get panningModel():String { return ''; }
+	public function get panningModel():String { return undefined; }
 	public function set panningModel(value:String):void { }
 	/**
 	*  @param x
@@ -78,25 +78,25 @@ public class PannerNode extends AudioNode
 	*/
 	public function setVelocity(x:Number, y:Number, z:Number):void {}
 
-	public function get distanceModel():String { return ''; }
+	public function get distanceModel():String { return undefined; }
 	public function set distanceModel(value:String):void { }
 
-	public function get refDistance():Number { return 0; }
+	public function get refDistance():Number { return undefined; }
 	public function set refDistance(value:Number):void { }
 
-	public function get maxDistance():Number { return 0; }
+	public function get maxDistance():Number { return undefined; }
 	public function set maxDistance(value:Number):void { }
 
-	public function get rolloffFactor():Number { return 0; }
+	public function get rolloffFactor():Number { return undefined; }
 	public function set rolloffFactor(value:Number):void { }
 
-	public function get coneInnerAngle():Number { return 0; }
+	public function get coneInnerAngle():Number { return undefined; }
 	public function set coneInnerAngle(value:Number):void { }
 
-	public function get coneOuterAngle():Number { return 0; }
+	public function get coneOuterAngle():Number { return undefined; }
 	public function set coneOuterAngle(value:Number):void { }
 
-	public function get coneOuterGain():Number { return 0; }
+	public function get coneOuterGain():Number { return undefined; }
 	public function set coneOuterGain(value:Number):void { }
 }
 

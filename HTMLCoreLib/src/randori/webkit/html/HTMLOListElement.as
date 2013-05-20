@@ -56,16 +56,16 @@ public class HTMLOListElement extends HTMLElement
 	*/
 	public function HTMLOListElement() {super();}
 
-	public function get compact():Boolean { return false; }
+	public function get compact():Boolean { return undefined; }
 	public function set compact(value:Boolean):void { }
 
-	public function get start():uint { return 0; }
+	public function get start():uint { return undefined; }
 	public function set start(value:uint):void { }
 
-	public function get reversed():Boolean { return false; }
+	public function get reversed():Boolean { return undefined; }
 	public function set reversed(value:Boolean):void { }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 }
 

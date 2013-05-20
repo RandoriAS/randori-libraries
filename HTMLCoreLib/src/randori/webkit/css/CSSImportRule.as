@@ -63,7 +63,7 @@ public class CSSImportRule extends CSSRule
 	*  contain the <code>"url(...)"</code> specifier around the URI.
 	*  </p>
 	*/
-	public function get href():String { return ''; }
+	public function get href():String { return undefined; }
 
 	/**
 	*  <p>
@@ -72,7 +72,7 @@ public class CSSImportRule extends CSSRule
 	*  </p>
 	*  @see randori.webkit.css.MediaList
 	*/
-	public function get media():MediaList { return null; }
+	public function get media():MediaList { return undefined; }
 
 	/**
 	*  <p>The style sheet referred to by this rule, if it has been loaded. The
@@ -82,7 +82,7 @@ public class CSSImportRule extends CSSRule
 	*  </p>
 	*  @see randori.webkit.css.CSSStyleSheet
 	*/
-	public function get styleSheet():CSSStyleSheet { return null; }
+	public function get styleSheet():CSSStyleSheet { return undefined; }
 }
 
 }

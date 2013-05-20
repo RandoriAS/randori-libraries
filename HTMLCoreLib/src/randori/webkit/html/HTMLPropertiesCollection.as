@@ -55,7 +55,7 @@ public class HTMLPropertiesCollection extends HTMLCollection
 	/**
 	*  @see randori.webkit.dom.DOMStringList
 	*/
-	public function get names():DOMStringList { return null; }
+	public function get names():DOMStringList { return undefined; }
 }
 
 }

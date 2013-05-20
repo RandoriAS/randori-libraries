@@ -52,7 +52,7 @@ import randori.webkit.dom.DomEvent;
 public class WebGLContextEvent extends DomEvent
 {
 
-	public function get statusMessage():String { return ''; }
+	public function get statusMessage():String { return undefined; }
 }
 
 }

@@ -55,7 +55,7 @@ public class SVGTRefElement extends SVGTextPositioningElement implements SVGURIR
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get href():SVGAnimatedString { return null; }
+	public function get href():SVGAnimatedString { return undefined; }
 }
 
 }

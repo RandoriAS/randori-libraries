@@ -65,7 +65,7 @@ public dynamic class NamedNodeMap
 	*  <code>nodeName</code>, or <code>null</code> if it does not
 	*  identify any node in this map.</p>
 	*/
-	public function getNamedItem(name:String=undefined):Node { return null;}
+	public function getNamedItem(name:String=undefined):Node { return undefined;}
 	/**
 	*  <p>Adds a node using its <code>nodeName</code> attribute. If a node with
 	*  that name is already present in this map, it is replaced by the new
@@ -86,7 +86,7 @@ public dynamic class NamedNodeMap
 	*  <code>Element</code> object. The DOM user must explicitly clone
 	*  <code>Attr</code> nodes to re-use them in other elements.</p>
 	*/
-	public function setNamedItem(node:Node=undefined):Node { return null;}
+	public function setNamedItem(node:Node=undefined):Node { return undefined;}
 	/**
 	*  <p>Removes a node specified by name. When this map contains the
 	*  attributes attached to an element, if the removed attribute is
@@ -99,14 +99,14 @@ public dynamic class NamedNodeMap
 	*  @throw DOMException <p>NOT_FOUND_ERR: Raised if there is no node named
 	*  <code>name</code> in this map.</p><p>NO_MODIFICATION_ALLOWED_ERR: Raised if this map is readonly.</p>
 	*/
-	public function removeNamedItem(name:String=undefined):Node { return null;}
+	public function removeNamedItem(name:String=undefined):Node { return undefined;}
 
 	/**
 	*  <p>The number of nodes in this map. The range of valid child node
 	*  indices is <code>0</code> to <code>length-1</code>
 	*  inclusive. </p>
 	*/
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 	/**
 	*  <p>Retrieves a node specified by local name and namespace
 	*  URI. HTML-only DOM implementations do not need to implement this
@@ -119,7 +119,7 @@ public dynamic class NamedNodeMap
 	*  local name and namespace URI, or <code>null</code> if they do not
 	*  identify any node in this map.</p>
 	*/
-	public function getNamedItemNS(namespaceURI:String=undefined, localName:String=undefined):Node { return null;}
+	public function getNamedItemNS(namespaceURI:String=undefined, localName:String=undefined):Node { return undefined;}
 	/**
 	*  <p>Adds a node using its <code>namespaceURI</code> and
 	*  <code>localName</code>. If a node with that namespace URI and that
@@ -138,7 +138,7 @@ public dynamic class NamedNodeMap
 	*  <code>Element</code> object. The DOM user must explicitly clone
 	*  <code>Attr</code> nodes to re-use them in other elements.</p>
 	*/
-	public function setNamedItemNS(node:Node=undefined):Node { return null;}
+	public function setNamedItemNS(node:Node=undefined):Node { return undefined;}
 	/**
 	*  <p>Removes a node specified by local name and namespace URI. A
 	*  removed attribute may be known to have a default value when this map
@@ -158,7 +158,7 @@ public dynamic class NamedNodeMap
 	*  <code>namespaceURI</code> and <code>localName</code> in this
 	*  map.</p><p>NO_MODIFICATION_ALLOWED_ERR: Raised if this map is readonly.</p>
 	*/
-	public function removeNamedItemNS(namespaceURI:String=undefined, localName:String=undefined):Node { return null;}
+	public function removeNamedItemNS(namespaceURI:String=undefined, localName:String=undefined):Node { return undefined;}
 }
 
 }

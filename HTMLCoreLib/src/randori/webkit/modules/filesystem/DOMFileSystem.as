@@ -50,12 +50,12 @@ package randori.webkit.modules.filesystem
 public class DOMFileSystem
 {
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.filesystem.DirectoryEntry
 	*/
-	public function get root():DirectoryEntry { return null; }
+	public function get root():DirectoryEntry { return undefined; }
 }
 
 }

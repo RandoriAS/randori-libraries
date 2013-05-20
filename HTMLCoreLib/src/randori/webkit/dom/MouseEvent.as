@@ -68,52 +68,52 @@ public class MouseEvent extends UIEvent
 	*  event occurred relative to the origin of the screen coordinate
 	*  system.</p>
 	*/
-	public function get screenX():uint { return 0; }
+	public function get screenX():uint { return undefined; }
 
 	/**
 	*  <p>The vertical coordinate at which the
 	*  event occurred relative to the origin of the screen coordinate
 	*  system.</p>
 	*/
-	public function get screenY():uint { return 0; }
+	public function get screenY():uint { return undefined; }
 
 	/**
 	*  <p>The horizontal coordinate at which the
 	*  event occurred relative to the DOM implementation's client area.</p>
 	*/
-	public function get clientX():uint { return 0; }
+	public function get clientX():uint { return undefined; }
 
 	/**
 	*  <p>The vertical coordinate at which the
 	*  event occurred relative to the DOM implementation's client area.</p>
 	*/
-	public function get clientY():uint { return 0; }
+	public function get clientY():uint { return undefined; }
 
 	/**
 	*  <p>Used to indicate whether the 'ctrl' key was depressed
 	*  during the firing of the event.</p>
 	*/
-	public function get ctrlKey():Boolean { return false; }
+	public function get ctrlKey():Boolean { return undefined; }
 
 	/**
 	*  <p>Used to indicate whether the 'shift' key was depressed
 	*  during the firing of the event.</p>
 	*/
-	public function get shiftKey():Boolean { return false; }
+	public function get shiftKey():Boolean { return undefined; }
 
 	/**
 	*  <p>Used to indicate whether the 'alt' key was depressed
 	*  during the firing of the event. On some platforms this key may map to
 	*  an alternative key name.</p>
 	*/
-	public function get altKey():Boolean { return false; }
+	public function get altKey():Boolean { return undefined; }
 
 	/**
 	*  <p>Used to indicate whether the 'meta' key was depressed
 	*  during the firing of the event.  On some platforms this key may map to
 	*  an alternative key name.</p>
 	*/
-	public function get metaKey():Boolean { return false; }
+	public function get metaKey():Boolean { return undefined; }
 
 	/**
 	*  <p>During mouse events caused by the depression or release of a mouse
@@ -123,7 +123,7 @@ public class MouseEvent extends UIEvent
 	*  two to indicate the right button.  For mice configured for left handed use in which
 	*  the button actions are reversed the values are instead read from right to left.</p>
 	*/
-	public function get button():uint { return 0; }
+	public function get button():uint { return undefined; }
 
 	/**
 	*  <p>Used to identify a secondary <code>EventTarget</code> related
@@ -132,7 +132,7 @@ public class MouseEvent extends UIEvent
 	*  <code>EventTarget</code> which the pointing device entered.</p>
 	*  @see randori.webkit.dom.EventTarget
 	*/
-	public function get relatedTarget():EventTarget { return null; }
+	public function get relatedTarget():EventTarget { return undefined; }
 	/**
 	*  <p>The <code>initMouseEvent</code> method is used to initialize the value of a <code>MouseEvent</code> created through
 	*  the <code>DocumentEvent</code> interface.  This method may only be called before the <code>MouseEvent</code> has
@@ -162,28 +162,28 @@ public class MouseEvent extends UIEvent
 	*/
 	public function initMouseEvent(type:String=undefined, canBubble:Boolean=undefined, cancelable:Boolean=undefined, view:Window=undefined, detail:uint=undefined, screenX:uint=undefined, screenY:uint=undefined, clientX:uint=undefined, clientY:uint=undefined, ctrlKey:Boolean=undefined, altKey:Boolean=undefined, shiftKey:Boolean=undefined, metaKey:Boolean=undefined, button:uint=undefined, relatedTarget:EventTarget=undefined):void {}
 
-	public function get offsetX():uint { return 0; }
+	public function get offsetX():uint { return undefined; }
 
-	public function get offsetY():uint { return 0; }
+	public function get offsetY():uint { return undefined; }
 
-	public function get x():uint { return 0; }
+	public function get x():uint { return undefined; }
 
-	public function get y():uint { return 0; }
-
-	/**
-	*  @see randori.webkit.dom.Node
-	*/
-	public function get fromElement():Node { return null; }
+	public function get y():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get toElement():Node { return null; }
+	public function get fromElement():Node { return undefined; }
+
+	/**
+	*  @see randori.webkit.dom.Node
+	*/
+	public function get toElement():Node { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Clipboard
 	*/
-	public function get dataTransfer():Clipboard { return null; }
+	public function get dataTransfer():Clipboard { return undefined; }
 }
 
 }

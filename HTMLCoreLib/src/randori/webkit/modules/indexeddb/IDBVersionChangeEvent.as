@@ -55,12 +55,12 @@ public class IDBVersionChangeEvent extends DomEvent
 	/**
 	*  @see randori.webkit.modules.indexeddb.IDBAny
 	*/
-	public function get oldVersion():IDBAny { return null; }
+	public function get oldVersion():IDBAny { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.indexeddb.IDBAny
 	*/
-	public function get newVersion():IDBAny { return null; }
+	public function get newVersion():IDBAny { return undefined; }
 }
 
 }

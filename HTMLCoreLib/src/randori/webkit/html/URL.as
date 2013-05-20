@@ -58,7 +58,7 @@ public class URL
 	*  @param blob
 	*  @return A <code>String</code> instance.
 	*/
-	public function createObjectURL(blob:Blob):String { return '';}
+	public function createObjectURL(blob:Blob):String { return undefined;}
 	/**
 	*  @param url
 	*/

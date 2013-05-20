@@ -51,7 +51,7 @@ package randori.webkit.modules.indexeddb
 public class IDBCursorWithValue extends IDBCursor
 {
 
-	public function get value():* { return null; }
+	public function get value():* { return undefined; }
 }
 
 }

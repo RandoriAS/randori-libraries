@@ -81,7 +81,7 @@ public class StyleSheet
 	*  HTML 4.0, and the type pseudo-attribute for the XML style sheet processing instruction.
 	*  </p>
 	*/
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 
 	/**
 	*  <p><code>false</code> if the style sheet is applied to the document.
@@ -92,7 +92,7 @@ public class StyleSheet
 	*  agent, the <code>disabled</code> attribute is ignored.
 	*  </p>
 	*/
-	public function get disabled():Boolean { return false; }
+	public function get disabled():Boolean { return undefined; }
 	public function set disabled(value:Boolean):void { }
 
 	/**
@@ -105,7 +105,7 @@ public class StyleSheet
 	*  </p>
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get ownerNode():Node { return null; }
+	public function get ownerNode():Node { return undefined; }
 
 	/**
 	*  <p>
@@ -117,7 +117,7 @@ public class StyleSheet
 	*  </p>
 	*  @see randori.webkit.css.StyleSheet
 	*/
-	public function get parentStyleSheet():StyleSheet { return null; }
+	public function get parentStyleSheet():StyleSheet { return undefined; }
 
 	/**
 	*  <p>
@@ -129,7 +129,7 @@ public class StyleSheet
 	*  instruction.
 	*  </p>
 	*/
-	public function get href():String { return ''; }
+	public function get href():String { return undefined; }
 
 	/**
 	*  <p>
@@ -139,7 +139,7 @@ public class StyleSheet
 	*  and the title pseudo-attribute for the XML style sheet processing instruction.
 	*  </p>
 	*/
-	public function get title():String { return ''; }
+	public function get title():String { return undefined; }
 
 	/**
 	*  <p>
@@ -153,7 +153,7 @@ public class StyleSheet
 	*  </p>
 	*  @see randori.webkit.css.MediaList
 	*/
-	public function get media():MediaList { return null; }
+	public function get media():MediaList { return undefined; }
 }
 
 }

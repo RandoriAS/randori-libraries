@@ -55,9 +55,9 @@ public class MediaKeyMessageEvent extends DomEvent
 	/**
 	*  @see randori.webkit.html.canvas.Uint8Array
 	*/
-	public function get message():Object { return null; }
+	public function get message():Object { return undefined; }
 
-	public function get destinationURL():String { return ''; }
+	public function get destinationURL():String { return undefined; }
 }
 
 }

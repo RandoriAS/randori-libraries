@@ -52,16 +52,16 @@ package randori.webkit.svg
 public class SVGAltGlyphElement extends SVGTextPositioningElement implements SVGURIReference
 {
 
-	public function get glyphRef():String { return ''; }
+	public function get glyphRef():String { return undefined; }
 	public function set glyphRef(value:String):void { }
 
-	public function get format():String { return ''; }
+	public function get format():String { return undefined; }
 	public function set format(value:String):void { }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get href():SVGAnimatedString { return null; }
+	public function get href():SVGAnimatedString { return undefined; }
 }
 
 }

@@ -50,13 +50,13 @@ package randori.webkit.plugins
 public dynamic class Plugin
 {
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
-	public function get filename():String { return ''; }
+	public function get filename():String { return undefined; }
 
-	public function get description():String { return ''; }
+	public function get description():String { return undefined; }
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 }
 
 }

@@ -54,7 +54,7 @@ public class Crypto
 	*  @param array
 	*  @return A <code>ArrayBufferView</code> instance.
 	*/
-	public function getRandomValues(array:ArrayBufferView):ArrayBufferView { return null;}
+	public function getRandomValues(array:ArrayBufferView):ArrayBufferView { return undefined;}
 }
 
 }

@@ -58,47 +58,52 @@ public class MediaSource
 	/**
 	*  @see randori.webkit.modules.mediasource.SourceBufferList
 	*/
-	public function get sourceBuffers():SourceBufferList { return null; }
+	public function get sourceBuffers():SourceBufferList { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.mediasource.SourceBufferList
 	*/
-	public function get activeSourceBuffers():SourceBufferList { return null; }
+	public function get activeSourceBuffers():SourceBufferList { return undefined; }
 
-	public function get duration():Number { return 0; }
+	public function get duration():Number { return undefined; }
 	public function set duration(value:Number):void { }
 	/**
 	*  @param type
 	*  @return A <code>SourceBuffer</code> instance.
 	*/
-	public function addSourceBuffer(type:String):SourceBuffer { return null;}
+	public function addSourceBuffer(type:String):SourceBuffer { return undefined;}
 	/**
 	*  @param buffer
 	*/
 	public function removeSourceBuffer(buffer:SourceBuffer):void {}
 
-	public function get readyState():String { return ''; }
+	public function get readyState():String { return undefined; }
 	/**
-	*  @param error (optional argument, default value is <code>null</code>)
+	*  @param error (optional argument, default value is <code>undefined</code>)
 	*/
-	public function endOfStream(error:String=null):void {}
-	/**
-	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
-	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function endOfStream(error:String=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @return A <code>Boolean</code> instance.
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function isTypeSupported(type:String):Boolean { return undefined;}
+	/**
+	*  @param type
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
+	*/
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
+	/**
+	*  @param type
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
+	*/
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param event
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(event:DomEvent):Boolean { return false;}
+	public function dispatchEvent(event:DomEvent):Boolean { return undefined;}
 }
 
 }

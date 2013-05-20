@@ -50,9 +50,9 @@ package randori.webkit.modules.geolocation
 public class PositionError
 {
 
-	public function get code():uint { return 0; }
+	public function get code():uint { return undefined; }
 
-	public function get message():String { return ''; }
+	public function get message():String { return undefined; }
 	public static const PERMISSION_DENIED:uint = 1;
 	public static const POSITION_UNAVAILABLE:uint = 2;
 	public static const TIMEOUT:uint = 3;

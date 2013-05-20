@@ -59,12 +59,12 @@ public class SVGFEDistantLightElement extends SVGElement
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get azimuth():SVGAnimatedNumber { return null; }
+	public function get azimuth():SVGAnimatedNumber { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedNumber
 	*/
-	public function get elevation():SVGAnimatedNumber { return null; }
+	public function get elevation():SVGAnimatedNumber { return undefined; }
 }
 
 }

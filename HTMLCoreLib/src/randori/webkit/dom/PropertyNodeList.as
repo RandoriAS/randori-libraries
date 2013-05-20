@@ -55,7 +55,7 @@ public class PropertyNodeList extends NodeList
 	/**
 	*  @return A <code>sequence</code> instance.
 	*/
-	public function getValues():Vector.<MicroDataItemValue> { return null;}
+	public function getValues():Vector.<MicroDataItemValue> { return undefined;}
 }
 
 }

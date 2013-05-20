@@ -54,22 +54,22 @@ public class SVGLinearGradientElement extends SVGGradientElement
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get x1():SVGAnimatedLength { return null; }
+	public function get x1():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get y1():SVGAnimatedLength { return null; }
+	public function get y1():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get x2():SVGAnimatedLength { return null; }
+	public function get x2():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get y2():SVGAnimatedLength { return null; }
+	public function get y2():SVGAnimatedLength { return undefined; }
 }
 
 }

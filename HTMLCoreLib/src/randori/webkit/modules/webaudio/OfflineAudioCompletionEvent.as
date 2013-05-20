@@ -55,7 +55,7 @@ public class OfflineAudioCompletionEvent extends DomEvent
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioBuffer
 	*/
-	public function get renderedBuffer():AudioBuffer { return null; }
+	public function get renderedBuffer():AudioBuffer { return undefined; }
 }
 
 }

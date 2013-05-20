@@ -50,12 +50,12 @@ package randori.webkit.css
 public class StyleMedia
 {
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	/**
 	*  @param mediaquery (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function matchMedium(mediaquery:String=undefined):Boolean { return false;}
+	public function matchMedium(mediaquery:String=undefined):Boolean { return undefined;}
 }
 
 }

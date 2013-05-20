@@ -66,59 +66,59 @@ public class HTMLDocument extends Document
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get embeds():HTMLCollection { return null; }
+	public function get embeds():HTMLCollection { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get plugins():HTMLCollection { return null; }
+	public function get plugins():HTMLCollection { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get scripts():HTMLCollection { return null; }
+	public function get scripts():HTMLCollection { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.HTMLAllCollection
 	*/
-	public function get all():HTMLAllCollection { return null; }
+	public function get all():HTMLAllCollection { return undefined; }
 	public function set all(value:HTMLAllCollection):void { }
 	public function clear():void {}
 	public function captureEvents():void {}
 	public function releaseEvents():void {}
 
-	public function get width():uint { return 0; }
+	public function get width():uint { return undefined; }
 
-	public function get height():uint { return 0; }
+	public function get height():uint { return undefined; }
 
-	public function get dir():String { return ''; }
+	public function get dir():String { return undefined; }
 	public function set dir(value:String):void { }
 
-	public function get designMode():String { return ''; }
+	public function get designMode():String { return undefined; }
 	public function set designMode(value:String):void { }
 
 	/**
 	*  @see randori.webkit.dom.Element
 	*/
-	public function get activeElement():Element { return null; }
+	public function get activeElement():Element { return undefined; }
 	/**
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function hasFocus():Boolean { return false;}
+	public function hasFocus():Boolean { return undefined;}
 
-	public function get bgColor():String { return ''; }
+	public function get bgColor():String { return undefined; }
 	public function set bgColor(value:String):void { }
 
-	public function get fgColor():String { return ''; }
+	public function get fgColor():String { return undefined; }
 	public function set fgColor(value:String):void { }
 
-	public function get alinkColor():String { return ''; }
+	public function get alinkColor():String { return undefined; }
 	public function set alinkColor(value:String):void { }
 
-	public function get linkColor():String { return ''; }
+	public function get linkColor():String { return undefined; }
 	public function set linkColor(value:String):void { }
 
-	public function get vlinkColor():String { return ''; }
+	public function get vlinkColor():String { return undefined; }
 	public function set vlinkColor(value:String):void { }
 }
 

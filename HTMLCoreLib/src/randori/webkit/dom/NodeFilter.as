@@ -69,7 +69,7 @@ public class NodeFilter
 	*  @param n (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>int</code> instance.
 	*/
-	public function acceptNode(n:Node=undefined):int { return 0;}
+	public function acceptNode(n:Node=undefined):int { return undefined;}
 }
 
 }

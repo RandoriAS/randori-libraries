@@ -56,13 +56,13 @@ public class HTMLFontElement extends HTMLElement
 	*/
 	public function HTMLFontElement() {super();}
 
-	public function get color():String { return ''; }
+	public function get color():String { return undefined; }
 	public function set color(value:String):void { }
 
-	public function get face():String { return ''; }
+	public function get face():String { return undefined; }
 	public function set face(value:String):void { }
 
-	public function get size():String { return ''; }
+	public function get size():String { return undefined; }
 	public function set size(value:String):void { }
 }
 

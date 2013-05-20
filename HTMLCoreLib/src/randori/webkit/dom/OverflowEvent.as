@@ -54,11 +54,11 @@ public class OverflowEvent extends DomEvent
 	public static const VERTICAL:uint = 1;
 	public static const BOTH:uint = 2;
 
-	public function get orient():uint { return 0; }
+	public function get orient():uint { return undefined; }
 
-	public function get horizontalOverflow():Boolean { return false; }
+	public function get horizontalOverflow():Boolean { return undefined; }
 
-	public function get verticalOverflow():Boolean { return false; }
+	public function get verticalOverflow():Boolean { return undefined; }
 }
 
 }

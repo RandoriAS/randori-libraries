@@ -55,34 +55,34 @@ public class SVGTextElement extends SVGTextPositioningElement implements SVGTran
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedTransformList
 	*/
-	public function get transform():SVGAnimatedTransformList { return null; }
+	public function get transform():SVGAnimatedTransformList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGElement
 	*/
-	public function get nearestViewportElement():SVGElement { return null; }
+	public function get nearestViewportElement():SVGElement { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGElement
 	*/
-	public function get farthestViewportElement():SVGElement { return null; }
+	public function get farthestViewportElement():SVGElement { return undefined; }
 	/**
 	*  @return A <code>SVGRect</code> instance.
 	*/
-	public function getBBox():SVGRect { return null;}
+	public function getBBox():SVGRect { return undefined;}
 	/**
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function getCTM():SVGMatrix { return null;}
+	public function getCTM():SVGMatrix { return undefined;}
 	/**
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function getScreenCTM():SVGMatrix { return null;}
+	public function getScreenCTM():SVGMatrix { return undefined;}
 	/**
 	*  @param element (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>SVGMatrix</code> instance.
 	*/
-	public function getTransformToElement(element:SVGElement=undefined):SVGMatrix { return null;}
+	public function getTransformToElement(element:SVGElement=undefined):SVGMatrix { return undefined;}
 }
 
 }

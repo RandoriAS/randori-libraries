@@ -50,7 +50,7 @@ package randori.webkit.dom
 public dynamic class ClientRectList
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 }
 
 }

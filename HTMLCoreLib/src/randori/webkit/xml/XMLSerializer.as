@@ -58,7 +58,7 @@ public class XMLSerializer
 	*  @param node (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>String</code> instance.
 	*/
-	public function serializeToString(node:Node=undefined):String { return '';}
+	public function serializeToString(node:Node=undefined):String { return undefined;}
 }
 
 }

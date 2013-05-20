@@ -54,9 +54,9 @@ public class MediaKeys
 	*  @param initData (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>MediaKeySession</code> instance.
 	*/
-	public function createSession(type:String=undefined, initData:Object=undefined):MediaKeySession { return null;}
+	public function createSession(type:String=undefined, initData:Object=undefined):MediaKeySession { return undefined;}
 
-	public function get keySystem():String { return ''; }
+	public function get keySystem():String { return undefined; }
 }
 
 }

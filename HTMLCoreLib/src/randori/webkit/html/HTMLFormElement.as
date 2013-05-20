@@ -56,45 +56,45 @@ public class HTMLFormElement extends HTMLElement
 	*/
 	public function HTMLFormElement() {super();}
 
-	public function get acceptCharset():String { return ''; }
+	public function get acceptCharset():String { return undefined; }
 	public function set acceptCharset(value:String):void { }
 
-	public function get action():String { return ''; }
+	public function get action():String { return undefined; }
 	public function set action(value:String):void { }
 
-	public function get autocomplete():String { return ''; }
+	public function get autocomplete():String { return undefined; }
 	public function set autocomplete(value:String):void { }
 
-	public function get enctype():String { return ''; }
+	public function get enctype():String { return undefined; }
 	public function set enctype(value:String):void { }
 
-	public function get encoding():String { return ''; }
+	public function get encoding():String { return undefined; }
 	public function set encoding(value:String):void { }
 
-	public function get method():String { return ''; }
+	public function get method():String { return undefined; }
 	public function set method(value:String):void { }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 
-	public function get noValidate():Boolean { return false; }
+	public function get noValidate():Boolean { return undefined; }
 	public function set noValidate(value:Boolean):void { }
 
-	public function get target():String { return ''; }
+	public function get target():String { return undefined; }
 	public function set target(value:String):void { }
 
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get elements():HTMLCollection { return null; }
+	public function get elements():HTMLCollection { return undefined; }
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 	public function submit():void {}
 	public function reset():void {}
 	/**
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function checkValidity():Boolean { return false;}
+	public function checkValidity():Boolean { return undefined;}
 }
 
 }

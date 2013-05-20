@@ -50,13 +50,13 @@ package randori.webkit.html.canvas
 public class ArrayBuffer
 {
 
-	public function get byteLength():uint { return 0; }
+	public function get byteLength():uint { return undefined; }
 	/**
 	*  @param begin
-	*  @param end (optional argument, default value is <code>0</code>)
+	*  @param end (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>ArrayBuffer</code> instance.
 	*/
-	public function slice(begin:uint, end:uint=0):ArrayBuffer { return null;}
+	public function slice(begin:uint, end:uint=undefined):ArrayBuffer { return undefined;}
 }
 
 }

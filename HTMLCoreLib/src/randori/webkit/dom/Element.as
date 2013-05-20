@@ -80,14 +80,14 @@ public class Element extends Node
 	*  in the canonical uppercase form, regardless of the case in the
 	*  source HTML document. </p>
 	*/
-	public function get tagName():String { return ''; }
+	public function get tagName():String { return undefined; }
 	/**
 	*  <p>Retrieves an attribute value by name.</p>
 	*  @param name <p>The name of the attribute to retrieve.</p>
 	*  @return <p>The <code>Attr</code> value as a string, or the empty string if
 	*  that attribute does not have a specified or default value.</p>
 	*/
-	public function getAttribute(name:String=undefined):String { return '';}
+	public function getAttribute(name:String=undefined):String { return undefined;}
 	/**
 	*  <p>Adds a new attribute. If an attribute with that name is already
 	*  present in the element, its value is changed to be that of the value
@@ -127,7 +127,7 @@ public class Element extends Node
 	*  name (<code>nodeName</code>) or <code>null</code> if there is no such
 	*  attribute.</p>
 	*/
-	public function getAttributeNode(name:String=undefined):Attr { return null;}
+	public function getAttributeNode(name:String=undefined):Attr { return undefined;}
 	/**
 	*  <p>Adds a new attribute node. If an attribute with that name
 	*  (<code>nodeName</code>) is already present in the element, it is replaced
@@ -145,7 +145,7 @@ public class Element extends Node
 	*  DOM user must explicitly clone <code>Attr</code>
 	*  nodes to re-use them in other elements.</p>
 	*/
-	public function setAttributeNode(newAttr:Attr=undefined):Attr { return null;}
+	public function setAttributeNode(newAttr:Attr=undefined):Attr { return undefined;}
 	/**
 	*  <p>Removes the specified attribute node. If the removed
 	*  <code>Attr</code> has a default value it is immediately
@@ -159,7 +159,7 @@ public class Element extends Node
 	*  readonly.</p><p>NOT_FOUND_ERR: Raised if <code>oldAttr</code> is not an attribute of
 	*  the element.</p>
 	*/
-	public function removeAttributeNode(oldAttr:Attr=undefined):Attr { return null;}
+	public function removeAttributeNode(oldAttr:Attr=undefined):Attr { return undefined;}
 	/**
 	*  <p>Returns a <code>NodeList</code> of all descendant<code>Elements</code> with a given tag name, in the order in which they
 	*  are encountered in a preorder traversal of this <code>Element</code>
@@ -168,16 +168,16 @@ public class Element extends Node
 	*  matches all tags.</p>
 	*  @return <p>A list of matching <code>Element</code> nodes.</p>
 	*/
-	public function getElementsByTagName(name:String=undefined):NodeList { return null;}
+	public function getElementsByTagName(name:String=undefined):NodeList { return undefined;}
 
 	/**
 	*  @see randori.webkit.dom.NamedNodeMap
 	*/
-	public function get attributes():NamedNodeMap { return null; }
+	public function get attributes():NamedNodeMap { return undefined; }
 	/**
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function hasAttributes():Boolean { return false;}
+	public function hasAttributes():Boolean { return undefined;}
 	/**
 	*  <p>Retrieves an attribute value by local name and namespace
 	*  URI. HTML-only DOM implementations do not need to implement this
@@ -189,7 +189,7 @@ public class Element extends Node
 	*  @return <p>The <code>Attr</code> value as a string, or the empty string if
 	*  that attribute does not have a specified or default value.</p>
 	*/
-	public function getAttributeNS(namespaceURI:String=undefined, localName:String=undefined):String { return '';}
+	public function getAttributeNS(namespaceURI:String=undefined, localName:String=undefined):String { return undefined;}
 	/**
 	*  <p>Adds a new attribute. If an attribute with the same local name
 	*  and namespace URI is already present on the element, its prefix is
@@ -250,7 +250,7 @@ public class Element extends Node
 	*  @return <p>A new <code>NodeList</code> object containing all the matched
 	*  <code>Elements</code>.</p>
 	*/
-	public function getElementsByTagNameNS(namespaceURI:String=undefined, localName:String=undefined):NodeList { return null;}
+	public function getElementsByTagNameNS(namespaceURI:String=undefined, localName:String=undefined):NodeList { return undefined;}
 	/**
 	*  <p>Retrieves an <code>Attr</code> node by local name and namespace
 	*  URI. HTML-only DOM implementations do not need to implement this
@@ -263,7 +263,7 @@ public class Element extends Node
 	*  name and namespace URI or <code>null</code> if there is no such
 	*  attribute.</p>
 	*/
-	public function getAttributeNodeNS(namespaceURI:String=undefined, localName:String=undefined):Attr { return null;}
+	public function getAttributeNodeNS(namespaceURI:String=undefined, localName:String=undefined):Attr { return undefined;}
 	/**
 	*  <p>Adds a new attribute. If an attribute with that local name and
 	*  that namespace URI is already present in the element, it is replaced by
@@ -282,7 +282,7 @@ public class Element extends Node
 	*  must explicitly clone <code>Attr</code> nodes to re-use them in
 	*  other elements.</p>
 	*/
-	public function setAttributeNodeNS(newAttr:Attr=undefined):Attr { return null;}
+	public function setAttributeNodeNS(newAttr:Attr=undefined):Attr { return undefined;}
 	/**
 	*  <p>Returns <code>true</code> when an attribute with a given name is
 	*  specified on this element or has a default value, <code>false</code>
@@ -292,7 +292,7 @@ public class Element extends Node
 	*  specified on this element or has a default value, <code>false</code>
 	*  otherwise.</p>
 	*/
-	public function hasAttribute(name:String):Boolean { return false;}
+	public function hasAttribute(name:String):Boolean { return undefined;}
 	/**
 	*  <p>Returns <code>true</code> when an attribute with a given local
 	*  name and namespace URI is specified on this element or has a default
@@ -306,53 +306,53 @@ public class Element extends Node
 	*  namespace URI is specified or has a default value on this element,
 	*  <code>false</code> otherwise.</p>
 	*/
-	public function hasAttributeNS(namespaceURI:String=undefined, localName:String=undefined):Boolean { return false;}
+	public function hasAttributeNS(namespaceURI:String=undefined, localName:String=undefined):Boolean { return undefined;}
 
 	/**
 	*  @see randori.webkit.css.CSSStyleDeclaration
 	*/
-	public function get style():CSSStyleDeclaration { return null; }
+	public function get style():CSSStyleDeclaration { return undefined; }
 
-	public function get offsetLeft():uint { return 0; }
+	public function get offsetLeft():uint { return undefined; }
 
-	public function get offsetTop():uint { return 0; }
+	public function get offsetTop():uint { return undefined; }
 
-	public function get offsetWidth():uint { return 0; }
+	public function get offsetWidth():uint { return undefined; }
 
-	public function get offsetHeight():uint { return 0; }
+	public function get offsetHeight():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Element
 	*/
-	public function get offsetParent():Element { return null; }
+	public function get offsetParent():Element { return undefined; }
 
-	public function get clientLeft():uint { return 0; }
+	public function get clientLeft():uint { return undefined; }
 
-	public function get clientTop():uint { return 0; }
+	public function get clientTop():uint { return undefined; }
 
-	public function get clientWidth():uint { return 0; }
+	public function get clientWidth():uint { return undefined; }
 
-	public function get clientHeight():uint { return 0; }
+	public function get clientHeight():uint { return undefined; }
 
-	public function get scrollLeft():uint { return 0; }
+	public function get scrollLeft():uint { return undefined; }
 	public function set scrollLeft(value:uint):void { }
 
-	public function get scrollTop():uint { return 0; }
+	public function get scrollTop():uint { return undefined; }
 	public function set scrollTop(value:uint):void { }
 
-	public function get scrollWidth():uint { return 0; }
+	public function get scrollWidth():uint { return undefined; }
 
-	public function get scrollHeight():uint { return 0; }
+	public function get scrollHeight():uint { return undefined; }
 	public function focus():void {}
 	public function blur():void {}
 	/**
-	*  @param alignWithTop (optional argument, default value is <code>false</code>)
+	*  @param alignWithTop (optional argument, default value is <code>undefined</code>)
 	*/
-	public function scrollIntoView(alignWithTop:Boolean=false):void {}
+	public function scrollIntoView(alignWithTop:Boolean=undefined):void {}
 	/**
-	*  @param centerIfNeeded (optional argument, default value is <code>false</code>)
+	*  @param centerIfNeeded (optional argument, default value is <code>undefined</code>)
 	*/
-	public function scrollIntoViewIfNeeded(centerIfNeeded:Boolean=false):void {}
+	public function scrollIntoViewIfNeeded(centerIfNeeded:Boolean=undefined):void {}
 	/**
 	*  @param lines (optional argument, default value is <code>undefined</code>)
 	*/
@@ -365,189 +365,189 @@ public class Element extends Node
 	*  @param name (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>NodeList</code> instance.
 	*/
-	public function getElementsByClassName(name:String=undefined):NodeList { return null;}
+	public function getElementsByClassName(name:String=undefined):NodeList { return undefined;}
 
-	public function get className():String { return ''; }
+	public function get className():String { return undefined; }
 	public function set className(value:String):void { }
 
 	/**
 	*  @see randori.webkit.html.DOMTokenList
 	*/
-	public function get classList():DOMTokenList { return null; }
+	public function get classList():DOMTokenList { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.DOMStringMap
 	*/
-	public function get dataset():DOMStringMap { return null; }
+	public function get dataset():DOMStringMap { return undefined; }
 	/**
 	*  @param selectors
 	*  @return A <code>Element</code> instance.
 	*/
-	public function querySelector(selectors:String):Element { return null;}
+	public function querySelector(selectors:String):Element { return undefined;}
 	/**
 	*  @param selectors
 	*  @return A <code>NodeList</code> instance.
 	*/
-	public function querySelectorAll(selectors:String):NodeList { return null;}
+	public function querySelectorAll(selectors:String):NodeList { return undefined;}
 
 	/**
 	*  @see randori.webkit.dom.Element
 	*/
-	public function get firstElementChild():Element { return null; }
+	public function get firstElementChild():Element { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Element
 	*/
-	public function get lastElementChild():Element { return null; }
+	public function get lastElementChild():Element { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Element
 	*/
-	public function get previousElementSibling():Element { return null; }
+	public function get previousElementSibling():Element { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Element
 	*/
-	public function get nextElementSibling():Element { return null; }
+	public function get nextElementSibling():Element { return undefined; }
 
-	public function get childElementCount():uint { return 0; }
+	public function get childElementCount():uint { return undefined; }
 	public function remove():void {}
 	/**
 	*  @return A <code>ClientRectList</code> instance.
 	*/
-	public function getClientRects():ClientRectList { return null;}
+	public function getClientRects():ClientRectList { return undefined;}
 	/**
 	*  @return A <code>ClientRect</code> instance.
 	*/
-	public function getBoundingClientRect():ClientRect { return null;}
+	public function getBoundingClientRect():ClientRect { return undefined;}
 
-	public function get onabort():Function { return null; }
+	public function get onabort():Function { return undefined; }
 	public function set onabort(value:Function):void { }
 
-	public function get onblur():Function { return null; }
+	public function get onblur():Function { return undefined; }
 	public function set onblur(value:Function):void { }
 
-	public function get onchange():Function { return null; }
+	public function get onchange():Function { return undefined; }
 	public function set onchange(value:Function):void { }
 
-	public function get onclick():Function { return null; }
+	public function get onclick():Function { return undefined; }
 	public function set onclick(value:Function):void { }
 
-	public function get oncontextmenu():Function { return null; }
+	public function get oncontextmenu():Function { return undefined; }
 	public function set oncontextmenu(value:Function):void { }
 
-	public function get ondblclick():Function { return null; }
+	public function get ondblclick():Function { return undefined; }
 	public function set ondblclick(value:Function):void { }
 
-	public function get ondrag():Function { return null; }
+	public function get ondrag():Function { return undefined; }
 	public function set ondrag(value:Function):void { }
 
-	public function get ondragend():Function { return null; }
+	public function get ondragend():Function { return undefined; }
 	public function set ondragend(value:Function):void { }
 
-	public function get ondragenter():Function { return null; }
+	public function get ondragenter():Function { return undefined; }
 	public function set ondragenter(value:Function):void { }
 
-	public function get ondragleave():Function { return null; }
+	public function get ondragleave():Function { return undefined; }
 	public function set ondragleave(value:Function):void { }
 
-	public function get ondragover():Function { return null; }
+	public function get ondragover():Function { return undefined; }
 	public function set ondragover(value:Function):void { }
 
-	public function get ondragstart():Function { return null; }
+	public function get ondragstart():Function { return undefined; }
 	public function set ondragstart(value:Function):void { }
 
-	public function get ondrop():Function { return null; }
+	public function get ondrop():Function { return undefined; }
 	public function set ondrop(value:Function):void { }
 
-	public function get onerror():Function { return null; }
+	public function get onerror():Function { return undefined; }
 	public function set onerror(value:Function):void { }
 
-	public function get onfocus():Function { return null; }
+	public function get onfocus():Function { return undefined; }
 	public function set onfocus(value:Function):void { }
 
-	public function get oninput():Function { return null; }
+	public function get oninput():Function { return undefined; }
 	public function set oninput(value:Function):void { }
 
-	public function get oninvalid():Function { return null; }
+	public function get oninvalid():Function { return undefined; }
 	public function set oninvalid(value:Function):void { }
 
-	public function get onkeydown():Function { return null; }
+	public function get onkeydown():Function { return undefined; }
 	public function set onkeydown(value:Function):void { }
 
-	public function get onkeypress():Function { return null; }
+	public function get onkeypress():Function { return undefined; }
 	public function set onkeypress(value:Function):void { }
 
-	public function get onkeyup():Function { return null; }
+	public function get onkeyup():Function { return undefined; }
 	public function set onkeyup(value:Function):void { }
 
-	public function get onload():Function { return null; }
+	public function get onload():Function { return undefined; }
 	public function set onload(value:Function):void { }
 
-	public function get onmousedown():Function { return null; }
+	public function get onmousedown():Function { return undefined; }
 	public function set onmousedown(value:Function):void { }
 
-	public function get onmousemove():Function { return null; }
+	public function get onmousemove():Function { return undefined; }
 	public function set onmousemove(value:Function):void { }
 
-	public function get onmouseout():Function { return null; }
+	public function get onmouseout():Function { return undefined; }
 	public function set onmouseout(value:Function):void { }
 
-	public function get onmouseover():Function { return null; }
+	public function get onmouseover():Function { return undefined; }
 	public function set onmouseover(value:Function):void { }
 
-	public function get onmouseup():Function { return null; }
+	public function get onmouseup():Function { return undefined; }
 	public function set onmouseup(value:Function):void { }
 
-	public function get onmousewheel():Function { return null; }
+	public function get onmousewheel():Function { return undefined; }
 	public function set onmousewheel(value:Function):void { }
 
-	public function get onscroll():Function { return null; }
+	public function get onscroll():Function { return undefined; }
 	public function set onscroll(value:Function):void { }
 
-	public function get onselect():Function { return null; }
+	public function get onselect():Function { return undefined; }
 	public function set onselect(value:Function):void { }
 
-	public function get onsubmit():Function { return null; }
+	public function get onsubmit():Function { return undefined; }
 	public function set onsubmit(value:Function):void { }
 
-	public function get onbeforecut():Function { return null; }
+	public function get onbeforecut():Function { return undefined; }
 	public function set onbeforecut(value:Function):void { }
 
-	public function get oncut():Function { return null; }
+	public function get oncut():Function { return undefined; }
 	public function set oncut(value:Function):void { }
 
-	public function get onbeforecopy():Function { return null; }
+	public function get onbeforecopy():Function { return undefined; }
 	public function set onbeforecopy(value:Function):void { }
 
-	public function get oncopy():Function { return null; }
+	public function get oncopy():Function { return undefined; }
 	public function set oncopy(value:Function):void { }
 
-	public function get onbeforepaste():Function { return null; }
+	public function get onbeforepaste():Function { return undefined; }
 	public function set onbeforepaste(value:Function):void { }
 
-	public function get onpaste():Function { return null; }
+	public function get onpaste():Function { return undefined; }
 	public function set onpaste(value:Function):void { }
 
-	public function get onreset():Function { return null; }
+	public function get onreset():Function { return undefined; }
 	public function set onreset(value:Function):void { }
 
-	public function get onsearch():Function { return null; }
+	public function get onsearch():Function { return undefined; }
 	public function set onsearch(value:Function):void { }
 
-	public function get onselectstart():Function { return null; }
+	public function get onselectstart():Function { return undefined; }
 	public function set onselectstart(value:Function):void { }
 
-	public function get ontouchstart():Function { return null; }
+	public function get ontouchstart():Function { return undefined; }
 	public function set ontouchstart(value:Function):void { }
 
-	public function get ontouchmove():Function { return null; }
+	public function get ontouchmove():Function { return undefined; }
 	public function set ontouchmove(value:Function):void { }
 
-	public function get ontouchend():Function { return null; }
+	public function get ontouchend():Function { return undefined; }
 	public function set ontouchend(value:Function):void { }
 
-	public function get ontouchcancel():Function { return null; }
+	public function get ontouchcancel():Function { return undefined; }
 	public function set ontouchcancel(value:Function):void { }
 }
 

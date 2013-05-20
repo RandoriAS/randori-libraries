@@ -50,9 +50,9 @@ package randori.webkit.modules.webdatabase
 public class SQLError
 {
 
-	public function get code():uint { return 0; }
+	public function get code():uint { return undefined; }
 
-	public function get message():String { return ''; }
+	public function get message():String { return undefined; }
 	public static const UNKNOWN_ERR:uint = 0;
 	public static const DATABASE_ERR:uint = 1;
 	public static const VERSION_ERR:uint = 2;

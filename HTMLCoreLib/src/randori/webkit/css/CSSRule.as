@@ -77,7 +77,7 @@ public class CSSRule
 	*  interface implied by the <code>type</code>.
 	*  </p>
 	*/
-	public function get type():uint { return 0; }
+	public function get type():uint { return undefined; }
 
 	/**
 	*  <p>
@@ -85,7 +85,7 @@ public class CSSRule
 	*  current state of the rule and not its initial value.
 	*  </p>
 	*/
-	public function get cssText():String { return ''; }
+	public function get cssText():String { return undefined; }
 	public function set cssText(value:String):void { }
 
 	/**
@@ -94,7 +94,7 @@ public class CSSRule
 	*  </p>
 	*  @see randori.webkit.css.CSSStyleSheet
 	*/
-	public function get parentStyleSheet():CSSStyleSheet { return null; }
+	public function get parentStyleSheet():CSSStyleSheet { return undefined; }
 
 	/**
 	*  <p>
@@ -104,7 +104,7 @@ public class CSSRule
 	*  </p>
 	*  @see randori.webkit.css.CSSRule
 	*/
-	public function get parentRule():CSSRule { return null; }
+	public function get parentRule():CSSRule { return undefined; }
 }
 
 }

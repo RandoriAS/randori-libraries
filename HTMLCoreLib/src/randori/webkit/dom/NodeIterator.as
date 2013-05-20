@@ -53,31 +53,31 @@ public class NodeIterator
 	/**
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get root():Node { return null; }
+	public function get root():Node { return undefined; }
 
-	public function get whatToShow():uint { return 0; }
+	public function get whatToShow():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.NodeFilter
 	*/
-	public function get filter():NodeFilter { return null; }
+	public function get filter():NodeFilter { return undefined; }
 
-	public function get expandEntityReferences():Boolean { return false; }
+	public function get expandEntityReferences():Boolean { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get referenceNode():Node { return null; }
+	public function get referenceNode():Node { return undefined; }
 
-	public function get pointerBeforeReferenceNode():Boolean { return false; }
+	public function get pointerBeforeReferenceNode():Boolean { return undefined; }
 	/**
 	*  @return A <code>Node</code> instance.
 	*/
-	public function nextNode():Node { return null;}
+	public function nextNode():Node { return undefined;}
 	/**
 	*  @return A <code>Node</code> instance.
 	*/
-	public function previousNode():Node { return null;}
+	public function previousNode():Node { return undefined;}
 	public function detach():void {}
 }
 

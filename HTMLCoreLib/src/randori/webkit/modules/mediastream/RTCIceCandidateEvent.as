@@ -55,7 +55,7 @@ public class RTCIceCandidateEvent extends DomEvent
 	/**
 	*  @see randori.webkit.modules.mediastream.RTCIceCandidate
 	*/
-	public function get candidate():RTCIceCandidate { return null; }
+	public function get candidate():RTCIceCandidate { return undefined; }
 }
 
 }

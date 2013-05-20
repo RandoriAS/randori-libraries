@@ -51,29 +51,29 @@ package randori.webkit.page
 public class PerformanceResourceTiming extends PerformanceEntry
 {
 
-	public function get initiatorType():String { return ''; }
+	public function get initiatorType():String { return undefined; }
 
-	public function get redirectStart():Number { return 0; }
+	public function get redirectStart():Number { return undefined; }
 
-	public function get redirectEnd():Number { return 0; }
+	public function get redirectEnd():Number { return undefined; }
 
-	public function get fetchStart():Number { return 0; }
+	public function get fetchStart():Number { return undefined; }
 
-	public function get domainLookupStart():Number { return 0; }
+	public function get domainLookupStart():Number { return undefined; }
 
-	public function get domainLookupEnd():Number { return 0; }
+	public function get domainLookupEnd():Number { return undefined; }
 
-	public function get connectStart():Number { return 0; }
+	public function get connectStart():Number { return undefined; }
 
-	public function get connectEnd():Number { return 0; }
+	public function get connectEnd():Number { return undefined; }
 
-	public function get secureConnectionStart():Number { return 0; }
+	public function get secureConnectionStart():Number { return undefined; }
 
-	public function get requestStart():Number { return 0; }
+	public function get requestStart():Number { return undefined; }
 
-	public function get responseStart():Number { return 0; }
+	public function get responseStart():Number { return undefined; }
 
-	public function get responseEnd():Number { return 0; }
+	public function get responseEnd():Number { return undefined; }
 }
 
 }

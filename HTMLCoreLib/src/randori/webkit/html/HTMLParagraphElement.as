@@ -56,7 +56,7 @@ public class HTMLParagraphElement extends HTMLElement
 	*/
 	public function HTMLParagraphElement() {super();}
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 }
 

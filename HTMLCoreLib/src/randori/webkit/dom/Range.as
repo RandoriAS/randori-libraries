@@ -53,23 +53,23 @@ public class Range
 	/**
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get startContainer():Node { return null; }
+	public function get startContainer():Node { return undefined; }
 
-	public function get startOffset():uint { return 0; }
-
-	/**
-	*  @see randori.webkit.dom.Node
-	*/
-	public function get endContainer():Node { return null; }
-
-	public function get endOffset():uint { return 0; }
-
-	public function get collapsed():Boolean { return false; }
+	public function get startOffset():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get commonAncestorContainer():Node { return null; }
+	public function get endContainer():Node { return undefined; }
+
+	public function get endOffset():uint { return undefined; }
+
+	public function get collapsed():Boolean { return undefined; }
+
+	/**
+	*  @see randori.webkit.dom.Node
+	*/
+	public function get commonAncestorContainer():Node { return undefined; }
 	/**
 	*  @param refNode (optional argument, default value is <code>undefined</code>)
 	*  @param offset (optional argument, default value is <code>undefined</code>)
@@ -117,16 +117,16 @@ public class Range
 	*  @param sourceRange (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>int</code> instance.
 	*/
-	public function compareBoundaryPoints(how:Object=undefined, sourceRange:Range=undefined):int { return 0;}
+	public function compareBoundaryPoints(how:Object=undefined, sourceRange:Range=undefined):int { return undefined;}
 	public function deleteContents():void {}
 	/**
 	*  @return A <code>DocumentFragment</code> instance.
 	*/
-	public function extractContents():DocumentFragment { return null;}
+	public function extractContents():DocumentFragment { return undefined;}
 	/**
 	*  @return A <code>DocumentFragment</code> instance.
 	*/
-	public function cloneContents():DocumentFragment { return null;}
+	public function cloneContents():DocumentFragment { return undefined;}
 	/**
 	*  @param newNode (optional argument, default value is <code>undefined</code>)
 	*/
@@ -138,35 +138,35 @@ public class Range
 	/**
 	*  @return A <code>Range</code> instance.
 	*/
-	public function cloneRange():Range { return null;}
+	public function cloneRange():Range { return undefined;}
 	/**
 	*  @return A <code>String</code> instance.
 	*/
-	public function toString():String { return '';}
+	public function toString():String { return undefined;}
 	public function detach():void {}
 	/**
 	*  @return A <code>ClientRectList</code> instance.
 	*/
-	public function getClientRects():ClientRectList { return null;}
+	public function getClientRects():ClientRectList { return undefined;}
 	/**
 	*  @return A <code>ClientRect</code> instance.
 	*/
-	public function getBoundingClientRect():ClientRect { return null;}
+	public function getBoundingClientRect():ClientRect { return undefined;}
 	/**
 	*  @param html (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>DocumentFragment</code> instance.
 	*/
-	public function createContextualFragment(html:String=undefined):DocumentFragment { return null;}
+	public function createContextualFragment(html:String=undefined):DocumentFragment { return undefined;}
 	/**
 	*  @param refNode (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function intersectsNode(refNode:Node=undefined):Boolean { return false;}
+	public function intersectsNode(refNode:Node=undefined):Boolean { return undefined;}
 	/**
 	*  @param refNode (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>int</code> instance.
 	*/
-	public function compareNode(refNode:Node=undefined):int { return 0;}
+	public function compareNode(refNode:Node=undefined):int { return undefined;}
 	public static const NODE_BEFORE:uint = 0;
 	public static const NODE_AFTER:uint = 1;
 	public static const NODE_BEFORE_AND_AFTER:uint = 2;
@@ -176,13 +176,13 @@ public class Range
 	*  @param offset (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>int</code> instance.
 	*/
-	public function comparePoint(refNode:Node=undefined, offset:uint=undefined):int { return 0;}
+	public function comparePoint(refNode:Node=undefined, offset:uint=undefined):int { return undefined;}
 	/**
 	*  @param refNode (optional argument, default value is <code>undefined</code>)
 	*  @param offset (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function isPointInRange(refNode:Node=undefined, offset:uint=undefined):Boolean { return false;}
+	public function isPointInRange(refNode:Node=undefined, offset:uint=undefined):Boolean { return undefined;}
 	/**
 	*  @param unit (optional argument, default value is <code>undefined</code>)
 	*/

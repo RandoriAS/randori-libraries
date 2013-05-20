@@ -60,27 +60,27 @@ public class SVGGradientElement extends SVGStyledElement implements SVGURIRefere
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedEnumeration
 	*/
-	public function get gradientUnits():SVGAnimatedEnumeration { return null; }
+	public function get gradientUnits():SVGAnimatedEnumeration { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedTransformList
 	*/
-	public function get gradientTransform():SVGAnimatedTransformList { return null; }
+	public function get gradientTransform():SVGAnimatedTransformList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedEnumeration
 	*/
-	public function get spreadMethod():SVGAnimatedEnumeration { return null; }
+	public function get spreadMethod():SVGAnimatedEnumeration { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get href():SVGAnimatedString { return null; }
+	public function get href():SVGAnimatedString { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedBoolean
 	*/
-	public function get externalResourcesRequired():SVGAnimatedBoolean { return null; }
+	public function get externalResourcesRequired():SVGAnimatedBoolean { return undefined; }
 }
 
 }

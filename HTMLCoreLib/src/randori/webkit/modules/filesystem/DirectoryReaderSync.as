@@ -52,7 +52,7 @@ public class DirectoryReaderSync
 	/**
 	*  @return A <code>EntryArraySync</code> instance.
 	*/
-	public function readEntries():EntryArraySync { return null;}
+	public function readEntries():EntryArraySync { return undefined;}
 }
 
 }

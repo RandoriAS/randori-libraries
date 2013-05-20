@@ -53,11 +53,11 @@ public class ArrayBufferView
 	/**
 	*  @see randori.webkit.html.canvas.ArrayBuffer
 	*/
-	public function get buffer():ArrayBuffer { return null; }
+	public function get buffer():ArrayBuffer { return undefined; }
 
-	public function get byteOffset():uint { return 0; }
+	public function get byteOffset():uint { return undefined; }
 
-	public function get byteLength():uint { return 0; }
+	public function get byteLength():uint { return undefined; }
 }
 
 }

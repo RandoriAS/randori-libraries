@@ -57,7 +57,7 @@ public class MutationObserver
 	/**
 	*  @return A <code>sequence</code> instance.
 	*/
-	public function takeRecords():Vector.<MutationRecord> { return null;}
+	public function takeRecords():Vector.<MutationRecord> { return undefined;}
 	public function disconnect():void {}
 }
 

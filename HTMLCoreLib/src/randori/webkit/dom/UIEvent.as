@@ -59,13 +59,13 @@ public class UIEvent extends DomEvent
 	*  <code>AbstractView</code> from which the event was generated.</p>
 	*  @see randori.webkit.page.Window
 	*/
-	public function get view():Window { return null; }
+	public function get view():Window { return undefined; }
 
 	/**
 	*  <p>Specifies some detail information about the <code>Event</code>,
 	*  depending on the type of event.</p>
 	*/
-	public function get detail():uint { return 0; }
+	public function get detail():uint { return undefined; }
 	/**
 	*  <p>The <code>initUIEvent</code> method is used to initialize the value of a <code>UIEvent</code> created through
 	*  the <code>DocumentEvent</code> interface.  This method may only be called before the <code>UIEvent</code> has
@@ -81,19 +81,19 @@ public class UIEvent extends DomEvent
 	*/
 	public function initUIEvent(type:String=undefined, canBubble:Boolean=undefined, cancelable:Boolean=undefined, view:Window=undefined, detail:uint=undefined):void {}
 
-	public function get keyCode():uint { return 0; }
+	public function get keyCode():uint { return undefined; }
 
-	public function get charCode():uint { return 0; }
+	public function get charCode():uint { return undefined; }
 
-	public function get layerX():uint { return 0; }
+	public function get layerX():uint { return undefined; }
 
-	public function get layerY():uint { return 0; }
+	public function get layerY():uint { return undefined; }
 
-	public function get pageX():uint { return 0; }
+	public function get pageX():uint { return undefined; }
 
-	public function get pageY():uint { return 0; }
+	public function get pageY():uint { return undefined; }
 
-	public function get which():uint { return 0; }
+	public function get which():uint { return undefined; }
 }
 
 }

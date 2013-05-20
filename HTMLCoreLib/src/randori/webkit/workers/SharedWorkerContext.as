@@ -51,12 +51,12 @@ package randori.webkit.workers
 public class SharedWorkerContext extends WorkerContext
 {
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
 	/**
 	*  Function that accepts an event of type <code>ConnectEvent</code>.
 	*/
-	public function get onconnect():Function { return null; }
+	public function get onconnect():Function { return undefined; }
 	public function set onconnect(value:Function):void { }
 }
 

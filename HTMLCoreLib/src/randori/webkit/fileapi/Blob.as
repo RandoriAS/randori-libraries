@@ -50,9 +50,9 @@ package randori.webkit.fileapi
 public class Blob
 {
 
-	public function get size():Number { return 0; }
+	public function get size():Number { return undefined; }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 }
 
 }

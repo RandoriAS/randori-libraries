@@ -54,7 +54,7 @@ public class WaveShaperNode extends AudioNode
 	/**
 	*  @see randori.webkit.html.canvas.Float32Array
 	*/
-	public function get curve():Object { return null; }
+	public function get curve():Object { return undefined; }
 	public function set curve(value:Object):void { }
 }
 

@@ -56,57 +56,57 @@ public class HTMLImageElement extends HTMLElement
 	*/
 	public function HTMLImageElement() {super();}
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 
-	public function get alt():String { return ''; }
+	public function get alt():String { return undefined; }
 	public function set alt(value:String):void { }
 
-	public function get border():String { return ''; }
+	public function get border():String { return undefined; }
 	public function set border(value:String):void { }
 
-	public function get crossOrigin():String { return ''; }
+	public function get crossOrigin():String { return undefined; }
 	public function set crossOrigin(value:String):void { }
 
-	public function get height():uint { return 0; }
+	public function get height():uint { return undefined; }
 	public function set height(value:uint):void { }
 
-	public function get hspace():uint { return 0; }
+	public function get hspace():uint { return undefined; }
 	public function set hspace(value:uint):void { }
 
-	public function get isMap():Boolean { return false; }
+	public function get isMap():Boolean { return undefined; }
 	public function set isMap(value:Boolean):void { }
 
-	public function get longDesc():String { return ''; }
+	public function get longDesc():String { return undefined; }
 	public function set longDesc(value:String):void { }
 
-	public function get src():String { return ''; }
+	public function get src():String { return undefined; }
 	public function set src(value:String):void { }
 
-	public function get useMap():String { return ''; }
+	public function get useMap():String { return undefined; }
 	public function set useMap(value:String):void { }
 
-	public function get vspace():uint { return 0; }
+	public function get vspace():uint { return undefined; }
 	public function set vspace(value:uint):void { }
 
-	public function get width():uint { return 0; }
+	public function get width():uint { return undefined; }
 	public function set width(value:uint):void { }
 
-	public function get complete():Boolean { return false; }
+	public function get complete():Boolean { return undefined; }
 
-	public function get lowsrc():String { return ''; }
+	public function get lowsrc():String { return undefined; }
 	public function set lowsrc(value:String):void { }
 
-	public function get naturalHeight():uint { return 0; }
+	public function get naturalHeight():uint { return undefined; }
 
-	public function get naturalWidth():uint { return 0; }
+	public function get naturalWidth():uint { return undefined; }
 
-	public function get x():uint { return 0; }
+	public function get x():uint { return undefined; }
 
-	public function get y():uint { return 0; }
+	public function get y():uint { return undefined; }
 }
 
 }

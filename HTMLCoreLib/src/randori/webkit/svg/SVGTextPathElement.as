@@ -61,22 +61,22 @@ public class SVGTextPathElement extends SVGTextContentElement implements SVGURIR
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get startOffset():SVGAnimatedLength { return null; }
+	public function get startOffset():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedEnumeration
 	*/
-	public function get method():SVGAnimatedEnumeration { return null; }
+	public function get method():SVGAnimatedEnumeration { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedEnumeration
 	*/
-	public function get spacing():SVGAnimatedEnumeration { return null; }
+	public function get spacing():SVGAnimatedEnumeration { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get href():SVGAnimatedString { return null; }
+	public function get href():SVGAnimatedString { return undefined; }
 }
 
 }

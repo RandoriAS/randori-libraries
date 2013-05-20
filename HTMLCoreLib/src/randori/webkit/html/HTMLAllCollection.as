@@ -52,12 +52,12 @@ import randori.webkit.dom.NodeList;
 public dynamic class HTMLAllCollection
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 	/**
 	*  @param name
 	*  @return A <code>NodeList</code> instance.
 	*/
-	public function tags(name:String):NodeList { return null;}
+	public function tags(name:String):NodeList { return undefined;}
 }
 
 }

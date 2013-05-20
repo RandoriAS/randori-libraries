@@ -56,27 +56,27 @@ public class HTMLTableSectionElement extends HTMLElement
 	*/
 	public function HTMLTableSectionElement() {super();}
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 
-	public function get ch():String { return ''; }
+	public function get ch():String { return undefined; }
 	public function set ch(value:String):void { }
 
-	public function get chOff():String { return ''; }
+	public function get chOff():String { return undefined; }
 	public function set chOff(value:String):void { }
 
-	public function get vAlign():String { return ''; }
+	public function get vAlign():String { return undefined; }
 	public function set vAlign(value:String):void { }
 
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get rows():HTMLCollection { return null; }
+	public function get rows():HTMLCollection { return undefined; }
 	/**
 	*  @param index (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>HTMLElement</code> instance.
 	*/
-	public function insertRow(index:uint=undefined):HTMLElement { return null;}
+	public function insertRow(index:uint=undefined):HTMLElement { return undefined;}
 	/**
 	*  @param index (optional argument, default value is <code>undefined</code>)
 	*/

@@ -50,7 +50,7 @@ package randori.webkit.modules.filesystem
 public dynamic class EntryArraySync
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 }
 
 }

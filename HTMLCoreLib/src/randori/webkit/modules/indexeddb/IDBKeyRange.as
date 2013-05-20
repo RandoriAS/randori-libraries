@@ -50,38 +50,38 @@ package randori.webkit.modules.indexeddb
 public class IDBKeyRange
 {
 
-	public function get lower():* { return null; }
+	public function get lower():* { return undefined; }
 
-	public function get upper():* { return null; }
+	public function get upper():* { return undefined; }
 
-	public function get lowerOpen():Boolean { return false; }
+	public function get lowerOpen():Boolean { return undefined; }
 
-	public function get upperOpen():Boolean { return false; }
+	public function get upperOpen():Boolean { return undefined; }
 	/**
 	*  @param value
 	*  @return A <code>IDBKeyRange</code> instance.
 	*/
-	public function only(value:*):IDBKeyRange { return null;}
+	public function only(value:*):IDBKeyRange { return undefined;}
 	/**
 	*  @param bound
-	*  @param open (optional argument, default value is <code>false</code>)
+	*  @param open (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>IDBKeyRange</code> instance.
 	*/
-	public function lowerBound(bound:*, open:Boolean=false):IDBKeyRange { return null;}
+	public function lowerBound(bound:*, open:Boolean=undefined):IDBKeyRange { return undefined;}
 	/**
 	*  @param bound
-	*  @param open (optional argument, default value is <code>false</code>)
+	*  @param open (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>IDBKeyRange</code> instance.
 	*/
-	public function upperBound(bound:*, open:Boolean=false):IDBKeyRange { return null;}
+	public function upperBound(bound:*, open:Boolean=undefined):IDBKeyRange { return undefined;}
 	/**
 	*  @param lower
-	*  @param upper
-	*  @param lowerOpen (optional argument, default value is <code>false</code>)
-	*  @param upperOpen (optional argument, default value is <code>false</code>)
+	*  @param upper (optional argument, default value is <code>undefined</code>)
+	*  @param lowerOpen (optional argument, default value is <code>undefined</code>)
+	*  @param upperOpen (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>IDBKeyRange</code> instance.
 	*/
-	public function bound(lower:*, upper:*, lowerOpen:Boolean=false, upperOpen:Boolean=false):IDBKeyRange { return null;}
+	public function bound(lower:*, upper:*=undefined, lowerOpen:Boolean=undefined, upperOpen:Boolean=undefined):IDBKeyRange { return undefined;}
 }
 
 }

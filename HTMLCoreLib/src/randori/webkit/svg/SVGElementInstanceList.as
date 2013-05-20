@@ -50,7 +50,7 @@ package randori.webkit.svg
 public dynamic class SVGElementInstanceList
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 }
 
 }

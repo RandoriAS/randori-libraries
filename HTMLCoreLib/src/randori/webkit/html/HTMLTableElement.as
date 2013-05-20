@@ -59,81 +59,81 @@ public class HTMLTableElement extends HTMLElement
 	/**
 	*  @see randori.webkit.html.HTMLTableCaptionElement
 	*/
-	public function get caption():HTMLTableCaptionElement { return null; }
+	public function get caption():HTMLTableCaptionElement { return undefined; }
 	public function set caption(value:HTMLTableCaptionElement):void { }
 
 	/**
 	*  @see randori.webkit.html.HTMLTableSectionElement
 	*/
-	public function get tHead():HTMLTableSectionElement { return null; }
+	public function get tHead():HTMLTableSectionElement { return undefined; }
 	public function set tHead(value:HTMLTableSectionElement):void { }
 
 	/**
 	*  @see randori.webkit.html.HTMLTableSectionElement
 	*/
-	public function get tFoot():HTMLTableSectionElement { return null; }
+	public function get tFoot():HTMLTableSectionElement { return undefined; }
 	public function set tFoot(value:HTMLTableSectionElement):void { }
 
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get rows():HTMLCollection { return null; }
+	public function get rows():HTMLCollection { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get tBodies():HTMLCollection { return null; }
+	public function get tBodies():HTMLCollection { return undefined; }
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 
-	public function get bgColor():String { return ''; }
+	public function get bgColor():String { return undefined; }
 	public function set bgColor(value:String):void { }
 
-	public function get border():String { return ''; }
+	public function get border():String { return undefined; }
 	public function set border(value:String):void { }
 
-	public function get cellPadding():String { return ''; }
+	public function get cellPadding():String { return undefined; }
 	public function set cellPadding(value:String):void { }
 
-	public function get cellSpacing():String { return ''; }
+	public function get cellSpacing():String { return undefined; }
 	public function set cellSpacing(value:String):void { }
 
-	public function get frame():String { return ''; }
+	public function get frame():String { return undefined; }
 	public function set frame(value:String):void { }
 
-	public function get rules():String { return ''; }
+	public function get rules():String { return undefined; }
 	public function set rules(value:String):void { }
 
-	public function get summary():String { return ''; }
+	public function get summary():String { return undefined; }
 	public function set summary(value:String):void { }
 
-	public function get width():String { return ''; }
+	public function get width():String { return undefined; }
 	public function set width(value:String):void { }
 	/**
 	*  @return A <code>HTMLElement</code> instance.
 	*/
-	public function createTHead():HTMLElement { return null;}
+	public function createTHead():HTMLElement { return undefined;}
 	public function deleteTHead():void {}
 	/**
 	*  @return A <code>HTMLElement</code> instance.
 	*/
-	public function createTFoot():HTMLElement { return null;}
+	public function createTFoot():HTMLElement { return undefined;}
 	public function deleteTFoot():void {}
 	/**
 	*  @return A <code>HTMLElement</code> instance.
 	*/
-	public function createTBody():HTMLElement { return null;}
+	public function createTBody():HTMLElement { return undefined;}
 	/**
 	*  @return A <code>HTMLElement</code> instance.
 	*/
-	public function createCaption():HTMLElement { return null;}
+	public function createCaption():HTMLElement { return undefined;}
 	public function deleteCaption():void {}
 	/**
 	*  @param index (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>HTMLElement</code> instance.
 	*/
-	public function insertRow(index:uint=undefined):HTMLElement { return null;}
+	public function insertRow(index:uint=undefined):HTMLElement { return undefined;}
 	/**
 	*  @param index (optional argument, default value is <code>undefined</code>)
 	*/

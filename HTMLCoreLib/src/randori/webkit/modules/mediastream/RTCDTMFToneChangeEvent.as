@@ -52,7 +52,7 @@ import randori.webkit.dom.DomEvent;
 public class RTCDTMFToneChangeEvent extends DomEvent
 {
 
-	public function get tone():String { return ''; }
+	public function get tone():String { return undefined; }
 }
 
 }

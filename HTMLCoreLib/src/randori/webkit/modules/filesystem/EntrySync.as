@@ -50,43 +50,43 @@ package randori.webkit.modules.filesystem
 public class EntrySync
 {
 
-	public function get isFile():Boolean { return false; }
+	public function get isFile():Boolean { return undefined; }
 
-	public function get isDirectory():Boolean { return false; }
+	public function get isDirectory():Boolean { return undefined; }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
-	public function get fullPath():String { return ''; }
+	public function get fullPath():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.filesystem.DOMFileSystemSync
 	*/
-	public function get filesystem():DOMFileSystemSync { return null; }
+	public function get filesystem():DOMFileSystemSync { return undefined; }
 	/**
 	*  @return A <code>Metadata</code> instance.
 	*/
-	public function getMetadata():Metadata { return null;}
+	public function getMetadata():Metadata { return undefined;}
 	/**
 	*  @param parent
 	*  @param name
 	*  @return A <code>EntrySync</code> instance.
 	*/
-	public function moveTo(parent:DirectoryEntrySync, name:String):EntrySync { return null;}
+	public function moveTo(parent:DirectoryEntrySync, name:String):EntrySync { return undefined;}
 	/**
 	*  @param parent
 	*  @param name
 	*  @return A <code>EntrySync</code> instance.
 	*/
-	public function copyTo(parent:DirectoryEntrySync, name:String):EntrySync { return null;}
+	public function copyTo(parent:DirectoryEntrySync, name:String):EntrySync { return undefined;}
 	/**
 	*  @return A <code>String</code> instance.
 	*/
-	public function toURL():String { return '';}
+	public function toURL():String { return undefined;}
 	public function remove():void {}
 	/**
 	*  @return A <code>DirectoryEntrySync</code> instance.
 	*/
-	public function getParent():DirectoryEntrySync { return null;}
+	public function getParent():DirectoryEntrySync { return undefined;}
 }
 
 }

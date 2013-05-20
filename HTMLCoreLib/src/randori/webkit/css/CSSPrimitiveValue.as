@@ -118,7 +118,7 @@ public class CSSPrimitiveValue extends CSSValue
 	/**
 	*  <p>The type of the value as defined by the constants specified above.</p>
 	*/
-	public function get primitiveType():uint { return 0; }
+	public function get primitiveType():uint { return undefined; }
 	/**
 	*  <p>
 	*  A method to set the float value with a specified unit. If the property
@@ -172,7 +172,7 @@ public class CSSPrimitiveValue extends CSSValue
 	*  unit.
 	*  </p>
 	*/
-	public function getFloatValue(unitType:uint=undefined):Number { return 0;}
+	public function getFloatValue(unitType:uint=undefined):Number { return undefined;}
 	/**
 	*  <p>
 	*  A method to set the string value with the specified unit. If the
@@ -217,7 +217,7 @@ public class CSSPrimitiveValue extends CSSValue
 	*  value.
 	*  </p>
 	*/
-	public function getStringValue():String { return '';}
+	public function getStringValue():String { return undefined;}
 	/**
 	*  <p>
 	*  This method is used to get the Counter value. If this CSS value doesn't
@@ -231,7 +231,7 @@ public class CSSPrimitiveValue extends CSSValue
 	*  Counter value (e.g. this is not <code>CSS_COUNTER</code>).
 	*  </p>
 	*/
-	public function getCounterValue():Counter { return null;}
+	public function getCounterValue():Counter { return undefined;}
 	/**
 	*  <p>
 	*  This method is used to get the Rect value. If this CSS value doesn't
@@ -245,7 +245,7 @@ public class CSSPrimitiveValue extends CSSValue
 	*  value.  (e.g. this is not <code>CSS_RECT</code>).
 	*  </p>
 	*/
-	public function getRectValue():Rect { return null;}
+	public function getRectValue():Rect { return undefined;}
 	/**
 	*  <p>
 	*  This method is used to get the RGB color. If this CSS value doesn't
@@ -259,7 +259,7 @@ public class CSSPrimitiveValue extends CSSValue
 	*  RGB color value (e.g. this is not <code>CSS_RGBCOLOR</code>).
 	*  </p>
 	*/
-	public function getRGBColorValue():RGBColor { return null;}
+	public function getRGBColorValue():RGBColor { return undefined;}
 }
 
 }

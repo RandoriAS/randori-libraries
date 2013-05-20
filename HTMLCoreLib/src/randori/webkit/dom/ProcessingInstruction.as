@@ -61,20 +61,20 @@ public class ProcessingInstruction extends Node
 	*  being the first token following the
 	*  markup that begins the processing instruction.</p>
 	*/
-	public function get target():String { return ''; }
+	public function get target():String { return undefined; }
 
 	/**
 	*  <p>The content of this processing instruction. This
 	*  is from the first non white space character after the target
 	*  to the character immediately preceding the <code>?&gt;</code>.</p>
 	*/
-	public function get data():String { return ''; }
+	public function get data():String { return undefined; }
 	public function set data(value:String):void { }
 
 	/**
 	*  @see randori.webkit.css.StyleSheet
 	*/
-	public function get sheet():StyleSheet { return null; }
+	public function get sheet():StyleSheet { return undefined; }
 }
 
 }

@@ -58,23 +58,23 @@ public class FileReaderSync
 	*  @param blob
 	*  @return A <code>ArrayBuffer</code> instance.
 	*/
-	public function readAsArrayBuffer(blob:Blob):ArrayBuffer { return null;}
+	public function readAsArrayBuffer(blob:Blob):ArrayBuffer { return undefined;}
 	/**
 	*  @param blob
 	*  @return A <code>String</code> instance.
 	*/
-	public function readAsBinaryString(blob:Blob):String { return '';}
+	public function readAsBinaryString(blob:Blob):String { return undefined;}
 	/**
 	*  @param blob
-	*  @param encoding (optional argument, default value is <code>''</code>)
+	*  @param encoding (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>String</code> instance.
 	*/
-	public function readAsText(blob:Blob, encoding:String=''):String { return '';}
+	public function readAsText(blob:Blob, encoding:String=undefined):String { return undefined;}
 	/**
 	*  @param blob
 	*  @return A <code>String</code> instance.
 	*/
-	public function readAsDataURL(blob:Blob):String { return '';}
+	public function readAsDataURL(blob:Blob):String { return undefined;}
 }
 
 }

@@ -55,15 +55,15 @@ public class SVGAngle
 	public static const SVG_ANGLETYPE_RAD:uint = 3;
 	public static const SVG_ANGLETYPE_GRAD:uint = 4;
 
-	public function get unitType():uint { return 0; }
+	public function get unitType():uint { return undefined; }
 
-	public function get value():Number { return 0; }
+	public function get value():Number { return undefined; }
 	public function set value(value:Number):void { }
 
-	public function get valueInSpecifiedUnits():Number { return 0; }
+	public function get valueInSpecifiedUnits():Number { return undefined; }
 	public function set valueInSpecifiedUnits(value:Number):void { }
 
-	public function get valueAsString():String { return ''; }
+	public function get valueAsString():String { return undefined; }
 	public function set valueAsString(value:String):void { }
 	/**
 	*  @param unitType

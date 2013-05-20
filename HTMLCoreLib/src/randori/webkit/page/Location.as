@@ -21,7 +21,7 @@
   MIT License:
 
   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
-  associated documentation files (the "Software"), to deal in the Software without restriction,
+  associated documentation files (the "Software"), to deal in the Software without restriction, 
   including without limitation the rights to use, copy, modify, merge, publish, distribute,
   sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
   furnished to do so, subject to the following conditions:
@@ -38,105 +38,62 @@
 *******************************************************************************************************/
 
 
-package randori.webkit.page {
+package randori.webkit.page
+{
 
-	import randori.webkit.dom.DOMStringList;
+import randori.webkit.dom.DOMStringList;
 
-	[JavaScript(export="false", omitconstructor="true", name="Location")]
+[JavaScript(export="false", omitconstructor="true", name="Location")]
+/**
+ *  @author RandoriAS Web IDL Parser
+ *  @version 1.0
+ */
+public class Location
+{
+
+	public function get href():String { return undefined; }
+	public function set href(value:String):void { }
 	/**
-	 *  @author RandoriAS Web IDL Parser
-	 *  @version 1.0
-	 */
-	public class Location {
+	*  @param url (optional argument, default value is <code>undefined</code>)
+	*/
+	public function assign(url:String=undefined):void {}
+	/**
+	*  @param url (optional argument, default value is <code>undefined</code>)
+	*/
+	public function replace(url:String=undefined):void {}
+	public function reload():void {}
 
-		public function get href():String {
-			return '';
-		}
+	public function get protocol():String { return undefined; }
+	public function set protocol(value:String):void { }
 
-		public function set href(value:String):void {
-		}
+	public function get host():String { return undefined; }
+	public function set host(value:String):void { }
 
-		/**
-		*  @param url (optional argument, default value is <code>undefined</code>)
-		*/
-		public function assign(url:String=undefined):void {
-		}
+	public function get hostname():String { return undefined; }
+	public function set hostname(value:String):void { }
 
-		/**
-		*  @param url (optional argument, default value is <code>undefined</code>)
-		*/
-		public function replace(url:String=undefined):void {
-		}
+	public function get port():String { return undefined; }
+	public function set port(value:String):void { }
 
-		public function reload():void {
-		}
+	public function get pathname():String { return undefined; }
+	public function set pathname(value:String):void { }
 
-		public function get protocol():String {
-			return '';
-		}
+	public function get search():String { return undefined; }
+	public function set search(value:String):void { }
 
-		public function set protocol(value:String):void {
-		}
+	public function get hash():String { return undefined; }
+	public function set hash(value:String):void { }
 
-		public function get host():String {
-			return '';
-		}
+	public function get origin():String { return undefined; }
 
-		public function set host(value:String):void {
-		}
-
-		public function get hostname():String {
-			return '';
-		}
-
-		public function set hostname(value:String):void {
-		}
-
-		public function get port():String {
-			return '';
-		}
-
-		public function set port(value:String):void {
-		}
-
-		public function get pathname():String {
-			return '';
-		}
-
-		public function set pathname(value:String):void {
-		}
-
-		public function get search():String {
-			return '';
-		}
-
-		public function set search(value:String):void {
-		}
-
-		public function get hash():String {
-			return '';
-		}
-
-		public function set hash(value:String):void {
-		}
-
-		public function get origin():String {
-			return '';
-		}
-
-		/**
-		*  @see randori.webkit.dom.DOMStringList
-		*/
-		public function get ancestorOrigins():DOMStringList {
-			return null;
-		}
-
-		/**
-		*  @return A <code>String</code> instance.
-		*/
-		public function toString():String {
-			return '';
-		}
-	}
+	/**
+	*  @see randori.webkit.dom.DOMStringList
+	*/
+	public function get ancestorOrigins():DOMStringList { return undefined; }
+	/**
+	*  @return A <code>String</code> instance.
+	*/
+	public function toString():String { return undefined;}
+}
 
 }

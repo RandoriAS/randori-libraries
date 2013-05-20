@@ -54,7 +54,7 @@ public class SQLTransactionSync
 	*  @param arguments
 	*  @return A <code>SQLResultSet</code> instance.
 	*/
-	public function executeSql(sqlStatement:String, arguments:Object):SQLResultSet { return null;}
+	public function executeSql(sqlStatement:String, arguments:Object):SQLResultSet { return undefined;}
 }
 
 }

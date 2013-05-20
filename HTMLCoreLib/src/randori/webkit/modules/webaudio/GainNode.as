@@ -52,9 +52,9 @@ public class GainNode extends AudioNode
 {
 
 	/**
-	*  @see randori.webkit.modules.webaudio.AudioGain
+	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get gain():AudioGain { return null; }
+	public function get gain():AudioParam { return undefined; }
 }
 
 }

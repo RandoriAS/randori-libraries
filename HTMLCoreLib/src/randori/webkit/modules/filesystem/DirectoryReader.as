@@ -51,9 +51,9 @@ public class DirectoryReader
 {
 	/**
 	*  @param successCallback
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function readEntries(successCallback:Object, errorCallback:Object=null):void {}
+	public function readEntries(successCallback:Object, errorCallback:Object=undefined):void {}
 }
 
 }

@@ -64,7 +64,7 @@ public class CSSPageRule extends CSSRule
 	*  The parsable textual representation of the page selector for the rule.
 	*  </p>
 	*/
-	public function get selectorText():String { return ''; }
+	public function get selectorText():String { return undefined; }
 	public function set selectorText(value:String):void { }
 
 	/**
@@ -73,7 +73,7 @@ public class CSSPageRule extends CSSRule
 	*  </p>
 	*  @see randori.webkit.css.CSSStyleDeclaration
 	*/
-	public function get style():CSSStyleDeclaration { return null; }
+	public function get style():CSSStyleDeclaration { return undefined; }
 }
 
 }

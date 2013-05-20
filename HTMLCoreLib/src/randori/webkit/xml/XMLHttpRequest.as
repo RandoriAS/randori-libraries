@@ -62,51 +62,51 @@ public class XMLHttpRequest
 	/**
 	*  Function that accepts an event of type <code>AbortEvent</code>.
 	*/
-	public function get onabort():Function { return null; }
+	public function get onabort():Function { return undefined; }
 	public function set onabort(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ErrorEvent</code>.
 	*  @see randori.webkit.dom.ErrorEvent
 	*/
-	public function get onerror():Function { return null; }
+	public function get onerror():Function { return undefined; }
 	public function set onerror(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>LoadEvent</code>.
 	*/
-	public function get onload():Function { return null; }
+	public function get onload():Function { return undefined; }
 	public function set onload(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>LoadendEvent</code>.
 	*/
-	public function get onloadend():Function { return null; }
+	public function get onloadend():Function { return undefined; }
 	public function set onloadend(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>LoadstartEvent</code>.
 	*/
-	public function get onloadstart():Function { return null; }
+	public function get onloadstart():Function { return undefined; }
 	public function set onloadstart(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ProgressEvent</code>.
 	*  @see randori.webkit.dom.ProgressEvent
 	*/
-	public function get onprogress():Function { return null; }
+	public function get onprogress():Function { return undefined; }
 	public function set onprogress(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>TimeoutEvent</code>.
 	*/
-	public function get ontimeout():Function { return null; }
+	public function get ontimeout():Function { return undefined; }
 	public function set ontimeout(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ReadystatechangeEvent</code>.
 	*/
-	public function get onreadystatechange():Function { return null; }
+	public function get onreadystatechange():Function { return undefined; }
 	public function set onreadystatechange(value:Function):void { }
 	public static const UNSENT:uint = 0;
 	public static const OPENED:uint = 1;
@@ -114,21 +114,21 @@ public class XMLHttpRequest
 	public static const LOADING:uint = 3;
 	public static const DONE:uint = 4;
 
-	public function get timeout():uint { return 0; }
+	public function get timeout():uint { return undefined; }
 	public function set timeout(value:uint):void { }
 
-	public function get readyState():uint { return 0; }
+	public function get readyState():uint { return undefined; }
 
-	public function get withCredentials():Boolean { return false; }
+	public function get withCredentials():Boolean { return undefined; }
 	public function set withCredentials(value:Boolean):void { }
 	/**
 	*  @param method
-	*  @param url
-	*  @param async (optional argument, default value is <code>false</code>)
-	*  @param user (optional argument, default value is <code>''</code>)
-	*  @param password (optional argument, default value is <code>''</code>)
+	*  @param url (optional argument, default value is <code>undefined</code>)
+	*  @param async (optional argument, default value is <code>undefined</code>)
+	*  @param user (optional argument, default value is <code>undefined</code>)
+	*  @param password (optional argument, default value is <code>undefined</code>)
 	*/
-	public function open(method:String, url:String, async:Boolean=false, user:String='', password:String=''):void {}
+	public function open(method:String, url:String=undefined, async:Boolean=undefined, user:String=undefined, password:String=undefined):void {}
 	/**
 	*  @param header
 	*  @param value
@@ -139,57 +139,57 @@ public class XMLHttpRequest
 	/**
 	*  @see randori.webkit.xml.XMLHttpRequestUpload
 	*/
-	public function get upload():XMLHttpRequestUpload { return null; }
+	public function get upload():XMLHttpRequestUpload { return undefined; }
 	/**
 	*  @return A <code>String</code> instance.
 	*/
-	public function getAllResponseHeaders():String { return '';}
+	public function getAllResponseHeaders():String { return undefined;}
 	/**
 	*  @param header
 	*  @return A <code>String</code> instance.
 	*/
-	public function getResponseHeader(header:String):String { return '';}
+	public function getResponseHeader(header:String):String { return undefined;}
 
-	public function get responseText():String { return ''; }
+	public function get responseText():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Document
 	*/
-	public function get responseXML():Document { return null; }
+	public function get responseXML():Document { return undefined; }
 
-	public function get responseType():String { return ''; }
-	public function set responseType(value:String):void { }
+	public function get responseType():Object { return undefined; }
+	public function set responseType(value:Object):void { }
 
-	public function get response():Object { return null; }
+	public function get response():Object { return undefined; }
 
-	public function get status():uint { return 0; }
+	public function get status():uint { return undefined; }
 
-	public function get statusText():String { return ''; }
+	public function get statusText():String { return undefined; }
 	/**
 	*  @param override
 	*/
 	public function overrideMimeType(override_:String):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param evt
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(evt:DomEvent):Boolean { return false;}
+	public function dispatchEvent(evt:DomEvent):Boolean { return undefined;}
 	/**
-	*  @param data (optional argument, default value is <code>null</code>)
+	*  @param data (optional argument, default value is <code>undefined</code>)
 	*/
-	public function send(data:*=null):void {}
+	public function send(data:*=undefined):void {}
 	[JavaScriptMethod(name="send")]
 	/**
 	*  @param data

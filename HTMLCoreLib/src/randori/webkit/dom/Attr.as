@@ -91,7 +91,7 @@ public class Attr extends Node
 	/**
 	*  <p>Returns the name of this attribute. </p>
 	*/
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
 	/**
 	*  <p>If this attribute was explicitly given a value in the original
@@ -117,7 +117,7 @@ public class Attr extends Node
 	*  <code>null</code> by the various removal and cloning operations)
 	*  <code>specified</code> is <code>true</code>.</p></item></ulist></p>
 	*/
-	public function get specified():Boolean { return false; }
+	public function get specified():Boolean { return undefined; }
 
 	/**
 	*  <p>On retrieval, the value of the attribute is returned as a
@@ -129,7 +129,7 @@ public class Attr extends Node
 	*  See also the method <code>setAttribute</code> on the
 	*  <code>Element</code> interface.</p>
 	*/
-	public function get value():String { return ''; }
+	public function get value():String { return undefined; }
 	public function set value(value:String):void { }
 
 	/**
@@ -137,9 +137,9 @@ public class Attr extends Node
 	*  <code>null</code> if this attribute is not in use.</p>
 	*  @see randori.webkit.dom.Element
 	*/
-	public function get ownerElement():Element { return null; }
+	public function get ownerElement():Element { return undefined; }
 
-	public function get isId():Boolean { return false; }
+	public function get isId():Boolean { return undefined; }
 }
 
 }

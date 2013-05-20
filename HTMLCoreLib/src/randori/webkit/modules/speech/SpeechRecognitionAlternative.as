@@ -50,9 +50,9 @@ package randori.webkit.modules.speech
 public class SpeechRecognitionAlternative
 {
 
-	public function get transcript():String { return ''; }
+	public function get transcript():String { return undefined; }
 
-	public function get confidence():Number { return 0; }
+	public function get confidence():Number { return undefined; }
 }
 
 }

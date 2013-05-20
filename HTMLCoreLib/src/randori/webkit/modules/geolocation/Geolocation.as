@@ -51,17 +51,17 @@ public class Geolocation
 {
 	/**
 	*  @param successCallback
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
-	*  @param options (optional argument, default value is <code>null</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
+	*  @param options (optional argument, default value is <code>undefined</code>)
 	*/
-	public function getCurrentPosition(successCallback:Object, errorCallback:Object=null, options:Object=null):void {}
+	public function getCurrentPosition(successCallback:Object, errorCallback:Object=undefined, options:Object=undefined):void {}
 	/**
 	*  @param successCallback
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
-	*  @param options (optional argument, default value is <code>null</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
+	*  @param options (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>uint</code> instance.
 	*/
-	public function watchPosition(successCallback:Object, errorCallback:Object=null, options:Object=null):uint { return 0;}
+	public function watchPosition(successCallback:Object, errorCallback:Object=undefined, options:Object=undefined):uint { return undefined;}
 	/**
 	*  @param watchID
 	*/

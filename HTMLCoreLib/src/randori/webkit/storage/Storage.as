@@ -50,17 +50,17 @@ package randori.webkit.storage
 public class Storage
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 	/**
 	*  @param index
 	*  @return A <code>String</code> instance.
 	*/
-	public function key(index:uint):String { return '';}
+	public function key(index:uint):String { return undefined;}
 	/**
 	*  @param key
 	*  @return A <code>String</code> instance.
 	*/
-	public function getItem(key:String):String { return '';}
+	public function getItem(key:String):String { return undefined;}
 	/**
 	*  @param key
 	*  @param data

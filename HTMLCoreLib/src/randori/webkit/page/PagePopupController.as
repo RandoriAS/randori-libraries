@@ -63,19 +63,19 @@ public class PagePopupController
 	*  @param numberString
 	*  @return A <code>String</code> instance.
 	*/
-	public function localizeNumberString(numberString:String):String { return '';}
+	public function localizeNumberString(numberString:String):String { return undefined;}
 	/**
 	*  @param year
 	*  @param zeroBaseMonth
 	*  @return A <code>String</code> instance.
 	*/
-	public function formatMonth(year:uint, zeroBaseMonth:uint):String { return '';}
+	public function formatMonth(year:uint, zeroBaseMonth:uint):String { return undefined;}
 	/**
 	*  @param year
 	*  @param zeroBaseMonth
 	*  @return A <code>String</code> instance.
 	*/
-	public function formatShortMonth(year:uint, zeroBaseMonth:uint):String { return '';}
+	public function formatShortMonth(year:uint, zeroBaseMonth:uint):String { return undefined;}
 	/**
 	*  @param name
 	*  @param sample

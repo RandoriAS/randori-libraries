@@ -50,12 +50,12 @@ package randori.webkit.modules.filesystem
 public class DOMFileSystemSync
 {
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.filesystem.DirectoryEntrySync
 	*/
-	public function get root():DirectoryEntrySync { return null; }
+	public function get root():DirectoryEntrySync { return undefined; }
 }
 
 }

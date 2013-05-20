@@ -53,12 +53,12 @@ public class SVGAnimatedTransformList
 	/**
 	*  @see randori.webkit.svg.SVGTransformList
 	*/
-	public function get baseVal():SVGTransformList { return null; }
+	public function get baseVal():SVGTransformList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGTransformList
 	*/
-	public function get animVal():SVGTransformList { return null; }
+	public function get animVal():SVGTransformList { return undefined; }
 }
 
 }

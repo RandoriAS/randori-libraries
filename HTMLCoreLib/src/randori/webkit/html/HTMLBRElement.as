@@ -56,7 +56,7 @@ public class HTMLBRElement extends HTMLElement
 	*/
 	public function HTMLBRElement() {super();}
 
-	public function get clear():String { return ''; }
+	public function get clear():String { return undefined; }
 	public function set clear(value:String):void { }
 }
 

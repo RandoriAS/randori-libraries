@@ -54,9 +54,9 @@ public class SourceBuffer
 	/**
 	*  @see randori.webkit.html.TimeRanges
 	*/
-	public function get buffered():TimeRanges { return null; }
+	public function get buffered():TimeRanges { return undefined; }
 
-	public function get timestampOffset():Number { return 0; }
+	public function get timestampOffset():Number { return undefined; }
 	public function set timestampOffset(value:Number):void { }
 	/**
 	*  @param data

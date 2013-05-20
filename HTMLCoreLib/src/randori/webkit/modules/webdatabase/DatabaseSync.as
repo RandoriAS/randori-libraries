@@ -50,15 +50,15 @@ package randori.webkit.modules.webdatabase
 public class DatabaseSync
 {
 
-	public function get version():String { return ''; }
+	public function get version():String { return undefined; }
 
-	public function get lastErrorMessage():String { return ''; }
+	public function get lastErrorMessage():String { return undefined; }
 	/**
 	*  @param oldVersion
-	*  @param newVersion
-	*  @param callback (optional argument, default value is <code>null</code>)
+	*  @param newVersion (optional argument, default value is <code>undefined</code>)
+	*  @param callback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function changeVersion(oldVersion:String, newVersion:String, callback:Object=null):void {}
+	public function changeVersion(oldVersion:String, newVersion:String=undefined, callback:Object=undefined):void {}
 	/**
 	*  @param callback
 	*/

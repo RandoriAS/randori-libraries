@@ -52,28 +52,28 @@ import randori.webkit.dom.DomEvent;
 public class MediaKeyEvent extends DomEvent
 {
 
-	public function get keySystem():String { return ''; }
+	public function get keySystem():String { return undefined; }
 
-	public function get sessionId():String { return ''; }
-
-	/**
-	*  @see randori.webkit.html.canvas.Uint8Array
-	*/
-	public function get initData():Object { return null; }
+	public function get sessionId():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.canvas.Uint8Array
 	*/
-	public function get message():Object { return null; }
+	public function get initData():Object { return undefined; }
 
-	public function get defaultURL():String { return ''; }
+	/**
+	*  @see randori.webkit.html.canvas.Uint8Array
+	*/
+	public function get message():Object { return undefined; }
+
+	public function get defaultURL():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.MediaKeyError
 	*/
-	public function get errorCode():MediaKeyError { return null; }
+	public function get errorCode():MediaKeyError { return undefined; }
 
-	public function get systemCode():uint { return 0; }
+	public function get systemCode():uint { return undefined; }
 }
 
 }

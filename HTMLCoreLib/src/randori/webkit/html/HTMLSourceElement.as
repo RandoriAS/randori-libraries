@@ -56,13 +56,13 @@ public class HTMLSourceElement extends HTMLElement
 	*/
 	public function HTMLSourceElement() {super();}
 
-	public function get src():String { return ''; }
+	public function get src():String { return undefined; }
 	public function set src(value:String):void { }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 
-	public function get media():String { return ''; }
+	public function get media():String { return undefined; }
 	public function set media(value:String):void { }
 }
 

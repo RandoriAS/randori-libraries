@@ -71,6 +71,10 @@ public class InspectorFrontendHost
 	*/
 	public function setAttachedWindowHeight(height:uint):void {}
 	/**
+	*  @param width
+	*/
+	public function setAttachedWindowWidth(width:uint):void {}
+	/**
 	*  @param x
 	*  @param y
 	*/
@@ -83,11 +87,7 @@ public class InspectorFrontendHost
 	/**
 	*  @return A <code>String</code> instance.
 	*/
-	public function localizedStringsURL():String { return '';}
-	/**
-	*  @return A <code>String</code> instance.
-	*/
-	public function hiddenPanels():String { return '';}
+	public function localizedStringsURL():String { return undefined;}
 	/**
 	*  @param text
 	*/
@@ -99,7 +99,7 @@ public class InspectorFrontendHost
 	/**
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function canSave():Boolean { return false;}
+	public function canSave():Boolean { return undefined;}
 	/**
 	*  @param url
 	*  @param content
@@ -116,17 +116,13 @@ public class InspectorFrontendHost
 	*/
 	public function close(url:String):void {}
 	/**
-	*  @return A <code>Boolean</code> instance.
+	*  @return A <code>String</code> instance.
 	*/
-	public function canInspectWorkers():Boolean { return false;}
+	public function platform():String { return undefined;}
 	/**
 	*  @return A <code>String</code> instance.
 	*/
-	public function platform():String { return '';}
-	/**
-	*  @return A <code>String</code> instance.
-	*/
-	public function port():String { return '';}
+	public function port():String { return undefined;}
 	/**
 	*  @param event
 	*  @param items
@@ -152,11 +148,11 @@ public class InspectorFrontendHost
 	*  @param url
 	*  @return A <code>String</code> instance.
 	*/
-	public function loadResourceSynchronously(url:String):String { return '';}
+	public function loadResourceSynchronously(url:String):String { return undefined;}
 	/**
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function supportsFileSystems():Boolean { return false;}
+	public function supportsFileSystems():Boolean { return undefined;}
 	public function requestFileSystems():void {}
 	public function addFileSystem():void {}
 	/**
@@ -168,11 +164,23 @@ public class InspectorFrontendHost
 	*  @param registeredName
 	*  @return A <code>DOMFileSystem</code> instance.
 	*/
-	public function isolatedFileSystem(fileSystemId:String, registeredName:String):DOMFileSystem { return null;}
+	public function isolatedFileSystem(fileSystemId:String, registeredName:String):DOMFileSystem { return undefined;}
 	/**
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function isUnderTest():Boolean { return false;}
+	public function isUnderTest():Boolean { return undefined;}
+	/**
+	*  @return A <code>Boolean</code> instance.
+	*/
+	public function canInspectWorkers():Boolean { return undefined;}
+	/**
+	*  @return A <code>Boolean</code> instance.
+	*/
+	public function canSaveAs():Boolean { return undefined;}
+	/**
+	*  @return A <code>String</code> instance.
+	*/
+	public function hiddenPanels():String { return undefined;}
 }
 
 }

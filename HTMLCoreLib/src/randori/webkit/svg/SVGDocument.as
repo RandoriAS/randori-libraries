@@ -55,7 +55,7 @@ public class SVGDocument extends Document
 	/**
 	*  @see randori.webkit.svg.SVGSVGElement
 	*/
-	public function get rootElement():SVGSVGElement { return null; }
+	public function get rootElement():SVGSVGElement { return undefined; }
 }
 
 }

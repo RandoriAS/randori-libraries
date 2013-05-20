@@ -41,6 +41,9 @@
 package randori.webkit.html.canvas
 {
 
+import randori.webkit.html.ImageData;
+import randori.webkit.html.HTMLImageElement;
+import randori.webkit.html.HTMLCanvasElement;
 
 [JavaScript(export="false", nativecondition="WEBGL", name="WebGLRenderingContext")]
 /**
@@ -347,9 +350,9 @@ public class WebGLRenderingContext extends CanvasRenderingContext
 	public static const UNPACK_COLORSPACE_CONVERSION_WEBGL:Object = 0x9243;
 	public static const BROWSER_DEFAULT_WEBGL:Object = 0x9244;
 
-	public function get drawingBufferWidth():Object { return null; }
+	public function get drawingBufferWidth():Object { return undefined; }
 
-	public function get drawingBufferHeight():Object { return null; }
+	public function get drawingBufferHeight():Object { return undefined; }
 	/**
 	*  @param texture
 	*/
@@ -413,23 +416,46 @@ public class WebGLRenderingContext extends CanvasRenderingContext
 	*  @param dstAlpha
 	*/
 	public function blendFuncSeparate(srcRGB:Object, dstRGB:Object, srcAlpha:Object, dstAlpha:Object):void {}
+	[JavaScriptMethod(name="bufferData")]
 	/**
 	*  @param target
 	*  @param data
 	*  @param usage
 	*/
-	public function bufferData(target:Object, data:ArrayBuffer, usage:Object):void {}
+	public function bufferData1(target:Object, data:ArrayBuffer, usage:Object):void {}
+	[JavaScriptMethod(name="bufferData")]
+	/**
+	*  @param target
+	*  @param data
+	*  @param usage
+	*/
+	public function bufferData2(target:Object, data:ArrayBufferView, usage:Object):void {}
+	[JavaScriptMethod(name="bufferData")]
+	/**
+	*  @param target
+	*  @param size
+	*  @param usage
+	*/
+	public function bufferData3(target:Object, size:Object, usage:Object):void {}
+	[JavaScriptMethod(name="bufferSubData")]
 	/**
 	*  @param target
 	*  @param offset
 	*  @param data
 	*/
-	public function bufferSubData(target:Object, offset:Object, data:ArrayBuffer):void {}
+	public function bufferSubData1(target:Object, offset:Object, data:ArrayBuffer):void {}
+	[JavaScriptMethod(name="bufferSubData")]
+	/**
+	*  @param target
+	*  @param offset
+	*  @param data
+	*/
+	public function bufferSubData2(target:Object, offset:Object, data:ArrayBufferView):void {}
 	/**
 	*  @param target
 	*  @return A <code>GLenum</code> instance.
 	*/
-	public function checkFramebufferStatus(target:Object):Object { return null;}
+	public function checkFramebufferStatus(target:Object):Object { return undefined;}
 	/**
 	*  @param mask
 	*/
@@ -506,28 +532,28 @@ public class WebGLRenderingContext extends CanvasRenderingContext
 	/**
 	*  @return A <code>WebGLBuffer</code> instance.
 	*/
-	public function createBuffer():WebGLBuffer { return null;}
+	public function createBuffer():WebGLBuffer { return undefined;}
 	/**
 	*  @return A <code>WebGLFramebuffer</code> instance.
 	*/
-	public function createFramebuffer():WebGLFramebuffer { return null;}
+	public function createFramebuffer():WebGLFramebuffer { return undefined;}
 	/**
 	*  @return A <code>WebGLProgram</code> instance.
 	*/
-	public function createProgram():WebGLProgram { return null;}
+	public function createProgram():WebGLProgram { return undefined;}
 	/**
 	*  @return A <code>WebGLRenderbuffer</code> instance.
 	*/
-	public function createRenderbuffer():WebGLRenderbuffer { return null;}
+	public function createRenderbuffer():WebGLRenderbuffer { return undefined;}
 	/**
 	*  @param type
 	*  @return A <code>WebGLShader</code> instance.
 	*/
-	public function createShader(type:Object):WebGLShader { return null;}
+	public function createShader(type:Object):WebGLShader { return undefined;}
 	/**
 	*  @return A <code>WebGLTexture</code> instance.
 	*/
-	public function createTexture():WebGLTexture { return null;}
+	public function createTexture():WebGLTexture { return undefined;}
 	/**
 	*  @param mode
 	*/
@@ -633,13 +659,13 @@ public class WebGLRenderingContext extends CanvasRenderingContext
 	*  @param index
 	*  @return A <code>WebGLActiveInfo</code> instance.
 	*/
-	public function getActiveAttrib(program:WebGLProgram, index:Object):WebGLActiveInfo { return null;}
+	public function getActiveAttrib(program:WebGLProgram, index:Object):WebGLActiveInfo { return undefined;}
 	/**
 	*  @param program
 	*  @param index
 	*  @return A <code>WebGLActiveInfo</code> instance.
 	*/
-	public function getActiveUniform(program:WebGLProgram, index:Object):WebGLActiveInfo { return null;}
+	public function getActiveUniform(program:WebGLProgram, index:Object):WebGLActiveInfo { return undefined;}
 	/**
 	*  @param program
 	*/
@@ -649,111 +675,111 @@ public class WebGLRenderingContext extends CanvasRenderingContext
 	*  @param name
 	*  @return A <code>GLint</code> instance.
 	*/
-	public function getAttribLocation(program:WebGLProgram, name:String):Object { return null;}
+	public function getAttribLocation(program:WebGLProgram, name:String):Object { return undefined;}
 	/**
 	*  @param target
 	*  @param pname
 	*  @return A <code>any</code> instance.
 	*/
-	public function getBufferParameter(target:Object, pname:Object):* { return null;}
+	public function getBufferParameter(target:Object, pname:Object):* { return undefined;}
 	/**
 	*  @return A <code>WebGLContextAttributes</code> instance.
 	*/
-	public function getContextAttributes():WebGLContextAttributes { return null;}
+	public function getContextAttributes():WebGLContextAttributes { return undefined;}
 	/**
 	*  @return A <code>GLenum</code> instance.
 	*/
-	public function getError():Object { return null;}
+	public function getError():Object { return undefined;}
 	/**
 	*  @param name
 	*  @return A <code>any</code> instance.
 	*/
-	public function getExtension(name:String):* { return null;}
+	public function getExtension(name:String):* { return undefined;}
 	/**
 	*  @param target
 	*  @param attachment
 	*  @param pname
 	*  @return A <code>any</code> instance.
 	*/
-	public function getFramebufferAttachmentParameter(target:Object, attachment:Object, pname:Object):* { return null;}
+	public function getFramebufferAttachmentParameter(target:Object, attachment:Object, pname:Object):* { return undefined;}
 	/**
 	*  @param pname
 	*  @return A <code>any</code> instance.
 	*/
-	public function getParameter(pname:Object):* { return null;}
+	public function getParameter(pname:Object):* { return undefined;}
 	/**
 	*  @param program
 	*  @param pname
 	*  @return A <code>any</code> instance.
 	*/
-	public function getProgramParameter(program:WebGLProgram, pname:Object):* { return null;}
+	public function getProgramParameter(program:WebGLProgram, pname:Object):* { return undefined;}
 	/**
 	*  @param program
 	*  @return A <code>String</code> instance.
 	*/
-	public function getProgramInfoLog(program:WebGLProgram):String { return '';}
+	public function getProgramInfoLog(program:WebGLProgram):String { return undefined;}
 	/**
 	*  @param target
 	*  @param pname
 	*  @return A <code>any</code> instance.
 	*/
-	public function getRenderbufferParameter(target:Object, pname:Object):* { return null;}
+	public function getRenderbufferParameter(target:Object, pname:Object):* { return undefined;}
 	/**
 	*  @param shader
 	*  @param pname
 	*  @return A <code>any</code> instance.
 	*/
-	public function getShaderParameter(shader:WebGLShader, pname:Object):* { return null;}
+	public function getShaderParameter(shader:WebGLShader, pname:Object):* { return undefined;}
 	/**
 	*  @param shader
 	*  @return A <code>String</code> instance.
 	*/
-	public function getShaderInfoLog(shader:WebGLShader):String { return '';}
+	public function getShaderInfoLog(shader:WebGLShader):String { return undefined;}
 	/**
 	*  @param shadertype
 	*  @param precisiontype
 	*  @return A <code>WebGLShaderPrecisionFormat</code> instance.
 	*/
-	public function getShaderPrecisionFormat(shadertype:Object, precisiontype:Object):WebGLShaderPrecisionFormat { return null;}
+	public function getShaderPrecisionFormat(shadertype:Object, precisiontype:Object):WebGLShaderPrecisionFormat { return undefined;}
 	/**
 	*  @param shader
 	*  @return A <code>String</code> instance.
 	*/
-	public function getShaderSource(shader:WebGLShader):String { return '';}
+	public function getShaderSource(shader:WebGLShader):String { return undefined;}
 	/**
 	*  @return A <code>sequence</code> instance.
 	*/
-	public function getSupportedExtensions():Vector.<String> { return null;}
+	public function getSupportedExtensions():Vector.<String> { return undefined;}
 	/**
 	*  @param target
 	*  @param pname
 	*  @return A <code>any</code> instance.
 	*/
-	public function getTexParameter(target:Object, pname:Object):* { return null;}
+	public function getTexParameter(target:Object, pname:Object):* { return undefined;}
 	/**
 	*  @param program
 	*  @param location
 	*  @return A <code>any</code> instance.
 	*/
-	public function getUniform(program:WebGLProgram, location:WebGLUniformLocation):* { return null;}
+	public function getUniform(program:WebGLProgram, location:WebGLUniformLocation):* { return undefined;}
 	/**
 	*  @param program
 	*  @param name
 	*  @return A <code>WebGLUniformLocation</code> instance.
 	*/
-	public function getUniformLocation(program:WebGLProgram, name:String):WebGLUniformLocation { return null;}
+	public function getUniformLocation(program:WebGLProgram, name:String):WebGLUniformLocation { return undefined;}
 	/**
 	*  @param index
 	*  @param pname
 	*  @return A <code>any</code> instance.
 	*/
-	public function getVertexAttrib(index:Object, pname:Object):* { return null;}
+	public function getVertexAttrib(index:Object, pname:Object):* { return undefined;}
 	/**
 	*  @param index
 	*  @param pname
 	*  @return A <code>GLsizeiptr</code> instance.
 	*/
-	public function getVertexAttribOffset(index:Object, pname:Object):Object { return null;}
+	public function getVertexAttribOffset(index:Object, pname:Object):Object { return undefined;}
 	/**
 	*  @param target
 	*  @param mode
@@ -763,41 +789,41 @@ public class WebGLRenderingContext extends CanvasRenderingContext
 	*  @param buffer
 	*  @return A <code>GLboolean</code> instance.
 	*/
-	public function isBuffer(buffer:WebGLBuffer):Object { return null;}
+	public function isBuffer(buffer:WebGLBuffer):Object { return undefined;}
 	/**
 	*  @return A <code>GLboolean</code> instance.
 	*/
-	public function isContextLost():Object { return null;}
+	public function isContextLost():Object { return undefined;}
 	/**
 	*  @param cap
 	*  @return A <code>GLboolean</code> instance.
 	*/
-	public function isEnabled(cap:Object):Object { return null;}
+	public function isEnabled(cap:Object):Object { return undefined;}
 	/**
 	*  @param framebuffer
 	*  @return A <code>GLboolean</code> instance.
 	*/
-	public function isFramebuffer(framebuffer:WebGLFramebuffer):Object { return null;}
+	public function isFramebuffer(framebuffer:WebGLFramebuffer):Object { return undefined;}
 	/**
 	*  @param program
 	*  @return A <code>GLboolean</code> instance.
 	*/
-	public function isProgram(program:WebGLProgram):Object { return null;}
+	public function isProgram(program:WebGLProgram):Object { return undefined;}
 	/**
 	*  @param renderbuffer
 	*  @return A <code>GLboolean</code> instance.
 	*/
-	public function isRenderbuffer(renderbuffer:WebGLRenderbuffer):Object { return null;}
+	public function isRenderbuffer(renderbuffer:WebGLRenderbuffer):Object { return undefined;}
 	/**
 	*  @param shader
 	*  @return A <code>GLboolean</code> instance.
 	*/
-	public function isShader(shader:WebGLShader):Object { return null;}
+	public function isShader(shader:WebGLShader):Object { return undefined;}
 	/**
 	*  @param texture
 	*  @return A <code>GLboolean</code> instance.
 	*/
-	public function isTexture(texture:WebGLTexture):Object { return null;}
+	public function isTexture(texture:WebGLTexture):Object { return undefined;}
 	/**
 	*  @param width
 	*/
@@ -898,6 +924,7 @@ public class WebGLRenderingContext extends CanvasRenderingContext
 	*  @param param
 	*/
 	public function texParameteri(target:Object, pname:Object, param:Object):void {}
+	[JavaScriptMethod(name="texImage2D")]
 	/**
 	*  @param target
 	*  @param level
@@ -909,7 +936,38 @@ public class WebGLRenderingContext extends CanvasRenderingContext
 	*  @param type
 	*  @param pixels
 	*/
-	public function texImage2D(target:Object, level:Object, internalformat:Object, width:Object, height:Object, border:Object, format:Object, type:Object, pixels:ArrayBufferView):void {}
+	public function texImage2D1(target:Object, level:Object, internalformat:Object, width:Object, height:Object, border:Object, format:Object, type:Object, pixels:ArrayBufferView):void {}
+	[JavaScriptMethod(name="texImage2D")]
+	/**
+	*  @param target
+	*  @param level
+	*  @param internalformat
+	*  @param format
+	*  @param type
+	*  @param pixels
+	*/
+	public function texImage2D2(target:Object, level:Object, internalformat:Object, format:Object, type:Object, pixels:ImageData):void {}
+	[JavaScriptMethod(name="texImage2D")]
+	/**
+	*  @param target
+	*  @param level
+	*  @param internalformat
+	*  @param format
+	*  @param type
+	*  @param image
+	*/
+	public function texImage2D3(target:Object, level:Object, internalformat:Object, format:Object, type:Object, image:HTMLImageElement):void {}
+	[JavaScriptMethod(name="texImage2D")]
+	/**
+	*  @param target
+	*  @param level
+	*  @param internalformat
+	*  @param format
+	*  @param type
+	*  @param canvas
+	*/
+	public function texImage2D4(target:Object, level:Object, internalformat:Object, format:Object, type:Object, canvas:HTMLCanvasElement):void {}
+	[JavaScriptMethod(name="texSubImage2D")]
 	/**
 	*  @param target
 	*  @param level
@@ -921,7 +979,40 @@ public class WebGLRenderingContext extends CanvasRenderingContext
 	*  @param type
 	*  @param pixels
 	*/
-	public function texSubImage2D(target:Object, level:Object, xoffset:Object, yoffset:Object, width:Object, height:Object, format:Object, type:Object, pixels:ArrayBufferView):void {}
+	public function texSubImage2D1(target:Object, level:Object, xoffset:Object, yoffset:Object, width:Object, height:Object, format:Object, type:Object, pixels:ArrayBufferView):void {}
+	[JavaScriptMethod(name="texSubImage2D")]
+	/**
+	*  @param target
+	*  @param level
+	*  @param xoffset
+	*  @param yoffset
+	*  @param format
+	*  @param type
+	*  @param pixels
+	*/
+	public function texSubImage2D2(target:Object, level:Object, xoffset:Object, yoffset:Object, format:Object, type:Object, pixels:ImageData):void {}
+	[JavaScriptMethod(name="texSubImage2D")]
+	/**
+	*  @param target
+	*  @param level
+	*  @param xoffset
+	*  @param yoffset
+	*  @param format
+	*  @param type
+	*  @param image
+	*/
+	public function texSubImage2D3(target:Object, level:Object, xoffset:Object, yoffset:Object, format:Object, type:Object, image:HTMLImageElement):void {}
+	[JavaScriptMethod(name="texSubImage2D")]
+	/**
+	*  @param target
+	*  @param level
+	*  @param xoffset
+	*  @param yoffset
+	*  @param format
+	*  @param type
+	*  @param canvas
+	*/
+	public function texSubImage2D4(target:Object, level:Object, xoffset:Object, yoffset:Object, format:Object, type:Object, canvas:HTMLCanvasElement):void {}
 	/**
 	*  @param location
 	*  @param x

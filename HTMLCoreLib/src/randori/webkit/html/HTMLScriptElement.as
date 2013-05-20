@@ -56,34 +56,34 @@ public class HTMLScriptElement extends HTMLElement
 	*/
 	public function HTMLScriptElement() {super();}
 
-	public function get text():String { return ''; }
+	public function get text():String { return undefined; }
 	public function set text(value:String):void { }
 
-	public function get htmlFor():String { return ''; }
+	public function get htmlFor():String { return undefined; }
 	public function set htmlFor(value:String):void { }
 
-	public function get event():String { return ''; }
+	public function get event():String { return undefined; }
 	public function set event(value:String):void { }
 
-	public function get charset():String { return ''; }
+	public function get charset():String { return undefined; }
 	public function set charset(value:String):void { }
 
-	public function get async():Boolean { return false; }
+	public function get async():Boolean { return undefined; }
 	public function set async(value:Boolean):void { }
 
-	public function get defer():Boolean { return false; }
+	public function get defer():Boolean { return undefined; }
 	public function set defer(value:Boolean):void { }
 
-	public function get src():String { return ''; }
+	public function get src():String { return undefined; }
 	public function set src(value:String):void { }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 
-	public function get crossOrigin():String { return ''; }
+	public function get crossOrigin():String { return undefined; }
 	public function set crossOrigin(value:String):void { }
 
-	public function get nonce():String { return ''; }
+	public function get nonce():String { return undefined; }
 	public function set nonce(value:String):void { }
 }
 

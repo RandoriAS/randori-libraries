@@ -53,26 +53,26 @@ public class DirectoryEntry extends Entry
 	/**
 	*  @return A <code>DirectoryReader</code> instance.
 	*/
-	public function createReader():DirectoryReader { return null;}
+	public function createReader():DirectoryReader { return undefined;}
 	/**
 	*  @param path
-	*  @param options (optional argument, default value is <code>null</code>)
-	*  @param successCallback (optional argument, default value is <code>null</code>)
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param options (optional argument, default value is <code>undefined</code>)
+	*  @param successCallback (optional argument, default value is <code>undefined</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function getFile(path:String, options:Object=null, successCallback:Object=null, errorCallback:Object=null):void {}
+	public function getFile(path:String, options:Object=undefined, successCallback:Object=undefined, errorCallback:Object=undefined):void {}
 	/**
 	*  @param path
-	*  @param options (optional argument, default value is <code>null</code>)
-	*  @param successCallback (optional argument, default value is <code>null</code>)
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param options (optional argument, default value is <code>undefined</code>)
+	*  @param successCallback (optional argument, default value is <code>undefined</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function getDirectory(path:String, options:Object=null, successCallback:Object=null, errorCallback:Object=null):void {}
+	public function getDirectory(path:String, options:Object=undefined, successCallback:Object=undefined, errorCallback:Object=undefined):void {}
 	/**
 	*  @param successCallback
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeRecursively(successCallback:Object, errorCallback:Object=null):void {}
+	public function removeRecursively(successCallback:Object, errorCallback:Object=undefined):void {}
 }
 
 }

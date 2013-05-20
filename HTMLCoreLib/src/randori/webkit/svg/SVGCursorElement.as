@@ -62,42 +62,42 @@ public class SVGCursorElement extends SVGElement implements SVGURIReference, SVG
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get x():SVGAnimatedLength { return null; }
+	public function get x():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get y():SVGAnimatedLength { return null; }
+	public function get y():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get href():SVGAnimatedString { return null; }
+	public function get href():SVGAnimatedString { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get requiredFeatures():SVGStringList { return null; }
+	public function get requiredFeatures():SVGStringList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get requiredExtensions():SVGStringList { return null; }
+	public function get requiredExtensions():SVGStringList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get systemLanguage():SVGStringList { return null; }
+	public function get systemLanguage():SVGStringList { return undefined; }
 	/**
 	*  @param extension (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function hasExtension(extension:String=undefined):Boolean { return false;}
+	public function hasExtension(extension:String=undefined):Boolean { return undefined;}
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedBoolean
 	*/
-	public function get externalResourcesRequired():SVGAnimatedBoolean { return null; }
+	public function get externalResourcesRequired():SVGAnimatedBoolean { return undefined; }
 }
 
 }

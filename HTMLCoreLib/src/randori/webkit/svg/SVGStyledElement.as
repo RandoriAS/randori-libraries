@@ -60,7 +60,7 @@ public class SVGStyledElement extends SVGElement
 	*  @param name (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>CSSValue</code> instance.
 	*/
-	public function getPresentationAttribute(name:String=undefined):CSSValue { return null;}
+	public function getPresentationAttribute(name:String=undefined):CSSValue { return undefined;}
 }
 
 }

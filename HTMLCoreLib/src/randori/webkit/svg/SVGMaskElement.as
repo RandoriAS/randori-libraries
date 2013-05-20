@@ -57,63 +57,63 @@ public class SVGMaskElement extends SVGStyledElement implements SVGTests, SVGLan
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedEnumeration
 	*/
-	public function get maskUnits():SVGAnimatedEnumeration { return null; }
+	public function get maskUnits():SVGAnimatedEnumeration { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedEnumeration
 	*/
-	public function get maskContentUnits():SVGAnimatedEnumeration { return null; }
+	public function get maskContentUnits():SVGAnimatedEnumeration { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get x():SVGAnimatedLength { return null; }
+	public function get x():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get y():SVGAnimatedLength { return null; }
+	public function get y():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get width():SVGAnimatedLength { return null; }
+	public function get width():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get height():SVGAnimatedLength { return null; }
+	public function get height():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get requiredFeatures():SVGStringList { return null; }
+	public function get requiredFeatures():SVGStringList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get requiredExtensions():SVGStringList { return null; }
+	public function get requiredExtensions():SVGStringList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get systemLanguage():SVGStringList { return null; }
+	public function get systemLanguage():SVGStringList { return undefined; }
 	/**
 	*  @param extension (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function hasExtension(extension:String=undefined):Boolean { return false;}
+	public function hasExtension(extension:String=undefined):Boolean { return undefined;}
 
-	public function get xmllang():String { return ''; }
+	public function get xmllang():String { return undefined; }
 	public function set xmllang(value:String):void { }
 
-	public function get xmlspace():String { return ''; }
+	public function get xmlspace():String { return undefined; }
 	public function set xmlspace(value:String):void { }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedBoolean
 	*/
-	public function get externalResourcesRequired():SVGAnimatedBoolean { return null; }
+	public function get externalResourcesRequired():SVGAnimatedBoolean { return undefined; }
 }
 
 }

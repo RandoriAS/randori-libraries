@@ -56,40 +56,40 @@ public class HTMLAreaElement extends HTMLElement
 	*/
 	public function HTMLAreaElement() {super();}
 
-	public function get alt():String { return ''; }
+	public function get alt():String { return undefined; }
 	public function set alt(value:String):void { }
 
-	public function get coords():String { return ''; }
+	public function get coords():String { return undefined; }
 	public function set coords(value:String):void { }
 
-	public function get href():String { return ''; }
+	public function get href():String { return undefined; }
 	public function set href(value:String):void { }
 
-	public function get noHref():Boolean { return false; }
+	public function get noHref():Boolean { return undefined; }
 	public function set noHref(value:Boolean):void { }
 
-	public function get ping():String { return ''; }
+	public function get ping():String { return undefined; }
 	public function set ping(value:String):void { }
 
-	public function get shape():String { return ''; }
+	public function get shape():String { return undefined; }
 	public function set shape(value:String):void { }
 
-	public function get target():String { return ''; }
+	public function get target():String { return undefined; }
 	public function set target(value:String):void { }
 
-	public function get hash():String { return ''; }
+	public function get hash():String { return undefined; }
 
-	public function get host():String { return ''; }
+	public function get host():String { return undefined; }
 
-	public function get hostname():String { return ''; }
+	public function get hostname():String { return undefined; }
 
-	public function get pathname():String { return ''; }
+	public function get pathname():String { return undefined; }
 
-	public function get port():String { return ''; }
+	public function get port():String { return undefined; }
 
-	public function get protocol():String { return ''; }
+	public function get protocol():String { return undefined; }
 
-	public function get search():String { return ''; }
+	public function get search():String { return undefined; }
 }
 
 }

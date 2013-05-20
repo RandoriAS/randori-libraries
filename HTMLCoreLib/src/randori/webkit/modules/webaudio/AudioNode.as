@@ -53,26 +53,49 @@ public class AudioNode
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioContext
 	*/
-	public function get context():AudioContext { return null; }
+	public function get context():AudioContext { return undefined; }
 
-	public function get numberOfInputs():uint { return 0; }
+	public function get numberOfInputs():uint { return undefined; }
 
-	public function get numberOfOutputs():uint { return 0; }
+	public function get numberOfOutputs():uint { return undefined; }
 
-	public function get channelCount():uint { return 0; }
+	public function get channelCount():uint { return undefined; }
 	public function set channelCount(value:uint):void { }
 
-	public function get channelCountMode():String { return ''; }
+	public function get channelCountMode():String { return undefined; }
 	public function set channelCountMode(value:String):void { }
 
-	public function get channelInterpretation():String { return ''; }
+	public function get channelInterpretation():String { return undefined; }
 	public function set channelInterpretation(value:String):void { }
+	[JavaScriptMethod(name="connect")]
+	/**
+	*  @param destination
+	*/
+	public function connect1(destination:AudioNode):void {}
+	[JavaScriptMethod(name="connect")]
+	/**
+	*  @param destination
+	*  @param output (optional argument, default value is <code>undefined</code>)
+	*/
+	public function connect2(destination:AudioNode, output:uint=undefined):void {}
+	[JavaScriptMethod(name="connect")]
 	/**
 	*  @param destination
 	*  @param output (optional argument, default value is <code>undefined</code>)
 	*  @param input (optional argument, default value is <code>undefined</code>)
 	*/
-	public function connect(destination:AudioNode, output:uint=undefined, input:uint=undefined):void {}
+	public function connect3(destination:AudioNode, output:uint=undefined, input:uint=undefined):void {}
+	[JavaScriptMethod(name="connect")]
+	/**
+	*  @param destination
+	*/
+	public function connect4(destination:AudioParam):void {}
+	[JavaScriptMethod(name="connect")]
+	/**
+	*  @param destination
+	*  @param output (optional argument, default value is <code>undefined</code>)
+	*/
+	public function connect5(destination:AudioParam, output:uint=undefined):void {}
 	/**
 	*  @param output (optional argument, default value is <code>undefined</code>)
 	*/

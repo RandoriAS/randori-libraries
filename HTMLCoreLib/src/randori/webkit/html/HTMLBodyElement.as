@@ -56,86 +56,86 @@ public class HTMLBodyElement extends HTMLElement
 	*/
 	public function HTMLBodyElement() {super();}
 
-	public function get aLink():String { return ''; }
+	public function get aLink():String { return undefined; }
 	public function set aLink(value:String):void { }
 
-	public function get background():String { return ''; }
+	public function get background():String { return undefined; }
 	public function set background(value:String):void { }
 
-	public function get bgColor():String { return ''; }
+	public function get bgColor():String { return undefined; }
 	public function set bgColor(value:String):void { }
 
-	public function get link():String { return ''; }
+	public function get link():String { return undefined; }
 	public function set link(value:String):void { }
 
-	public function get text():String { return ''; }
+	public function get text():String { return undefined; }
 	public function set text(value:String):void { }
 
-	public function get vLink():String { return ''; }
+	public function get vLink():String { return undefined; }
 	public function set vLink(value:String):void { }
 
 	/**
 	*  Function that accepts an event of type <code>BeforeunloadEvent</code>.
 	*/
-	public function get onbeforeunload():Function { return null; }
+	public function get onbeforeunload():Function { return undefined; }
 	public function set onbeforeunload(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>HashchangeEvent</code>.
 	*  @see randori.webkit.dom.HashChangeEvent
 	*/
-	public function get onhashchange():Function { return null; }
+	public function get onhashchange():Function { return undefined; }
 	public function set onhashchange(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>MessageEvent</code>.
 	*  @see randori.webkit.dom.MessageEvent
 	*/
-	public function get onmessage():Function { return null; }
+	public function get onmessage():Function { return undefined; }
 	public function set onmessage(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>OfflineEvent</code>.
 	*/
-	public function get onoffline():Function { return null; }
+	public function get onoffline():Function { return undefined; }
 	public function set onoffline(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>OnlineEvent</code>.
 	*/
-	public function get ononline():Function { return null; }
+	public function get ononline():Function { return undefined; }
 	public function set ononline(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>PopstateEvent</code>.
 	*  @see randori.webkit.dom.PopStateEvent
 	*/
-	public function get onpopstate():Function { return null; }
+	public function get onpopstate():Function { return undefined; }
 	public function set onpopstate(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ResizeEvent</code>.
 	*/
-	public function get onresize():Function { return null; }
+	public function get onresize():Function { return undefined; }
 	public function set onresize(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>StorageEvent</code>.
 	*  @see randori.webkit.storage.StorageEvent
 	*/
-	public function get onstorage():Function { return null; }
+	public function get onstorage():Function { return undefined; }
 	public function set onstorage(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>UnloadEvent</code>.
 	*/
-	public function get onunload():Function { return null; }
+	public function get onunload():Function { return undefined; }
 	public function set onunload(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>OrientationchangeEvent</code>.
 	*/
-	public function get onorientationchange():Function { return null; }
+	public function get onorientationchange():Function { return undefined; }
 	public function set onorientationchange(value:Function):void { }
 }
 

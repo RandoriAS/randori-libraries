@@ -53,85 +53,85 @@ public class DataView extends ArrayBufferView
 	/**
 	*  @return A <code>any</code> instance.
 	*/
-	public function getInt8():* { return null;}
+	public function getInt8():* { return undefined;}
 	/**
 	*  @return A <code>any</code> instance.
 	*/
-	public function getUint8():* { return null;}
+	public function getUint8():* { return undefined;}
 	/**
 	*  @param byteOffset
-	*  @param littleEndian (optional argument, default value is <code>false</code>)
+	*  @param littleEndian (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>int</code> instance.
 	*/
-	public function getInt16(byteOffset:uint, littleEndian:Boolean=false):int { return 0;}
+	public function getInt16(byteOffset:uint, littleEndian:Boolean=undefined):int { return undefined;}
 	/**
 	*  @param byteOffset
-	*  @param littleEndian (optional argument, default value is <code>false</code>)
+	*  @param littleEndian (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>uint</code> instance.
 	*/
-	public function getUint16(byteOffset:uint, littleEndian:Boolean=false):uint { return 0;}
+	public function getUint16(byteOffset:uint, littleEndian:Boolean=undefined):uint { return undefined;}
 	/**
 	*  @param byteOffset
-	*  @param littleEndian (optional argument, default value is <code>false</code>)
+	*  @param littleEndian (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>uint</code> instance.
 	*/
-	public function getInt32(byteOffset:uint, littleEndian:Boolean=false):uint { return 0;}
+	public function getInt32(byteOffset:uint, littleEndian:Boolean=undefined):uint { return undefined;}
 	/**
 	*  @param byteOffset
-	*  @param littleEndian (optional argument, default value is <code>false</code>)
+	*  @param littleEndian (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>uint</code> instance.
 	*/
-	public function getUint32(byteOffset:uint, littleEndian:Boolean=false):uint { return 0;}
+	public function getUint32(byteOffset:uint, littleEndian:Boolean=undefined):uint { return undefined;}
 	/**
 	*  @param byteOffset
-	*  @param littleEndian (optional argument, default value is <code>false</code>)
+	*  @param littleEndian (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Number</code> instance.
 	*/
-	public function getFloat32(byteOffset:uint, littleEndian:Boolean=false):Number { return 0;}
+	public function getFloat32(byteOffset:uint, littleEndian:Boolean=undefined):Number { return undefined;}
 	/**
 	*  @param byteOffset
-	*  @param littleEndian (optional argument, default value is <code>false</code>)
+	*  @param littleEndian (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Number</code> instance.
 	*/
-	public function getFloat64(byteOffset:uint, littleEndian:Boolean=false):Number { return 0;}
+	public function getFloat64(byteOffset:uint, littleEndian:Boolean=undefined):Number { return undefined;}
 	public function setInt8():void {}
 	public function setUint8():void {}
 	/**
 	*  @param byteOffset
-	*  @param value
-	*  @param littleEndian (optional argument, default value is <code>false</code>)
+	*  @param value (optional argument, default value is <code>undefined</code>)
+	*  @param littleEndian (optional argument, default value is <code>undefined</code>)
 	*/
-	public function setInt16(byteOffset:uint, value:int, littleEndian:Boolean=false):void {}
+	public function setInt16(byteOffset:uint, value:int=undefined, littleEndian:Boolean=undefined):void {}
 	/**
 	*  @param byteOffset
-	*  @param value
-	*  @param littleEndian (optional argument, default value is <code>false</code>)
+	*  @param value (optional argument, default value is <code>undefined</code>)
+	*  @param littleEndian (optional argument, default value is <code>undefined</code>)
 	*/
-	public function setUint16(byteOffset:uint, value:uint, littleEndian:Boolean=false):void {}
+	public function setUint16(byteOffset:uint, value:uint=undefined, littleEndian:Boolean=undefined):void {}
 	/**
 	*  @param byteOffset
-	*  @param value
-	*  @param littleEndian (optional argument, default value is <code>false</code>)
+	*  @param value (optional argument, default value is <code>undefined</code>)
+	*  @param littleEndian (optional argument, default value is <code>undefined</code>)
 	*/
-	public function setInt32(byteOffset:uint, value:uint, littleEndian:Boolean=false):void {}
+	public function setInt32(byteOffset:uint, value:uint=undefined, littleEndian:Boolean=undefined):void {}
 	/**
 	*  @param byteOffset
-	*  @param value
-	*  @param littleEndian (optional argument, default value is <code>false</code>)
+	*  @param value (optional argument, default value is <code>undefined</code>)
+	*  @param littleEndian (optional argument, default value is <code>undefined</code>)
 	*/
-	public function setUint32(byteOffset:uint, value:uint, littleEndian:Boolean=false):void {}
+	public function setUint32(byteOffset:uint, value:uint=undefined, littleEndian:Boolean=undefined):void {}
 	/**
 	*  @param byteOffset
-	*  @param value
-	*  @param littleEndian (optional argument, default value is <code>false</code>)
+	*  @param value (optional argument, default value is <code>undefined</code>)
+	*  @param littleEndian (optional argument, default value is <code>undefined</code>)
 	*/
-	public function setFloat32(byteOffset:uint, value:Number, littleEndian:Boolean=false):void {}
+	public function setFloat32(byteOffset:uint, value:Number=undefined, littleEndian:Boolean=undefined):void {}
 	/**
 	*  @param byteOffset
-	*  @param value
-	*  @param littleEndian (optional argument, default value is <code>false</code>)
+	*  @param value (optional argument, default value is <code>undefined</code>)
+	*  @param littleEndian (optional argument, default value is <code>undefined</code>)
 	*/
-	public function setFloat64(byteOffset:uint, value:Number, littleEndian:Boolean=false):void {}
+	public function setFloat64(byteOffset:uint, value:Number=undefined, littleEndian:Boolean=undefined):void {}
 }
 
 }

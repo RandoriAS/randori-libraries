@@ -53,21 +53,21 @@ public class Performance
 	/**
 	*  @see randori.webkit.page.PerformanceNavigation
 	*/
-	public function get navigation():PerformanceNavigation { return null; }
+	public function get navigation():PerformanceNavigation { return undefined; }
 
 	/**
 	*  @see randori.webkit.page.PerformanceTiming
 	*/
-	public function get timing():PerformanceTiming { return null; }
+	public function get timing():PerformanceTiming { return undefined; }
 
 	/**
 	*  @see randori.webkit.page.MemoryInfo
 	*/
-	public function get memory():MemoryInfo { return null; }
+	public function get memory():MemoryInfo { return undefined; }
 	/**
 	*  @return A <code>Number</code> instance.
 	*/
-	public function now():Number { return 0;}
+	public function now():Number { return undefined;}
 }
 
 }

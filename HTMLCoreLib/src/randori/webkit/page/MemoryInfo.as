@@ -50,11 +50,11 @@ package randori.webkit.page
 public class MemoryInfo
 {
 
-	public function get totalJSHeapSize():uint { return 0; }
+	public function get totalJSHeapSize():uint { return undefined; }
 
-	public function get usedJSHeapSize():uint { return 0; }
+	public function get usedJSHeapSize():uint { return undefined; }
 
-	public function get jsHeapSizeLimit():uint { return 0; }
+	public function get jsHeapSizeLimit():uint { return undefined; }
 }
 
 }

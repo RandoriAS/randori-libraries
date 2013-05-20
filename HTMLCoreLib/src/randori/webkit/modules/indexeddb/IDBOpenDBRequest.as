@@ -54,13 +54,13 @@ public class IDBOpenDBRequest extends IDBRequest
 	/**
 	*  Function that accepts an event of type <code>BlockedEvent</code>.
 	*/
-	public function get onblocked():Function { return null; }
+	public function get onblocked():Function { return undefined; }
 	public function set onblocked(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>UpgradeneededEvent</code>.
 	*/
-	public function get onupgradeneeded():Function { return null; }
+	public function get onupgradeneeded():Function { return undefined; }
 	public function set onupgradeneeded(value:Function):void { }
 }
 

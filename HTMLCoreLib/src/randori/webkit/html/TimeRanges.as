@@ -50,17 +50,17 @@ package randori.webkit.html
 public class TimeRanges
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 	/**
 	*  @param index
 	*  @return A <code>Number</code> instance.
 	*/
-	public function start(index:uint):Number { return 0;}
+	public function start(index:uint):Number { return undefined;}
 	/**
 	*  @param index
 	*  @return A <code>Number</code> instance.
 	*/
-	public function end(index:uint):Number { return 0;}
+	public function end(index:uint):Number { return undefined;}
 }
 
 }

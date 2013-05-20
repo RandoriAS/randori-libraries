@@ -57,42 +57,42 @@ public class SVGFilterElement extends SVGStyledElement implements SVGURIReferenc
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedEnumeration
 	*/
-	public function get filterUnits():SVGAnimatedEnumeration { return null; }
+	public function get filterUnits():SVGAnimatedEnumeration { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedEnumeration
 	*/
-	public function get primitiveUnits():SVGAnimatedEnumeration { return null; }
+	public function get primitiveUnits():SVGAnimatedEnumeration { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get x():SVGAnimatedLength { return null; }
+	public function get x():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get y():SVGAnimatedLength { return null; }
+	public function get y():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get width():SVGAnimatedLength { return null; }
+	public function get width():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get height():SVGAnimatedLength { return null; }
+	public function get height():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedInteger
 	*/
-	public function get filterResX():SVGAnimatedInteger { return null; }
+	public function get filterResX():SVGAnimatedInteger { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedInteger
 	*/
-	public function get filterResY():SVGAnimatedInteger { return null; }
+	public function get filterResY():SVGAnimatedInteger { return undefined; }
 	/**
 	*  @param filterResX (optional argument, default value is <code>undefined</code>)
 	*  @param filterResY (optional argument, default value is <code>undefined</code>)
@@ -102,18 +102,18 @@ public class SVGFilterElement extends SVGStyledElement implements SVGURIReferenc
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get href():SVGAnimatedString { return null; }
+	public function get href():SVGAnimatedString { return undefined; }
 
-	public function get xmllang():String { return ''; }
+	public function get xmllang():String { return undefined; }
 	public function set xmllang(value:String):void { }
 
-	public function get xmlspace():String { return ''; }
+	public function get xmlspace():String { return undefined; }
 	public function set xmlspace(value:String):void { }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedBoolean
 	*/
-	public function get externalResourcesRequired():SVGAnimatedBoolean { return null; }
+	public function get externalResourcesRequired():SVGAnimatedBoolean { return undefined; }
 }
 
 }

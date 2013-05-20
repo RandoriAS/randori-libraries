@@ -88,7 +88,7 @@ public class XPathEvaluator
 	*  legal according to the rules of the
 	*  <code>XPathEvaluator</code>.</p>
 	*/
-	public function createExpression(expression:String=undefined, resolver:XPathNSResolver=undefined):XPathExpression { return null;}
+	public function createExpression(expression:String=undefined, resolver:XPathNSResolver=undefined):XPathExpression { return undefined;}
 	/**
 	*  <p>Adapts any DOM node to resolve namespaces so that an XPath
 	*  expression can be easily evaluated relative to the context of
@@ -102,7 +102,7 @@ public class XPathEvaluator
 	*  @return <p><code>XPathNSResolver</code> which resolves namespaces with respect to
 	*  the definitions in scope for a specified node.</p>
 	*/
-	public function createNSResolver(nodeResolver:Node=undefined):XPathNSResolver { return null;}
+	public function createNSResolver(nodeResolver:Node=undefined):XPathNSResolver { return undefined;}
 	/**
 	*  <p>Evaluates an XPath expression string and returns a result of the
 	*  specified type if possible.</p>
@@ -139,7 +139,7 @@ public class XPathEvaluator
 	*  <code>XPathEvaluator</code>i</p><p>TYPE_ERR: Raised if the result cannot be converted to
 	*  return the specified type.</p>
 	*/
-	public function evaluate(expression:String=undefined, contextNode:Node=undefined, resolver:XPathNSResolver=undefined, type:uint=undefined, inResult:XPathResult=undefined):XPathResult { return null;}
+	public function evaluate(expression:String=undefined, contextNode:Node=undefined, resolver:XPathNSResolver=undefined, type:uint=undefined, inResult:XPathResult=undefined):XPathResult { return undefined;}
 }
 
 }

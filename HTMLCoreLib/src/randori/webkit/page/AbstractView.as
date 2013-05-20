@@ -55,12 +55,12 @@ public class AbstractView
 	/**
 	*  @see randori.webkit.dom.Document
 	*/
-	public function get document():Document { return null; }
+	public function get document():Document { return undefined; }
 
 	/**
 	*  @see randori.webkit.css.StyleMedia
 	*/
-	public function get styleMedia():StyleMedia { return null; }
+	public function get styleMedia():StyleMedia { return undefined; }
 }
 
 }

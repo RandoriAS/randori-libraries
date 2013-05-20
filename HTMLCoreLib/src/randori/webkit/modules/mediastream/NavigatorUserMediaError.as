@@ -51,7 +51,7 @@ public class NavigatorUserMediaError
 {
 	public static const PERMISSION_DENIED:uint = 1;
 
-	public function get code():uint { return 0; }
+	public function get code():uint { return undefined; }
 }
 
 }

@@ -52,7 +52,7 @@ import randori.webkit.dom.DomEvent;
 public class TrackEvent extends DomEvent
 {
 
-	public function get track():Object { return null; }
+	public function get track():Object { return undefined; }
 }
 
 }

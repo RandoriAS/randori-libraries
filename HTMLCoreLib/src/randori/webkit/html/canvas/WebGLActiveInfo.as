@@ -50,11 +50,11 @@ package randori.webkit.html.canvas
 public class WebGLActiveInfo
 {
 
-	public function get size():uint { return 0; }
+	public function get size():uint { return undefined; }
 
-	public function get type():uint { return 0; }
+	public function get type():uint { return undefined; }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 }
 
 }

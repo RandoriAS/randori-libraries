@@ -50,12 +50,12 @@ package randori.webkit.html.track
 public dynamic class TextTrackCueList
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 	/**
 	*  @param id
 	*  @return A <code>TextTrackCue</code> instance.
 	*/
-	public function getCueById(id:String):TextTrackCue { return null;}
+	public function getCueById(id:String):TextTrackCue { return undefined;}
 }
 
 }

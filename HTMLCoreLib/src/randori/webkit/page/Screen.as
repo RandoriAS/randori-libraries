@@ -50,21 +50,21 @@ package randori.webkit.page
 public class Screen
 {
 
-	public function get height():uint { return 0; }
+	public function get height():uint { return undefined; }
 
-	public function get width():uint { return 0; }
+	public function get width():uint { return undefined; }
 
-	public function get colorDepth():uint { return 0; }
+	public function get colorDepth():uint { return undefined; }
 
-	public function get pixelDepth():uint { return 0; }
+	public function get pixelDepth():uint { return undefined; }
 
-	public function get availLeft():uint { return 0; }
+	public function get availLeft():uint { return undefined; }
 
-	public function get availTop():uint { return 0; }
+	public function get availTop():uint { return undefined; }
 
-	public function get availHeight():uint { return 0; }
+	public function get availHeight():uint { return undefined; }
 
-	public function get availWidth():uint { return 0; }
+	public function get availWidth():uint { return undefined; }
 }
 
 }

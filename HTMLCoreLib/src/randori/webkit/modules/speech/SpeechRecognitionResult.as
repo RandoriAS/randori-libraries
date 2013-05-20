@@ -50,9 +50,9 @@ package randori.webkit.modules.speech
 public dynamic class SpeechRecognitionResult
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 
-	public function get isFinal():Boolean { return false; }
+	public function get isFinal():Boolean { return undefined; }
 }
 
 }

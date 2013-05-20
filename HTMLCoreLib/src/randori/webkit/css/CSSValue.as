@@ -64,7 +64,7 @@ public class CSSValue
 	*  A string representation of the current value.
 	*  </p>
 	*/
-	public function get cssText():String { return ''; }
+	public function get cssText():String { return undefined; }
 	public function set cssText(value:String):void { }
 
 	/**
@@ -72,7 +72,7 @@ public class CSSValue
 	*  A code defining the type of the value as defined above.
 	*  </p>
 	*/
-	public function get cssValueType():uint { return 0; }
+	public function get cssValueType():uint { return undefined; }
 }
 
 }

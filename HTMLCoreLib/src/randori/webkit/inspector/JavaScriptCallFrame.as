@@ -61,38 +61,38 @@ public class JavaScriptCallFrame
 	/**
 	*  @return A <code>any</code> instance.
 	*/
-	public function restart():* { return null;}
+	public function restart():* { return undefined;}
 	/**
 	*  @param scopeIndex
 	*  @param variableName
 	*  @param newValue
 	*  @return A <code>any</code> instance.
 	*/
-	public function setVariableValue(scopeIndex:int, variableName:String, newValue:*):* { return null;}
+	public function setVariableValue(scopeIndex:int, variableName:String, newValue:*):* { return undefined;}
 
 	/**
 	*  @see randori.webkit.inspector.JavaScriptCallFrame
 	*/
-	public function get caller():JavaScriptCallFrame { return null; }
+	public function get caller():JavaScriptCallFrame { return undefined; }
 
-	public function get sourceID():uint { return 0; }
+	public function get sourceID():uint { return undefined; }
 
-	public function get line():uint { return 0; }
+	public function get line():uint { return undefined; }
 
-	public function get column():uint { return 0; }
+	public function get column():uint { return undefined; }
 
-	public function get scopeChain():Array { return null; }
+	public function get scopeChain():Array { return undefined; }
 	/**
 	*  @param scopeIndex
 	*  @return A <code>uint</code> instance.
 	*/
-	public function scopeType(scopeIndex:int):uint { return 0;}
+	public function scopeType(scopeIndex:int):uint { return undefined;}
 
-	public function get thisObject():Object { return null; }
+	public function get thisObject():Object { return undefined; }
 
-	public function get functionName():String { return ''; }
+	public function get functionName():String { return undefined; }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 }
 
 }

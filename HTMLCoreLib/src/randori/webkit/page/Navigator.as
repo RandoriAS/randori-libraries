@@ -50,43 +50,43 @@ package randori.webkit.page
 public class Navigator
 {
 
-	public function get appCodeName():String { return ''; }
+	public function get appCodeName():String { return undefined; }
 
-	public function get appName():String { return ''; }
+	public function get appName():String { return undefined; }
 
-	public function get appVersion():String { return ''; }
+	public function get appVersion():String { return undefined; }
 
-	public function get language():String { return ''; }
+	public function get language():String { return undefined; }
 
-	public function get userAgent():String { return ''; }
+	public function get userAgent():String { return undefined; }
 
-	public function get platform():String { return ''; }
+	public function get platform():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.plugins.PluginArray
 	*/
-	public function get plugins():Object { return null; }
+	public function get plugins():Object { return undefined; }
 
 	/**
 	*  @see randori.webkit.plugins.MimeTypeArray
 	*/
-	public function get mimeTypes():Object { return null; }
+	public function get mimeTypes():Object { return undefined; }
 
-	public function get product():String { return ''; }
+	public function get product():String { return undefined; }
 
-	public function get productSub():String { return ''; }
+	public function get productSub():String { return undefined; }
 
-	public function get vendor():String { return ''; }
+	public function get vendor():String { return undefined; }
 
-	public function get vendorSub():String { return ''; }
+	public function get vendorSub():String { return undefined; }
 
-	public function get cookieEnabled():Boolean { return false; }
+	public function get cookieEnabled():Boolean { return undefined; }
 	/**
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function javaEnabled():Boolean { return false;}
+	public function javaEnabled():Boolean { return undefined;}
 
-	public function get onLine():Boolean { return false; }
+	public function get onLine():Boolean { return undefined; }
 	public function getStorageUpdates():void {}
 }
 

@@ -56,70 +56,70 @@ public class HTMLAnchorElement extends HTMLElement
 	*/
 	public function HTMLAnchorElement() {super();}
 
-	public function get charset():String { return ''; }
+	public function get charset():String { return undefined; }
 	public function set charset(value:String):void { }
 
-	public function get coords():String { return ''; }
+	public function get coords():String { return undefined; }
 	public function set coords(value:String):void { }
 
-	public function get download():String { return ''; }
+	public function get download():String { return undefined; }
 	public function set download(value:String):void { }
 
-	public function get href():String { return ''; }
+	public function get href():String { return undefined; }
 	public function set href(value:String):void { }
 
-	public function get hreflang():String { return ''; }
+	public function get hreflang():String { return undefined; }
 	public function set hreflang(value:String):void { }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 
-	public function get ping():String { return ''; }
+	public function get ping():String { return undefined; }
 	public function set ping(value:String):void { }
 
-	public function get rel():String { return ''; }
+	public function get rel():String { return undefined; }
 	public function set rel(value:String):void { }
 
-	public function get rev():String { return ''; }
+	public function get rev():String { return undefined; }
 	public function set rev(value:String):void { }
 
-	public function get shape():String { return ''; }
+	public function get shape():String { return undefined; }
 	public function set shape(value:String):void { }
 
-	public function get target():String { return ''; }
+	public function get target():String { return undefined; }
 	public function set target(value:String):void { }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	public function set type(value:String):void { }
 
-	public function get hash():String { return ''; }
+	public function get hash():String { return undefined; }
 	public function set hash(value:String):void { }
 
-	public function get host():String { return ''; }
+	public function get host():String { return undefined; }
 	public function set host(value:String):void { }
 
-	public function get hostname():String { return ''; }
+	public function get hostname():String { return undefined; }
 	public function set hostname(value:String):void { }
 
-	public function get pathname():String { return ''; }
+	public function get pathname():String { return undefined; }
 	public function set pathname(value:String):void { }
 
-	public function get port():String { return ''; }
+	public function get port():String { return undefined; }
 	public function set port(value:String):void { }
 
-	public function get protocol():String { return ''; }
+	public function get protocol():String { return undefined; }
 	public function set protocol(value:String):void { }
 
-	public function get search():String { return ''; }
+	public function get search():String { return undefined; }
 	public function set search(value:String):void { }
 
-	public function get origin():String { return ''; }
+	public function get origin():String { return undefined; }
 
-	public function get text():String { return ''; }
+	public function get text():String { return undefined; }
 	/**
 	*  @return A <code>String</code> instance.
 	*/
-	public function toString():String { return '';}
+	public function toString():String { return undefined;}
 }
 
 }

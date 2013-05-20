@@ -55,7 +55,7 @@ public class MediaStreamEvent extends DomEvent
 	/**
 	*  @see randori.webkit.modules.mediastream.MediaStream
 	*/
-	public function get stream():MediaStream { return null; }
+	public function get stream():MediaStream { return undefined; }
 }
 
 }

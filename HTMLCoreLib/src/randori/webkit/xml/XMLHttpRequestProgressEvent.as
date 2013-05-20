@@ -52,9 +52,9 @@ import randori.webkit.dom.ProgressEvent;
 public class XMLHttpRequestProgressEvent extends ProgressEvent
 {
 
-	public function get position():Number { return 0; }
+	public function get position():Number { return undefined; }
 
-	public function get totalSize():Number { return 0; }
+	public function get totalSize():Number { return undefined; }
 }
 
 }

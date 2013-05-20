@@ -59,9 +59,9 @@ public class HashChangeEvent extends DomEvent
 	*/
 	public function initHashChangeEvent(type:String=undefined, canBubble:Boolean=undefined, cancelable:Boolean=undefined, oldURL:String=undefined, newURL:String=undefined):void {}
 
-	public function get oldURL():String { return ''; }
+	public function get oldURL():String { return undefined; }
 
-	public function get newURL():String { return ''; }
+	public function get newURL():String { return undefined; }
 }
 
 }

@@ -53,59 +53,59 @@ public class EventSource
 	/**
 	*  Creates a new <code>EventSource</code> instance.
 	*  @param url
-	*  @param eventSourceInit (optional argument, default value is <code>null</code>)
+	*  @param eventSourceInit (optional argument, default value is <code>undefined</code>)
 	*/
-	public function EventSource(url:String, eventSourceInit:Object=null) {super();}
+	public function EventSource(url:String, eventSourceInit:Object=undefined) {super();}
 
 	[JavaScriptProperty(name="URL")]
-	public function get URL_():String { return ''; }
+	public function get URL_():String { return undefined; }
 
-	public function get url():String { return ''; }
+	public function get url():String { return undefined; }
 
-	public function get withCredentials():Boolean { return false; }
+	public function get withCredentials():Boolean { return undefined; }
 	public static const CONNECTING:uint = 0;
 	public static const OPEN:uint = 1;
 	public static const CLOSED:uint = 2;
 
-	public function get readyState():uint { return 0; }
+	public function get readyState():uint { return undefined; }
 
 	/**
 	*  Function that accepts an event of type <code>OpenEvent</code>.
 	*/
-	public function get onopen():Function { return null; }
+	public function get onopen():Function { return undefined; }
 	public function set onopen(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>MessageEvent</code>.
 	*  @see randori.webkit.dom.MessageEvent
 	*/
-	public function get onmessage():Function { return null; }
+	public function get onmessage():Function { return undefined; }
 	public function set onmessage(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ErrorEvent</code>.
 	*  @see randori.webkit.dom.ErrorEvent
 	*/
-	public function get onerror():Function { return null; }
+	public function get onerror():Function { return undefined; }
 	public function set onerror(value:Function):void { }
 	public function close():void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param evt
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(evt:DomEvent):Boolean { return false;}
+	public function dispatchEvent(evt:DomEvent):Boolean { return undefined;}
 }
 
 }

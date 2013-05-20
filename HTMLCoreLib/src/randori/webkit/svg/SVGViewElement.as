@@ -62,30 +62,30 @@ public class SVGViewElement extends SVGElement implements SVGExternalResourcesRe
 	/**
 	*  @see randori.webkit.svg.SVGStringList
 	*/
-	public function get viewTarget():SVGStringList { return null; }
+	public function get viewTarget():SVGStringList { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedBoolean
 	*/
-	public function get externalResourcesRequired():SVGAnimatedBoolean { return null; }
+	public function get externalResourcesRequired():SVGAnimatedBoolean { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedRect
 	*/
-	public function get viewBox():SVGAnimatedRect { return null; }
+	public function get viewBox():SVGAnimatedRect { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedPreserveAspectRatio
 	*/
-	public function get preserveAspectRatio():SVGAnimatedPreserveAspectRatio { return null; }
+	public function get preserveAspectRatio():SVGAnimatedPreserveAspectRatio { return undefined; }
 
-	public function get SVG_ZOOMANDPAN_UNKNOWN():uint { return 0; }
+	public function get SVG_ZOOMANDPAN_UNKNOWN():uint { return undefined; }
 
-	public function get SVG_ZOOMANDPAN_DISABLE():uint { return 0; }
+	public function get SVG_ZOOMANDPAN_DISABLE():uint { return undefined; }
 
-	public function get SVG_ZOOMANDPAN_MAGNIFY():uint { return 0; }
+	public function get SVG_ZOOMANDPAN_MAGNIFY():uint { return undefined; }
 
-	public function get zoomAndPan():uint { return 0; }
+	public function get zoomAndPan():uint { return undefined; }
 	public function set zoomAndPan(value:uint):void { }
 }
 

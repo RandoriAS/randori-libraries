@@ -75,7 +75,7 @@ public class CSSCharsetRule extends CSSRule
 	*  The encoding information used in this <code>@charset</code> rule.
 	*  </p>
 	*/
-	public function get encoding():String { return ''; }
+	public function get encoding():String { return undefined; }
 	public function set encoding(value:String):void { }
 }
 

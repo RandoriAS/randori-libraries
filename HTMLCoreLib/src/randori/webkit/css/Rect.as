@@ -63,7 +63,7 @@ public class Rect
 	*  </p>
 	*  @see randori.webkit.css.CSSPrimitiveValue
 	*/
-	public function get top():CSSPrimitiveValue { return null; }
+	public function get top():CSSPrimitiveValue { return undefined; }
 
 	/**
 	*  <p>
@@ -71,7 +71,7 @@ public class Rect
 	*  </p>
 	*  @see randori.webkit.css.CSSPrimitiveValue
 	*/
-	public function get right():CSSPrimitiveValue { return null; }
+	public function get right():CSSPrimitiveValue { return undefined; }
 
 	/**
 	*  <p>
@@ -79,7 +79,7 @@ public class Rect
 	*  </p>
 	*  @see randori.webkit.css.CSSPrimitiveValue
 	*/
-	public function get bottom():CSSPrimitiveValue { return null; }
+	public function get bottom():CSSPrimitiveValue { return undefined; }
 
 	/**
 	*  <p>
@@ -87,7 +87,7 @@ public class Rect
 	*  </p>
 	*  @see randori.webkit.css.CSSPrimitiveValue
 	*/
-	public function get left():CSSPrimitiveValue { return null; }
+	public function get left():CSSPrimitiveValue { return undefined; }
 }
 
 }

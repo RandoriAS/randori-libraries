@@ -63,63 +63,63 @@ public class SVGMarkerElement extends SVGStyledElement implements SVGLangSpace, 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get refX():SVGAnimatedLength { return null; }
+	public function get refX():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get refY():SVGAnimatedLength { return null; }
+	public function get refY():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedEnumeration
 	*/
-	public function get markerUnits():SVGAnimatedEnumeration { return null; }
+	public function get markerUnits():SVGAnimatedEnumeration { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get markerWidth():SVGAnimatedLength { return null; }
+	public function get markerWidth():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get markerHeight():SVGAnimatedLength { return null; }
+	public function get markerHeight():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedEnumeration
 	*/
-	public function get orientType():SVGAnimatedEnumeration { return null; }
+	public function get orientType():SVGAnimatedEnumeration { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedAngle
 	*/
-	public function get orientAngle():SVGAnimatedAngle { return null; }
+	public function get orientAngle():SVGAnimatedAngle { return undefined; }
 	public function setOrientToAuto():void {}
 	/**
 	*  @param angle (optional argument, default value is <code>undefined</code>)
 	*/
 	public function setOrientToAngle(angle:SVGAngle=undefined):void {}
 
-	public function get xmllang():String { return ''; }
+	public function get xmllang():String { return undefined; }
 	public function set xmllang(value:String):void { }
 
-	public function get xmlspace():String { return ''; }
+	public function get xmlspace():String { return undefined; }
 	public function set xmlspace(value:String):void { }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedBoolean
 	*/
-	public function get externalResourcesRequired():SVGAnimatedBoolean { return null; }
+	public function get externalResourcesRequired():SVGAnimatedBoolean { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedRect
 	*/
-	public function get viewBox():SVGAnimatedRect { return null; }
+	public function get viewBox():SVGAnimatedRect { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedPreserveAspectRatio
 	*/
-	public function get preserveAspectRatio():SVGAnimatedPreserveAspectRatio { return null; }
+	public function get preserveAspectRatio():SVGAnimatedPreserveAspectRatio { return undefined; }
 }
 
 }

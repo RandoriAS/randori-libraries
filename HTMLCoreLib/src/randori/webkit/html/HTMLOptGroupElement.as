@@ -56,10 +56,10 @@ public class HTMLOptGroupElement extends HTMLElement
 	*/
 	public function HTMLOptGroupElement() {super();}
 
-	public function get disabled():Boolean { return false; }
+	public function get disabled():Boolean { return undefined; }
 	public function set disabled(value:Boolean):void { }
 
-	public function get label():String { return ''; }
+	public function get label():String { return undefined; }
 	public function set label(value:String):void { }
 }
 

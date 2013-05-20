@@ -59,7 +59,7 @@ public class DOMParser
 	*  @param contentType (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Document</code> instance.
 	*/
-	public function parseFromString(str:String=undefined, contentType:String=undefined):Document { return null;}
+	public function parseFromString(str:String=undefined, contentType:String=undefined):Document { return undefined;}
 }
 
 }

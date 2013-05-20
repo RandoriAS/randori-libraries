@@ -54,7 +54,7 @@ public class FocusEvent extends UIEvent
 	/**
 	*  @see randori.webkit.dom.EventTarget
 	*/
-	public function get relatedTarget():EventTarget { return null; }
+	public function get relatedTarget():EventTarget { return undefined; }
 }
 
 }

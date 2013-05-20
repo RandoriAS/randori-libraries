@@ -52,13 +52,13 @@ package randori.webkit.dom
 public class DeviceMotionEvent extends DomEvent
 {
 
-	public function get acceleration():Object { return null; }
+	public function get acceleration():Object { return undefined; }
 
-	public function get accelerationIncludingGravity():Object { return null; }
+	public function get accelerationIncludingGravity():Object { return undefined; }
 
-	public function get rotationRate():Object { return null; }
+	public function get rotationRate():Object { return undefined; }
 
-	public function get interval():Number { return 0; }
+	public function get interval():Number { return undefined; }
 	/**
 	*  @param type (optional argument, default value is <code>undefined</code>)
 	*  @param bubbles (optional argument, default value is <code>undefined</code>)

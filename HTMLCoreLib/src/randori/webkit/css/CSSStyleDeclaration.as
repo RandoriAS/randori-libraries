@@ -86,7 +86,7 @@ public dynamic class CSSStyleDeclaration
 	*  declaration block including the removal or addition of properties.
 	*  </p>
 	*/
-	public function get cssText():String { return ''; }
+	public function get cssText():String { return undefined; }
 	public function set cssText(value:String):void { }
 	/**
 	*  <p>
@@ -102,7 +102,7 @@ public dynamic class CSSStyleDeclaration
 	*  has not been set.
 	*  </p>
 	*/
-	public function getPropertyValue(propertyName:String=undefined):String { return '';}
+	public function getPropertyValue(propertyName:String=undefined):String { return undefined;}
 	/**
 	*  <p>
 	*  Used to retrieve the object representation of the value of a CSS
@@ -120,7 +120,7 @@ public dynamic class CSSStyleDeclaration
 	*  has not been set.
 	*  </p>
 	*/
-	public function getPropertyCSSValue(propertyName:String=undefined):CSSValue { return null;}
+	public function getPropertyCSSValue(propertyName:String=undefined):CSSValue { return undefined;}
 	/**
 	*  <p>
 	*  Used to remove a CSS property if it has been explicitly
@@ -138,7 +138,7 @@ public dynamic class CSSStyleDeclaration
 	*  @throw DOMException <p>NO_MODIFICATION_ALLOWED_ERR: Raised if this declaration is
 	*  readonly or the property is readonly.</p>
 	*/
-	public function removeProperty(propertyName:String=undefined):String { return '';}
+	public function removeProperty(propertyName:String=undefined):String { return undefined;}
 	/**
 	*  <p>
 	*  Used to retrieve the priority of a CSS property
@@ -154,7 +154,7 @@ public dynamic class CSSStyleDeclaration
 	*  if one exists. The empty string if none exists.
 	*  </p>
 	*/
-	public function getPropertyPriority(propertyName:String=undefined):String { return '';}
+	public function getPropertyPriority(propertyName:String=undefined):String { return undefined;}
 	/**
 	*  <p>
 	*  Used to set a property value and priority within this declaration
@@ -182,7 +182,7 @@ public dynamic class CSSStyleDeclaration
 	*  inclusive.
 	*  </p>
 	*/
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 
 	/**
 	*  <p>
@@ -192,17 +192,17 @@ public dynamic class CSSStyleDeclaration
 	*  </p>
 	*  @see randori.webkit.css.CSSRule
 	*/
-	public function get parentRule():CSSRule { return null; }
+	public function get parentRule():CSSRule { return undefined; }
 	/**
 	*  @param propertyName (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>String</code> instance.
 	*/
-	public function getPropertyShorthand(propertyName:String=undefined):String { return '';}
+	public function getPropertyShorthand(propertyName:String=undefined):String { return undefined;}
 	/**
 	*  @param propertyName (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function isPropertyImplicit(propertyName:String=undefined):Boolean { return false;}
+	public function isPropertyImplicit(propertyName:String=undefined):Boolean { return undefined;}
 }
 
 }

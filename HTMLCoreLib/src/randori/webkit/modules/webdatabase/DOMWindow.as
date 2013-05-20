@@ -51,15 +51,15 @@ public class DOMWindow
 {
 	/**
 	*  @param name
-	*  @param version
-	*  @param displayName
-	*  @param estimatedSize
-	*  @param creationCallback (optional argument, default value is <code>null</code>)
+	*  @param version (optional argument, default value is <code>undefined</code>)
+	*  @param displayName (optional argument, default value is <code>undefined</code>)
+	*  @param estimatedSize (optional argument, default value is <code>undefined</code>)
+	*  @param creationCallback (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Database</code> instance.
 	*/
-	public function openDatabase(name:String, version:String, displayName:String, estimatedSize:uint, creationCallback:Object=null):Database { return null;}
+	public function openDatabase(name:String, version:String=undefined, displayName:String=undefined, estimatedSize:uint=undefined, creationCallback:Object=undefined):Database { return undefined;}
 
-	public function get SQLException():Object { return null; }
+	public function get SQLException():Object { return undefined; }
 	public function set SQLException(value:Object):void { }
 }
 

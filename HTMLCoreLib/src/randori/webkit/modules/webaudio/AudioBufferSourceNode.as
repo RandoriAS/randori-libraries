@@ -54,39 +54,39 @@ public class AudioBufferSourceNode extends AudioSourceNode
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioBuffer
 	*/
-	public function get buffer():AudioBuffer { return null; }
+	public function get buffer():AudioBuffer { return undefined; }
 	public function set buffer(value:AudioBuffer):void { }
 	public static const UNSCHEDULED_STATE:uint = 0;
 	public static const SCHEDULED_STATE:uint = 1;
 	public static const PLAYING_STATE:uint = 2;
 	public static const FINISHED_STATE:uint = 3;
 
-	public function get playbackState():uint { return 0; }
-
-	/**
-	*  @see randori.webkit.modules.webaudio.AudioGain
-	*/
-	public function get gain():AudioGain { return null; }
+	public function get playbackState():uint { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.webaudio.AudioParam
 	*/
-	public function get playbackRate():AudioParam { return null; }
+	public function get gain():AudioParam { return undefined; }
 
-	public function get loop():Boolean { return false; }
+	/**
+	*  @see randori.webkit.modules.webaudio.AudioParam
+	*/
+	public function get playbackRate():AudioParam { return undefined; }
+
+	public function get loop():Boolean { return undefined; }
 	public function set loop(value:Boolean):void { }
 
-	public function get loopStart():Number { return 0; }
+	public function get loopStart():Number { return undefined; }
 	public function set loopStart(value:Number):void { }
 
-	public function get loopEnd():Number { return 0; }
+	public function get loopEnd():Number { return undefined; }
 	public function set loopEnd(value:Number):void { }
 	/**
 	*  @param when
-	*  @param grainOffset
-	*  @param grainDuration
+	*  @param grainOffset (optional argument, default value is <code>undefined</code>)
+	*  @param grainDuration (optional argument, default value is <code>undefined</code>)
 	*/
-	public function start(when:Number, grainOffset:Number, grainDuration:Number):void {}
+	public function start(when:Number, grainOffset:Number=undefined, grainDuration:Number=undefined):void {}
 	/**
 	*  @param when
 	*/

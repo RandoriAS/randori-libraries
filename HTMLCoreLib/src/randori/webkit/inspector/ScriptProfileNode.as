@@ -50,25 +50,25 @@ package randori.webkit.inspector
 public class ScriptProfileNode
 {
 
-	public function get functionName():String { return ''; }
+	public function get functionName():String { return undefined; }
 
-	public function get url():String { return ''; }
+	public function get url():String { return undefined; }
 
-	public function get lineNumber():uint { return 0; }
+	public function get lineNumber():uint { return undefined; }
 
-	public function get totalTime():Number { return 0; }
+	public function get totalTime():Number { return undefined; }
 
-	public function get selfTime():Number { return 0; }
+	public function get selfTime():Number { return undefined; }
 
-	public function get numberOfCalls():uint { return 0; }
+	public function get numberOfCalls():uint { return undefined; }
 	/**
 	*  @return A <code>sequence</code> instance.
 	*/
-	public function children():Vector.<ScriptProfileNode> { return null;}
+	public function children():Vector.<ScriptProfileNode> { return undefined;}
 
-	public function get visible():Boolean { return false; }
+	public function get visible():Boolean { return undefined; }
 
-	public function get callUID():uint { return 0; }
+	public function get callUID():uint { return undefined; }
 }
 
 }

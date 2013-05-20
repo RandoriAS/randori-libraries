@@ -49,10 +49,16 @@ package randori.webkit.modules.vibration
  */
 public class Navigator
 {
+	[JavaScriptMethod(name="vibrate")]
 	/**
 	*  @param pattern
 	*/
-	public function vibrate(pattern:Vector.<uint>):void {}
+	public function vibrate1(pattern:Vector.<uint>):void {}
+	[JavaScriptMethod(name="vibrate")]
+	/**
+	*  @param time
+	*/
+	public function vibrate2(time:uint):void {}
 }
 
 }

@@ -57,10 +57,10 @@ public class WorkerContext
 	/**
 	*  @see randori.webkit.fileapi.FileError
 	*/
-	public function get FileError_():FileError { return null; }
+	public function get FileError_():FileError { return undefined; }
 	public function set FileError_(value:FileError):void { }
 
-	public function get FileException():Object { return null; }
+	public function get FileException():Object { return undefined; }
 	public function set FileException(value:Object):void { }
 }
 

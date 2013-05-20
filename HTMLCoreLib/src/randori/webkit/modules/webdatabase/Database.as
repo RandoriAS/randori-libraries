@@ -50,27 +50,27 @@ package randori.webkit.modules.webdatabase
 public class Database
 {
 
-	public function get version():String { return ''; }
+	public function get version():String { return undefined; }
 	/**
 	*  @param oldVersion
-	*  @param newVersion
-	*  @param callback (optional argument, default value is <code>null</code>)
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
-	*  @param successCallback (optional argument, default value is <code>null</code>)
+	*  @param newVersion (optional argument, default value is <code>undefined</code>)
+	*  @param callback (optional argument, default value is <code>undefined</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
+	*  @param successCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function changeVersion(oldVersion:String, newVersion:String, callback:Object=null, errorCallback:Object=null, successCallback:Object=null):void {}
+	public function changeVersion(oldVersion:String, newVersion:String=undefined, callback:Object=undefined, errorCallback:Object=undefined, successCallback:Object=undefined):void {}
 	/**
 	*  @param callback
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
-	*  @param successCallback (optional argument, default value is <code>null</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
+	*  @param successCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function transaction(callback:Object, errorCallback:Object=null, successCallback:Object=null):void {}
+	public function transaction(callback:Object, errorCallback:Object=undefined, successCallback:Object=undefined):void {}
 	/**
 	*  @param callback
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
-	*  @param successCallback (optional argument, default value is <code>null</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
+	*  @param successCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function readTransaction(callback:Object, errorCallback:Object=null, successCallback:Object=null):void {}
+	public function readTransaction(callback:Object, errorCallback:Object=undefined, successCallback:Object=undefined):void {}
 }
 
 }

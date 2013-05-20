@@ -50,9 +50,9 @@ package randori.webkit.page
 public class History
 {
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 
-	public function get state():Object { return null; }
+	public function get state():Object { return undefined; }
 	public function back():void {}
 	public function forward():void {}
 	/**
@@ -61,16 +61,16 @@ public class History
 	public function go(distance:uint=undefined):void {}
 	/**
 	*  @param data
-	*  @param title
-	*  @param url (optional argument, default value is <code>''</code>)
+	*  @param title (optional argument, default value is <code>undefined</code>)
+	*  @param url (optional argument, default value is <code>undefined</code>)
 	*/
-	public function pushState(data:*, title:String, url:String=''):void {}
+	public function pushState(data:*, title:String=undefined, url:String=undefined):void {}
 	/**
 	*  @param data
-	*  @param title
-	*  @param url (optional argument, default value is <code>''</code>)
+	*  @param title (optional argument, default value is <code>undefined</code>)
+	*  @param url (optional argument, default value is <code>undefined</code>)
 	*/
-	public function replaceState(data:*, title:String, url:String=''):void {}
+	public function replaceState(data:*, title:String=undefined, url:String=undefined):void {}
 }
 
 }

@@ -50,51 +50,51 @@ package randori.webkit.modules.filesystem
 public class Entry
 {
 
-	public function get isFile():Boolean { return false; }
+	public function get isFile():Boolean { return undefined; }
 
-	public function get isDirectory():Boolean { return false; }
+	public function get isDirectory():Boolean { return undefined; }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 
-	public function get fullPath():String { return ''; }
+	public function get fullPath():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.filesystem.DOMFileSystem
 	*/
-	public function get filesystem():DOMFileSystem { return null; }
+	public function get filesystem():DOMFileSystem { return undefined; }
 	/**
 	*  @param successCallback
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function getMetadata(successCallback:Object, errorCallback:Object=null):void {}
+	public function getMetadata(successCallback:Object, errorCallback:Object=undefined):void {}
 	/**
 	*  @param parent
-	*  @param name (optional argument, default value is <code>''</code>)
-	*  @param successCallback (optional argument, default value is <code>null</code>)
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param name (optional argument, default value is <code>undefined</code>)
+	*  @param successCallback (optional argument, default value is <code>undefined</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function moveTo(parent:DirectoryEntry, name:String='', successCallback:Object=null, errorCallback:Object=null):void {}
+	public function moveTo(parent:DirectoryEntry, name:String=undefined, successCallback:Object=undefined, errorCallback:Object=undefined):void {}
 	/**
 	*  @param parent
-	*  @param name (optional argument, default value is <code>''</code>)
-	*  @param successCallback (optional argument, default value is <code>null</code>)
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param name (optional argument, default value is <code>undefined</code>)
+	*  @param successCallback (optional argument, default value is <code>undefined</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function copyTo(parent:DirectoryEntry, name:String='', successCallback:Object=null, errorCallback:Object=null):void {}
+	public function copyTo(parent:DirectoryEntry, name:String=undefined, successCallback:Object=undefined, errorCallback:Object=undefined):void {}
 	/**
 	*  @return A <code>String</code> instance.
 	*/
-	public function toURL():String { return '';}
+	public function toURL():String { return undefined;}
 	/**
 	*  @param successCallback
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function remove(successCallback:Object, errorCallback:Object=null):void {}
+	public function remove(successCallback:Object, errorCallback:Object=undefined):void {}
 	/**
-	*  @param successCallback (optional argument, default value is <code>null</code>)
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param successCallback (optional argument, default value is <code>undefined</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function getParent(successCallback:Object=null, errorCallback:Object=null):void {}
+	public function getParent(successCallback:Object=undefined, errorCallback:Object=undefined):void {}
 }
 
 }

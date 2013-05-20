@@ -55,11 +55,11 @@ public class RTCIceCandidate
 	*/
 	public function RTCIceCandidate(dictionary:Object) {super();}
 
-	public function get candidate():String { return ''; }
+	public function get candidate():String { return undefined; }
 
-	public function get sdpMid():String { return ''; }
+	public function get sdpMid():String { return undefined; }
 
-	public function get sdpMLineIndex():uint { return 0; }
+	public function get sdpMLineIndex():uint { return undefined; }
 }
 
 }

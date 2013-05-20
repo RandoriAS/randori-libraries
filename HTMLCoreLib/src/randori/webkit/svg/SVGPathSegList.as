@@ -50,40 +50,40 @@ package randori.webkit.svg
 public class SVGPathSegList
 {
 
-	public function get numberOfItems():uint { return 0; }
+	public function get numberOfItems():uint { return undefined; }
 	public function clear():void {}
 	/**
 	*  @param newItem
 	*  @return A <code>SVGPathSeg</code> instance.
 	*/
-	public function initialize(newItem:SVGPathSeg):SVGPathSeg { return null;}
+	public function initialize(newItem:SVGPathSeg):SVGPathSeg { return undefined;}
 	/**
 	*  @param index
 	*  @return A <code>SVGPathSeg</code> instance.
 	*/
-	public function getItem(index:uint):SVGPathSeg { return null;}
+	public function getItem(index:uint):SVGPathSeg { return undefined;}
 	/**
 	*  @param newItem
 	*  @param index
 	*  @return A <code>SVGPathSeg</code> instance.
 	*/
-	public function insertItemBefore(newItem:SVGPathSeg, index:uint):SVGPathSeg { return null;}
+	public function insertItemBefore(newItem:SVGPathSeg, index:uint):SVGPathSeg { return undefined;}
 	/**
 	*  @param newItem
 	*  @param index
 	*  @return A <code>SVGPathSeg</code> instance.
 	*/
-	public function replaceItem(newItem:SVGPathSeg, index:uint):SVGPathSeg { return null;}
+	public function replaceItem(newItem:SVGPathSeg, index:uint):SVGPathSeg { return undefined;}
 	/**
 	*  @param index
 	*  @return A <code>SVGPathSeg</code> instance.
 	*/
-	public function removeItem(index:uint):SVGPathSeg { return null;}
+	public function removeItem(index:uint):SVGPathSeg { return undefined;}
 	/**
 	*  @param newItem
 	*  @return A <code>SVGPathSeg</code> instance.
 	*/
-	public function appendItem(newItem:SVGPathSeg):SVGPathSeg { return null;}
+	public function appendItem(newItem:SVGPathSeg):SVGPathSeg { return undefined;}
 }
 
 }

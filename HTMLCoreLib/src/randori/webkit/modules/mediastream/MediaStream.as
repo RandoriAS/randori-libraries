@@ -60,19 +60,19 @@ public class MediaStream
 	*  Creates a new <code>MediaStream</code> instance.
 	*  @param tracks
 	*/
-	public function MediaStream(arg1:*=null) {super();}
+	public function MediaStream(arg1:*=undefined) {super();}
 
-	public function get label():String { return ''; }
+	public function get label():String { return undefined; }
 
-	public function get id():String { return ''; }
+	public function get id():String { return undefined; }
 	/**
 	*  @return A <code>sequence</code> instance.
 	*/
-	public function getAudioTracks():Vector.<MediaStreamTrack> { return null;}
+	public function getAudioTracks():Vector.<MediaStreamTrack> { return undefined;}
 	/**
 	*  @return A <code>sequence</code> instance.
 	*/
-	public function getVideoTracks():Vector.<MediaStreamTrack> { return null;}
+	public function getVideoTracks():Vector.<MediaStreamTrack> { return undefined;}
 	/**
 	*  @param track
 	*/
@@ -85,44 +85,44 @@ public class MediaStream
 	*  @param trackId
 	*  @return A <code>MediaStreamTrack</code> instance.
 	*/
-	public function getTrackById(trackId:String):MediaStreamTrack { return null;}
+	public function getTrackById(trackId:String):MediaStreamTrack { return undefined;}
 
-	public function get ended():Boolean { return false; }
+	public function get ended():Boolean { return undefined; }
 
 	/**
 	*  Function that accepts an event of type <code>EndedEvent</code>.
 	*/
-	public function get onended():Function { return null; }
+	public function get onended():Function { return undefined; }
 	public function set onended(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>AddtrackEvent</code>.
 	*/
-	public function get onaddtrack():Function { return null; }
+	public function get onaddtrack():Function { return undefined; }
 	public function set onaddtrack(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>RemovetrackEvent</code>.
 	*/
-	public function get onremovetrack():Function { return null; }
+	public function get onremovetrack():Function { return undefined; }
 	public function set onremovetrack(value:Function):void { }
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param event
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(event:DomEvent):Boolean { return false;}
+	public function dispatchEvent(event:DomEvent):Boolean { return undefined;}
 }
 
 }

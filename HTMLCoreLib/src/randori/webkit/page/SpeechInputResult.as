@@ -50,9 +50,9 @@ package randori.webkit.page
 public class SpeechInputResult
 {
 
-	public function get utterance():String { return ''; }
+	public function get utterance():String { return undefined; }
 
-	public function get confidence():Number { return 0; }
+	public function get confidence():Number { return undefined; }
 }
 
 }

@@ -56,7 +56,7 @@ public class HTMLTitleElement extends HTMLElement
 	*/
 	public function HTMLTitleElement() {super();}
 
-	public function get text():String { return ''; }
+	public function get text():String { return undefined; }
 	public function set text(value:String):void { }
 }
 

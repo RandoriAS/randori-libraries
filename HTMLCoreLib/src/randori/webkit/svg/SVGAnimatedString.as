@@ -50,10 +50,10 @@ package randori.webkit.svg
 public class SVGAnimatedString
 {
 
-	public function get baseVal():String { return ''; }
+	public function get baseVal():String { return undefined; }
 	public function set baseVal(value:String):void { }
 
-	public function get animVal():String { return ''; }
+	public function get animVal():String { return undefined; }
 }
 
 }

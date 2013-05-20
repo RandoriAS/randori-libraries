@@ -52,28 +52,28 @@ package randori.webkit.svg
 public class SVGGlyphRefElement extends SVGStyledElement implements SVGURIReference
 {
 
-	public function get glyphRef():String { return ''; }
+	public function get glyphRef():String { return undefined; }
 	public function set glyphRef(value:String):void { }
 
-	public function get format():String { return ''; }
+	public function get format():String { return undefined; }
 	public function set format(value:String):void { }
 
-	public function get x():Number { return 0; }
+	public function get x():Number { return undefined; }
 	public function set x(value:Number):void { }
 
-	public function get y():Number { return 0; }
+	public function get y():Number { return undefined; }
 	public function set y(value:Number):void { }
 
-	public function get dx():Number { return 0; }
+	public function get dx():Number { return undefined; }
 	public function set dx(value:Number):void { }
 
-	public function get dy():Number { return 0; }
+	public function get dy():Number { return undefined; }
 	public function set dy(value:Number):void { }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedString
 	*/
-	public function get href():SVGAnimatedString { return null; }
+	public function get href():SVGAnimatedString { return undefined; }
 }
 
 }

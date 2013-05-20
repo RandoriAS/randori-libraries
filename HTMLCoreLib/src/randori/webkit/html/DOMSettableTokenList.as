@@ -51,7 +51,7 @@ package randori.webkit.html
 public class DOMSettableTokenList extends DOMTokenList
 {
 
-	public function get value():String { return ''; }
+	public function get value():String { return undefined; }
 	public function set value(value:String):void { }
 }
 

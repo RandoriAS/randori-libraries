@@ -50,7 +50,7 @@ package randori.webkit.dom
 public class DOMError
 {
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 }
 
 }

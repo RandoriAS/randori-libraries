@@ -71,14 +71,14 @@ public class Text extends CharacterData
 	*  @throw DOMException <p>INDEX_SIZE_ERR: Raised if the specified offset is negative or
 	*  greater than the number of 16-bit units in <code>data</code>.</p><p>NO_MODIFICATION_ALLOWED_ERR: Raised if this node is readonly.</p>
 	*/
-	public function splitText(offset:uint=undefined):Text { return null;}
+	public function splitText(offset:uint=undefined):Text { return undefined;}
 
-	public function get wholeText():String { return ''; }
+	public function get wholeText():String { return undefined; }
 	/**
 	*  @param content (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Text</code> instance.
 	*/
-	public function replaceWholeText(content:String=undefined):Text { return null;}
+	public function replaceWholeText(content:String=undefined):Text { return undefined;}
 }
 
 }

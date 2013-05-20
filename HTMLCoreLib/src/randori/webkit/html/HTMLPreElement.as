@@ -56,10 +56,10 @@ public class HTMLPreElement extends HTMLElement
 	*/
 	public function HTMLPreElement() {super();}
 
-	public function get width():uint { return 0; }
+	public function get width():uint { return undefined; }
 	public function set width(value:uint):void { }
 
-	public function get wrap():Boolean { return false; }
+	public function get wrap():Boolean { return undefined; }
 	public function set wrap(value:Boolean):void { }
 }
 

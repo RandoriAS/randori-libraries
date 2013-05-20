@@ -52,14 +52,14 @@ public class FileEntry extends Entry
 {
 	/**
 	*  @param successCallback
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function createWriter(successCallback:Object, errorCallback:Object=null):void {}
+	public function createWriter(successCallback:Object, errorCallback:Object=undefined):void {}
 	/**
 	*  @param successCallback
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function file(successCallback:Object, errorCallback:Object=null):void {}
+	public function file(successCallback:Object, errorCallback:Object=undefined):void {}
 }
 
 }

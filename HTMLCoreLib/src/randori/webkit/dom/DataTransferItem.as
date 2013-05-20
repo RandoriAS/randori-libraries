@@ -52,9 +52,9 @@ import randori.webkit.fileapi.Blob;
 public class DataTransferItem
 {
 
-	public function get kind():String { return ''; }
+	public function get kind():String { return undefined; }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 	/**
 	*  @param callback (optional argument, default value is <code>undefined</code>)
 	*/
@@ -62,7 +62,7 @@ public class DataTransferItem
 	/**
 	*  @return A <code>Blob</code> instance.
 	*/
-	public function getAsFile():Blob { return null;}
+	public function getAsFile():Blob { return undefined;}
 }
 
 }

@@ -58,37 +58,37 @@ public dynamic class HTMLSelectElement extends HTMLElement
 	*/
 	public function HTMLSelectElement() {super();}
 
-	public function get autofocus():Boolean { return false; }
+	public function get autofocus():Boolean { return undefined; }
 	public function set autofocus(value:Boolean):void { }
 
-	public function get disabled():Boolean { return false; }
+	public function get disabled():Boolean { return undefined; }
 	public function set disabled(value:Boolean):void { }
 
 	/**
 	*  @see randori.webkit.html.HTMLFormElement
 	*/
-	public function get form():HTMLFormElement { return null; }
+	public function get form():HTMLFormElement { return undefined; }
 
-	public function get multiple():Boolean { return false; }
+	public function get multiple():Boolean { return undefined; }
 	public function set multiple(value:Boolean):void { }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 
-	public function get required():Boolean { return false; }
+	public function get required():Boolean { return undefined; }
 	public function set required(value:Boolean):void { }
 
-	public function get size():uint { return 0; }
+	public function get size():uint { return undefined; }
 	public function set size(value:uint):void { }
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.HTMLOptionsCollection
 	*/
-	public function get options():HTMLOptionsCollection { return null; }
+	public function get options():HTMLOptionsCollection { return undefined; }
 
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 	public function set length(value:uint):void { }
 	/**
 	*  @param element (optional argument, default value is <code>undefined</code>)
@@ -99,26 +99,26 @@ public dynamic class HTMLSelectElement extends HTMLElement
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get selectedOptions():HTMLCollection { return null; }
+	public function get selectedOptions():HTMLCollection { return undefined; }
 
-	public function get selectedIndex():uint { return 0; }
+	public function get selectedIndex():uint { return undefined; }
 	public function set selectedIndex(value:uint):void { }
 
-	public function get value():String { return ''; }
+	public function get value():String { return undefined; }
 	public function set value(value:String):void { }
 
-	public function get willValidate():Boolean { return false; }
+	public function get willValidate():Boolean { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.ValidityState
 	*/
-	public function get validity():ValidityState { return null; }
+	public function get validity():ValidityState { return undefined; }
 
-	public function get validationMessage():String { return ''; }
+	public function get validationMessage():String { return undefined; }
 	/**
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function checkValidity():Boolean { return false;}
+	public function checkValidity():Boolean { return undefined;}
 	/**
 	*  @param error
 	*/
@@ -127,7 +127,7 @@ public dynamic class HTMLSelectElement extends HTMLElement
 	/**
 	*  @see randori.webkit.dom.NodeList
 	*/
-	public function get labels():NodeList { return null; }
+	public function get labels():NodeList { return undefined; }
 }
 
 }

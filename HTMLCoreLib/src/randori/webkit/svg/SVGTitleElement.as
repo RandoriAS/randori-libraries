@@ -52,10 +52,10 @@ package randori.webkit.svg
 public class SVGTitleElement extends SVGStyledElement implements SVGLangSpace
 {
 
-	public function get xmllang():String { return ''; }
+	public function get xmllang():String { return undefined; }
 	public function set xmllang(value:String):void { }
 
-	public function get xmlspace():String { return ''; }
+	public function get xmlspace():String { return undefined; }
 	public function set xmlspace(value:String):void { }
 }
 

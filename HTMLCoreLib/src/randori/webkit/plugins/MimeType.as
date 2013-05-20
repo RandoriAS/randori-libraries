@@ -50,16 +50,16 @@ package randori.webkit.plugins
 public class MimeType
 {
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 
-	public function get suffixes():String { return ''; }
+	public function get suffixes():String { return undefined; }
 
-	public function get description():String { return ''; }
+	public function get description():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.plugins.Plugin
 	*/
-	public function get enabledPlugin():Plugin { return null; }
+	public function get enabledPlugin():Plugin { return undefined; }
 }
 
 }

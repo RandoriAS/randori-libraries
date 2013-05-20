@@ -61,9 +61,9 @@ public class SVGPaint extends SVGColor
 	public static const SVG_PAINTTYPE_URI_RGBCOLOR_ICCCOLOR:uint = 106;
 	public static const SVG_PAINTTYPE_URI:uint = 107;
 
-	public function get paintType():uint { return 0; }
+	public function get paintType():uint { return undefined; }
 
-	public function get uri():String { return ''; }
+	public function get uri():String { return undefined; }
 	/**
 	*  @param uri
 	*/

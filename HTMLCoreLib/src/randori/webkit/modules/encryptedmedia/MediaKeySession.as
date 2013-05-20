@@ -55,11 +55,11 @@ public class MediaKeySession
 	/**
 	*  @see randori.webkit.html.MediaKeyError
 	*/
-	public function get error():MediaKeyError { return null; }
+	public function get error():MediaKeyError { return undefined; }
 
-	public function get keySystem():String { return ''; }
+	public function get keySystem():String { return undefined; }
 
-	public function get sessionId():String { return ''; }
+	public function get sessionId():String { return undefined; }
 	/**
 	*  @param key
 	*/
@@ -67,21 +67,21 @@ public class MediaKeySession
 	public function close():void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param evt
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(evt:DomEvent):Boolean { return false;}
+	public function dispatchEvent(evt:DomEvent):Boolean { return undefined;}
 }
 
 }

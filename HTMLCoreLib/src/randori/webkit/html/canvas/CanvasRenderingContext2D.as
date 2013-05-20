@@ -43,8 +43,8 @@ package randori.webkit.html.canvas
 
 import randori.webkit.html.TextMetrics;
 import randori.webkit.html.HTMLImageElement;
-import randori.webkit.html.ImageData;
 import randori.webkit.html.HTMLCanvasElement;
+import randori.webkit.html.ImageData;
 
 [JavaScript(export="false", name="CanvasRenderingContext2D")]
 /**
@@ -89,10 +89,10 @@ public class CanvasRenderingContext2D extends CanvasRenderingContext
 	*/
 	public function setTransform(m11:Number=undefined, m12:Number=undefined, m21:Number=undefined, m22:Number=undefined, dx:Number=undefined, dy:Number=undefined):void {}
 
-	public function get globalAlpha():Number { return 0; }
+	public function get globalAlpha():Number { return undefined; }
 	public function set globalAlpha(value:Number):void { }
 
-	public function get globalCompositeOperation():String { return ''; }
+	public function get globalCompositeOperation():String { return undefined; }
 	public function set globalCompositeOperation(value:String):void { }
 	/**
 	*  @param x0 (optional argument, default value is <code>undefined</code>)
@@ -101,7 +101,7 @@ public class CanvasRenderingContext2D extends CanvasRenderingContext
 	*  @param y1 (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>CanvasGradient</code> instance.
 	*/
-	public function createLinearGradient(x0:Number=undefined, y0:Number=undefined, x1:Number=undefined, y1:Number=undefined):CanvasGradient { return null;}
+	public function createLinearGradient(x0:Number=undefined, y0:Number=undefined, x1:Number=undefined, y1:Number=undefined):CanvasGradient { return undefined;}
 	/**
 	*  @param x0 (optional argument, default value is <code>undefined</code>)
 	*  @param y0 (optional argument, default value is <code>undefined</code>)
@@ -111,30 +111,30 @@ public class CanvasRenderingContext2D extends CanvasRenderingContext
 	*  @param r1 (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>CanvasGradient</code> instance.
 	*/
-	public function createRadialGradient(x0:Number=undefined, y0:Number=undefined, r0:Number=undefined, x1:Number=undefined, y1:Number=undefined, r1:Number=undefined):CanvasGradient { return null;}
+	public function createRadialGradient(x0:Number=undefined, y0:Number=undefined, r0:Number=undefined, x1:Number=undefined, y1:Number=undefined, r1:Number=undefined):CanvasGradient { return undefined;}
 
-	public function get lineWidth():Number { return 0; }
+	public function get lineWidth():Number { return undefined; }
 	public function set lineWidth(value:Number):void { }
 
-	public function get lineCap():String { return ''; }
+	public function get lineCap():String { return undefined; }
 	public function set lineCap(value:String):void { }
 
-	public function get lineJoin():String { return ''; }
+	public function get lineJoin():String { return undefined; }
 	public function set lineJoin(value:String):void { }
 
-	public function get miterLimit():Number { return 0; }
+	public function get miterLimit():Number { return undefined; }
 	public function set miterLimit(value:Number):void { }
 
-	public function get shadowOffsetX():Number { return 0; }
+	public function get shadowOffsetX():Number { return undefined; }
 	public function set shadowOffsetX(value:Number):void { }
 
-	public function get shadowOffsetY():Number { return 0; }
+	public function get shadowOffsetY():Number { return undefined; }
 	public function set shadowOffsetY(value:Number):void { }
 
-	public function get shadowBlur():Number { return 0; }
+	public function get shadowBlur():Number { return undefined; }
 	public function set shadowBlur(value:Number):void { }
 
-	public function get shadowColor():String { return ''; }
+	public function get shadowColor():String { return undefined; }
 	public function set shadowColor(value:String):void { }
 	/**
 	*  @param dash
@@ -143,9 +143,9 @@ public class CanvasRenderingContext2D extends CanvasRenderingContext
 	/**
 	*  @return A <code>sequence</code> instance.
 	*/
-	public function getLineDash():Vector.<Number> { return null;}
+	public function getLineDash():Vector.<Number> { return undefined;}
 
-	public function get lineDashOffset():Number { return 0; }
+	public function get lineDashOffset():Number { return undefined; }
 	public function set lineDashOffset(value:Number):void { }
 	/**
 	*  @param x (optional argument, default value is <code>undefined</code>)
@@ -214,41 +214,41 @@ public class CanvasRenderingContext2D extends CanvasRenderingContext
 	*/
 	public function arc(x:Number=undefined, y:Number=undefined, radius:Number=undefined, startAngle:Number=undefined, endAngle:Number=undefined, anticlockwise:Boolean=undefined):void {}
 	/**
-	*  @param winding (optional argument, default value is <code>''</code>)
+	*  @param winding (optional argument, default value is <code>undefined</code>)
 	*/
-	public function fill(winding:String=''):void {}
+	public function fill(winding:Object=undefined):void {}
 	public function stroke():void {}
 	/**
-	*  @param winding (optional argument, default value is <code>''</code>)
+	*  @param winding (optional argument, default value is <code>undefined</code>)
 	*/
-	public function clip(winding:String=''):void {}
+	public function clip(winding:Object=undefined):void {}
 	/**
 	*  @param x (optional argument, default value is <code>undefined</code>)
 	*  @param y (optional argument, default value is <code>undefined</code>)
-	*  @param winding (optional argument, default value is <code>''</code>)
+	*  @param winding (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function isPointInPath(x:Number=undefined, y:Number=undefined, winding:String=''):Boolean { return false;}
+	public function isPointInPath(x:Number=undefined, y:Number=undefined, winding:Object=undefined):Boolean { return undefined;}
 	/**
 	*  @param x (optional argument, default value is <code>undefined</code>)
 	*  @param y (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function isPointInStroke(x:Number=undefined, y:Number=undefined):Boolean { return false;}
+	public function isPointInStroke(x:Number=undefined, y:Number=undefined):Boolean { return undefined;}
 
-	public function get font():String { return ''; }
+	public function get font():String { return undefined; }
 	public function set font(value:String):void { }
 
-	public function get textAlign():String { return ''; }
+	public function get textAlign():String { return undefined; }
 	public function set textAlign(value:String):void { }
 
-	public function get textBaseline():String { return ''; }
+	public function get textBaseline():String { return undefined; }
 	public function set textBaseline(value:String):void { }
 	/**
 	*  @param text (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>TextMetrics</code> instance.
 	*/
-	public function measureText(text:String=undefined):TextMetrics { return null;}
+	public function measureText(text:String=undefined):TextMetrics { return undefined;}
 	/**
 	*  @param alpha (optional argument, default value is <code>undefined</code>)
 	*/
@@ -276,18 +276,49 @@ public class CanvasRenderingContext2D extends CanvasRenderingContext
 	public function clearShadow():void {}
 	/**
 	*  @param text
-	*  @param x
-	*  @param y
-	*  @param maxWidth (optional argument, default value is <code>0</code>)
+	*  @param x (optional argument, default value is <code>undefined</code>)
+	*  @param y (optional argument, default value is <code>undefined</code>)
+	*  @param maxWidth (optional argument, default value is <code>undefined</code>)
 	*/
-	public function fillText(text:String, x:Number, y:Number, maxWidth:Number=0):void {}
+	public function fillText(text:String, x:Number=undefined, y:Number=undefined, maxWidth:Number=undefined):void {}
 	/**
 	*  @param text
-	*  @param x
-	*  @param y
-	*  @param maxWidth (optional argument, default value is <code>0</code>)
+	*  @param x (optional argument, default value is <code>undefined</code>)
+	*  @param y (optional argument, default value is <code>undefined</code>)
+	*  @param maxWidth (optional argument, default value is <code>undefined</code>)
 	*/
-	public function strokeText(text:String, x:Number, y:Number, maxWidth:Number=0):void {}
+	public function strokeText(text:String, x:Number=undefined, y:Number=undefined, maxWidth:Number=undefined):void {}
+	[JavaScriptMethod(name="setStrokeColor")]
+	/**
+	*  @param color
+	*/
+	public function setStrokeColor1(color:String):void {}
+	[JavaScriptMethod(name="setStrokeColor")]
+	/**
+	*  @param color
+	*  @param alpha (optional argument, default value is <code>undefined</code>)
+	*/
+	public function setStrokeColor2(color:String, alpha:Number=undefined):void {}
+	[JavaScriptMethod(name="setStrokeColor")]
+	/**
+	*  @param grayLevel
+	*/
+	public function setStrokeColor3(grayLevel:Number):void {}
+	[JavaScriptMethod(name="setStrokeColor")]
+	/**
+	*  @param grayLevel
+	*  @param alpha (optional argument, default value is <code>undefined</code>)
+	*/
+	public function setStrokeColor4(grayLevel:Number, alpha:Number=undefined):void {}
+	[JavaScriptMethod(name="setStrokeColor")]
+	/**
+	*  @param r
+	*  @param g
+	*  @param b
+	*  @param a
+	*/
+	public function setStrokeColor5(r:Number, g:Number, b:Number, a:Number):void {}
+	[JavaScriptMethod(name="setStrokeColor")]
 	/**
 	*  @param c
 	*  @param m
@@ -295,7 +326,38 @@ public class CanvasRenderingContext2D extends CanvasRenderingContext
 	*  @param k
 	*  @param a
 	*/
-	public function setStrokeColor(c:Number, m:Number, y:Number, k:Number, a:Number):void {}
+	public function setStrokeColor6(c:Number, m:Number, y:Number, k:Number, a:Number):void {}
+	[JavaScriptMethod(name="setFillColor")]
+	/**
+	*  @param color
+	*/
+	public function setFillColor1(color:String):void {}
+	[JavaScriptMethod(name="setFillColor")]
+	/**
+	*  @param color
+	*  @param alpha (optional argument, default value is <code>undefined</code>)
+	*/
+	public function setFillColor2(color:String, alpha:Number=undefined):void {}
+	[JavaScriptMethod(name="setFillColor")]
+	/**
+	*  @param grayLevel
+	*/
+	public function setFillColor3(grayLevel:Number):void {}
+	[JavaScriptMethod(name="setFillColor")]
+	/**
+	*  @param grayLevel
+	*  @param alpha (optional argument, default value is <code>undefined</code>)
+	*/
+	public function setFillColor4(grayLevel:Number, alpha:Number=undefined):void {}
+	[JavaScriptMethod(name="setFillColor")]
+	/**
+	*  @param r
+	*  @param g
+	*  @param b
+	*  @param a
+	*/
+	public function setFillColor5(r:Number, g:Number, b:Number, a:Number):void {}
+	[JavaScriptMethod(name="setFillColor")]
 	/**
 	*  @param c
 	*  @param m
@@ -303,15 +365,32 @@ public class CanvasRenderingContext2D extends CanvasRenderingContext
 	*  @param k
 	*  @param a
 	*/
-	public function setFillColor(c:Number, m:Number, y:Number, k:Number, a:Number):void {}
+	public function setFillColor6(c:Number, m:Number, y:Number, k:Number, a:Number):void {}
 	/**
 	*  @param x (optional argument, default value is <code>undefined</code>)
 	*  @param y (optional argument, default value is <code>undefined</code>)
 	*  @param width (optional argument, default value is <code>undefined</code>)
 	*  @param height (optional argument, default value is <code>undefined</code>)
-	*  @param lineWidth (optional argument, default value is <code>0</code>)
+	*  @param lineWidth (optional argument, default value is <code>undefined</code>)
 	*/
-	public function strokeRect(x:Number=undefined, y:Number=undefined, width:Number=undefined, height:Number=undefined, lineWidth:Number=0):void {}
+	public function strokeRect(x:Number=undefined, y:Number=undefined, width:Number=undefined, height:Number=undefined, lineWidth:Number=undefined):void {}
+	[JavaScriptMethod(name="drawImage")]
+	/**
+	*  @param image
+	*  @param x
+	*  @param y
+	*/
+	public function drawImage1(image:HTMLImageElement, x:Number, y:Number):void {}
+	[JavaScriptMethod(name="drawImage")]
+	/**
+	*  @param image
+	*  @param x
+	*  @param y
+	*  @param width
+	*  @param height
+	*/
+	public function drawImage2(image:HTMLImageElement, x:Number, y:Number, width:Number, height:Number):void {}
+	[JavaScriptMethod(name="drawImage")]
 	/**
 	*  @param image
 	*  @param sx
@@ -323,20 +402,102 @@ public class CanvasRenderingContext2D extends CanvasRenderingContext
 	*  @param dw
 	*  @param dh
 	*/
-	public function drawImage(image:HTMLImageElement, sx:Number, sy:Number, sw:Number, sh:Number, dx:Number, dy:Number, dw:Number, dh:Number):void {}
+	public function drawImage3(image:HTMLImageElement, sx:Number, sy:Number, sw:Number, sh:Number, dx:Number, dy:Number, dw:Number, dh:Number):void {}
+	[JavaScriptMethod(name="drawImage")]
+	/**
+	*  @param canvas
+	*  @param x
+	*  @param y
+	*/
+	public function drawImage4(canvas:HTMLCanvasElement, x:Number, y:Number):void {}
+	[JavaScriptMethod(name="drawImage")]
+	/**
+	*  @param canvas
+	*  @param x
+	*  @param y
+	*  @param width
+	*  @param height
+	*/
+	public function drawImage5(canvas:HTMLCanvasElement, x:Number, y:Number, width:Number, height:Number):void {}
+	[JavaScriptMethod(name="drawImage")]
+	/**
+	*  @param canvas
+	*  @param sx
+	*  @param sy
+	*  @param sw
+	*  @param sh
+	*  @param dx
+	*  @param dy
+	*  @param dw
+	*  @param dh
+	*/
+	public function drawImage6(canvas:HTMLCanvasElement, sx:Number, sy:Number, sw:Number, sh:Number, dx:Number, dy:Number, dw:Number, dh:Number):void {}
 	/**
 	*  @param image
-	*  @param sx (optional argument, default value is <code>0</code>)
-	*  @param sy (optional argument, default value is <code>0</code>)
-	*  @param sw (optional argument, default value is <code>0</code>)
-	*  @param sh (optional argument, default value is <code>0</code>)
-	*  @param dx (optional argument, default value is <code>0</code>)
-	*  @param dy (optional argument, default value is <code>0</code>)
-	*  @param dw (optional argument, default value is <code>0</code>)
-	*  @param dh (optional argument, default value is <code>0</code>)
-	*  @param compositeOperation (optional argument, default value is <code>''</code>)
+	*  @param sx (optional argument, default value is <code>undefined</code>)
+	*  @param sy (optional argument, default value is <code>undefined</code>)
+	*  @param sw (optional argument, default value is <code>undefined</code>)
+	*  @param sh (optional argument, default value is <code>undefined</code>)
+	*  @param dx (optional argument, default value is <code>undefined</code>)
+	*  @param dy (optional argument, default value is <code>undefined</code>)
+	*  @param dw (optional argument, default value is <code>undefined</code>)
+	*  @param dh (optional argument, default value is <code>undefined</code>)
+	*  @param compositeOperation (optional argument, default value is <code>undefined</code>)
 	*/
-	public function drawImageFromRect(image:HTMLImageElement, sx:Number=0, sy:Number=0, sw:Number=0, sh:Number=0, dx:Number=0, dy:Number=0, dw:Number=0, dh:Number=0, compositeOperation:String=''):void {}
+	public function drawImageFromRect(image:HTMLImageElement, sx:Number=undefined, sy:Number=undefined, sw:Number=undefined, sh:Number=undefined, dx:Number=undefined, dy:Number=undefined, dw:Number=undefined, dh:Number=undefined, compositeOperation:String=undefined):void {}
+	[JavaScriptMethod(name="setShadow")]
+	/**
+	*  @param width
+	*  @param height
+	*  @param blur
+	*/
+	public function setShadow1(width:Number, height:Number, blur:Number):void {}
+	[JavaScriptMethod(name="setShadow")]
+	/**
+	*  @param width
+	*  @param height
+	*  @param blur
+	*  @param color (optional argument, default value is <code>undefined</code>)
+	*/
+	public function setShadow2(width:Number, height:Number, blur:Number, color:String=undefined):void {}
+	[JavaScriptMethod(name="setShadow")]
+	/**
+	*  @param width
+	*  @param height
+	*  @param blur
+	*  @param color (optional argument, default value is <code>undefined</code>)
+	*  @param alpha (optional argument, default value is <code>undefined</code>)
+	*/
+	public function setShadow3(width:Number, height:Number, blur:Number, color:String=undefined, alpha:Number=undefined):void {}
+	[JavaScriptMethod(name="setShadow")]
+	/**
+	*  @param width
+	*  @param height
+	*  @param blur
+	*  @param grayLevel
+	*/
+	public function setShadow4(width:Number, height:Number, blur:Number, grayLevel:Number):void {}
+	[JavaScriptMethod(name="setShadow")]
+	/**
+	*  @param width
+	*  @param height
+	*  @param blur
+	*  @param grayLevel
+	*  @param alpha (optional argument, default value is <code>undefined</code>)
+	*/
+	public function setShadow5(width:Number, height:Number, blur:Number, grayLevel:Number, alpha:Number=undefined):void {}
+	[JavaScriptMethod(name="setShadow")]
+	/**
+	*  @param width
+	*  @param height
+	*  @param blur
+	*  @param r
+	*  @param g
+	*  @param b
+	*  @param a
+	*/
+	public function setShadow6(width:Number, height:Number, blur:Number, r:Number, g:Number, b:Number, a:Number):void {}
+	[JavaScriptMethod(name="setShadow")]
 	/**
 	*  @param width
 	*  @param height
@@ -347,34 +508,49 @@ public class CanvasRenderingContext2D extends CanvasRenderingContext
 	*  @param k
 	*  @param a
 	*/
-	public function setShadow(width:Number, height:Number, blur:Number, c:Number, m:Number, y:Number, k:Number, a:Number):void {}
+	public function setShadow7(width:Number, height:Number, blur:Number, c:Number, m:Number, y:Number, k:Number, a:Number):void {}
 	/**
 	*  @param imagedata
 	*  @param dx
 	*  @param dy
 	*  @param dirtyX
-	*  @param dirtyY
-	*  @param dirtyWidth
-	*  @param dirtyHeight
+	*  @param dirtyY (optional argument, default value is <code>undefined</code>)
+	*  @param dirtyWidth (optional argument, default value is <code>undefined</code>)
+	*  @param dirtyHeight (optional argument, default value is <code>undefined</code>)
 	*/
-	public function putImageData(imagedata:ImageData, dx:Number, dy:Number, dirtyX:Number, dirtyY:Number, dirtyWidth:Number, dirtyHeight:Number):void {}
+	public function putImageData(imagedata:ImageData, dx:Number, dy:Number, dirtyX:Number, dirtyY:Number=undefined, dirtyWidth:Number=undefined, dirtyHeight:Number=undefined):void {}
+	[JavaScriptMethod(name="createPattern")]
 	/**
 	*  @param canvas
 	*  @param repetitionType
 	*  @return A <code>CanvasPattern</code> instance.
 	*/
-	public function createPattern(canvas:HTMLCanvasElement, repetitionType:String):CanvasPattern { return null;}
+	public function createPattern1(canvas:HTMLCanvasElement, repetitionType:String):CanvasPattern { return undefined;}
+	[JavaScriptMethod(name="createPattern")]
+	/**
+	*  @param image
+	*  @param repetitionType
+	*  @return A <code>CanvasPattern</code> instance.
+	*/
+	public function createPattern2(image:HTMLImageElement, repetitionType:String):CanvasPattern { return undefined;}
+	[JavaScriptMethod(name="createImageData")]
+	/**
+	*  @param imagedata
+	*  @return A <code>ImageData</code> instance.
+	*/
+	public function createImageData1(imagedata:ImageData):ImageData { return undefined;}
+	[JavaScriptMethod(name="createImageData")]
 	/**
 	*  @param sw
 	*  @param sh
 	*  @return A <code>ImageData</code> instance.
 	*/
-	public function createImageData(sw:Number, sh:Number):ImageData { return null;}
+	public function createImageData2(sw:Number, sh:Number):ImageData { return undefined;}
 
-	public function get strokeStyle():Object { return null; }
+	public function get strokeStyle():Object { return undefined; }
 	public function set strokeStyle(value:Object):void { }
 
-	public function get fillStyle():Object { return null; }
+	public function get fillStyle():Object { return undefined; }
 	public function set fillStyle(value:Object):void { }
 	/**
 	*  @param sx (optional argument, default value is <code>undefined</code>)
@@ -383,7 +559,7 @@ public class CanvasRenderingContext2D extends CanvasRenderingContext
 	*  @param sh (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>ImageData</code> instance.
 	*/
-	public function getImageData(sx:Number=undefined, sy:Number=undefined, sw:Number=undefined, sh:Number=undefined):ImageData { return null;}
+	public function getImageData(sx:Number=undefined, sy:Number=undefined, sw:Number=undefined, sh:Number=undefined):ImageData { return undefined;}
 }
 
 }

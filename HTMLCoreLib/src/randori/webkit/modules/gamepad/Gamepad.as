@@ -50,15 +50,15 @@ package randori.webkit.modules.gamepad
 public class Gamepad
 {
 
-	public function get id():String { return ''; }
+	public function get id():String { return undefined; }
 
-	public function get index():uint { return 0; }
+	public function get index():uint { return undefined; }
 
-	public function get timestamp():Number { return 0; }
+	public function get timestamp():Number { return undefined; }
 
-	public function get axes():Vector.<Number> { return null; }
+	public function get axes():Vector.<Number> { return undefined; }
 
-	public function get buttons():Vector.<Number> { return null; }
+	public function get buttons():Vector.<Number> { return undefined; }
 }
 
 }

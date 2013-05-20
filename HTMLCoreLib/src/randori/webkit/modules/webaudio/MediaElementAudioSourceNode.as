@@ -55,7 +55,7 @@ public class MediaElementAudioSourceNode extends AudioSourceNode
 	/**
 	*  @see randori.webkit.html.HTMLMediaElement
 	*/
-	public function get mediaElement():HTMLMediaElement { return null; }
+	public function get mediaElement():HTMLMediaElement { return undefined; }
 }
 
 }

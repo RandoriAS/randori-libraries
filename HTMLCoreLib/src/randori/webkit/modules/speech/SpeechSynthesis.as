@@ -50,11 +50,11 @@ package randori.webkit.modules.speech
 public class SpeechSynthesis
 {
 
-	public function get pending():Boolean { return false; }
+	public function get pending():Boolean { return undefined; }
 
-	public function get speaking():Boolean { return false; }
+	public function get speaking():Boolean { return undefined; }
 
-	public function get paused():Boolean { return false; }
+	public function get paused():Boolean { return undefined; }
 	/**
 	*  @param utterance
 	*/
@@ -65,7 +65,7 @@ public class SpeechSynthesis
 	/**
 	*  @return A <code>sequence</code> instance.
 	*/
-	public function getVoices():Vector.<SpeechSynthesisVoice> { return null;}
+	public function getVoices():Vector.<SpeechSynthesisVoice> { return undefined;}
 }
 
 }

@@ -50,17 +50,17 @@ package randori.webkit.dom
 public class ClientRect
 {
 
-	public function get top():Number { return 0; }
+	public function get top():Number { return undefined; }
 
-	public function get right():Number { return 0; }
+	public function get right():Number { return undefined; }
 
-	public function get bottom():Number { return 0; }
+	public function get bottom():Number { return undefined; }
 
-	public function get left():Number { return 0; }
+	public function get left():Number { return undefined; }
 
-	public function get width():Number { return 0; }
+	public function get width():Number { return undefined; }
 
-	public function get height():Number { return 0; }
+	public function get height():Number { return undefined; }
 }
 
 }

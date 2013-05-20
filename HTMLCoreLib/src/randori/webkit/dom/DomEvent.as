@@ -70,25 +70,25 @@ public class DomEvent
 	public static const SELECT:uint = 16384;
 	public static const CHANGE:uint = 32768;
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.EventTarget
 	*/
-	public function get target():EventTarget { return null; }
+	public function get target():EventTarget { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.EventTarget
 	*/
-	public function get currentTarget():EventTarget { return null; }
+	public function get currentTarget():EventTarget { return undefined; }
 
-	public function get eventPhase():uint { return 0; }
+	public function get eventPhase():uint { return undefined; }
 
-	public function get bubbles():Boolean { return false; }
+	public function get bubbles():Boolean { return undefined; }
 
-	public function get cancelable():Boolean { return false; }
+	public function get cancelable():Boolean { return undefined; }
 
-	public function get timeStamp():Object { return null; }
+	public function get timeStamp():Object { return undefined; }
 	public function stopPropagation():void {}
 	public function preventDefault():void {}
 	/**
@@ -98,24 +98,24 @@ public class DomEvent
 	*/
 	public function initEvent(eventTypeArg:String=undefined, canBubbleArg:Boolean=undefined, cancelableArg:Boolean=undefined):void {}
 
-	public function get defaultPrevented():Boolean { return false; }
+	public function get defaultPrevented():Boolean { return undefined; }
 	public function stopImmediatePropagation():void {}
 
 	/**
 	*  @see randori.webkit.dom.EventTarget
 	*/
-	public function get srcElement():EventTarget { return null; }
+	public function get srcElement():EventTarget { return undefined; }
 
-	public function get returnValue():Boolean { return false; }
+	public function get returnValue():Boolean { return undefined; }
 	public function set returnValue(value:Boolean):void { }
 
-	public function get cancelBubble():Boolean { return false; }
+	public function get cancelBubble():Boolean { return undefined; }
 	public function set cancelBubble(value:Boolean):void { }
 
 	/**
 	*  @see randori.webkit.dom.Clipboard
 	*/
-	public function get clipboardData():Clipboard { return null; }
+	public function get clipboardData():Clipboard { return undefined; }
 }
 
 }

@@ -52,59 +52,59 @@ import randori.webkit.dom.DomEvent;
 public class IDBTransaction
 {
 
-	public function get mode():String { return ''; }
+	public function get mode():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.modules.indexeddb.IDBDatabase
 	*/
-	public function get db():IDBDatabase { return null; }
+	public function get db():IDBDatabase { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.DOMError
 	*/
-	public function get error():DOMError { return null; }
+	public function get error():DOMError { return undefined; }
 	/**
 	*  @param name
 	*  @return A <code>IDBObjectStore</code> instance.
 	*/
-	public function objectStore(name:String):IDBObjectStore { return null;}
+	public function objectStore(name:String):IDBObjectStore { return undefined;}
 	public function abort():void {}
 
 	/**
 	*  Function that accepts an event of type <code>AbortEvent</code>.
 	*/
-	public function get onabort():Function { return null; }
+	public function get onabort():Function { return undefined; }
 	public function set onabort(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>CompleteEvent</code>.
 	*/
-	public function get oncomplete():Function { return null; }
+	public function get oncomplete():Function { return undefined; }
 	public function set oncomplete(value:Function):void { }
 
 	/**
 	*  Function that accepts an event of type <code>ErrorEvent</code>.
 	*  @see randori.webkit.dom.ErrorEvent
 	*/
-	public function get onerror():Function { return null; }
+	public function get onerror():Function { return undefined; }
 	public function set onerror(value:Function):void { }
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function addEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function addEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param type
-	*  @param listener
-	*  @param useCapture (optional argument, default value is <code>false</code>)
+	*  @param listener (optional argument, default value is <code>undefined</code>)
+	*  @param useCapture (optional argument, default value is <code>undefined</code>)
 	*/
-	public function removeEventListener(type:String, listener:Function, useCapture:Boolean=false):void {}
+	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
 	*  @param evt
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(evt:DomEvent):Boolean { return false;}
+	public function dispatchEvent(evt:DomEvent):Boolean { return undefined;}
 }
 
 }

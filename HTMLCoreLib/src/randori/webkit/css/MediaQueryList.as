@@ -50,9 +50,9 @@ package randori.webkit.css
 public class MediaQueryList
 {
 
-	public function get media():String { return ''; }
+	public function get media():String { return undefined; }
 
-	public function get matches():Boolean { return false; }
+	public function get matches():Boolean { return undefined; }
 	/**
 	*  @param listener (optional argument, default value is <code>undefined</code>)
 	*/

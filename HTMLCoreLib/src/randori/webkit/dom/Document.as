@@ -53,6 +53,7 @@ import randori.webkit.html.HTMLCollection;
 import randori.webkit.page.Location;
 import randori.webkit.page.Selection;
 import randori.webkit.html.canvas.CanvasRenderingContext;
+import randori.webkit.css.FontLoader;
 import randori.webkit.page.SecurityPolicy;
 
 [JavaScript(export="false", name="Document")]
@@ -84,7 +85,7 @@ public class Document extends Node
 	*  <code>removeNode</code>.</p>
 	*  @see randori.webkit.dom.DocumentType
 	*/
-	public function get doctype():DocumentType { return null; }
+	public function get doctype():DocumentType { return undefined; }
 
 	/**
 	*  <p>The <code>DOMImplementation</code> object that handles this
@@ -92,7 +93,7 @@ public class Document extends Node
 	*  implementations.</p>
 	*  @see randori.webkit.dom.DOMImplementation
 	*/
-	public function get implementation():DOMImplementation { return null; }
+	public function get implementation():DOMImplementation { return undefined; }
 
 	/**
 	*  <p>This is a convenience attribute that allows direct
@@ -101,7 +102,7 @@ public class Document extends Node
 	*  the tagName "HTML".</p>
 	*  @see randori.webkit.dom.Element
 	*/
-	public function get documentElement():Element { return null; }
+	public function get documentElement():Element { return undefined; }
 	/**
 	*  <p>Creates an element of the type specified. Note that the instance
 	*  returned implements the <code>Element</code> interface, so attributes
@@ -122,27 +123,27 @@ public class Document extends Node
 	*  @throw DOMException <p>INVALID_CHARACTER_ERR: Raised if the specified name contains
 	*  an illegal character.</p>
 	*/
-	public function createElement(tagName:String=undefined):Element { return null;}
+	public function createElement(tagName:String=undefined):Element { return undefined;}
 	/**
 	*  <p>Creates an empty <code>DocumentFragment</code> object.
 	*  </p>
 	*  @return <p>A new <code>DocumentFragment</code>.</p>
 	*/
-	public function createDocumentFragment():DocumentFragment { return null;}
+	public function createDocumentFragment():DocumentFragment { return undefined;}
 	/**
 	*  <p>Creates a <code>Text</code> node given the specified
 	*  string.</p>
 	*  @param data <p>The data for the node.</p>
 	*  @return <p>The new <code>Text</code> object.</p>
 	*/
-	public function createTextNode(data:String=undefined):Text { return null;}
+	public function createTextNode(data:String=undefined):Text { return undefined;}
 	/**
 	*  <p>Creates a <code>Comment</code> node given the specified
 	*  string.</p>
 	*  @param data <p>The data for the node.</p>
 	*  @return <p>The new <code>Comment</code> object.</p>
 	*/
-	public function createComment(data:String=undefined):Comment { return null;}
+	public function createComment(data:String=undefined):Comment { return undefined;}
 	/**
 	*  <p>Creates a <code>CDATASection</code> node whose value  is
 	*  the specified string.</p>
@@ -151,7 +152,7 @@ public class Document extends Node
 	*  @throw DOMException <p>NOT_SUPPORTED_ERR: Raised if this document is an HTML
 	*  document.</p>
 	*/
-	public function createCDATASection(data:String=undefined):CDATASection { return null;}
+	public function createCDATASection(data:String=undefined):CDATASection { return undefined;}
 	/**
 	*  <p>Creates a <code>ProcessingInstruction</code> node given
 	*  the specified name and data strings.</p>
@@ -161,7 +162,7 @@ public class Document extends Node
 	*  @throw DOMException <p>INVALID_CHARACTER_ERR: Raised if the specified target
 	*  contains an illegal character.</p><p>NOT_SUPPORTED_ERR: Raised if this document is an HTML document.</p>
 	*/
-	public function createProcessingInstruction(target:String=undefined, data:String=undefined):ProcessingInstruction { return null;}
+	public function createProcessingInstruction(target:String=undefined, data:String=undefined):ProcessingInstruction { return undefined;}
 	/**
 	*  <p>Creates an <code>Attr</code> of the given name.
 	*  Note that the <code>Attr</code> instance
@@ -177,7 +178,7 @@ public class Document extends Node
 	*  @throw DOMException <p>INVALID_CHARACTER_ERR: Raised if the specified name contains
 	*  an illegal character.</p>
 	*/
-	public function createAttribute(name:String=undefined):Attr { return null;}
+	public function createAttribute(name:String=undefined):Attr { return undefined;}
 	/**
 	*  <p>Creates an <code>EntityReference</code> object. In addition, if
 	*  the referenced entity is known, the child list of the
@@ -193,7 +194,7 @@ public class Document extends Node
 	*  @throw DOMException <p>INVALID_CHARACTER_ERR: Raised if the specified name contains
 	*  an illegal character.</p><p>NOT_SUPPORTED_ERR: Raised if this document is an HTML document.</p>
 	*/
-	public function createEntityReference(name:String=undefined):EntityReference { return null;}
+	public function createEntityReference(name:String=undefined):EntityReference { return undefined;}
 	/**
 	*  <p>Returns a <code>NodeList</code> of all the <code>Elements</code>
 	*  with a given tag name in the order in which they are encountered
@@ -204,7 +205,7 @@ public class Document extends Node
 	*  @return <p>A new <code>NodeList</code> object containing
 	*  all the matched <code>Elements</code>.</p>
 	*/
-	public function getElementsByTagName(tagname:String=undefined):NodeList { return null;}
+	public function getElementsByTagName(tagname:String=undefined):NodeList { return undefined;}
 	/**
 	*  <p>Imports a node from another document to this document. The returned
 	*  node has no parent; (<code>parentNode</code> is <code>null</code>). The
@@ -276,7 +277,7 @@ public class Document extends Node
 	*  @throw DOMException <p>NOT_SUPPORTED_ERR: Raised if the type of node being imported
 	*  is not supported.</p>
 	*/
-	public function importNode(importedNode:Node=undefined, deep:Boolean=false):Node { return null;}
+	public function importNode(importedNode:Node=undefined, deep:Boolean=undefined):Node { return undefined;}
 	/**
 	*  <p>Creates an element of the given qualified name and namespace
 	*  URI. HTML-only DOM implementations do not need to implement this
@@ -298,7 +299,7 @@ public class Document extends Node
 	*  is "xml" and the <code>namespaceURI</code> is different
 	*  from "<loc href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</loc>" <bibref ref="Namespaces" />.</p>
 	*/
-	public function createElementNS(namespaceURI:String=undefined, qualifiedName:String=undefined):Element { return null;}
+	public function createElementNS(namespaceURI:String=undefined, qualifiedName:String=undefined):Element { return undefined;}
 	/**
 	*  <p>Creates an attribute of the given qualified name and namespace
 	*  URI. HTML-only DOM implementations do not need to implement this
@@ -323,7 +324,7 @@ public class Document extends Node
 	*  <code>namespaceURI</code> is different from
 	*  "<loc href="http://www.w3.org/2000/xmlns/">http://www.w3.org/2000/xmlns/</loc>".</p>
 	*/
-	public function createAttributeNS(namespaceURI:String=undefined, qualifiedName:String=undefined):Attr { return null;}
+	public function createAttributeNS(namespaceURI:String=undefined, qualifiedName:String=undefined):Attr { return undefined;}
 	/**
 	*  <p>Returns a <code>NodeList</code> of all the <code>Elements</code>
 	*  with a given local name and
@@ -338,7 +339,7 @@ public class Document extends Node
 	*  @return <p>A new <code>NodeList</code> object containing all the matched
 	*  <code>Elements</code>.</p>
 	*/
-	public function getElementsByTagNameNS(namespaceURI:String=undefined, localName:String=undefined):NodeList { return null;}
+	public function getElementsByTagNameNS(namespaceURI:String=undefined, localName:String=undefined):NodeList { return undefined;}
 	/**
 	*  <p>Returns the <code>Element</code> whose <code>ID</code>
 	*  is given by <code>elementId</code>. If no such element exists, returns
@@ -351,33 +352,33 @@ public class Document extends Node
 	*  @param elementId <p>The unique <code>id</code> value for an element.</p>
 	*  @return <p>The matching element.</p>
 	*/
-	public function getElementById(elementId:String=undefined):Element { return null;}
+	public function getElementById(elementId:String=undefined):Element { return undefined;}
 
-	public function get inputEncoding():String { return ''; }
+	public function get inputEncoding():String { return undefined; }
 
-	public function get xmlEncoding():String { return ''; }
+	public function get xmlEncoding():String { return undefined; }
 
-	public function get xmlVersion():String { return ''; }
+	public function get xmlVersion():String { return undefined; }
 	public function set xmlVersion(value:String):void { }
 
-	public function get xmlStandalone():Boolean { return false; }
+	public function get xmlStandalone():Boolean { return undefined; }
 	public function set xmlStandalone(value:Boolean):void { }
 	/**
 	*  @param source (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Node</code> instance.
 	*/
-	public function adoptNode(source:Node=undefined):Node { return null;}
+	public function adoptNode(source:Node=undefined):Node { return undefined;}
 
-	public function get documentURI():String { return ''; }
+	public function get documentURI():String { return undefined; }
 	/**
 	*  @param eventType (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>DomEvent</code> instance.
 	*/
-	public function createEvent(eventType:String=undefined):DomEvent { return null;}
+	public function createEvent(eventType:String=undefined):DomEvent { return undefined;}
 	/**
 	*  @return A <code>Range</code> instance.
 	*/
-	public function createRange():Range { return null;}
+	public function createRange():Range { return undefined;}
 	/**
 	*  @param root (optional argument, default value is <code>undefined</code>)
 	*  @param whatToShow (optional argument, default value is <code>undefined</code>)
@@ -385,7 +386,7 @@ public class Document extends Node
 	*  @param expandEntityReferences (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>NodeIterator</code> instance.
 	*/
-	public function createNodeIterator(root:Node=undefined, whatToShow:uint=undefined, filter:NodeFilter=undefined, expandEntityReferences:Boolean=undefined):NodeIterator { return null;}
+	public function createNodeIterator(root:Node=undefined, whatToShow:uint=undefined, filter:NodeFilter=undefined, expandEntityReferences:Boolean=undefined):NodeIterator { return undefined;}
 	/**
 	*  @param root (optional argument, default value is <code>undefined</code>)
 	*  @param whatToShow (optional argument, default value is <code>undefined</code>)
@@ -393,34 +394,34 @@ public class Document extends Node
 	*  @param expandEntityReferences (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>TreeWalker</code> instance.
 	*/
-	public function createTreeWalker(root:Node=undefined, whatToShow:uint=undefined, filter:NodeFilter=undefined, expandEntityReferences:Boolean=undefined):TreeWalker { return null;}
+	public function createTreeWalker(root:Node=undefined, whatToShow:uint=undefined, filter:NodeFilter=undefined, expandEntityReferences:Boolean=undefined):TreeWalker { return undefined;}
 
 	/**
 	*  @see randori.webkit.page.Window
 	*/
-	public function get defaultView():Window { return null; }
+	public function get defaultView():Window { return undefined; }
 
 	/**
 	*  @see randori.webkit.css.StyleSheetList
 	*/
-	public function get styleSheets():StyleSheetList { return null; }
+	public function get styleSheets():StyleSheetList { return undefined; }
 	/**
 	*  @param element (optional argument, default value is <code>undefined</code>)
 	*  @param pseudoElement (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>CSSStyleDeclaration</code> instance.
 	*/
-	public function getOverrideStyle(element:Element=undefined, pseudoElement:String=undefined):CSSStyleDeclaration { return null;}
+	public function getOverrideStyle(element:Element=undefined, pseudoElement:String=undefined):CSSStyleDeclaration { return undefined;}
 	/**
 	*  @param expression (optional argument, default value is <code>undefined</code>)
 	*  @param resolver (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>XPathExpression</code> instance.
 	*/
-	public function createExpression(expression:String=undefined, resolver:XPathNSResolver=undefined):XPathExpression { return null;}
+	public function createExpression(expression:String=undefined, resolver:XPathNSResolver=undefined):XPathExpression { return undefined;}
 	/**
 	*  @param nodeResolver
 	*  @return A <code>XPathNSResolver</code> instance.
 	*/
-	public function createNSResolver(nodeResolver:Node):XPathNSResolver { return null;}
+	public function createNSResolver(nodeResolver:Node):XPathNSResolver { return undefined;}
 	/**
 	*  @param expression (optional argument, default value is <code>undefined</code>)
 	*  @param contextNode (optional argument, default value is <code>undefined</code>)
@@ -429,131 +430,131 @@ public class Document extends Node
 	*  @param inResult (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>XPathResult</code> instance.
 	*/
-	public function evaluate(expression:String=undefined, contextNode:Node=undefined, resolver:XPathNSResolver=undefined, type:uint=undefined, inResult:XPathResult=undefined):XPathResult { return null;}
+	public function evaluate(expression:String=undefined, contextNode:Node=undefined, resolver:XPathNSResolver=undefined, type:uint=undefined, inResult:XPathResult=undefined):XPathResult { return undefined;}
 	/**
 	*  @param command (optional argument, default value is <code>undefined</code>)
 	*  @param userInterface (optional argument, default value is <code>undefined</code>)
 	*  @param value (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function execCommand(command:String=undefined, userInterface:Boolean=undefined, value:String=undefined):Boolean { return false;}
+	public function execCommand(command:String=undefined, userInterface:Boolean=undefined, value:String=undefined):Boolean { return undefined;}
 	/**
 	*  @param command (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function queryCommandEnabled(command:String=undefined):Boolean { return false;}
+	public function queryCommandEnabled(command:String=undefined):Boolean { return undefined;}
 	/**
 	*  @param command (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function queryCommandIndeterm(command:String=undefined):Boolean { return false;}
+	public function queryCommandIndeterm(command:String=undefined):Boolean { return undefined;}
 	/**
 	*  @param command (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function queryCommandState(command:String=undefined):Boolean { return false;}
+	public function queryCommandState(command:String=undefined):Boolean { return undefined;}
 	/**
 	*  @param command (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function queryCommandSupported(command:String=undefined):Boolean { return false;}
+	public function queryCommandSupported(command:String=undefined):Boolean { return undefined;}
 	/**
 	*  @param command (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>String</code> instance.
 	*/
-	public function queryCommandValue(command:String=undefined):String { return '';}
+	public function queryCommandValue(command:String=undefined):String { return undefined;}
 
-	public function get title():String { return ''; }
+	public function get title():String { return undefined; }
 	public function set title(value:String):void { }
 
-	public function get referrer():String { return ''; }
+	public function get referrer():String { return undefined; }
 
-	public function get domain():String { return ''; }
+	public function get domain():String { return undefined; }
 	public function set domain(value:String):void { }
 
 	[JavaScriptProperty(name="URL")]
-	public function get URL_():String { return ''; }
+	public function get URL_():String { return undefined; }
 
-	public function get cookie():String { return ''; }
+	public function get cookie():String { return undefined; }
 	public function set cookie(value:String):void { }
 
 	/**
 	*  @see randori.webkit.html.HTMLElement
 	*/
-	public function get body():HTMLElement { return null; }
+	public function get body():HTMLElement { return undefined; }
 	public function set body(value:HTMLElement):void { }
 
 	/**
 	*  @see randori.webkit.html.HTMLHeadElement
 	*/
-	public function get head():HTMLHeadElement { return null; }
+	public function get head():HTMLHeadElement { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get images():HTMLCollection { return null; }
+	public function get images():HTMLCollection { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get applets():HTMLCollection { return null; }
+	public function get applets():HTMLCollection { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get links():HTMLCollection { return null; }
+	public function get links():HTMLCollection { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get forms():HTMLCollection { return null; }
+	public function get forms():HTMLCollection { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.HTMLCollection
 	*/
-	public function get anchors():HTMLCollection { return null; }
+	public function get anchors():HTMLCollection { return undefined; }
 
-	public function get lastModified():String { return ''; }
+	public function get lastModified():String { return undefined; }
 	/**
 	*  @param elementName (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>NodeList</code> instance.
 	*/
-	public function getElementsByName(elementName:String=undefined):NodeList { return null;}
+	public function getElementsByName(elementName:String=undefined):NodeList { return undefined;}
 
 	/**
 	*  @see randori.webkit.page.Location
 	*/
-	public function get location():Location { return null; }
+	public function get location():Location { return undefined; }
 	public function set location(value:Location):void { }
 
-	public function get charset():String { return ''; }
+	public function get charset():String { return undefined; }
 	public function set charset(value:String):void { }
 
-	public function get defaultCharset():String { return ''; }
+	public function get defaultCharset():String { return undefined; }
 
-	public function get readyState():String { return ''; }
+	public function get readyState():String { return undefined; }
 	/**
 	*  @param x (optional argument, default value is <code>undefined</code>)
 	*  @param y (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Element</code> instance.
 	*/
-	public function elementFromPoint(x:uint=undefined, y:uint=undefined):Element { return null;}
+	public function elementFromPoint(x:uint=undefined, y:uint=undefined):Element { return undefined;}
 	/**
 	*  @param x (optional argument, default value is <code>undefined</code>)
 	*  @param y (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Range</code> instance.
 	*/
-	public function caretRangeFromPoint(x:uint=undefined, y:uint=undefined):Range { return null;}
+	public function caretRangeFromPoint(x:uint=undefined, y:uint=undefined):Range { return undefined;}
 	/**
 	*  @return A <code>Selection</code> instance.
 	*/
-	public function getSelection():Selection { return null;}
+	public function getSelection():Selection { return undefined;}
 
-	public function get characterSet():String { return ''; }
+	public function get characterSet():String { return undefined; }
 
-	public function get preferredStylesheetSet():String { return ''; }
+	public function get preferredStylesheetSet():String { return undefined; }
 
-	public function get selectedStylesheetSet():String { return ''; }
+	public function get selectedStylesheetSet():String { return undefined; }
 	public function set selectedStylesheetSet(value:String):void { }
 	/**
 	*  @param contextId
@@ -562,164 +563,172 @@ public class Document extends Node
 	*  @param height
 	*  @return A <code>CanvasRenderingContext</code> instance.
 	*/
-	public function getCSSCanvasContext(contextId:String, name:String, width:uint, height:uint):CanvasRenderingContext { return null;}
+	public function getCSSCanvasContext(contextId:String, name:String, width:uint, height:uint):CanvasRenderingContext { return undefined;}
 	/**
 	*  @param tagname (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>NodeList</code> instance.
 	*/
-	public function getElementsByClassName(tagname:String=undefined):NodeList { return null;}
+	public function getElementsByClassName(tagname:String=undefined):NodeList { return undefined;}
 
-	public function get compatMode():String { return ''; }
+	public function get compatMode():String { return undefined; }
 	/**
 	*  @param selectors
 	*  @return A <code>Element</code> instance.
 	*/
-	public function querySelector(selectors:String):Element { return null;}
+	public function querySelector(selectors:String):Element { return undefined;}
 	/**
 	*  @param selectors
 	*  @return A <code>NodeList</code> instance.
 	*/
-	public function querySelectorAll(selectors:String):NodeList { return null;}
+	public function querySelectorAll(selectors:String):NodeList { return undefined;}
 
-	public function get onabort():Function { return null; }
+	/**
+	*  @see randori.webkit.css.FontLoader
+	*/
+	public function get fontloader():FontLoader { return undefined; }
+
+	public function get onabort():Function { return undefined; }
 	public function set onabort(value:Function):void { }
 
-	public function get onblur():Function { return null; }
+	public function get onblur():Function { return undefined; }
 	public function set onblur(value:Function):void { }
 
-	public function get onchange():Function { return null; }
+	public function get onchange():Function { return undefined; }
 	public function set onchange(value:Function):void { }
 
-	public function get onclick():Function { return null; }
+	public function get onclick():Function { return undefined; }
 	public function set onclick(value:Function):void { }
 
-	public function get oncontextmenu():Function { return null; }
+	public function get oncontextmenu():Function { return undefined; }
 	public function set oncontextmenu(value:Function):void { }
 
-	public function get ondblclick():Function { return null; }
+	public function get ondblclick():Function { return undefined; }
 	public function set ondblclick(value:Function):void { }
 
-	public function get ondrag():Function { return null; }
+	public function get ondrag():Function { return undefined; }
 	public function set ondrag(value:Function):void { }
 
-	public function get ondragend():Function { return null; }
+	public function get ondragend():Function { return undefined; }
 	public function set ondragend(value:Function):void { }
 
-	public function get ondragenter():Function { return null; }
+	public function get ondragenter():Function { return undefined; }
 	public function set ondragenter(value:Function):void { }
 
-	public function get ondragleave():Function { return null; }
+	public function get ondragleave():Function { return undefined; }
 	public function set ondragleave(value:Function):void { }
 
-	public function get ondragover():Function { return null; }
+	public function get ondragover():Function { return undefined; }
 	public function set ondragover(value:Function):void { }
 
-	public function get ondragstart():Function { return null; }
+	public function get ondragstart():Function { return undefined; }
 	public function set ondragstart(value:Function):void { }
 
-	public function get ondrop():Function { return null; }
+	public function get ondrop():Function { return undefined; }
 	public function set ondrop(value:Function):void { }
 
-	public function get onerror():Function { return null; }
+	public function get onerror():Function { return undefined; }
 	public function set onerror(value:Function):void { }
 
-	public function get onfocus():Function { return null; }
+	public function get onfocus():Function { return undefined; }
 	public function set onfocus(value:Function):void { }
 
-	public function get oninput():Function { return null; }
+	public function get oninput():Function { return undefined; }
 	public function set oninput(value:Function):void { }
 
-	public function get oninvalid():Function { return null; }
+	public function get oninvalid():Function { return undefined; }
 	public function set oninvalid(value:Function):void { }
 
-	public function get onkeydown():Function { return null; }
+	public function get onkeydown():Function { return undefined; }
 	public function set onkeydown(value:Function):void { }
 
-	public function get onkeypress():Function { return null; }
+	public function get onkeypress():Function { return undefined; }
 	public function set onkeypress(value:Function):void { }
 
-	public function get onkeyup():Function { return null; }
+	public function get onkeyup():Function { return undefined; }
 	public function set onkeyup(value:Function):void { }
 
-	public function get onload():Function { return null; }
+	public function get onload():Function { return undefined; }
 	public function set onload(value:Function):void { }
 
-	public function get onmousedown():Function { return null; }
+	public function get onmousedown():Function { return undefined; }
 	public function set onmousedown(value:Function):void { }
 
-	public function get onmousemove():Function { return null; }
+	public function get onmousemove():Function { return undefined; }
 	public function set onmousemove(value:Function):void { }
 
-	public function get onmouseout():Function { return null; }
+	public function get onmouseout():Function { return undefined; }
 	public function set onmouseout(value:Function):void { }
 
-	public function get onmouseover():Function { return null; }
+	public function get onmouseover():Function { return undefined; }
 	public function set onmouseover(value:Function):void { }
 
-	public function get onmouseup():Function { return null; }
+	public function get onmouseup():Function { return undefined; }
 	public function set onmouseup(value:Function):void { }
 
-	public function get onmousewheel():Function { return null; }
+	public function get onmousewheel():Function { return undefined; }
 	public function set onmousewheel(value:Function):void { }
 
-	public function get onreadystatechange():Function { return null; }
+	public function get onreadystatechange():Function { return undefined; }
 	public function set onreadystatechange(value:Function):void { }
 
-	public function get onscroll():Function { return null; }
+	public function get onscroll():Function { return undefined; }
 	public function set onscroll(value:Function):void { }
 
-	public function get onselect():Function { return null; }
+	public function get onselect():Function { return undefined; }
 	public function set onselect(value:Function):void { }
 
-	public function get onsubmit():Function { return null; }
+	public function get onsubmit():Function { return undefined; }
 	public function set onsubmit(value:Function):void { }
 
-	public function get onbeforecut():Function { return null; }
+	public function get onbeforecut():Function { return undefined; }
 	public function set onbeforecut(value:Function):void { }
 
-	public function get oncut():Function { return null; }
+	public function get oncut():Function { return undefined; }
 	public function set oncut(value:Function):void { }
 
-	public function get onbeforecopy():Function { return null; }
+	public function get onbeforecopy():Function { return undefined; }
 	public function set onbeforecopy(value:Function):void { }
 
-	public function get oncopy():Function { return null; }
+	public function get oncopy():Function { return undefined; }
 	public function set oncopy(value:Function):void { }
 
-	public function get onbeforepaste():Function { return null; }
+	public function get onbeforepaste():Function { return undefined; }
 	public function set onbeforepaste(value:Function):void { }
 
-	public function get onpaste():Function { return null; }
+	public function get onpaste():Function { return undefined; }
 	public function set onpaste(value:Function):void { }
 
-	public function get onreset():Function { return null; }
+	public function get onreset():Function { return undefined; }
 	public function set onreset(value:Function):void { }
 
-	public function get onsearch():Function { return null; }
+	public function get onsearch():Function { return undefined; }
 	public function set onsearch(value:Function):void { }
 
-	public function get onselectstart():Function { return null; }
+	public function get onselectstart():Function { return undefined; }
 	public function set onselectstart(value:Function):void { }
 
-	public function get onselectionchange():Function { return null; }
+	public function get onselectionchange():Function { return undefined; }
 	public function set onselectionchange(value:Function):void { }
 
-	public function get ontouchstart():Function { return null; }
+	public function get ontouchstart():Function { return undefined; }
 	public function set ontouchstart(value:Function):void { }
 
-	public function get ontouchmove():Function { return null; }
+	public function get ontouchmove():Function { return undefined; }
 	public function set ontouchmove(value:Function):void { }
 
-	public function get ontouchend():Function { return null; }
+	public function get ontouchend():Function { return undefined; }
 	public function set ontouchend(value:Function):void { }
 
-	public function get ontouchcancel():Function { return null; }
+	public function get ontouchcancel():Function { return undefined; }
 	public function set ontouchcancel(value:Function):void { }
+
+	public function get onsecuritypolicyviolation():Function { return undefined; }
+	public function set onsecuritypolicyviolation(value:Function):void { }
 
 	/**
 	*  @see randori.webkit.page.SecurityPolicy
 	*/
-	public function get securityPolicy():SecurityPolicy { return null; }
+	public function get securityPolicy():SecurityPolicy { return undefined; }
 }
 
 }

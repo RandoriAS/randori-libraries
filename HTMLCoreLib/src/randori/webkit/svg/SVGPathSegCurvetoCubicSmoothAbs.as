@@ -51,16 +51,16 @@ package randori.webkit.svg
 public class SVGPathSegCurvetoCubicSmoothAbs extends SVGPathSeg
 {
 
-	public function get x():Number { return 0; }
+	public function get x():Number { return undefined; }
 	public function set x(value:Number):void { }
 
-	public function get y():Number { return 0; }
+	public function get y():Number { return undefined; }
 	public function set y(value:Number):void { }
 
-	public function get x2():Number { return 0; }
+	public function get x2():Number { return undefined; }
 	public function set x2(value:Number):void { }
 
-	public function get y2():Number { return 0; }
+	public function get y2():Number { return undefined; }
 	public function set y2(value:Number):void { }
 }
 

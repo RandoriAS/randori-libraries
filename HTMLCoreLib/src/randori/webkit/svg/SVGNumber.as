@@ -50,7 +50,7 @@ package randori.webkit.svg
 public class SVGNumber
 {
 
-	public function get value():Number { return 0; }
+	public function get value():Number { return undefined; }
 	public function set value(value:Number):void { }
 }
 

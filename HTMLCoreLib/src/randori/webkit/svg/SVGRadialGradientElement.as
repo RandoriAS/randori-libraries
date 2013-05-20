@@ -54,32 +54,32 @@ public class SVGRadialGradientElement extends SVGGradientElement
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get cx():SVGAnimatedLength { return null; }
+	public function get cx():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get cy():SVGAnimatedLength { return null; }
+	public function get cy():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get r():SVGAnimatedLength { return null; }
+	public function get r():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get fx():SVGAnimatedLength { return null; }
+	public function get fx():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get fy():SVGAnimatedLength { return null; }
+	public function get fy():SVGAnimatedLength { return undefined; }
 
 	/**
 	*  @see randori.webkit.svg.SVGAnimatedLength
 	*/
-	public function get fr():SVGAnimatedLength { return null; }
+	public function get fr():SVGAnimatedLength { return undefined; }
 }
 
 }

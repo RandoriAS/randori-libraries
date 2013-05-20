@@ -56,16 +56,16 @@ public class HTMLMetaElement extends HTMLElement
 	*/
 	public function HTMLMetaElement() {super();}
 
-	public function get content():String { return ''; }
+	public function get content():String { return undefined; }
 	public function set content(value:String):void { }
 
-	public function get httpEquiv():String { return ''; }
+	public function get httpEquiv():String { return undefined; }
 	public function set httpEquiv(value:String):void { }
 
-	public function get name():String { return ''; }
+	public function get name():String { return undefined; }
 	public function set name(value:String):void { }
 
-	public function get scheme():String { return ''; }
+	public function get scheme():String { return undefined; }
 	public function set scheme(value:String):void { }
 }
 

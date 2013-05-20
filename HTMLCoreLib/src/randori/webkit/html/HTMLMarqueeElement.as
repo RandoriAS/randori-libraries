@@ -58,37 +58,37 @@ public class HTMLMarqueeElement extends HTMLElement
 	public function start():void {}
 	public function stop():void {}
 
-	public function get behavior():String { return ''; }
+	public function get behavior():String { return undefined; }
 	public function set behavior(value:String):void { }
 
-	public function get bgColor():String { return ''; }
+	public function get bgColor():String { return undefined; }
 	public function set bgColor(value:String):void { }
 
-	public function get direction():String { return ''; }
+	public function get direction():String { return undefined; }
 	public function set direction(value:String):void { }
 
-	public function get height():String { return ''; }
+	public function get height():String { return undefined; }
 	public function set height(value:String):void { }
 
-	public function get hspace():uint { return 0; }
+	public function get hspace():uint { return undefined; }
 	public function set hspace(value:uint):void { }
 
-	public function get loop():uint { return 0; }
+	public function get loop():uint { return undefined; }
 	public function set loop(value:uint):void { }
 
-	public function get scrollAmount():uint { return 0; }
+	public function get scrollAmount():uint { return undefined; }
 	public function set scrollAmount(value:uint):void { }
 
-	public function get scrollDelay():uint { return 0; }
+	public function get scrollDelay():uint { return undefined; }
 	public function set scrollDelay(value:uint):void { }
 
-	public function get trueSpeed():Boolean { return false; }
+	public function get trueSpeed():Boolean { return undefined; }
 	public function set trueSpeed(value:Boolean):void { }
 
-	public function get vspace():uint { return 0; }
+	public function get vspace():uint { return undefined; }
 	public function set vspace(value:uint):void { }
 
-	public function get width():String { return ''; }
+	public function get width():String { return undefined; }
 	public function set width(value:String):void { }
 }
 

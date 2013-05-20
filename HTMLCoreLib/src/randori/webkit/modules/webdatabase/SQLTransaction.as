@@ -51,11 +51,11 @@ public class SQLTransaction
 {
 	/**
 	*  @param sqlStatement
-	*  @param arguments
-	*  @param callback (optional argument, default value is <code>null</code>)
-	*  @param errorCallback (optional argument, default value is <code>null</code>)
+	*  @param arguments (optional argument, default value is <code>undefined</code>)
+	*  @param callback (optional argument, default value is <code>undefined</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function executeSql(sqlStatement:String, arguments:Object, callback:Object=null, errorCallback:Object=null):void {}
+	public function executeSql(sqlStatement:String, arguments:Object=undefined, callback:Object=undefined, errorCallback:Object=undefined):void {}
 }
 
 }

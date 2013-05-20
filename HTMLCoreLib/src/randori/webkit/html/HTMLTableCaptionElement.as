@@ -56,7 +56,7 @@ public class HTMLTableCaptionElement extends HTMLElement
 	*/
 	public function HTMLTableCaptionElement() {super();}
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 }
 

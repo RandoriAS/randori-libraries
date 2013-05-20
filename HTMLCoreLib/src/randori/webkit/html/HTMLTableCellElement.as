@@ -56,48 +56,48 @@ public class HTMLTableCellElement extends HTMLElement
 	*/
 	public function HTMLTableCellElement() {super();}
 
-	public function get cellIndex():uint { return 0; }
+	public function get cellIndex():uint { return undefined; }
 
-	public function get abbr():String { return ''; }
+	public function get abbr():String { return undefined; }
 	public function set abbr(value:String):void { }
 
-	public function get align():String { return ''; }
+	public function get align():String { return undefined; }
 	public function set align(value:String):void { }
 
-	public function get axis():String { return ''; }
+	public function get axis():String { return undefined; }
 	public function set axis(value:String):void { }
 
-	public function get bgColor():String { return ''; }
+	public function get bgColor():String { return undefined; }
 	public function set bgColor(value:String):void { }
 
-	public function get ch():String { return ''; }
+	public function get ch():String { return undefined; }
 	public function set ch(value:String):void { }
 
-	public function get chOff():String { return ''; }
+	public function get chOff():String { return undefined; }
 	public function set chOff(value:String):void { }
 
-	public function get colSpan():uint { return 0; }
+	public function get colSpan():uint { return undefined; }
 	public function set colSpan(value:uint):void { }
 
-	public function get headers():String { return ''; }
+	public function get headers():String { return undefined; }
 	public function set headers(value:String):void { }
 
-	public function get height():String { return ''; }
+	public function get height():String { return undefined; }
 	public function set height(value:String):void { }
 
-	public function get noWrap():Boolean { return false; }
+	public function get noWrap():Boolean { return undefined; }
 	public function set noWrap(value:Boolean):void { }
 
-	public function get rowSpan():uint { return 0; }
+	public function get rowSpan():uint { return undefined; }
 	public function set rowSpan(value:uint):void { }
 
-	public function get scope():String { return ''; }
+	public function get scope():String { return undefined; }
 	public function set scope(value:String):void { }
 
-	public function get vAlign():String { return ''; }
+	public function get vAlign():String { return undefined; }
 	public function set vAlign(value:String):void { }
 
-	public function get width():String { return ''; }
+	public function get width():String { return undefined; }
 	public function set width(value:String):void { }
 }
 

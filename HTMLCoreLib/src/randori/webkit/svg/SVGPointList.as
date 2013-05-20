@@ -50,40 +50,40 @@ package randori.webkit.svg
 public class SVGPointList
 {
 
-	public function get numberOfItems():uint { return 0; }
+	public function get numberOfItems():uint { return undefined; }
 	public function clear():void {}
 	/**
 	*  @param item
 	*  @return A <code>SVGPoint</code> instance.
 	*/
-	public function initialize(item:SVGPoint):SVGPoint { return null;}
+	public function initialize(item:SVGPoint):SVGPoint { return undefined;}
 	/**
 	*  @param index
 	*  @return A <code>SVGPoint</code> instance.
 	*/
-	public function getItem(index:uint):SVGPoint { return null;}
+	public function getItem(index:uint):SVGPoint { return undefined;}
 	/**
 	*  @param item
 	*  @param index
 	*  @return A <code>SVGPoint</code> instance.
 	*/
-	public function insertItemBefore(item:SVGPoint, index:uint):SVGPoint { return null;}
+	public function insertItemBefore(item:SVGPoint, index:uint):SVGPoint { return undefined;}
 	/**
 	*  @param item
 	*  @param index
 	*  @return A <code>SVGPoint</code> instance.
 	*/
-	public function replaceItem(item:SVGPoint, index:uint):SVGPoint { return null;}
+	public function replaceItem(item:SVGPoint, index:uint):SVGPoint { return undefined;}
 	/**
 	*  @param index
 	*  @return A <code>SVGPoint</code> instance.
 	*/
-	public function removeItem(index:uint):SVGPoint { return null;}
+	public function removeItem(index:uint):SVGPoint { return undefined;}
 	/**
 	*  @param item
 	*  @return A <code>SVGPoint</code> instance.
 	*/
-	public function appendItem(item:SVGPoint):SVGPoint { return null;}
+	public function appendItem(item:SVGPoint):SVGPoint { return undefined;}
 }
 
 }

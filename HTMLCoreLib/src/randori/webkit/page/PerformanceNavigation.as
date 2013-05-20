@@ -54,9 +54,9 @@ public class PerformanceNavigation
 	public static const TYPE_BACK_FORWARD:uint = 2;
 	public static const TYPE_RESERVED:uint = 255;
 
-	public function get type():uint { return 0; }
+	public function get type():uint { return undefined; }
 
-	public function get redirectCount():uint { return 0; }
+	public function get redirectCount():uint { return undefined; }
 }
 
 }

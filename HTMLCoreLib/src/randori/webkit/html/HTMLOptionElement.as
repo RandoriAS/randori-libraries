@@ -53,37 +53,37 @@ public class HTMLOptionElement extends HTMLElement
 {
 	/**
 	*  Creates a new <code>HTMLOptionElement</code> instance.
-	*  @param data (optional argument, default value is <code>null</code>)
-	*  @param value (optional argument, default value is <code>null</code>)
+	*  @param data (optional argument, default value is <code>undefined</code>)
+	*  @param value (optional argument, default value is <code>undefined</code>)
 	*  @param defaultSelected (optional argument, default value is <code>undefined</code>)
 	*  @param selected (optional argument, default value is <code>undefined</code>)
 	*/
-	public function HTMLOptionElement(data:String=null, value:String=null, defaultSelected:Boolean=undefined, selected:Boolean=undefined) {super();}
+	public function HTMLOptionElement(data:String=undefined, value:String=undefined, defaultSelected:Boolean=undefined, selected:Boolean=undefined) {super();}
 
-	public function get disabled():Boolean { return false; }
+	public function get disabled():Boolean { return undefined; }
 	public function set disabled(value:Boolean):void { }
 
 	/**
 	*  @see randori.webkit.html.HTMLFormElement
 	*/
-	public function get form():HTMLFormElement { return null; }
+	public function get form():HTMLFormElement { return undefined; }
 
-	public function get label():String { return ''; }
+	public function get label():String { return undefined; }
 	public function set label(value:String):void { }
 
-	public function get defaultSelected():Boolean { return false; }
+	public function get defaultSelected():Boolean { return undefined; }
 	public function set defaultSelected(value:Boolean):void { }
 
-	public function get selected():Boolean { return false; }
+	public function get selected():Boolean { return undefined; }
 	public function set selected(value:Boolean):void { }
 
-	public function get value():String { return ''; }
+	public function get value():String { return undefined; }
 	public function set value(value:String):void { }
 
-	public function get text():String { return ''; }
+	public function get text():String { return undefined; }
 	public function set text(value:String):void { }
 
-	public function get index():uint { return 0; }
+	public function get index():uint { return undefined; }
 }
 
 }

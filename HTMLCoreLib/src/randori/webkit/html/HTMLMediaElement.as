@@ -59,98 +59,98 @@ public class HTMLMediaElement extends HTMLElement
 	/**
 	*  @see randori.webkit.html.MediaError
 	*/
-	public function get error():MediaError { return null; }
+	public function get error():MediaError { return undefined; }
 
-	public function get src():String { return ''; }
+	public function get src():String { return undefined; }
 	public function set src(value:String):void { }
 
-	public function get currentSrc():String { return ''; }
+	public function get currentSrc():String { return undefined; }
 	public static const NETWORK_EMPTY:uint = 0;
 	public static const NETWORK_IDLE:uint = 1;
 	public static const NETWORK_LOADING:uint = 2;
 	public static const NETWORK_NO_SOURCE:uint = 3;
 
-	public function get networkState():uint { return 0; }
+	public function get networkState():uint { return undefined; }
 
-	public function get preload():String { return ''; }
+	public function get preload():String { return undefined; }
 	public function set preload(value:String):void { }
 
 	/**
 	*  @see randori.webkit.html.TimeRanges
 	*/
-	public function get buffered():TimeRanges { return null; }
+	public function get buffered():TimeRanges { return undefined; }
 	public function load():void {}
 	/**
 	*  @param type (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>String</code> instance.
 	*/
-	public function canPlayType(type:String=undefined):String { return '';}
+	public function canPlayType(type:String=undefined):String { return undefined;}
 	public static const HAVE_NOTHING:uint = 0;
 	public static const HAVE_METADATA:uint = 1;
 	public static const HAVE_CURRENT_DATA:uint = 2;
 	public static const HAVE_FUTURE_DATA:uint = 3;
 	public static const HAVE_ENOUGH_DATA:uint = 4;
 
-	public function get readyState():uint { return 0; }
+	public function get readyState():uint { return undefined; }
 
-	public function get seeking():Boolean { return false; }
+	public function get seeking():Boolean { return undefined; }
 
-	public function get currentTime():Number { return 0; }
+	public function get currentTime():Number { return undefined; }
 	public function set currentTime(value:Number):void { }
 
-	public function get initialTime():Number { return 0; }
+	public function get initialTime():Number { return undefined; }
 
-	public function get startTime():Number { return 0; }
+	public function get startTime():Number { return undefined; }
 
-	public function get duration():Number { return 0; }
+	public function get duration():Number { return undefined; }
 
-	public function get paused():Boolean { return false; }
+	public function get paused():Boolean { return undefined; }
 
-	public function get defaultPlaybackRate():Number { return 0; }
+	public function get defaultPlaybackRate():Number { return undefined; }
 	public function set defaultPlaybackRate(value:Number):void { }
 
-	public function get playbackRate():Number { return 0; }
+	public function get playbackRate():Number { return undefined; }
 	public function set playbackRate(value:Number):void { }
 
 	/**
 	*  @see randori.webkit.html.TimeRanges
 	*/
-	public function get played():TimeRanges { return null; }
+	public function get played():TimeRanges { return undefined; }
 
 	/**
 	*  @see randori.webkit.html.TimeRanges
 	*/
-	public function get seekable():TimeRanges { return null; }
+	public function get seekable():TimeRanges { return undefined; }
 
-	public function get ended():Boolean { return false; }
+	public function get ended():Boolean { return undefined; }
 
-	public function get autoplay():Boolean { return false; }
+	public function get autoplay():Boolean { return undefined; }
 	public function set autoplay(value:Boolean):void { }
 
-	public function get loop():Boolean { return false; }
+	public function get loop():Boolean { return undefined; }
 	public function set loop(value:Boolean):void { }
 	public function play():void {}
 	public function pause():void {}
 
-	public function get controls():Boolean { return false; }
+	public function get controls():Boolean { return undefined; }
 	public function set controls(value:Boolean):void { }
 
-	public function get volume():Number { return 0; }
+	public function get volume():Number { return undefined; }
 	public function set volume(value:Number):void { }
 
-	public function get muted():Boolean { return false; }
+	public function get muted():Boolean { return undefined; }
 	public function set muted(value:Boolean):void { }
 
-	public function get defaultMuted():Boolean { return false; }
+	public function get defaultMuted():Boolean { return undefined; }
 	public function set defaultMuted(value:Boolean):void { }
 
-	public function get mediaGroup():String { return ''; }
+	public function get mediaGroup():String { return undefined; }
 	public function set mediaGroup(value:String):void { }
 
 	/**
 	*  @see randori.webkit.html.MediaController
 	*/
-	public function get controller():MediaController { return null; }
+	public function get controller():MediaController { return undefined; }
 	public function set controller(value:MediaController):void { }
 }
 

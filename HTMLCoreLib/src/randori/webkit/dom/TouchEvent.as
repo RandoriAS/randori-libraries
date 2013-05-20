@@ -56,25 +56,25 @@ public class TouchEvent extends UIEvent
 	/**
 	*  @see randori.webkit.dom.TouchList
 	*/
-	public function get touches():TouchList { return null; }
+	public function get touches():TouchList { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.TouchList
 	*/
-	public function get targetTouches():TouchList { return null; }
+	public function get targetTouches():TouchList { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.TouchList
 	*/
-	public function get changedTouches():TouchList { return null; }
+	public function get changedTouches():TouchList { return undefined; }
 
-	public function get ctrlKey():Boolean { return false; }
+	public function get ctrlKey():Boolean { return undefined; }
 
-	public function get shiftKey():Boolean { return false; }
+	public function get shiftKey():Boolean { return undefined; }
 
-	public function get altKey():Boolean { return false; }
+	public function get altKey():Boolean { return undefined; }
 
-	public function get metaKey():Boolean { return false; }
+	public function get metaKey():Boolean { return undefined; }
 	/**
 	*  @param touches (optional argument, default value is <code>undefined</code>)
 	*  @param targetTouches (optional argument, default value is <code>undefined</code>)

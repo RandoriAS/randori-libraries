@@ -59,7 +59,7 @@ public dynamic class NodeList
 	*  <p>The number of nodes in the list. The range of valid child node
 	*  indices is 0 to <code>length-1</code> inclusive. </p>
 	*/
-	public function get length():uint { return 0; }
+	public function get length():uint { return undefined; }
 }
 
 }

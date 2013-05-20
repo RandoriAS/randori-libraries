@@ -50,38 +50,38 @@ package randori.webkit.dom
 public class MutationRecord
 {
 
-	public function get type():String { return ''; }
+	public function get type():String { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get target():Node { return null; }
+	public function get target():Node { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.NodeList
 	*/
-	public function get addedNodes():NodeList { return null; }
+	public function get addedNodes():NodeList { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.NodeList
 	*/
-	public function get removedNodes():NodeList { return null; }
+	public function get removedNodes():NodeList { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get previousSibling():Node { return null; }
+	public function get previousSibling():Node { return undefined; }
 
 	/**
 	*  @see randori.webkit.dom.Node
 	*/
-	public function get nextSibling():Node { return null; }
+	public function get nextSibling():Node { return undefined; }
 
-	public function get attributeName():String { return ''; }
+	public function get attributeName():String { return undefined; }
 
-	public function get attributeNamespace():String { return ''; }
+	public function get attributeNamespace():String { return undefined; }
 
-	public function get oldValue():String { return ''; }
+	public function get oldValue():String { return undefined; }
 }
 
 }

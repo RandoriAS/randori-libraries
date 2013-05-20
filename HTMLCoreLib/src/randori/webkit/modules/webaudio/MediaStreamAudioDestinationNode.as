@@ -55,7 +55,7 @@ public class MediaStreamAudioDestinationNode extends AudioSourceNode
 	/**
 	*  @see randori.webkit.modules.mediastream.MediaStream
 	*/
-	public function get stream():MediaStream { return null; }
+	public function get stream():MediaStream { return undefined; }
 }
 
 }

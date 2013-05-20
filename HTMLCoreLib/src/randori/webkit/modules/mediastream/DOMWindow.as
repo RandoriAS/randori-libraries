@@ -54,21 +54,21 @@ public class DOMWindow
 	/**
 	*  @see randori.webkit.modules.mediastream.RTCSessionDescription
 	*/
-	public function get RTCSessionDescription_():RTCSessionDescription { return null; }
+	public function get RTCSessionDescription_():RTCSessionDescription { return undefined; }
 	public function set RTCSessionDescription_(value:RTCSessionDescription):void { }
 
 	[JavaScriptProperty(name="RTCIceCandidate")]
 	/**
 	*  @see randori.webkit.modules.mediastream.RTCIceCandidate
 	*/
-	public function get RTCIceCandidate_():RTCIceCandidate { return null; }
+	public function get RTCIceCandidate_():RTCIceCandidate { return undefined; }
 	public function set RTCIceCandidate_(value:RTCIceCandidate):void { }
 
 	[JavaScriptProperty(name="MediaStreamEvent")]
 	/**
 	*  @see randori.webkit.modules.mediastream.MediaStreamEvent
 	*/
-	public function get MediaStreamEvent_():MediaStreamEvent { return null; }
+	public function get MediaStreamEvent_():MediaStreamEvent { return undefined; }
 	public function set MediaStreamEvent_(value:MediaStreamEvent):void { }
 }
 

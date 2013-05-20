@@ -54,10 +54,10 @@ public class ScriptProcessorNode extends AudioNode
 	/**
 	*  Function that accepts an event of type <code>AudioprocessEvent</code>.
 	*/
-	public function get onaudioprocess():Function { return null; }
+	public function get onaudioprocess():Function { return undefined; }
 	public function set onaudioprocess(value:Function):void { }
 
-	public function get bufferSize():uint { return 0; }
+	public function get bufferSize():uint { return undefined; }
 }
 
 }

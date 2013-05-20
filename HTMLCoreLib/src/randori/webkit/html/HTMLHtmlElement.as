@@ -56,10 +56,10 @@ public class HTMLHtmlElement extends HTMLElement
 	*/
 	public function HTMLHtmlElement() {super();}
 
-	public function get version():String { return ''; }
+	public function get version():String { return undefined; }
 	public function set version(value:String):void { }
 
-	public function get manifest():String { return ''; }
+	public function get manifest():String { return undefined; }
 	public function set manifest(value:String):void { }
 }
 

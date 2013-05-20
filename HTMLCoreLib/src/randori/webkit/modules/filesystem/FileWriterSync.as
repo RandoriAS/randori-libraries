@@ -63,9 +63,9 @@ public class FileWriterSync
 	*/
 	public function truncate(size:Number):void {}
 
-	public function get position():Number { return 0; }
+	public function get position():Number { return undefined; }
 
-	public function get length():Number { return 0; }
+	public function get length():Number { return undefined; }
 }
 
 }

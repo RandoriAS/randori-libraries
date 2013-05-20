@@ -52,11 +52,11 @@ import randori.webkit.dom.DomEvent;
 public class DeviceProximityEvent extends DomEvent
 {
 
-	public function get value():Number { return 0; }
+	public function get value():Number { return undefined; }
 
-	public function get min():Number { return 0; }
+	public function get min():Number { return undefined; }
 
-	public function get max():Number { return 0; }
+	public function get max():Number { return undefined; }
 }
 
 }
