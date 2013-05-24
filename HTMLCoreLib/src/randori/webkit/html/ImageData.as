@@ -53,6 +53,10 @@ public class ImageData
 	public function get width():uint { return undefined; }
 
 	public function get height():uint { return undefined; }
+
+	public function get resolution():int { return undefined; }
+
+	public function get data():Vector.<uint> { return undefined; }
 }
 
 }
