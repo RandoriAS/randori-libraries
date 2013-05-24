@@ -4,7 +4,7 @@
   This file was auto generated with the tool "WebIDLParser"
 
   Content was generated from IDL file:
-  http://trac.webkit.org/browser/trunk/Source/WebCore/html/DOMURL.idl
+  http://trac.webkit.org/browser/trunk/Source/WebCore/Modules/quota/NavigatorStorageQuota.idl
 
   PLEASE DO *NOT* MODIFY THIS FILE! This file will be overridden next generation. If you need changes:
   - Regenerate the project with the newest IDL files.
@@ -38,31 +38,17 @@
 *******************************************************************************************************/
 
 
-package randori.webkit.html
+package randori.webkit.modules.quota
 {
 
-import randori.webkit.fileapi.Blob;
 
-[JavaScript(export="false", nativecondition="BLOB", name="URL")]
+[JavaScript(export="false", nativecondition="QUOTA", name="NavigatorStorageQuota")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0
  */
-public class URL
+public class Navigator
 {
-	/**
-	*  Creates a new <code>URL</code> instance.
-	*/
-	public function URL() {super();}
-	/**
-	*  @param blob
-	*  @return A <code>String</code> instance.
-	*/
-	public static function createObjectURL(blob:Blob):String { return undefined;}
-	/**
-	*  @param url
-	*/
-	public static function revokeObjectURL(url:String):void {}
 }
 
 }

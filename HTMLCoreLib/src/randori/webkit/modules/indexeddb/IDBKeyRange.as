@@ -61,19 +61,19 @@ public class IDBKeyRange
 	*  @param value
 	*  @return A <code>IDBKeyRange</code> instance.
 	*/
-	public function only(value:*):IDBKeyRange { return undefined;}
+	public static function only(value:*):IDBKeyRange { return undefined;}
 	/**
 	*  @param bound
 	*  @param open (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>IDBKeyRange</code> instance.
 	*/
-	public function lowerBound(bound:*, open:Boolean=undefined):IDBKeyRange { return undefined;}
+	public static function lowerBound(bound:*, open:Boolean=undefined):IDBKeyRange { return undefined;}
 	/**
 	*  @param bound
 	*  @param open (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>IDBKeyRange</code> instance.
 	*/
-	public function upperBound(bound:*, open:Boolean=undefined):IDBKeyRange { return undefined;}
+	public static function upperBound(bound:*, open:Boolean=undefined):IDBKeyRange { return undefined;}
 	/**
 	*  @param lower
 	*  @param upper (optional argument, default value is <code>undefined</code>)
@@ -81,7 +81,7 @@ public class IDBKeyRange
 	*  @param upperOpen (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>IDBKeyRange</code> instance.
 	*/
-	public function bound(lower:*, upper:*=undefined, lowerOpen:Boolean=undefined, upperOpen:Boolean=undefined):IDBKeyRange { return undefined;}
+	public static function bound(lower:*, upper:*=undefined, lowerOpen:Boolean=undefined, upperOpen:Boolean=undefined):IDBKeyRange { return undefined;}
 }
 
 }

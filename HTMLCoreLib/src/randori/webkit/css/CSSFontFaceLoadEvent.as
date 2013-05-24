@@ -4,7 +4,7 @@
   This file was auto generated with the tool "WebIDLParser"
 
   Content was generated from IDL file:
-  http://trac.webkit.org/browser/trunk/Source/WebCore/html/DOMURL.idl
+  http://trac.webkit.org/browser/trunk/Source/WebCore/css/CSSFontFaceLoadEvent.idl
 
   PLEASE DO *NOT* MODIFY THIS FILE! This file will be overridden next generation. If you need changes:
   - Regenerate the project with the newest IDL files.
@@ -38,31 +38,31 @@
 *******************************************************************************************************/
 
 
-package randori.webkit.html
+package randori.webkit.css
 {
 
-import randori.webkit.fileapi.Blob;
+import randori.webkit.dom.DomEvent;
+import randori.webkit.dom.DOMError;
 
-[JavaScript(export="false", nativecondition="BLOB", name="URL")]
+[JavaScript(export="false", nativecondition="FONT_LOAD_EVENTS", name="CSSFontFaceLoadEvent")]
 /**
+ *  <note>This class depends on the browser to support: <code>FONT_LOAD_EVENTS</code></note>
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0
+ *  @see randori.webkit.dom.DomEvent
  */
-public class URL
+public class CSSFontFaceLoadEvent extends DomEvent
 {
+
 	/**
-	*  Creates a new <code>URL</code> instance.
+	*  @see randori.webkit.css.CSSFontFaceRule
 	*/
-	public function URL() {super();}
+	public function get fontface():CSSFontFaceRule { return undefined; }
+
 	/**
-	*  @param blob
-	*  @return A <code>String</code> instance.
+	*  @see randori.webkit.dom.DOMError
 	*/
-	public static function createObjectURL(blob:Blob):String { return undefined;}
-	/**
-	*  @param url
-	*/
-	public static function revokeObjectURL(url:String):void {}
+	public function get error():DOMError { return undefined; }
 }
 
 }

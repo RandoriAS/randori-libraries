@@ -4,7 +4,7 @@
   This file was auto generated with the tool "WebIDLParser"
 
   Content was generated from IDL file:
-  http://trac.webkit.org/browser/trunk/Source/WebCore/html/DOMURL.idl
+  http://trac.webkit.org/browser/trunk/Source/WebCore/Modules/quota/StorageQuota.idl
 
   PLEASE DO *NOT* MODIFY THIS FILE! This file will be overridden next generation. If you need changes:
   - Regenerate the project with the newest IDL files.
@@ -38,31 +38,28 @@
 *******************************************************************************************************/
 
 
-package randori.webkit.html
+package randori.webkit.modules.quota
 {
 
-import randori.webkit.fileapi.Blob;
 
-[JavaScript(export="false", nativecondition="BLOB", name="URL")]
+[JavaScript(export="false", nativecondition="QUOTA", omitconstructor="true", name="StorageQuota")]
 /**
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0
  */
-public class URL
+public class StorageQuota
 {
 	/**
-	*  Creates a new <code>URL</code> instance.
+	*  @param usageCallback
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public function URL() {super();}
+	public function queryUsageAndQuota(usageCallback:Object, errorCallback:Object=undefined):void {}
 	/**
-	*  @param blob
-	*  @return A <code>String</code> instance.
+	*  @param newQuotaInBytes
+	*  @param quotaCallback (optional argument, default value is <code>undefined</code>)
+	*  @param errorCallback (optional argument, default value is <code>undefined</code>)
 	*/
-	public static function createObjectURL(blob:Blob):String { return undefined;}
-	/**
-	*  @param url
-	*/
-	public static function revokeObjectURL(url:String):void {}
+	public function requestQuota(newQuotaInBytes:Number, quotaCallback:Object=undefined, errorCallback:Object=undefined):void {}
 }
 
 }

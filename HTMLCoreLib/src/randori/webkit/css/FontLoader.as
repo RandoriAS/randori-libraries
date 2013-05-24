@@ -4,7 +4,7 @@
   This file was auto generated with the tool "WebIDLParser"
 
   Content was generated from IDL file:
-  http://trac.webkit.org/browser/trunk/Source/WebCore/Modules/mediasource/MediaSource.idl
+  http://trac.webkit.org/browser/trunk/Source/WebCore/css/FontLoader.idl
 
   PLEASE DO *NOT* MODIFY THIS FILE! This file will be overridden next generation. If you need changes:
   - Regenerate the project with the newest IDL files.
@@ -38,55 +38,50 @@
 *******************************************************************************************************/
 
 
-package randori.webkit.modules.mediasource
+package randori.webkit.css
 {
 
 import randori.webkit.dom.DomEvent;
 
-[JavaScript(export="false", nativecondition="MEDIA_SOURCE", name="MediaSource")]
+[JavaScript(export="false", nativecondition="FONT_LOAD_EVENTS", name="FontLoader")]
 /**
+ *  <note>This class depends on the browser to support: <code>FONT_LOAD_EVENTS</code></note>
  *  @author RandoriAS Web IDL Parser
  *  @version 1.0
  */
-public class MediaSource
+public class FontLoader
 {
-	/**
-	*  Creates a new <code>MediaSource</code> instance.
-	*/
-	public function MediaSource() {super();}
 
-	/**
-	*  @see randori.webkit.modules.mediasource.SourceBufferList
-	*/
-	public function get sourceBuffers():SourceBufferList { return undefined; }
+	public function get onloading():Function { return undefined; }
+	public function set onloading(value:Function):void { }
 
-	/**
-	*  @see randori.webkit.modules.mediasource.SourceBufferList
-	*/
-	public function get activeSourceBuffers():SourceBufferList { return undefined; }
+	public function get onloadingdone():Function { return undefined; }
+	public function set onloadingdone(value:Function):void { }
 
-	public function get duration():Number { return undefined; }
-	public function set duration(value:Number):void { }
-	/**
-	*  @param type
-	*  @return A <code>SourceBuffer</code> instance.
-	*/
-	public function addSourceBuffer(type:String):SourceBuffer { return undefined;}
-	/**
-	*  @param buffer
-	*/
-	public function removeSourceBuffer(buffer:SourceBuffer):void {}
+	public function get onloadstart():Function { return undefined; }
+	public function set onloadstart(value:Function):void { }
 
-	public function get readyState():String { return undefined; }
+	public function get onload():Function { return undefined; }
+	public function set onload(value:Function):void { }
+
+	public function get onerror():Function { return undefined; }
+	public function set onerror(value:Function):void { }
 	/**
-	*  @param error (optional argument, default value is <code>undefined</code>)
-	*/
-	public function endOfStream(error:String=undefined):void {}
-	/**
-	*  @param type
+	*  @param font
+	*  @param text (optional argument, default value is <code>undefined</code>)
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public static function isTypeSupported(type:String):Boolean { return undefined;}
+	public function checkFont(font:String, text:String=undefined):Boolean { return undefined;}
+	/**
+	*  @param params
+	*/
+	public function loadFont(params:Object):void {}
+	/**
+	*  @param callback
+	*/
+	public function notifyWhenFontsReady(callback:Object):void {}
+
+	public function get loading():Boolean { return undefined; }
 	/**
 	*  @param type
 	*  @param listener (optional argument, default value is <code>undefined</code>)
@@ -100,10 +95,10 @@ public class MediaSource
 	*/
 	public function removeEventListener(type:String, listener:Function=undefined, useCapture:Boolean=undefined):void {}
 	/**
-	*  @param event
+	*  @param evt
 	*  @return A <code>Boolean</code> instance.
 	*/
-	public function dispatchEvent(event:DomEvent):Boolean { return undefined;}
+	public function dispatchEvent(evt:DomEvent):Boolean { return undefined;}
 }
 
 }
