@@ -6,6 +6,10 @@ package randori.backbone {
 		public static var ajax:Function;
 		public static var emulateHTTP:Boolean;
 		public static var emulateJSON:Boolean;
+		public static var $:Object;
+		public static function noConflict():Object{
+			return undefined;
+		};
 	}
 
 }
