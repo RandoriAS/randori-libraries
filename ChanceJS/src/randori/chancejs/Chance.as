@@ -33,7 +33,7 @@ package randori.chancejs {
 		}
 
 		public function character(param:CharacterParam=undefined):String {
-			return "";
+			return null;
 		}
 
 		public function integer(range:Range=undefined):int {
@@ -66,6 +66,30 @@ package randori.chancejs {
 
 		[JavaScriptMethod(name="name_prefix")]
 		public function namePrefix():String {
+			return null;
+		}
+		
+		public function tld():String {
+			return null;
+		}
+		
+		public function address():String {
+			return null;
+		}
+
+		public function city():String {
+			return null;
+		}
+
+		public function phone():String {
+			return null;
+		}
+		
+		public function state():String {
+			return null;
+		}
+
+		public function zip():String {
 			return null;
 		}
 
@@ -106,11 +130,11 @@ package randori.chancejs {
 		}
 
 		public function guid():String {
-			return "";
+			return null;
 		}
 
 		public function areacode():String {
-			return "";
+			return null;
 		}
 
 		[JavaScriptMethod(name="mersenne_twister")]
@@ -124,6 +148,10 @@ package randori.chancejs {
 		}
 
 		public function states():Vector.<NameAbbrev> {
+			return null;
+		}
+
+		public function street():String {
 			return null;
 		}
 
