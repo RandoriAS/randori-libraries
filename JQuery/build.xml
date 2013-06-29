@@ -24,7 +24,7 @@
     </target>
 
     <target name="compile">
-        <compc output="${OUTPUT_PATH}HTMLCoreLib.swc" target-player="11.1.0">
+        <compc output="${OUTPUT_PATH}JQuery.swc" target-player="11.1.0">
             <strict>false</strict>
             <optimize>true</optimize>
             <warnings>true</warnings>
@@ -35,6 +35,7 @@
             <include-sources dir="${basedir}/src" includes="*"/>
 		<external-library-path dir="${OUTPUT_PATH}">
 			<include name="builtin.swc"/>
+			<include name="HTMLCoreLib.swc"/>
 		</external-library-path>
         </compc>
     </target>
