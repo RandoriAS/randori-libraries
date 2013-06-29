@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="foobar" default="main" basedir=".">
+
+    
+    <target name="define-constants">
+        <property name="FLEX_HOME" value="C:/Program Files (x86)/Adobe/Adobe Flash Builder 4.6/sdks/4.9.1/" />
+        <property name="OUTPUT_PATH" value="D:/randori-sdk-swcs/" />
+    </target>
+
+
+    <target name="define-tasks">
+        <taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar" />
+    </target>
+
+    <target name="main" depends="define-constants,define-tasks,build">
+    </target>
+
+
+    <target name="after">
+    </target>
+
+    <target name="build" depends="compile">
+    </target>
+
+    <target name="compile">
+        <compc output="${OUTPUT_PATH}HTMLCoreLib.swc" target-player="11.1.0">
+            <strict>false</strict>
+            <optimize>true</optimize>
+            <warnings>true</warnings>
+            <verbose-stacktraces>true</verbose-stacktraces>
+            <compute-digest>false</compute-digest>
+	    <load-config filename="${basedir}/../randori-library-config.xml"/>
+            <source-path path-element="${basedir}/src" />
+            <include-sources dir="${basedir}/src" includes="*"/>
+		<external-library-path dir="${FLEX_HOME}/frameworks/libs">
+			<include name="player/11.1/playerglobal.swc"/>
+		</external-library-path>
+        </compc>
+    </target>
+</project>
